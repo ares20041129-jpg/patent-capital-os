@@ -7,14 +7,14 @@ Use this page when an application asks whether you are an active open-source mai
 - Project: Patent Capital OS
 - Repository: `https://github.com/ares20041129-jpg/patent-capital-os`
 - License: Apache-2.0
-- Primary/core maintainer: `@ares20041129-jpg`
+- Primary/core maintainer: Cyrus Sheng (`@ares20041129-jpg`)
 - Current status: early public open-source project with a complete local skill loop and regression evidence
 
 ## Maintainer Role Evidence
 
 Evidence to keep current:
 
-- `MAINTAINERS.md` lists `@ares20041129-jpg` as primary/core maintainer.
+- `MAINTAINERS.md` lists Cyrus Sheng (`@ares20041129-jpg`) as primary/core maintainer.
 - `GOVERNANCE.md` defines the primary-maintainer decision model.
 - `WORKLOG.md` records implementation, validation, and release-readiness work.
 - GitHub commit history should show ongoing maintainer commits.
@@ -39,7 +39,7 @@ Evidence to build:
 
 ## Public Profile Evidence
 
-The GitHub profile for `@ares20041129-jpg` should be public and should link to:
+The GitHub profile for Cyrus Sheng (`@ares20041129-jpg`) should be public and should link to:
 
 - Patent Capital OS repository
 - maintainer role

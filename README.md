@@ -6,7 +6,7 @@ It is designed for Chinese patent workflow prototyping and enterprise IP operati
 
 ## Project Status
 
-Patent Capital OS is an early public open-source project maintained by [@ares20041129-jpg](https://github.com/ares20041129-jpg). It has a complete local workflow loop, benchmark evidence, and regression gates. Public adoption is tracked honestly in `ADOPTERS.md`; the project does not claim broad ecosystem reliance until public evidence exists.
+Patent Capital OS is an early public open-source project maintained by Cyrus Sheng ([@ares20041129-jpg](https://github.com/ares20041129-jpg)). It has a complete local workflow loop, benchmark evidence, and regression gates. Public adoption is tracked honestly in `ADOPTERS.md`; the project does not claim broad ecosystem reliance until public evidence exists.
 
 ## What This Repository Contains
 
@@ -22,6 +22,7 @@ Patent Capital OS is an early public open-source project maintained by [@ares200
 - `GOVERNANCE.md`: project decision and review model
 - `ADOPTERS.md`: public adoption evidence tracker
 - `ROADMAP.md`: public roadmap
+- `MARKETING.md`: developer and GPT-builder launch strategy
 
 ## Core Capabilities
 
@@ -137,6 +138,7 @@ For applications or reviews that ask whether the maintainer is active in open so
 - `MAINTAINERS.md`
 - `GOVERNANCE.md`
 - `WORKLOG.md`
+- `MARKETING.md`
 - `docs/maintainer-application-evidence.md`
 
 ## Verification Status

@@ -6,7 +6,7 @@ Patent Capital OS uses a primary-maintainer model while the project is early.
 
 | Maintainer | GitHub | Role | Scope |
 | --- | --- | --- | --- |
-| ares20041129-jpg | [@ares20041129-jpg](https://github.com/ares20041129-jpg) | Primary/core maintainer | Roadmap, releases, security boundary, workflow contracts, and final merge decisions |
+| Cyrus Sheng | [@ares20041129-jpg](https://github.com/ares20041129-jpg) | Primary/core maintainer | Roadmap, releases, security boundary, workflow contracts, and final merge decisions |
 
 ## Maintainer Responsibilities
 

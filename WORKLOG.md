@@ -1,5 +1,40 @@
 ﻿# Patent Capital OS Worklog
 
+## 2026-06-08 04:21 +08:00
+
+Karpathy preflight:
+
+- Assumptions: the user wants the public project and author/maintainer identity to present as Cyrus Sheng while keeping the existing GitHub login and repository URLs stable; the marketing plan should target developers, GPT builders, agent engineers, and adjacent legaltech/IP operators without fabricating adoption.
+- Smallest sufficient action: update repository-facing maintainer/author metadata, update the public profile README, add a focused `MARKETING.md`, and preserve the existing patent workflow, legal/compliance gates, official-boundary flags, scripts, benchmarks, and release semantics.
+- Evidence check: current GitHub repository and profile repository exist under `ares20041129-jpg`; GitHub profile README can be updated through the repository contents API; changing the GitHub account display-name field requires an additional `user` OAuth scope that the current CLI token does not have.
+- Jagged-intelligence check: AI is useful for positioning, launch sequencing, and documentation consistency, but brittle at claiming market traction or changing external account settings without authenticated scope. Marketing copy must stay evidence-based and must not claim legal advice, official filing, broad usage, or ecosystem dependence before public proof exists.
+- Success criteria: local docs identify Cyrus Sheng as author/primary maintainer, public profile README starts with `# Cyrus Sheng`, marketing plan exists, validation checks pass, and GitHub display-name scope limitation is recorded honestly.
+- Stop rule: do not fabricate adoption, testimonials, attorney/legal review, official filing status, GitHub profile fields, or external advertising performance.
+
+Backup:
+
+- `<skill-root>\backups\20260608-cyrus-sheng-brand-marketing`
+
+Changes recorded:
+
+- Updated `README.md`, `MAINTAINERS.md`, `GOVERNANCE.md`, `CITATION.cff`, `NOTICE`, `docs\maintainer-application-evidence.md`, and `docs\github-profile-readme.md` so the public author/maintainer identity is Cyrus Sheng with GitHub handle `@ares20041129-jpg`.
+- Updated local git author name to `Cyrus Sheng` while keeping the GitHub noreply email.
+- Updated the public GitHub profile README through the profile repository API so it now opens with `# Cyrus Sheng` and links to Patent Capital OS, governance, maintainer role, roadmap, adoption tracking, and marketing/community plan.
+- Added `MARKETING.md` with positioning, audience, launch hooks, channel strategy, content assets, launch copy, KPIs, guardrails, and a weekly maintainer rhythm for developers, GPT builders, agent engineers, and legaltech/IP operators.
+- Updated `PUBLISHING.md` so the GitHub release checklist includes `MARKETING.md`.
+
+Marketing source notes:
+
+- Stack Overflow advertising, Reddit community targeting, LinkedIn Ads, OpenAI Developers, and OpenAI Developer Community were checked as current channel references for developer/GPT-builder distribution planning.
+
+Verification:
+
+- `python -m json.tool test-prompts.json`: passed.
+- `python -c "import yaml ..."` over `CITATION.cff`: passed.
+- `gh api repos/ares20041129-jpg/ares20041129-jpg/contents/README.md`: confirmed the remote profile README begins with `# Cyrus Sheng`.
+- `gh api user -X PATCH -f name='Cyrus Sheng' ...`: blocked by missing GitHub `user` scope; `gh auth refresh -h github.com -s user` timed out in the interactive authorization flow, so the GitHub display-name field remains pending external authorization.
+- `gh api user --jq '{login:.login,name:.name,bio:.bio,html_url:.html_url}'`: returned `name=null`, confirming the display-name field has not yet been changed by API.
+
 ## 2026-06-08 04:09 +08:00
 
 Karpathy preflight:

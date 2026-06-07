@@ -3,7 +3,9 @@ title: Patent Capital OS
 message: "If you use Patent Capital OS in public research, benchmarks, or open-source integrations, please cite the repository."
 type: software
 authors:
-  - name: Patent Capital OS contributors
+  - family-names: Sheng
+    given-names: Cyrus
+    alias: ares20041129-jpg
 repository-code: "https://github.com/ares20041129-jpg/patent-capital-os"
 license: Apache-2.0
 version: 0.1.0

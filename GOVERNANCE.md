@@ -4,7 +4,7 @@ Patent Capital OS is currently governed by a primary maintainer.
 
 ## Decision Model
 
-The primary maintainer, [@ares20041129-jpg](https://github.com/ares20041129-jpg), has final decision authority for:
+The primary maintainer, Cyrus Sheng ([@ares20041129-jpg](https://github.com/ares20041129-jpg)), has final decision authority for:
 
 - roadmap priorities
 - release timing
