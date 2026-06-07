@@ -25,6 +25,7 @@ Patent Capital OS is an early public open-source project maintained by Cyrus She
 - `ADOPTERS.md`: public adoption evidence tracker
 - `ROADMAP.md`: public roadmap
 - `MARKETING.md`: GitHub launch kit for this patent skill
+- `docs/github-marketing-strategy.md`: strategic GitHub marketing and trust model
 
 ## Core Capabilities
 
@@ -140,6 +141,7 @@ patent-capital-os/
 - Review `SECURITY.md` before enabling issues, PRs, or public contribution.
 - Keep `ADOPTERS.md` truthful. Do not claim heavy usage until public evidence exists.
 - Use `MARKETING.md` as the GitHub-specific positioning and growth kit for this patent skill.
+- Use `docs/github-marketing-strategy.md` for the full strategic thinking behind GitHub positioning, trust, contribution, and adoption.
 
 ## Maintainer Evidence
 

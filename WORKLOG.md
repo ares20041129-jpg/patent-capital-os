@@ -1,5 +1,42 @@
 ﻿# Patent Capital OS Worklog
 
+## 2026-06-08 07:36 +08:00
+
+Karpathy preflight:
+
+- Assumptions: the active goal is to design a comprehensive, top-tier GitHub marketing strategy for the Patent Capital OS skill before expanding execution; existing `MARKETING.md` is an execution kit and needs a deeper strategy layer.
+- Smallest sufficient action: add a strategy document that explains audience architecture, category design, trust model, narrative, GitHub surfaces, growth loops, metrics, risks, and claim guardrails; then link it from README, `MARKETING.md`, and `PUBLISHING.md`.
+- Evidence check: current GitHub README, topics, issues, discussions, labels, and launch kit already exist; GitHub and OpenSSF sources were checked for README, topics, discussions, and open-source best-practice trust mechanics.
+- Jagged-intelligence check: AI can write impressive marketing words that overclaim adoption or legal authority. The strategy must make trust, proof, and official-boundary discipline the differentiator instead of adding hype.
+- Success criteria: repository contains a strategic GitHub marketing document that is materially more comprehensive than the execution kit, points back to authoritative GitHub/OpenSSF sources, and preserves all no-official-submission and no-fabricated-adoption constraints.
+- Stop rule: do not alter patent workflow semantics, legal gates, official filing boundaries, or public adoption claims.
+
+Backup:
+
+- `<skill-root>\backups\20260608-top-tier-github-marketing-strategy`
+
+Changes recorded:
+
+- Added `docs\github-marketing-strategy.md` as the strategic thinking layer behind the GitHub launch kit.
+- The strategy covers executive thesis, source base, constraints, audience tiers, category design, narrative architecture, GitHub surface strategy, trust flywheel, content system, 90-day plan, metrics, experiments, risk register, claim matrix, maintainer operating model, and strategic checklist.
+- Updated `MARKETING.md` to point to `docs/github-marketing-strategy.md` for deeper strategy.
+- Updated `README.md` and `PUBLISHING.md` so the strategic document is part of the GitHub publishing and maintainer evidence surface.
+
+Source notes:
+
+- GitHub README guidance: `https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes`
+- GitHub repository topics guidance: `https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics`
+- GitHub Discussions guidance: `https://docs.github.com/en/discussions`
+- OpenSSF Best Practices Badge program: `https://openssf.org/projects/best-practices-badge/`
+
+Verification:
+
+- Markdown/link inspection with `rg`: confirmed `docs/github-marketing-strategy.md` is linked from `README.md`, `MARKETING.md`, `PUBLISHING.md`, and `WORKLOG.md`.
+- `git diff --check`: passed, with the existing `WORKLOG.md` CRLF normalization warning only.
+- `python -m json.tool test-prompts.json`: passed.
+- `CITATION.cff` YAML parse: passed.
+- `gh repo view ares20041129-jpg/patent-capital-os --json description,repositoryTopics,hasIssuesEnabled,hasDiscussionsEnabled,url`: confirmed description, topics, Issues, and Discussions remain aligned.
+
 ## 2026-06-08 04:50 +08:00
 
 Karpathy preflight:

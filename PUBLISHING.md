@@ -11,6 +11,7 @@ Use this checklist when preparing Patent Capital OS for a GitHub repository.
 - [ ] `GOVERNANCE.md` explains the maintainer model
 - [ ] `ADOPTERS.md` avoids unsupported usage claims
 - [ ] `MARKETING.md` explains the GitHub launch kit for this patent skill
+- [ ] `docs/github-marketing-strategy.md` explains the strategic GitHub trust, contribution, and adoption model
 - [ ] `.gitignore` excludes `out/`, `backups/`, and local zip exports
 - [ ] `requirements.txt` matches the actual runtime dependency surface
 - [ ] no secrets, credentials, or applicant-private materials are present

@@ -4,6 +4,8 @@ This is the GitHub-facing marketing kit for Patent Capital OS. It is written for
 
 The goal is to make a developer, GPT builder, or agent engineer understand the project in 30 seconds, trust the boundary claims in 3 minutes, and run or star the repository in 10 minutes.
 
+For the deeper strategic reasoning behind this kit, see `docs/github-marketing-strategy.md`.
+
 ## Repository Positioning
 
 Patent Capital OS is an open-source Codex skill for evidence-bound patent workflow automation.
