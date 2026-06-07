@@ -1,0 +1,22 @@
+{
+  "case_id": "APPLICATION-NUMBER-MOCK-001",
+  "previous_status": "official_receipt_received",
+  "status": "accepted_or_application_number_received",
+  "legal_gate": "passed",
+  "official_channel_preflight": "passed",
+  "approved_adapter_preflight": "passed",
+  "official_session_authorization": "passed",
+  "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+  "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "receipt_capture": "passed_mock",
+  "application_number_evidence": "passed_mock",
+  "decision": "application_number_received_mock_for_benchmark_only",
+  "final_package_hash": "sha256:8d7ea1297da68fb475bbf9c16c88bff301afc2abf4583dd327b024e4239f4b22",
+  "reviewed_package_hash": "sha256:8d7ea1297da68fb475bbf9c16c88bff301afc2abf4583dd327b024e4239f4b22",
+  "official_system_touched": true,
+  "official_submission_performed": true,
+  "official_receipt_hash": "sha256:cc424b5707959088ad64dd2c32a8ff512589f38ced0c1a3c8cfe2413dbd4d780",
+  "application_number": "MOCK-CN-202606010001",
+  "benchmark_mock": true,
+  "updated_at": "2026-06-01T22:42:00+08:00"
+}

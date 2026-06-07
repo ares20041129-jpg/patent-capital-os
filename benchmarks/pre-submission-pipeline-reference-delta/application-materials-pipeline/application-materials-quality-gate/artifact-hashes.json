@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "generated_at": "2026-06-03T06:11:16+08:00",
+  "files": [
+    {
+      "path": "application-materials-quality-review.json",
+      "sha256": "sha256:868b4c40278906d4e542c2d4c246baefd3c3aeb2bddaad1cea3c90dd5279303f",
+      "bytes": 7224
+    },
+    {
+      "path": "application-materials-quality-report.md",
+      "sha256": "sha256:d42beceb248ce57adeb344d23257dfcd520a8eee176390bd657d50e547dc526f",
+      "bytes": 844
+    }
+  ]
+}

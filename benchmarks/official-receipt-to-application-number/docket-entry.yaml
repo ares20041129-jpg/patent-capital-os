@@ -1,0 +1,14 @@
+case_id: "CASE-INTAKE-ORCH-001"
+docket_entry_id: "DOCKET-APPLICATION-NUMBER-MOCK-CASE-INTAKE-ORCH-001"
+event_type: "accepted_or_application_number_received"
+event_date: "2026-06-01T22:40:00+08:00"
+application_number: "MOCK-CN-CASE-INTAKE-ORCH-001"
+source_evidence: "application-number-evidence.json"
+source_hash: "see artifact-hashes.json"
+next_deadlines:
+  -
+    name: "substantive examination request placeholder"
+    due_date: "mock-date"
+  -
+    name: "annuity monitoring placeholder"
+    due_date: "mock-date"

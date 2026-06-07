@@ -1,0 +1,79 @@
+{
+  "session_gate": "official_session_authorization_gate",
+  "evidence_mode": "official_session_authorization",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system": "",
+  "official_account": {
+    "role": "applicant_self_filing_account_owner",
+    "account_owner_authorization_hash": "sha256:...",
+    "self_filing_authority_hash": "sha256:...",
+    "authorization_scope_hash": "sha256:..."
+  },
+  "session_broker": {
+    "name": "official-session-broker",
+    "version": "",
+    "approval_hash": "sha256:...",
+    "session_reference_hash": "sha256:...",
+    "session_reference_scope": "case_action_and_account_scoped",
+    "expires_at": "",
+    "scoped_to_case": true,
+    "revocable": true,
+    "expiry_enforced": true
+  },
+  "authorization": {
+    "allowed_actions": [
+      "submit_package",
+      "pay_official_fees"
+    ],
+    "signature_authority_hash": "sha256:...",
+    "payment_authority_hash": "sha256:...",
+    "fee_payment_allowed": true,
+    "filing_action_idempotency_key": "",
+    "human_only_steps": [],
+    "human_only_steps_resolved": true
+  },
+  "credential_boundary": {
+    "credential_source": "official_session_broker",
+    "credential_material_included": false,
+    "raw_credentials_in_request": false,
+    "private_keys_in_request": false,
+    "session_tokens_in_request": false,
+    "cookies_in_request": false,
+    "mfa_secrets_in_request": false,
+    "passwords_in_request": false,
+    "stores_credentials": false
+  },
+  "official_controls": {
+    "respects_mfa": true,
+    "respects_captcha": true,
+    "access_control_enforced": true,
+    "human_only_steps_trigger_handoff": true,
+    "signature_ceremony_handoff_if_required": true,
+    "bypasses_access_controls": false,
+    "bypasses_captcha": false,
+    "bypasses_signature_ceremony": false,
+    "bypasses_mfa": false,
+    "human_only_step_bypassed": false
+  },
+  "execution_controls": {
+    "requested_action": "submit_package",
+    "stop_on_hash_mismatch": true,
+    "stop_on_human_only_step": true,
+    "stop_on_access_control_bypass": true,
+    "receipt_capture_required": true,
+    "audit_logging_required": true,
+    "idempotency_key_required": true
+  },
+  "audit": {
+    "audit_log_schema_hash": "sha256:...",
+    "logs_input_hashes": true,
+    "logs_output_hashes": true,
+    "redacts_secrets": true,
+    "retention_policy": "retain official session authorization evidence according to applicant policy"
+  },
+  "decision": {
+    "status": "official_session_authorized",
+    "reason": ""
+  }
+}

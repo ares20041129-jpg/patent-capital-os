@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-03T00:38:01+08:00",
+  "files": [
+    {
+      "path": "case-package-manifest.json",
+      "sha256": "sha256:46d26fe2d05b34c865d39adbe221f5fa2a368cf58174f88ce2f513919f2c0967",
+      "bytes": 3095
+    },
+    {
+      "path": "01-normalized/source-material-manifest.json",
+      "sha256": "sha256:d555bb9cd99f73e3407dccd485baa5bfa7fde4b16efa8ab8fab2625df6f40ede",
+      "bytes": 2340
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:c42b46893eb1fdae85a92bff22c5853be0c6cae5ac75c23da412ac2ceef877e5",
+      "bytes": 429
+    },
+    {
+      "path": "intake-report.md",
+      "sha256": "sha256:28ce9141d6db836badfa2bace28ab437d70ae8398674cc57ba695dfc078a2f65",
+      "bytes": 761
+    }
+  ]
+}

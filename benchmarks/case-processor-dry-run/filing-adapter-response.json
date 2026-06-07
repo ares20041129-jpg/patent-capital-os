@@ -1,0 +1,21 @@
+{
+  "case_id": "CASE-PROCESSOR-DRY-RUN-001",
+  "execution_mode": "dry_run",
+  "adapter_name": "benchmark-dry-run-adapter",
+  "adapter_version": "0.0.0",
+  "response_state": "handoff_required",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "final_package_hash": "sha256:271f551faf3e459183db4014002ca92c3e50298743290ee102e057dc9b5fd0ab",
+  "reviewed_package_hash": "sha256:271f551faf3e459183db4014002ca92c3e50298743290ee102e057dc9b5fd0ab",
+  "receipt_capture_status": "planned",
+  "next_status": "ready_for_authorized_filing",
+  "handoff_required": true,
+  "human_action": "Authorized filing operator must perform final official-system confirmation or approve a real adapter run.",
+  "errors": [],
+  "warnings": [
+    "dry_run_only",
+    "no_official_system_touched"
+  ],
+  "audit_log_entry": "audit-log-entry.yaml"
+}

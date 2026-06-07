@@ -1,0 +1,5 @@
+<specification case-id="CASE-INTAKE-ORCH-001">
+  <title>Adaptive motor control for dough-state estimation</title>
+  <technical-field>Motor control and state estimation for food preparation appliances.</technical-field>
+  <boundary>Mock final specification for offline package validation only; no official submission.</boundary>
+</specification>

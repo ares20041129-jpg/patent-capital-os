@@ -1,0 +1,94 @@
+{
+  "base_packet": "../ai-self-filing-package-validation/ai-self-filing-authorization-packet.json",
+  "cases": [
+    {
+      "id": "legal_advice_claim_rejected",
+      "mutations": {
+        "ai_compliance_review.legal_gate_review.legal_advice_claimed": true
+      },
+      "expected_error": "ai_self_filing_must_not_claim_legal_advice"
+    },
+    {
+      "id": "lawyer_or_agent_review_claim_rejected",
+      "mutations": {
+        "ai_compliance_review.legal_gate_review.lawyer_or_agent_review_claimed": true
+      },
+      "expected_error": "ai_self_filing_must_not_claim_lawyer_or_agent_review"
+    },
+    {
+      "id": "missing_stop_condition_rejected",
+      "mutations": {
+        "ai_compliance_review.legal_gate_review.stop_conditions_checked": [
+          "mandatory_agent_condition",
+          "foreign_or_hmt_applicant_condition",
+          "agency_bypass_request",
+          "access_control_bypass"
+        ]
+      },
+      "expected_error": "legal_gate_stop_conditions_missing"
+    },
+    {
+      "id": "fee_authority_failure_rejected",
+      "mutations": {
+        "ai_compliance_review.legal_gate_review.fee_authority_check": "failed"
+      },
+      "expected_error": "ai_compliance_review.legal_gate_review.fee_authority_check_must_pass"
+    },
+    {
+      "id": "abnormal_risk_assessment_missing_rejected",
+      "remove_paths": [
+        "ai_compliance_review.abnormal_filing_risk_assessment"
+      ],
+      "expected_error": "missing_required_field: ai_compliance_review.abnormal_filing_risk_assessment.case_id"
+    },
+    {
+      "id": "abnormal_risk_assessment_high_rejected",
+      "mutations": {
+        "ai_compliance_review.abnormal_filing_risk_assessment.risk_level": "high"
+      },
+      "expected_error": "abnormal_filing_risk_assessment_must_be_low_or_none"
+    },
+    {
+      "id": "source_draft_hash_shape_rejected",
+      "mutations": {
+        "source_draft_hash": "sha256:not-a-real-digest"
+      },
+      "expected_error": "source_draft_hash_must_be_sha256_64_hex"
+    },
+    {
+      "id": "legal_gate_review_hash_shape_rejected",
+      "mutations": {
+        "ai_compliance_review.legal_gate_review.review_record_hash": "sha256:not-a-real-digest"
+      },
+      "expected_error": "ai_compliance_review.legal_gate_review.review_record_hash_must_be_sha256_64_hex"
+    },
+    {
+      "id": "abnormal_risk_assessment_hash_shape_rejected",
+      "mutations": {
+        "ai_compliance_review.abnormal_filing_risk_assessment.artifact_hash": "sha256:not-a-real-digest"
+      },
+      "expected_error": "ai_compliance_review.abnormal_filing_risk_assessment.artifact_hash_must_be_sha256_64_hex"
+    },
+    {
+      "id": "abnormal_risk_assessment_hash_mismatch_rejected",
+      "mutations": {
+        "ai_compliance_review.abnormal_filing_risk_assessment.artifact_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_error": "abnormal_filing_risk_assessment_artifact_hash_mismatch"
+    },
+    {
+      "id": "abnormal_risk_assessment_artifact_missing_rejected",
+      "mutations": {
+        "ai_compliance_review.abnormal_filing_risk_assessment.artifact_path": "../missing/abnormal-filing-risk-assessment.json"
+      },
+      "expected_error": "abnormal_filing_risk_assessment_artifact_file_not_found"
+    },
+    {
+      "id": "legal_gate_review_missing_rejected",
+      "remove_paths": [
+        "ai_compliance_review.legal_gate_review"
+      ],
+      "expected_error": "missing_required_field: ai_compliance_review.legal_gate_review.review_record_hash"
+    }
+  ]
+}

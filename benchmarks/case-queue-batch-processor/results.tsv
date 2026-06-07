@@ -1,0 +1,2 @@
+timestamp	queue_id	skill_version	score	target_dimension	mutation	status	eval_mode	validation_result	official_system_touched	official_submission_performed	notes
+2026-06-01T21:35:00+08:00	QUEUE-BATCH-001	local-no-git	92	batch_processor	Created dry-run case queue benchmark with local runner output for draft, package-pending, and ready-for-filing cases.	keep	dry_run	passed	false	false	Queue reports per-case outcome without submitting.

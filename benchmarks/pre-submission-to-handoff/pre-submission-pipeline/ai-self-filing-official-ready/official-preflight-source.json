@@ -1,0 +1,41 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-001",
+  "checked_by": "Patent Capital OS AI self-filing official preflight",
+  "account": {
+    "role": "applicant self-filing official account",
+    "authorization_evidence": "applicant-official-account-self-filing-authorization.pdf"
+  },
+  "signature": {
+    "authority_holder": "Applicant Filing Operator",
+    "authority_evidence": "applicant-electronic-signature-authority-record.pdf",
+    "human_only": false
+  },
+  "automation": {
+    "automation_allowed": true,
+    "adapter_name": "ai-self-filing-benchmark-adapter",
+    "adapter_version": "0.0.0-dry-run",
+    "bypasses_access_controls": false
+  },
+  "fees": {
+    "payment_method_reference": "benchmark-applicant-payment-account"
+  },
+  "application_materials": {
+    "path": "../application-materials-pipeline/application-materials/application-materials.json",
+    "hash": "sha256:99a6667e31eb1fc58a5b95e0a41912e44a629cec915bd4f3529c3f5d33c076af"
+  },
+  "receipt_capture": {
+    "destination": "case-vault/CASE-PRE-SUB-HANDOFF-001/ai-self-filing-receipts",
+    "responsible_owner": "Applicant Filing Operator",
+    "planned_docket_entry_id": "planned-ai-self-filing-docket-CASE-PRE-SUB-HANDOFF-001",
+    "next_deadlines": [
+      {
+        "name": "capture official receipt after AI self-filing submission",
+        "due_date": "on submission day"
+      }
+    ]
+  },
+  "decision": {
+    "status": "ready_for_authorized_filing",
+    "reason": "AI self-filing official-channel preflight source is complete for the local pre-submission pipeline. No official system has been touched."
+  }
+}

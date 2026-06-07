@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE-PACKAGE-INTAKE-001",
+  "generated_at": "2026-06-03T00:38:01+08:00",
+  "files": [
+    {
+      "path": "case-package-manifest.json",
+      "sha256": "sha256:638f9030f01cef73c299dbf9424aaf9202282b57996a8737adcaf0428f9c99f5",
+      "bytes": 3101
+    },
+    {
+      "path": "01-normalized/source-material-manifest.json",
+      "sha256": "sha256:5348d998ff126d86979e3079c47118b8987790e311f2e9ce504a4f93745d9e57",
+      "bytes": 2343
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:249046b7992a7c1cae7242a1af1cb4a0db97c57eb449a58793cd93e24f3b7f96",
+      "bytes": 432
+    },
+    {
+      "path": "intake-report.md",
+      "sha256": "sha256:99e5f795faec0e562d1a74e878bef401392ff20cd5e565405b39e400b1f9d556",
+      "bytes": 764
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+case_id: ""
+event_id: ""
+event_type: ""
+actor: ""
+actor_role: ""
+timestamp: ""
+input_hashes:
+  - ""
+output_hashes:
+  - ""
+approval_basis: ""
+decision: "proceed | stop | blocked | handoff"
+external_system: ""
+receipt_or_error_evidence: ""
+notes: ""

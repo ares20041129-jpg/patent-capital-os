@@ -1,0 +1,11 @@
+{
+  "case_id": "ABNORMAL-FILING-RISK-REJECTION",
+  "generated_at": "2026-06-02T02:35:02+08:00",
+  "files": [
+    {
+      "path": "rejection-cases.json",
+      "sha256": "sha256:25b8b3793d2eebe0b28d4ed36dad36ec3d2a0c7833aa8da85ce4118d272353ec",
+      "bytes": 2686
+    }
+  ]
+}

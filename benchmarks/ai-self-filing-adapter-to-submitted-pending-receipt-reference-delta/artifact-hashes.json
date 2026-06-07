@@ -1,0 +1,56 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-03T05:24:54+08:00",
+  "files": [
+    {
+      "path": "adapter-execution-source.json",
+      "sha256": "sha256:fb3f3b6a70ce955c24992213ac0f51924e888d203bb930c2b7c542bb6f8bb6f5",
+      "bytes": 1696
+    },
+    {
+      "path": "adapter-execution-result.json",
+      "sha256": "sha256:1eb34909ef28be24eec2801c702872f8c370a81b847313502fc703ce381e090f",
+      "bytes": 4009
+    },
+    {
+      "path": "filing-adapter-response.json",
+      "sha256": "sha256:4d8c6af9e3c61c4bb91966e7edc427975834a5c40171ca567e3b21216d500eac",
+      "bytes": 2258
+    },
+    {
+      "path": "receipt-capture-pending.yaml",
+      "sha256": "sha256:39e32745ee2709e43cbaf2c5f8d95b9b56b50fc12676c1c492c41e6fa05dcbe0",
+      "bytes": 1021
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:6107c6fa1e0ff48e191ce783753b663c49d07ea5fc300e90058e53713bdb55b0",
+      "bytes": 2056
+    },
+    {
+      "path": "adapter-execution-report.md",
+      "sha256": "sha256:f5284dab9d0893823876ec7c96ad87b0784c9aa4f09354796c64e87bbfdf5c2d",
+      "bytes": 866
+    },
+    {
+      "path": "audit-log-entry.yaml",
+      "sha256": "sha256:c38c4557dc14dd2dda1f176bce35a02d37a039ad3ca5c878ba6b0ca875d788b9",
+      "bytes": 1362
+    },
+    {
+      "path": "docket-entry.yaml",
+      "sha256": "sha256:27e0e58e4a426295d8feb09a209de264a53f8a7c998e567e92a690a32fa4a82a",
+      "bytes": 467
+    },
+    {
+      "path": "ai-self-filing-mock-submitted-status-snapshot-case-intake-orch-001.png",
+      "sha256": "sha256:374b2feffb60e5dd2fb2f0db3591b6888452e6309b6491a306096c8b45b12d40",
+      "bytes": 186
+    },
+    {
+      "path": "ai-self-filing-mock-submitted-file-list-case-intake-orch-001.txt",
+      "sha256": "sha256:33bba9152c6911c95df560391ecf536ecd0f9189bd75f4b2f8ee6d58bfffbd61",
+      "bytes": 224
+    }
+  ]
+}

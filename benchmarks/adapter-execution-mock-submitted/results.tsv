@@ -1,0 +1,2 @@
+timestamp	case_id	skill_version	score	target_dimension	mutation	status	eval_mode	validation_result	benchmark_mock	receipt_captured	application_number	notes
+2026-06-01T22:22:00+08:00	APPROVED-ADAPTER-PREFLIGHT-001	local-no-git	92	adapter_execution_result	Added mock submitted_pending_receipt adapter execution benchmark with receipt still pending.	keep	dry_run	passed	true	false	false	Adapter result proves post-submission pending-receipt evidence shape without claiming receipt.

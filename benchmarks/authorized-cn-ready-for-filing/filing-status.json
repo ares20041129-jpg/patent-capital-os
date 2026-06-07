@@ -1,0 +1,15 @@
+{
+  "case_id": "AUTHORIZED-CN-READY-001",
+  "status": "ready_for_authorized_filing",
+  "legal_gate": "passed",
+  "official_channel_preflight": "passed",
+  "failed_gates": [],
+  "final_package_hash": "sha256:87a8c293b9a77a423548096b9d4e4e36871ba1bb058db39624a216daba489d90",
+  "reviewed_package_hash": "sha256:87a8c293b9a77a423548096b9d4e4e36871ba1bb058db39624a216daba489d90",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "updated_at": "2026-06-01T18:45:00+08:00",
+  "not_filed_yet": true,
+  "official_submission_performed": false,
+  "official_system_touched": false
+}

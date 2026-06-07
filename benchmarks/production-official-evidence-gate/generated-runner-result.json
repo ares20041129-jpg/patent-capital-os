@@ -1,0 +1,37 @@
+{
+  "queue_id": "CASE-PRODUCTION-OFFICIAL-EVIDENCE-GATE-QUEUE",
+  "processed_at": "2026-06-02T00:52:00+08:00",
+  "execution_mode": "dry_run",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 0
+  },
+  "results": [
+    {
+      "case_id": "CASE-PRODUCTION-SHAPE-001",
+      "input_status": "accepted_or_application_number_received",
+      "output_status": "accepted_or_application_number_received",
+      "expected_outcome": "production_official_evidence",
+      "decision": "production_official_evidence_gate_passed",
+      "outcome": "passed",
+      "validators_run": [
+        "validate_production_official_evidence_gate_benchmark"
+      ],
+      "errors": [],
+      "warnings": [
+        "validate_production_official_evidence_gate_benchmark: production_shape: production_shape_test_not_real_official_evidence"
+      ],
+      "next_action": "Treat production official evidence as usable only when the strict gate passes on real, non-mock artifacts.",
+      "owner": "Production official evidence gate operator",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": []
+}

@@ -1,0 +1,66 @@
+{
+  "case_id": "CASE-PRE-SUB-001",
+  "generated_at": "2026-06-03T06:11:16+08:00",
+  "files": [
+    {
+      "path": "claims-material.md",
+      "sha256": "sha256:9d16237b9666d7350c78e52be101499f1d529854c8032c995b73d431aac58539",
+      "bytes": 840
+    },
+    {
+      "path": "specification-material.md",
+      "sha256": "sha256:2f121a19aada357d9502ddbccc25b090a3aa247c9c3a030979d97ab645f9c780",
+      "bytes": 2944
+    },
+    {
+      "path": "abstract-material.md",
+      "sha256": "sha256:c65ffec21b68a1c69e26f5f5a7c616dc57c75ed5bca3303425f6b091c16a34c3",
+      "bytes": 793
+    },
+    {
+      "path": "drawings-materials-plan.md",
+      "sha256": "sha256:5c55fd22475e0d72b4f05e3c8f77e62fed1ca3218c4964c9910edd91d5fa658a",
+      "bytes": 570
+    },
+    {
+      "path": "request-form-metadata.json",
+      "sha256": "sha256:33dd112547ce788fd5c0b70c4904ca49436e88615f17b07d4c7a6df8c225eadf",
+      "bytes": 1597
+    },
+    {
+      "path": "xml-readiness-checklist.json",
+      "sha256": "sha256:3f61f1658634abb0330233fc004a6ea65cf7e6c5ecea1a3ba42f768870de05a2",
+      "bytes": 667
+    },
+    {
+      "path": "document-generation-plan.json",
+      "sha256": "sha256:95476c6ce53d5753065342430a8d25eb5aa34442f8187968edc6b03d941cbeee",
+      "bytes": 1937
+    },
+    {
+      "path": "draft-evidence-provenance.json",
+      "sha256": "sha256:afa036b69abf7c5ae9960f454bc6d670fb7ceb2de0fa9e2f5b1cbfc779ef4c12",
+      "bytes": 1955
+    },
+    {
+      "path": "abnormal-filing-risk-assessment.json",
+      "sha256": "sha256:baaec6c3b5fa78f59fdd49bcf2375759bd2a47b5d689fbfdef32acd5ebfcbb92",
+      "bytes": 4626
+    },
+    {
+      "path": "application-materials.json",
+      "sha256": "sha256:5aac7d067af68ada2e258fba823e33183c455ca34974933a3540b7c504431a7d",
+      "bytes": 9757
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:1b8c246b24122fcde6cef7100d0f981f3ff2de7739991f2a49f8cf97654dc8dd",
+      "bytes": 941
+    },
+    {
+      "path": "application-materials-report.md",
+      "sha256": "sha256:3e8bb07f1da87a78be966e21dde4cca8c9e823955cf6e2a338f7279c407fe191",
+      "bytes": 1649
+    }
+  ]
+}

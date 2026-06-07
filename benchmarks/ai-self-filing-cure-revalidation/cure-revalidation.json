@@ -1,0 +1,44 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "source_case_id": "CASE-INTAKE-ORCH-001-legal_advice_claim_rejected",
+  "status": "ready_for_package_validation",
+  "decision": "package_validation_required_before_official_preflight",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "source_deficiency_hash": "sha256:24e598dc1f34db9c3c4252839c213aca202e04ee9a2ae95399102d9702f0e5fb",
+  "source_failed_packet_hash": "sha256:28324bf1a8d4505309e452e8d6d9ffcb71a1ea4fc478d1ddf34330757fcf2b90",
+  "cured_packet_hash": "sha256:8175700081953bb4b727e9e91abddaa88caa3e19280dcdd5f0f460aad80c0834",
+  "prior_validator_errors": [
+    "ai_self_filing_must_not_claim_legal_advice"
+  ],
+  "source_validation_errors": [
+    "missing_required_field: ai_compliance_review.abnormal_filing_risk_assessment.case_id",
+    "missing_required_field: ai_compliance_review.abnormal_filing_risk_assessment.status",
+    "missing_required_field: ai_compliance_review.abnormal_filing_risk_assessment.gate",
+    "missing_required_field: ai_compliance_review.abnormal_filing_risk_assessment.risk_level",
+    "missing_required_field: ai_compliance_review.abnormal_filing_risk_assessment.artifact_hash",
+    "missing_required_field: ai_compliance_review.abnormal_filing_risk_assessment.artifact_hash",
+    "ai_self_filing_must_not_claim_legal_advice"
+  ],
+  "source_validation_warnings": [],
+  "post_validation_errors": [],
+  "post_validation_warnings": [],
+  "unresolved_prior_errors": [],
+  "cure_source": {
+    "source_type": "cure_source",
+    "cured_packet_source": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\ai-self-filing-package-validation\\ai-self-filing-authorization-packet.json",
+    "cure_notes": [
+      "Removed the legal-advice misrepresentation.",
+      "Preserved AI self-filing route with no external lawyer or patent agent.",
+      "Revalidation may advance only to ready_for_package_validation."
+    ],
+    "mutated_paths": [],
+    "removed_paths": []
+  },
+  "filing_allowed": false,
+  "package_validation_required": true,
+  "official_channel_preflight_required": true,
+  "next_allowed_step": "run_ai_self_filing_package_validation_before_official_preflight",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "external_lawyer_involved": false
+}

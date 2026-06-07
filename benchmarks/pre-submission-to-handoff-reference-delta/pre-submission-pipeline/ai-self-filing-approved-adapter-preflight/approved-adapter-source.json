@@ -1,0 +1,52 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "adapter": {
+    "name": "authorized-cnipa-ai-self-filing-adapter",
+    "version": "1.0.0-security-reviewed",
+    "approved_for_production": true,
+    "registry_entry_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "dry_run_result_hash": "sha256:7eab6eceed08131e110741f4d06f1bc7ac98033a4d91fa0f56616abd98851318",
+    "security_review": {
+      "reviewed_by": "Security Reviewer",
+      "reviewed_at": "2026-06-01T23:35:00+08:00",
+      "result": "passed",
+      "review_artifact_hash": "sha256:c3528d14ad8a3bb4ae5fd163b9937bd4d407c3bbe4a9c852bdbc7f32be9b721c",
+      "scope": "Credential isolation, no access-control bypass, official-channel action scope, audit logging, docket update, and receipt capture planning."
+    }
+  },
+  "production_readiness": {
+    "packet": "../../../production-adapter-readiness-gate/production-ready/ai-self-filing-adapter-readiness-packet.json"
+  },
+  "official_session_authorization": {
+    "packet": "../../../official-session-authorization-gate/production-ready/ai-self-filing-session-authorization-packet.json"
+  },
+  "authorization": {
+    "account_owner_authorization": "applicant-account-owner-adapter-authorization.pdf",
+    "allowed_actions": [
+      "submit",
+      "file",
+      "pay official fees"
+    ],
+    "two_person_approval": {
+      "legal_approver": "Patent Capital OS AI self-filing legal/compliance gate",
+      "ops_approver": "Applicant Filing Operator",
+      "approved_at": "2026-06-03T06:51:21+08:00",
+      "evidence_hash": "sha256:ed416c210619653f3c2915dfc56ca992fc80a40d27a77705a108c2ba7d883cdf"
+    }
+  },
+  "credential_handling": {
+    "raw_credentials_in_request": false,
+    "private_keys_in_request": false,
+    "captcha_bypass": false,
+    "mfa_secret_in_request": false,
+    "session_token_in_request": false,
+    "stores_credentials": false
+  },
+  "execution_controls": {
+    "payment_allowed": true
+  },
+  "decision": {
+    "status": "approved_for_adapter_execution",
+    "reason": "Approved-adapter preflight evidence is complete for the local pre-submission pipeline. This does not execute the adapter or submit."
+  }
+}

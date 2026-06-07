@@ -1,0 +1,48 @@
+{
+  "case_id": "CASE-ID",
+  "evidence_gate": "production_official_evidence_gate",
+  "evidence_mode": "production_official_evidence",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system": "CNIPA patent business processing system",
+  "source": {
+    "capture_method": "approved_adapter_capture",
+    "captured_at": "YYYY-MM-DDTHH:MM:SS+08:00",
+    "captured_by": "authorized-applicant-filing-operator",
+    "official_account_role": "applicant_self_filing_account_owner",
+    "authorization_packet_hash": "sha256:...",
+    "official_session_reference_hash": "sha256:...",
+    "credential_material_included": false,
+    "human_only_step_bypassed": false
+  },
+  "package": {
+    "final_package_hash": "sha256:...",
+    "reviewed_package_hash": "sha256:...",
+    "submitted_package_hash": "sha256:..."
+  },
+  "artifacts": {
+    "adapter_execution_result": {
+      "path": "adapter-execution-result.json",
+      "sha256": "sha256:...",
+      "adapter_production_readiness_hash": "sha256:...",
+      "official_session_authorization_hash": "sha256:...",
+      "official_session_reference_hash": "sha256:..."
+    },
+    "receipt_capture": {
+      "path": "receipt-capture.yaml",
+      "sha256": "sha256:...",
+      "official_session_authorization_hash": "sha256:...",
+      "official_session_reference_hash": "sha256:..."
+    },
+    "application_number_evidence": {
+      "path": "application-number-evidence.json",
+      "sha256": "sha256:...",
+      "official_session_authorization_hash": "sha256:...",
+      "official_session_reference_hash": "sha256:..."
+    }
+  },
+  "decision": {
+    "status": "production_official_evidence_verified",
+    "reason": "Submission, receipt, and application-number evidence are independently captured from an authorized official channel and are bound to matching package hashes."
+  }
+}

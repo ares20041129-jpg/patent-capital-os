@@ -1,0 +1,41 @@
+{
+    "case_id":  "RECEIPT-CAPTURE-MOCK-001",
+    "generated_at":  "2026-06-02T19:07:00+08:00",
+    "files":  [
+                  {
+                      "path":  "receipt-capture.yaml",
+                      "sha256":  "sha256:21e02ccbbab955892cb0191a3616459e94e2c55d553912f860cd75bff17d1280",
+                      "bytes":  1243
+                  },
+                  {
+                      "path":  "filing-status.json",
+                      "sha256":  "sha256:ca6eaa00e4bfb12bf340974790508428d1bd4721df4dc27207571d5786dcc63f",
+                      "bytes":  1128
+                  },
+                  {
+                      "path":  "receipt-report.md",
+                      "sha256":  "sha256:89c422a8b1a03fe708904ee3c770801bad7bc73ee2b5b243f8dc3e5289fa22e7",
+                      "bytes":  791
+                  },
+                  {
+                      "path":  "results.tsv",
+                      "sha256":  "sha256:745cf65b67a315e3a85e7b59a276bc97c0dba29a283a4b3a30a0499feae55275",
+                      "bytes":  473
+                  },
+                  {
+                      "path":  "mock-official-receipt.pdf",
+                      "sha256":  "sha256:ec927516989a9be816131149fd835302a9c2a10ec577f31dcb8e6e804dc9709e",
+                      "bytes":  183
+                  },
+                  {
+                      "path":  "mock-official-file-list.txt",
+                      "sha256":  "sha256:38a9561756cfffa81e04c4a9138001ead3c455890160144707001b20ee94822d",
+                      "bytes":  168
+                  },
+                  {
+                      "path":  "mock-payment-receipt.pdf",
+                      "sha256":  "sha256:2c7db32b0a9f1b0942bb7de962dd0768a3c3d1f4a03ba510b6d7ddc1e3a01b6e",
+                      "bytes":  152
+                  }
+              ]
+}

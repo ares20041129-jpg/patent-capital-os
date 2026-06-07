@@ -1,0 +1,21 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T06:51:20+08:00",
+  "files": [
+    {
+      "path": "reference-patent-delta.json",
+      "sha256": "sha256:dbeaea5732615939b31e769c75ab844d68a8b1048a1f498da8edf676f2729b2b",
+      "bytes": 7130
+    },
+    {
+      "path": "claim-strategy.md",
+      "sha256": "sha256:9f9dc3735bec1ac71b76c23a85dabbf2a89220bd09a9e88478427bcccbfb94a6",
+      "bytes": 2085
+    },
+    {
+      "path": "reference-patent-delta-report.md",
+      "sha256": "sha256:c06fa4f40fd1251adb32000f859487df49bc78358fc038e08a72f5d097690171",
+      "bytes": 518
+    }
+  ]
+}

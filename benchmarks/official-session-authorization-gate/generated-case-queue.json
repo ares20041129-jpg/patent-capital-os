@@ -1,0 +1,24 @@
+{
+  "queue_id": "CASE-OFFICIAL-SESSION-AUTHORIZATION-QUEUE",
+  "created_at": "2026-06-02T00:39:28+08:00",
+  "execution_mode": "dry_run",
+  "official_submission_allowed": false,
+  "official_system_touch_allowed": false,
+  "queue_owner": "Patent Capital OS",
+  "items": [
+    {
+      "case_id": "CNIPA patent business processing system",
+      "priority": 1,
+      "current_status": "ready_for_authorized_filing",
+      "target_status": "ready_for_authorized_filing",
+      "case_record": "official-session-authorization-report.md",
+      "case_folder": ".",
+      "expected_outcome": "official_session_authorization",
+      "owner": "Official session authorization gate operator",
+      "required_validators": [
+        "validate_official_session_authorization_benchmark"
+      ],
+      "notes": "Generated from official-session-authorization-report.md by build_case_queue.py."
+    }
+  ]
+}

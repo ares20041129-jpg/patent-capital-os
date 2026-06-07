@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-02T02:49:45+08:00",
+  "files": [
+    {
+      "path": "source-deficiency-report.json",
+      "sha256": "sha256:24e598dc1f34db9c3c4252839c213aca202e04ee9a2ae95399102d9702f0e5fb",
+      "bytes": 1165
+    },
+    {
+      "path": "source-failed-authorization-packet.json",
+      "sha256": "sha256:28324bf1a8d4505309e452e8d6d9ffcb71a1ea4fc478d1ddf34330757fcf2b90",
+      "bytes": 3792
+    },
+    {
+      "path": "cured-ai-self-filing-authorization-packet.json",
+      "sha256": "sha256:8175700081953bb4b727e9e91abddaa88caa3e19280dcdd5f0f460aad80c0834",
+      "bytes": 4181
+    },
+    {
+      "path": "cure-revalidation.json",
+      "sha256": "sha256:f6c450551b0b2d85d3c1f004f4edf5411898641e8f4615bff1cd5b9de2c3545e",
+      "bytes": 2319
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:4bf85ae4dbafe268afcd014d56e00c83b3f84c656a1481f12f9e494b58adf01f",
+      "bytes": 854
+    },
+    {
+      "path": "cure-revalidation-report.md",
+      "sha256": "sha256:ed111b1b46c4de7d851e1bc5f478e1cde1c56eb85191d8cdf5be391594714062",
+      "bytes": 1269
+    }
+  ]
+}

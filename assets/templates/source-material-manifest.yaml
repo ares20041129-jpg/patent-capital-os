@@ -1,0 +1,28 @@
+case_id: ""
+received_at: ""
+received_from: ""
+confidentiality_marker: "confidential"
+source_package_hash: ""
+materials:
+  - material_id: "M-001"
+    filename: ""
+    type: "invention_disclosure | drawing | experiment | prototype_log | prior_art | transcript | email | other"
+    received_at: ""
+    hash: ""
+    source_owner: ""
+    confidentiality: "confidential"
+    usable_for_claim_support: false
+    notes: ""
+chain_of_custody:
+  - actor: ""
+    action: "received | normalized | hashed | reviewed | exported"
+    timestamp: ""
+    input_hash: ""
+    output_hash: ""
+claim_support_links:
+  - claim_id: ""
+    limitation_id: ""
+    material_id: ""
+    evidence_hash: ""
+missing_materials:
+  - ""

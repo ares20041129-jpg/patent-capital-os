@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "generated_at": "2026-06-03T06:11:17+08:00",
+  "files": [
+    {
+      "path": "approved-adapter-preflight.json",
+      "sha256": "sha256:ee6201721365d8aac13f646ba3f6a70c86acf842a7627137498fa70893f965b6",
+      "bytes": 6651
+    },
+    {
+      "path": "filing-adapter-request.json",
+      "sha256": "sha256:c79aa57ed9c59bc0f85439de56ba40aa47a1f714a5821da9c81a6c2acecee358",
+      "bytes": 2165
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:5ea41488b80d18236e4a8c6eb56c68617598ce731b7f5743e93e159edcd08458",
+      "bytes": 1628
+    },
+    {
+      "path": "adapter-boundary-report.md",
+      "sha256": "sha256:17614695423f30c71db2524b542ec9bedcb9d278228757a2d1a100f4b8a6c392",
+      "bytes": 1459
+    },
+    {
+      "path": "audit-log-entry-plan.yaml",
+      "sha256": "sha256:edeabfd4c3976552530e1121dd950ba3422246e8cc3ca047bf57019dde0c533f",
+      "bytes": 1249
+    },
+    {
+      "path": "docket-entry-plan.yaml",
+      "sha256": "sha256:9734aa62db05c40deb595519afe79fee73163cd62c3549309087675881df11c4",
+      "bytes": 476
+    }
+  ]
+}

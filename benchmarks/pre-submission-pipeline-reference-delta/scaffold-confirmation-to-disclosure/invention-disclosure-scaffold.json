@@ -1,0 +1,95 @@
+{
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "disclosure_status": "scaffold_pending_confirmation",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "normalized_at": "2026-06-03T06:11:16+08:00",
+  "source_material_manifest": "01-normalized/source-material-manifest.json",
+  "source_package_hash": "sha256:8a534abe29fa4e60cb851dd8374005bf1e137b5a7a74aae2bd313cfa6336525e",
+  "invention_disclosure": {
+    "case_id": "CASE-PRE-SUB-REF-001",
+    "title": "Adaptive motor control for dough-state estimation",
+    "jurisdiction_plan": {
+      "first_filing": "CN",
+      "later_foreign_or_pct": null
+    },
+    "business_goal": "Normalize raw intake into a disclosure scaffold for inventor, applicant, and AI legal/compliance confirmation.",
+    "applicant_context": {
+      "applicant_name": "TBD",
+      "product_or_project": "Adaptive motor control for dough-state estimation",
+      "actual_r_and_d_basis": "Raw source materials received; actual R&D basis requires inventor confirmation."
+    },
+    "inventor_input": {
+      "inventors": [],
+      "contribution_confirmed": false
+    },
+    "technical_problem": "Existing appliances use fixed mixing schedules and do not adapt to dough state.",
+    "technical_solution": {
+      "required_features": [
+        "Compare motor current ripple, bowl temperature, and timed rest intervals to classify dough hydration and elasticity state."
+      ],
+      "optional_features": []
+    },
+    "technical_effects": [
+      {
+        "effect": "Potential technical effect pending confirmation.",
+        "evidence": "Prototype log indicates motor-current variance changes after water absorption."
+      }
+    ],
+    "embodiments": [
+      {
+        "name": "Implementation scaffold pending confirmation",
+        "implementation_steps": [
+          "Compare motor current ripple, bowl temperature, and timed rest intervals to classify dough hydration and elasticity state."
+        ],
+        "components": [],
+        "parameters": []
+      }
+    ],
+    "drawings_needed": [
+      "drawing-notes.txt"
+    ],
+    "known_prior_art": [
+      {
+        "publication": "prior-art-notes.txt",
+        "relevance": "Prior-art material received; publication identifier pending extraction."
+      }
+    ],
+    "similarity_control": {
+      "uses_reference_patents": true,
+      "no_copying_or_synonym_substitution_confirmed": false,
+      "real_technical_contribution_summary": "Pending inventor and AI legal/compliance confirmation."
+    },
+    "data_and_evidence": {
+      "prototypes": [],
+      "experiments": [],
+      "logs_or_measurements": [],
+      "source_hashes": [
+        "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+        "sha256:36938c5922b3d40d2d16a0e50d7edacb676dd227621189f3a8d261ef7c235771",
+        "sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e"
+      ]
+    },
+    "secrecy": {
+      "invention_completed_in_china": null,
+      "foreign_or_pct_planned": null,
+      "secrecy_review_status": "unknown"
+    },
+    "ai_legal_compliance_questions": [
+      "Confirm inventor names and contributions.",
+      "Confirm applicant and ownership basis.",
+      "Confirm no copying or synonym substitution from reference patents.",
+      "Confirm technical effects and supporting evidence.",
+      "Confirm secrecy review and filing jurisdiction plan."
+    ]
+  },
+  "scaffold_controls": {
+    "inventor_confirmation_pending": true,
+    "legal_gate_pending": true,
+    "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+    "external_lawyer_involved": false,
+    "no_copying_confirmation_pending": true,
+    "filing_allowed": false,
+    "draft_generation_allowed": false
+  }
+}

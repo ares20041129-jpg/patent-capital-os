@@ -1,0 +1,115 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "execution_mode": "approved_adapter",
+  "adapter": {
+    "name": "authorized-cnipa-ai-self-filing-adapter",
+    "version": "1.0.0-security-reviewed",
+    "approved_for_production": true,
+    "registry_entry_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "dry_run_result_hash": "sha256:7eab6eceed08131e110741f4d06f1bc7ac98033a4d91fa0f56616abd98851318",
+    "security_review": {
+      "reviewed_by": "Security Reviewer",
+      "reviewed_at": "2026-06-01T23:35:00+08:00",
+      "result": "passed",
+      "review_artifact_hash": "sha256:c3528d14ad8a3bb4ae5fd163b9937bd4d407c3bbe4a9c852bdbc7f32be9b721c",
+      "scope": "Credential isolation, no access-control bypass, official-channel action scope, audit logging, docket update, and receipt capture planning."
+    },
+    "production_readiness": {
+      "readiness_gate": "production_adapter_readiness_gate",
+      "evidence_mode": "production_adapter_readiness",
+      "packet": "../production-adapter-readiness-gate/production-ready/ai-self-filing-adapter-readiness-packet.json",
+      "packet_hash": "sha256:d8a70abc8fb1e8e19dbc74c6979bf2532cbc14e9cefab6d29949461595cb47a8",
+      "validation_result": "passed",
+      "approved_for_real_execution": true,
+      "adapter_name": "authorized-cnipa-ai-self-filing-adapter",
+      "adapter_version": "1.0.0-security-reviewed",
+      "registry_entry_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "authorization": {
+    "submission_authorization_packet": "../ai-self-filing-package-validation/ai-self-filing-authorization-packet.json",
+    "submission_authorization_packet_hash": "sha256:d6f6b5deb1e8c4afc8b0e7ab2bb7133fc5dd3e83d243989033e19b3ec8affe6f",
+    "authorization_packet_type": "ai_self_filing_no_external_lawyer",
+    "applicant_authorization_confirmed": true,
+    "counsel_review_confirmed": false,
+    "ai_self_filing_confirmed": true,
+    "external_lawyer_involved": false,
+    "self_filing_allowed": true,
+    "mandatory_agent_required": false,
+    "foreign_or_hmt_applicant": false,
+    "agency_bypass_requested": false,
+    "account_owner_authorization": "applicant-account-owner-adapter-authorization.pdf",
+    "signature_authority_evidence": "applicant-electronic-signature-authority-record.pdf",
+    "payment_authority_evidence": "benchmark-applicant-payment-account",
+    "allowed_actions": [
+      "submit",
+      "file",
+      "pay official fees"
+    ],
+    "two_person_approval": {
+      "legal_approver": "Patent Capital OS AI self-filing legal/compliance gate",
+      "ops_approver": "Applicant Filing Operator",
+      "approved_at": "2026-06-01T23:36:00+08:00",
+      "evidence_hash": "sha256:ed416c210619653f3c2915dfc56ca992fc80a40d27a77705a108c2ba7d883cdf"
+    }
+  },
+  "official_channel": {
+    "preflight_file": "../ai-self-filing-official-ready/official-channel-preflight.yaml",
+    "preflight_hash": "sha256:cfeb0f1de19eaa9efbdb138a5f5a7a2fbcf6a19b647086dd3a7469bc329b9433",
+    "official_system": "CNIPA patent business processing system",
+    "automation_allowed": true,
+    "bypasses_access_controls": false,
+    "human_only_steps": [],
+    "human_only_steps_resolved": true,
+    "session_authorization": {
+      "session_gate": "official_session_authorization_gate",
+      "evidence_mode": "official_session_authorization",
+      "packet": "../official-session-authorization-gate/production-ready/ai-self-filing-session-authorization-packet.json",
+      "packet_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+      "validation_result": "passed",
+      "approved_for_real_execution": true,
+      "official_account_role": "applicant_self_filing_account_owner",
+      "session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "authorization_scope_hash": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+  },
+  "package": {
+    "manifest_file": "../ai-self-filing-package-validation/filing-package-manifest.yaml",
+    "manifest_hash": "sha256:e490362e6c46d1b410dc2b019f707f746edcc95cdcdfd3a5f4084533295b3f2c",
+    "final_package_hash": "sha256:d69aec78f0c470f2cfac50ba4a0a83b688ffeab129610b1c897ad9f665b0975b",
+    "reviewed_package_hash": "sha256:d69aec78f0c470f2cfac50ba4a0a83b688ffeab129610b1c897ad9f665b0975b",
+    "xml_validation_result": "passed",
+    "attachment_list_hash": "sha256:0f23dc75d76a29cdf4bab11209a2e63a6b8f94293034d9bd4691389a241dc8b0"
+  },
+  "evidence": {
+    "receipt_capture_plan": "../ai-self-filing-official-ready/receipt-capture-plan.yaml",
+    "receipt_capture_plan_hash": "sha256:22dce1a9c97fa0ba658a72171050d977d3c4029abe2519d61b04cb323c4e3975",
+    "audit_log_entry_plan": "audit-log-entry-plan.yaml",
+    "audit_log_entry_plan_hash": "sha256:af8b949e590e84ecf3e60960e14911ecd05d52f16fe4cc0c591b9c9107a93301",
+    "docket_entry_plan": "docket-entry-plan.yaml",
+    "docket_entry_plan_hash": "sha256:51a28ad5616a784096cb507899410d4101a8747682a3c5ea39e2a5f8d2eec8c9"
+  },
+  "credential_handling": {
+    "raw_credentials_in_request": false,
+    "private_keys_in_request": false,
+    "captcha_bypass": false,
+    "mfa_secret_in_request": false,
+    "session_token_in_request": false,
+    "stores_credentials": false
+  },
+  "execution_controls": {
+    "requested_action": "submit_package",
+    "payment_allowed": true,
+    "stop_on_hash_mismatch": true,
+    "stop_on_human_only_step": true,
+    "stop_on_access_control_bypass": true,
+    "receipt_capture_required": true,
+    "audit_log_required": true,
+    "docket_update_required": true
+  },
+  "decision": {
+    "status": "approved_for_adapter_execution",
+    "reason": "AI self-filing benchmark adapter, compliance, official-channel, package, receipt, audit, docket, and credential-handling gates are present. This benchmark does not execute official submission.",
+    "next_status_if_success": "submitted_pending_receipt"
+  }
+}

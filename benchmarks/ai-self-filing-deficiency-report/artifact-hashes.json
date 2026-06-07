@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001-legal_advice_claim_rejected",
+  "generated_at": "2026-06-02T02:03:22+08:00",
+  "files": [
+    {
+      "path": "ai-self-filing-authorization-packet.json",
+      "sha256": "sha256:28324bf1a8d4505309e452e8d6d9ffcb71a1ea4fc478d1ddf34330757fcf2b90",
+      "bytes": 3792
+    },
+    {
+      "path": "deficiency-report.json",
+      "sha256": "sha256:24e598dc1f34db9c3c4252839c213aca202e04ee9a2ae95399102d9702f0e5fb",
+      "bytes": 1165
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:b32e12710aa7b736e2ce0225973de908a1c2cfaaff87cd60aa995b820143bc41",
+      "bytes": 719
+    },
+    {
+      "path": "deficiency-report.md",
+      "sha256": "sha256:3c475bf40d360f410a2b79786cfc2b97383da3fe86165a0f542dff4687586ac0",
+      "bytes": 1429
+    }
+  ]
+}

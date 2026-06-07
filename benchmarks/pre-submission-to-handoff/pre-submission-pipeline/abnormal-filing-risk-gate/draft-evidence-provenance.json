@@ -1,0 +1,45 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-001",
+  "status": "draft_evidence_provenance_checked",
+  "decision": "draft_only_do_not_file",
+  "source_material_manifest_hash": "sha256:8515c1135d8dc26a604d2d224307ec477f52f3ebe9cb09d22ddb7f31c11eae5a",
+  "invention_disclosure_hash": "sha256:54c808675859acd442bc70c7187863bfe060e6624c36f074f7779e64f7533438",
+  "patent_application_draft_hash": "sha256:1568e64175abb90a0f29f46cbb4676d55b6eb45c3cd6a5b7f6abd5cb344ecf66",
+  "claim_support_map_hash": "sha256:353f37a321e382e4f3c4ef339b84bc00e5d164193c1d4f25e0a8ab5f5b2d5f1d",
+  "filing_status_hash": "sha256:1af501ffda19bdf99e87cebe9bfb56ac1695b6292e4ff2c3fc86f67d8af996c3",
+  "own_support_hashes": [
+    "sha256:36938c5922b3d40d2d16a0e50d7edacb676dd227621189f3a8d261ef7c235771",
+    "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c"
+  ],
+  "prohibited_reference_hashes": [
+    "sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e"
+  ],
+  "reference_identifiers": [
+    "prior-art-notes.txt"
+  ],
+  "claim_support_rows": [
+    {
+      "row": 1,
+      "claim": "1",
+      "limitation": "Compare motor current ripple, bowl temperature, and timed rest intervals to classify dough hydration and elasticity state",
+      "evidence_hash": "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+      "evidence_role": "own_source_material",
+      "material_id": "M-001",
+      "material_type": "drawing",
+      "source_owner": "Patent Capital OS benchmark",
+      "passes": true,
+      "errors": []
+    }
+  ],
+  "unsupported_rows": [],
+  "errors": [],
+  "warnings": [
+    "source_manifest: material_3_not_marked_usable_for_claim_support",
+    "claim_support_map: row_1_draft_status: draft_supported"
+  ],
+  "draft_generation_allowed": true,
+  "filing_allowed": false,
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "external_lawyer_involved": false
+}

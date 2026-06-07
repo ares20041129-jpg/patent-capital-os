@@ -1,0 +1,16 @@
+{
+    "case_id":  "PRE-SUBMISSION-HANDOFF-REJECTION",
+    "generated_at":  "2026-06-03T06:30:00+08:00",
+    "files":  [
+                  {
+                      "path":  "rejection-cases.json",
+                      "sha256":  "sha256:6af416a0c4438a1b7bd2799787aa3405762161717584bb17d7cb8563203f868d",
+                      "bytes":  2124
+                  },
+                  {
+                      "path":  "handoff-rejection-report.md",
+                      "sha256":  "sha256:1e1f739cf2ad1b20ad804e33d8ee3c66fa107a8cdb426d1b703fa9135ac32871",
+                      "bytes":  524
+                  }
+              ]
+}

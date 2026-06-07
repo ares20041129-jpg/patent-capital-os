@@ -1,0 +1,24 @@
+{
+  "queue_id": "CONFIRMED-DISCLOSURE-QUEUE-001",
+  "created_at": "2026-06-01T20:42:51+08:00",
+  "execution_mode": "dry_run",
+  "official_submission_allowed": false,
+  "official_system_touch_allowed": false,
+  "queue_owner": "Patent Capital OS benchmark",
+  "items": [
+    {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "priority": 1,
+      "current_status": "draft_only",
+      "target_status": "draft_only",
+      "case_record": "invention-disclosure.json",
+      "case_folder": ".",
+      "expected_outcome": "confirmed_disclosure",
+      "owner": "Disclosure confirmation operator",
+      "required_validators": [
+        "validate_scaffold_confirmation_benchmark"
+      ],
+      "notes": "Generated from invention-disclosure.json by build_case_queue.py."
+    }
+  ]
+}

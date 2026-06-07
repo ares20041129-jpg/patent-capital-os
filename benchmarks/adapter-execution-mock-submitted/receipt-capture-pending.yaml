@@ -1,0 +1,23 @@
+case_id: "APPROVED-ADAPTER-PREFLIGHT-001"
+filing_action_id: "MOCK-SUBMISSION-PENDING-001"
+status: "submitted_pending_receipt"
+submitted_at: "2026-06-01T22:21:00+08:00"
+official_system: "CNIPA patent business processing system"
+official_receipt:
+  receipt_id: ""
+  receipt_file: ""
+  receipt_hash: ""
+application:
+  application_number: ""
+  filing_date: ""
+  official_file_list_hash: ""
+fees:
+  payment_status: "pending"
+  payment_receipt_file: ""
+  payment_receipt_hash: ""
+docket:
+  docket_entry_id: "DOCKET-ADAPTER-EXECUTION-MOCK-001"
+  next_deadlines:
+    - name: "capture official filing receipt"
+      due_date: "2026-06-02"
+evidence_notes: "Benchmark mock only. This is not a real official submission; receipt is pending."

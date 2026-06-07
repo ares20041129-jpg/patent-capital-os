@@ -1,0 +1,24 @@
+{
+  "queue_id": "PRODUCTION-ADAPTER-READINESS-GATE-QUEUE-001",
+  "created_at": "2026-06-02T00:10:11+08:00",
+  "execution_mode": "dry_run",
+  "official_submission_allowed": false,
+  "official_system_touch_allowed": false,
+  "queue_owner": "Production Adapter Readiness Gate",
+  "items": [
+    {
+      "case_id": "authorized-cnipa-filing-adapter-shape-test",
+      "priority": 1,
+      "current_status": "ready_for_authorized_filing",
+      "target_status": "ready_for_authorized_filing",
+      "case_record": "production-adapter-readiness-report.md",
+      "case_folder": ".",
+      "expected_outcome": "production_adapter_readiness",
+      "owner": "Production adapter readiness gate operator",
+      "required_validators": [
+        "validate_production_adapter_readiness_benchmark"
+      ],
+      "notes": "Generated from production-adapter-readiness-report.md by build_case_queue.py."
+    }
+  ]
+}

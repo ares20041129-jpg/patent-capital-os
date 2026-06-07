@@ -1,0 +1,27 @@
+{
+  "case_id": "APPROVED-ADAPTER-PREFLIGHT-001",
+  "execution_mode": "approved_adapter",
+  "adapter_name": "authorized-cnipa-counsel-reviewed-adapter",
+  "adapter_version": "1.0.0-security-reviewed",
+  "response_state": "submitted_pending_receipt",
+  "official_system_touched": true,
+  "official_submission_performed": true,
+  "final_package_hash": "sha256:0d03edad83fe8418fd41462106631245ba1fd9ffa6faf66bcb979c1fe112f012",
+  "reviewed_package_hash": "sha256:0d03edad83fe8418fd41462106631245ba1fd9ffa6faf66bcb979c1fe112f012",
+  "receipt_capture_status": "submitted_pending_receipt",
+  "next_status": "submitted_pending_receipt",
+  "handoff_required": false,
+  "human_action": "",
+  "errors": [],
+  "warnings": [
+    "mock_adapter_execution_for_benchmark_only",
+    "receipt_capture_followup_required"
+  ],
+  "approved_adapter_preflight_hash": "sha256:b294574df0df61a8b3a1ca575c162edb155e6a3b75886dc90716e019a8ea06c2",
+  "adapter_production_readiness_hash": "sha256:2e98aee405d11b9e7e5f0a480a81f2d2b322121ce4406040db297a1a438215fd",
+  "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+  "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "adapter_execution_result": "adapter-execution-result.json",
+  "adapter_execution_result_hash": "sha256:3e2aa29ecdb039b862e9c70b5d3019fcb39f2cc0e519fd223c5bd4304fc0e5df",
+  "audit_log_entry": "audit-log-entry.yaml"
+}

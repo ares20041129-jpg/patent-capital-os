@@ -1,0 +1,11 @@
+{
+  "case_id": "DISCLOSURE-CONFIRMATION-REJECTION",
+  "generated_at": "2026-06-02T22:04:00+08:00",
+  "files": [
+    {
+      "path": "rejection-cases.json",
+      "sha256": "sha256:4c92bd88158b924f656aa63e55e4b6c8611def6036d1a794e6a1f8a58a3b63b6",
+      "bytes": 2624
+    }
+  ]
+}

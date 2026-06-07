@@ -1,0 +1,16 @@
+{
+  "case_id": "PATENT-CAPITAL-OS-SKILL-CLOSURE-001",
+  "generated_at": "2026-06-03T13:27:29+08:00",
+  "files": [
+    {
+      "path": "skill-completion-audit.json",
+      "sha256": "sha256:e107215a637436e7082abcdcf55fb9d02f15592e82963bfc59c6bed6c06425db",
+      "bytes": 67682
+    },
+    {
+      "path": "skill-completion-audit.md",
+      "sha256": "sha256:a8c616f03351d69e27ca8753d4457961dd08d020e68c045ace619e40c709d592",
+      "bytes": 1564
+    }
+  ]
+}

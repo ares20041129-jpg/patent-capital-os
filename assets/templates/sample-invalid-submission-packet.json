@@ -1,0 +1,26 @@
+{
+  "case_id": "SAMPLE-BLOCKED",
+  "filing_type": "invention",
+  "jurisdiction": "CN",
+  "final_documents": {
+    "claims": "claims-final.docx",
+    "specification": "specification-final.docx",
+    "abstract": "abstract-final.docx"
+  },
+  "hashes": {
+    "source_package": "sha256-demo-reviewed"
+  },
+  "counsel_review": {
+    "reviewer_name": "Patent Agent",
+    "reviewer_role": "patent agent",
+    "organization": "Example IP Firm",
+    "approval_statement": "Approved draft only.",
+    "reviewed_hash": "sha256-different",
+    "timestamp": "2026-06-01T16:30:00+08:00"
+  },
+  "secrecy_review": {
+    "china_completed": true,
+    "foreign_or_pct_planned": true,
+    "status": "unknown"
+  }
+}

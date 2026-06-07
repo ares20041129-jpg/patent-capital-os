@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-001",
+  "generated_at": "2026-06-03T07:03:16+08:00",
+  "files": [
+    {
+      "path": "official-channel-preflight.yaml",
+      "sha256": "sha256:0e4f29718631e2f429ad99cab40ead460bd395fb36da5b0e82f3da889f6d858c",
+      "bytes": 1892
+    },
+    {
+      "path": "receipt-capture-plan.yaml",
+      "sha256": "sha256:19d057a33f7141ceb0a5c5d36fd863abcbdf6c958e6ba44d848d7a7a39383277",
+      "bytes": 755
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:8702e909a67222b5a115396b2d528c5c832a1616b6baf67d2569317ab6f007b8",
+      "bytes": 1047
+    },
+    {
+      "path": "readiness-report.md",
+      "sha256": "sha256:78214f067e8ec2ab6b3cdf96eea5fd130f0f18b6532780d59fe9f6ce8556214a",
+      "bytes": 1242
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "ok": true,
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "pipeline_type": "pre_submission_to_handoff_ai_self_filing_no_external_lawyer",
+  "created_at": "2026-06-03T06:51:22+08:00",
+  "status": "approved_for_adapter_execution",
+  "decision": "handoff_ready_no_auto_submit",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "adapter_execution_performed": false,
+  "automatic_submission_performed": false,
+  "pre_submission_lifecycle_gate": "passed",
+  "lifecycle_trace_hash": "sha256:caa9b617d15e82d744c88c85299f118a5520f287cffa6c76bd5536c674fc9bca",
+  "source_pre_submission_hash": "sha256:d86c5fd9b0312d09a15b31f56d0f1d071f334c2dc5f28d22793ce3d12ba25c93",
+  "handoff_package_hash": "sha256:dd24704edc1ae6dc6e88c5eb027db12a1aa756ef8588e8145183b6b025b5c0f1",
+  "reference_patent_delta_hash": "sha256:cfdb203ea3b5ab9cf252ca2eefbcec44edd6e569d54cf843078b49ad9ad3da91",
+  "reference_delta_rows_count": 3,
+  "reference_delta_claim_elements_count": 3,
+  "reference_delta_boundary_preserved": true,
+  "stages": {
+    "pre_submission_pipeline": {
+      "ok": true,
+      "exit_code": 0,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline",
+      "artifacts": {
+        "raw_input": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\raw-input",
+        "reference_delta_source": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\reference-patent-delta\\reference-delta-source.json",
+        "ai_self_filing_source": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\ai-self-filing-package-validation\\ai-self-filing-source.json",
+        "official_preflight_source": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\ai-self-filing-official-ready\\official-preflight-source.json",
+        "approved_adapter_source": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\ai-self-filing-approved-adapter-preflight\\approved-adapter-source.json",
+        "case_lifecycle_trace": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\case-lifecycle-trace\\case-lifecycle-trace.json",
+        "pre_submission_pipeline_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\pre-submission-pipeline-result.json",
+        "pre_submission_pipeline_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\pre-submission-pipeline-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": []
+    },
+    "pre_submission_handoff_package": {
+      "ok": true,
+      "exit_code": 0,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-handoff-package",
+      "artifacts": {
+        "handoff_package": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-handoff-package\\pre-submission-handoff-package.json",
+        "handoff_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-handoff-package\\pre-submission-handoff-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-handoff-package\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [
+        "source_pre_submission: case_package: case_package_manifest: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "source_pre_submission: case_package: case_package_manifest: source_file_3_not_marked_usable_for_claim_support",
+        "source_pre_submission: case_package: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "source_pre_submission: draft_package: claim_support_map: row_1_draft_status: draft_supported",
+        "source_pre_submission: draft_package: claim_support_map: row_2_draft_status: draft_supported",
+        "source_pre_submission: draft_package: claim_support_map: row_3_draft_status: draft_supported",
+        "source_pre_submission: draft_evidence_provenance: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "source_pre_submission: draft_evidence_provenance: claim_support_map: row_1_draft_status: draft_supported",
+        "source_pre_submission: draft_evidence_provenance: claim_support_map: row_2_draft_status: draft_supported",
+        "source_pre_submission: draft_evidence_provenance: claim_support_map: row_3_draft_status: draft_supported",
+        "source_pre_submission: abnormal_filing_risk: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "source_pre_submission: abnormal_filing_risk: claim_support_map: row_1_draft_status: draft_supported",
+        "source_pre_submission: abnormal_filing_risk: claim_support_map: row_2_draft_status: draft_supported",
+        "source_pre_submission: abnormal_filing_risk: claim_support_map: row_3_draft_status: draft_supported"
+      ]
+    }
+  },
+  "validations": {
+    "pre_submission_pipeline": {
+      "ok": true,
+      "validator": "validate_pre_submission_pipeline_benchmark",
+      "target": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline",
+      "errors": [],
+      "warnings": [
+        "case_package: case_package_manifest: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "case_package: case_package_manifest: source_file_3_not_marked_usable_for_claim_support",
+        "case_package: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "draft_package: claim_support_map: row_1_draft_status: draft_supported",
+        "draft_package: claim_support_map: row_2_draft_status: draft_supported",
+        "draft_package: claim_support_map: row_3_draft_status: draft_supported",
+        "draft_evidence_provenance: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "draft_evidence_provenance: claim_support_map: row_1_draft_status: draft_supported",
+        "draft_evidence_provenance: claim_support_map: row_2_draft_status: draft_supported",
+        "draft_evidence_provenance: claim_support_map: row_3_draft_status: draft_supported",
+        "abnormal_filing_risk: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "abnormal_filing_risk: claim_support_map: row_1_draft_status: draft_supported",
+        "abnormal_filing_risk: claim_support_map: row_2_draft_status: draft_supported",
+        "abnormal_filing_risk: claim_support_map: row_3_draft_status: draft_supported"
+      ]
+    },
+    "pre_submission_handoff_package": {
+      "ok": true,
+      "validator": "validate_pre_submission_handoff_package",
+      "target": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-handoff-package",
+      "errors": [],
+      "warnings": [
+        "source_pre_submission: case_package: case_package_manifest: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "source_pre_submission: case_package: case_package_manifest: source_file_3_not_marked_usable_for_claim_support",
+        "source_pre_submission: case_package: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "source_pre_submission: draft_package: claim_support_map: row_1_draft_status: draft_supported",
+        "source_pre_submission: draft_package: claim_support_map: row_2_draft_status: draft_supported",
+        "source_pre_submission: draft_package: claim_support_map: row_3_draft_status: draft_supported",
+        "source_pre_submission: draft_evidence_provenance: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "source_pre_submission: draft_evidence_provenance: claim_support_map: row_1_draft_status: draft_supported",
+        "source_pre_submission: draft_evidence_provenance: claim_support_map: row_2_draft_status: draft_supported",
+        "source_pre_submission: draft_evidence_provenance: claim_support_map: row_3_draft_status: draft_supported",
+        "source_pre_submission: abnormal_filing_risk: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "source_pre_submission: abnormal_filing_risk: claim_support_map: row_1_draft_status: draft_supported",
+        "source_pre_submission: abnormal_filing_risk: claim_support_map: row_2_draft_status: draft_supported",
+        "source_pre_submission: abnormal_filing_risk: claim_support_map: row_3_draft_status: draft_supported"
+      ]
+    }
+  },
+  "artifacts": {
+    "pre_submission_pipeline": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline",
+    "pre_submission_pipeline_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\pre-submission-pipeline-result.json",
+    "pre_submission_handoff_package": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-handoff-package\\pre-submission-handoff-package.json",
+    "pre_submission_handoff_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-handoff-package\\pre-submission-handoff-report.md",
+    "case_lifecycle_trace": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-pipeline\\case-lifecycle-trace\\case-lifecycle-trace.json",
+    "pre_submission_to_handoff_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-to-handoff-result.json",
+    "pre_submission_to_handoff_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\pre-submission-to-handoff-report.md",
+    "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-to-handoff-reference-delta\\artifact-hashes.json"
+  },
+  "next_action": "Use the read-only handoff package as approved-adapter execution input evidence only; adapter execution, receipt capture, and application-number evidence remain separate gates.",
+  "manifest_errors": [],
+  "manifest_warnings": []
+}

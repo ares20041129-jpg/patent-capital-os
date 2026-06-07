@@ -1,0 +1,13 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-001",
+  "status": "intake_received",
+  "legal_gate": "pending",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "decision": "intake_only_do_not_file",
+  "official_submission_performed": false,
+  "official_system_touched": false,
+  "official_receipt_hash": "",
+  "application_number": "",
+  "updated_at": "2026-06-03T06:51:10+08:00"
+}

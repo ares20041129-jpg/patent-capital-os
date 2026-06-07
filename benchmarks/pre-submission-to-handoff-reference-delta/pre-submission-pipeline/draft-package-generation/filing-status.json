@@ -1,0 +1,24 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "status": "draft_only",
+  "legal_gate": "failed",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "failed_gates": [
+    "G1 final_ai_self_filing_legal_compliance_authorization_absent",
+    "G2 applicant_filing_authorization_absent",
+    "G6 agency_and_signature_authority_absent",
+    "G7 fee_authority_absent",
+    "G9 official_channel_preflight_absent"
+  ],
+  "decision": "do_not_file",
+  "draft_generation_allowed": true,
+  "filing_allowed": false,
+  "external_lawyer_involved": false,
+  "final_package_hash": "",
+  "reviewed_package_hash": "",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "updated_at": "2026-06-03T06:51:20+08:00"
+}

@@ -1,0 +1,67 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "previous_status": "official_receipt_received",
+  "status": "accepted_or_application_number_received",
+  "official_system": "CNIPA patent business processing system",
+  "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+  "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "checked_at": "2026-06-01T23:55:00+08:00",
+  "checked_by": "Patent Capital OS AI self-filing benchmark",
+  "official_receipt": {
+    "receipt_id": "AI-MOCK-RECEIPT-CASE-INTAKE-ORCH-001",
+    "receipt_file": "ai-self-filing-mock-official-receipt-case-intake-orch-001.pdf",
+    "receipt_hash": "sha256:8df8024236158d3f9db9a1242690cb53fce8904519a38fbf6f8a411568bf0367"
+  },
+  "application": {
+    "application_number": "AI-MOCK-CN-CASE-INTAKE-ORCH-001",
+    "filing_date": "2026-06-01",
+    "official_status": "application_number_received",
+    "official_status_snapshot": "ai-self-filing-mock-official-status-snapshot-case-intake-orch-001.png",
+    "official_status_snapshot_hash": "sha256:d9cbf6357c9eff1df3eb41f4d3fecacf714009f49c51442e5e98261d054d8b08",
+    "official_file_list_file": "ai-self-filing-mock-official-file-list-case-intake-orch-001.txt",
+    "official_file_list_hash": "sha256:905d9df2eec3dd53d9f1f1e2f0c4fe6033cdfb0572199d175bce47d2d490ca94"
+  },
+  "package": {
+    "final_package_hash": "sha256:d76adb4e8b7c944c1f31c197dc9b9476cc521f51095171411bbd166d27473b98",
+    "reviewed_package_hash": "sha256:d76adb4e8b7c944c1f31c197dc9b9476cc521f51095171411bbd166d27473b98",
+    "submitted_package_hash": "sha256:d76adb4e8b7c944c1f31c197dc9b9476cc521f51095171411bbd166d27473b98"
+  },
+  "fees": {
+    "payment_status": "pending",
+    "payment_receipt_file": "",
+    "payment_receipt_hash": ""
+  },
+  "docket": {
+    "docket_entry_id": "DOCKET-AI-SELF-FILING-APPLICATION-NUMBER-MOCK-CASE-INTAKE-ORCH-001",
+    "docket_entry_hash": "sha256:7f1f51a27d1d24aeaefe3dda90ea73217fc5bc6e7b01014780008938bc511526",
+    "next_deadlines": [
+      {
+        "name": "substantive examination request placeholder",
+        "due_date": "mock-date"
+      },
+      {
+        "name": "annuity monitoring placeholder",
+        "due_date": "mock-date"
+      }
+    ]
+  },
+  "portfolio": {
+    "family_id": "AI-SELF-FILING-FAMILY-CASE-INTAKE-ORCH-001",
+    "portfolio_tags": [
+      "ai-self-filing",
+      "cn-invention",
+      "mock-benchmark"
+    ],
+    "maintenance_owner": "Portfolio operator"
+  },
+  "benchmark_mock": true,
+  "decision": {
+    "status": "accepted_or_application_number_received",
+    "reason": "Mock AI self-filing application-number evidence proves the required shape for final filing-status acceptance. It is not a real official application number."
+  },
+  "application_materials_hash": "sha256:451bf6debc7c479dd7802a2adf2c709e11b1e9051d498e33f965c1be8fd268ae",
+  "reference_patent_delta_hash": "sha256:21afcd8d4569933058a050427f65a6c863a9053f48a5b9a1368475827fb3a4a2",
+  "reference_delta_rows_count": "3",
+  "reference_delta_claim_elements_count": "3",
+  "reference_delta_boundary_preserved": true
+}

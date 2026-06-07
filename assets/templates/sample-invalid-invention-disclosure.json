@@ -1,0 +1,47 @@
+{
+  "case_id": "DISCLOSURE-BAD-001",
+  "title": "Similar smart bread patent",
+  "jurisdiction_plan": {
+    "first_filing": "CN",
+    "later_foreign_or_pct": true
+  },
+  "business_goal": "Generate many similar patents",
+  "applicant_context": {
+    "applicant_name": "",
+    "product_or_project": "",
+    "actual_r_and_d_basis": ""
+  },
+  "inventor_input": {
+    "inventors": [],
+    "contribution_confirmed": false
+  },
+  "technical_problem": "",
+  "technical_solution": {
+    "required_features": [],
+    "optional_features": []
+  },
+  "technical_effects": [],
+  "embodiments": [],
+  "known_prior_art": [
+    {
+      "publication": "CN120827118A",
+      "relevance": "copy and rewrite"
+    }
+  ],
+  "similarity_control": {
+    "uses_reference_patents": true,
+    "no_copying_or_synonym_substitution_confirmed": false,
+    "real_technical_contribution_summary": ""
+  },
+  "data_and_evidence": {
+    "prototypes": [],
+    "experiments": [],
+    "logs_or_measurements": [],
+    "source_hashes": []
+  },
+  "secrecy": {
+    "invention_completed_in_china": true,
+    "foreign_or_pct_planned": true,
+    "secrecy_review_status": ""
+  }
+}

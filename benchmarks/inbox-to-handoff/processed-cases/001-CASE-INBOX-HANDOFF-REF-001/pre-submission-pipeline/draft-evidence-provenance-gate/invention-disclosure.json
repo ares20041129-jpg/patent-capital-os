@@ -1,0 +1,121 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-REF-001",
+  "title": "Adaptive motor control for dough-state estimation",
+  "jurisdiction_plan": {
+    "first_filing": "CN",
+    "later_foreign_or_pct": null
+  },
+  "business_goal": "Normalize raw intake into a disclosure scaffold for inventor, applicant, and AI legal/compliance confirmation.",
+  "applicant_context": {
+    "applicant_name": "Example Appliance Technology Ltd.",
+    "product_or_project": "Adaptive dough-state motor control module",
+    "actual_r_and_d_basis": "Prototype controller logs and drawing notes received in the raw case package.",
+    "ownership_basis": "Employee service invention assigned to the applicant under internal R&D policy."
+  },
+  "inventor_input": {
+    "inventors": [
+      {
+        "name": "Inventor A",
+        "contribution": "Designed the motor-current ripple and bowl-temperature dough-state classification rule."
+      },
+      {
+        "name": "Inventor B",
+        "contribution": "Prepared prototype logging and timed rest interval control experiments."
+      }
+    ],
+    "contribution_confirmed": true
+  },
+  "technical_problem": "Existing appliances use fixed mixing schedules and do not adapt to dough state.",
+  "technical_solution": {
+    "required_features": [
+      "Compare motor current ripple, bowl temperature, and timed rest intervals to classify dough hydration and elasticity state."
+    ],
+    "optional_features": []
+  },
+  "technical_effects": [
+    {
+      "effect": "Improves dough-state transition judgment compared with a fixed mixing schedule.",
+      "evidence": "Prototype log indicates motor-current variance changes after water absorption; source hash sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c."
+    },
+    {
+      "effect": "Provides a controller input for adjusting rest intervals based on dough hydration and elasticity state.",
+      "evidence": "Drawing notes and technical idea material in source hash sha256:36938c5922b3d40d2d16a0e50d7edacb676dd227621189f3a8d261ef7c235771."
+    }
+  ],
+  "embodiments": [
+    {
+      "name": "Implementation scaffold pending confirmation",
+      "implementation_steps": [
+        "Compare motor current ripple, bowl temperature, and timed rest intervals to classify dough hydration and elasticity state."
+      ],
+      "components": [],
+      "parameters": []
+    }
+  ],
+  "drawings_needed": [
+    "drawing-notes.txt"
+  ],
+  "known_prior_art": [
+    {
+      "publication": "prior-art-notes.txt",
+      "relevance": "Prior-art material received; publication identifier pending extraction."
+    }
+  ],
+  "similarity_control": {
+    "uses_reference_patents": true,
+    "no_copying_or_synonym_substitution_confirmed": true,
+    "real_technical_contribution_summary": "The contribution is a motor-current ripple, bowl-temperature, and timed-rest classification workflow tied to adaptive dough hydration and elasticity control."
+  },
+  "data_and_evidence": {
+    "prototypes": [
+      "adaptive-dough-controller-prototype-log"
+    ],
+    "experiments": [
+      "water-absorption motor-current variance observation"
+    ],
+    "logs_or_measurements": [
+      "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c"
+    ],
+    "source_hashes": [
+      "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+      "sha256:36938c5922b3d40d2d16a0e50d7edacb676dd227621189f3a8d261ef7c235771"
+    ],
+    "prohibited_reference_hashes": [
+      "sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e"
+    ]
+  },
+  "secrecy": {
+    "invention_completed_in_china": true,
+    "foreign_or_pct_planned": false,
+    "secrecy_review_status": "not_required"
+  },
+  "ai_legal_compliance_questions": [
+    "Confirm inventor names and contributions.",
+    "Confirm applicant and ownership basis.",
+    "Confirm no copying or synonym substitution from reference patents.",
+    "Confirm technical effects and supporting evidence.",
+    "Confirm secrecy review and filing jurisdiction plan.",
+    "Confirm whether motor-current ripple and bowl temperature should be claimed as required features or fallback dependent features.",
+    "Confirm closest prior art before broad independent claim drafting."
+  ],
+  "confirmation_record": {
+    "confirmed_at": "2026-06-03T07:03:14+08:00",
+    "scaffold_hash": "sha256:bf604d5c2ab109544da47bf76a0698df770d4de311bb65dbd56428511f86c735",
+    "confirmation_packet_hash": "sha256:b7aa87f126c15cee123229be25f2c7f0a9c2eb53dfe6cc372360732ab3bb5b5c",
+    "legal_drafting_review": {
+      "reviewed_by": {
+        "name": "Patent Capital OS AI Compliance Reviewer",
+        "organization": "Patent Capital OS AI Self-Filing Review Bench",
+        "role": "ai_legal_compliance_reviewer"
+      },
+      "review_timestamp": "2026-06-03T07:03:14+08:00",
+      "reviewed_scaffold_hash": "sha256:bf604d5c2ab109544da47bf76a0698df770d4de311bb65dbd56428511f86c735",
+      "approval_scope": "draft_generation_only",
+      "filing_approved": false,
+      "approval_statement": "The scaffold may be promoted to a confirmed invention disclosure for draft-only patent document generation by AI legal/compliance review. This review does not approve filing, submission, signature, fee payment, or official-channel use."
+    },
+    "draft_generation_allowed": true,
+    "filing_allowed": false,
+    "external_lawyer_involved": false
+  }
+}

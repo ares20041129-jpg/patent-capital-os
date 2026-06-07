@@ -1,0 +1,108 @@
+{
+  "case_id": "APPROVED-ADAPTER-PREFLIGHT-001",
+  "execution_mode": "approved_adapter",
+  "adapter": {
+    "name": "authorized-cnipa-counsel-reviewed-adapter",
+    "version": "1.0.0-security-reviewed",
+    "approved_for_production": true,
+    "registry_entry_hash": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "dry_run_result_hash": "sha256:8a8876e6338fae21bb2ee7023600651c0314a684ddaa714b680ea86647f2da38",
+    "production_readiness": {
+      "readiness_gate": "production_adapter_readiness_gate",
+      "evidence_mode": "production_adapter_readiness",
+      "packet": "../production-adapter-readiness-gate/production-ready/counsel-reviewed-adapter-readiness-packet.json",
+      "packet_hash": "sha256:2e98aee405d11b9e7e5f0a480a81f2d2b322121ce4406040db297a1a438215fd",
+      "validation_result": "passed",
+      "approved_for_real_execution": true,
+      "adapter_name": "authorized-cnipa-counsel-reviewed-adapter",
+      "adapter_version": "1.0.0-security-reviewed",
+      "registry_entry_hash": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    "security_review": {
+      "reviewed_by": "Security reviewer",
+      "reviewed_at": "2026-06-01T22:00:00+08:00",
+      "result": "passed",
+      "review_artifact_hash": "sha256:53e26bdfd89fc336c3452383e257708be369076c8d6114f6e0b7a784034d763c",
+      "scope": "Credential isolation, no control bypass, audit logging, receipt capture, and package hash immutability."
+    }
+  },
+  "authorization": {
+    "submission_authorization_packet": "../authorized-cn-ready-for-filing/submission-packet.json",
+    "submission_authorization_packet_hash": "sha256:c8850ff0d5797239b0b32183fe38eafd073f34d7a5bfe8aa091cf4177e686494",
+    "applicant_authorization_confirmed": true,
+    "counsel_review_confirmed": true,
+    "account_owner_authorization": "account-owner-adapter-authorization.pdf",
+    "signature_authority_evidence": "signature-authority-record.pdf",
+    "payment_authority_evidence": "benchmark-payment-authority",
+    "allowed_actions": [
+      "submit",
+      "file",
+      "pay official fees"
+    ],
+    "two_person_approval": {
+      "legal_approver": "Patent Agent",
+      "ops_approver": "Filing Operator",
+      "approved_at": "2026-06-01T22:02:00+08:00",
+      "evidence_hash": "sha256:a2f461aa002b5b8a9c41ea467ce08831dd358d9b6c5e137da1b2ac7e60c46676"
+    }
+  },
+  "official_channel": {
+    "preflight_file": "../authorized-cn-ready-for-filing/official-channel-preflight.yaml",
+    "preflight_hash": "sha256:ba56fd1b0bcff3f2c93777e378236ef48470e0543875a3d4ba3ccbdd998df303",
+    "official_system": "CNIPA patent business processing system",
+    "automation_allowed": true,
+    "bypasses_access_controls": false,
+    "human_only_steps": [],
+    "human_only_steps_resolved": true,
+    "session_authorization": {
+      "session_gate": "official_session_authorization_gate",
+      "evidence_mode": "official_session_authorization",
+      "packet": "../official-session-authorization-gate/production-ready/ai-self-filing-session-authorization-packet.json",
+      "packet_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+      "validation_result": "passed",
+      "approved_for_real_execution": true,
+      "official_account_role": "applicant_self_filing_account_owner",
+      "session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "authorization_scope_hash": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+  },
+  "package": {
+    "manifest_file": "../draft-to-filing-package-validation/filing-package-manifest.yaml",
+    "manifest_hash": "sha256:c2c4ddd3f8e3c7fdba6cbe6fb9418276dbbefa27c1b645d3d450b35db4f50ea5",
+    "final_package_hash": "sha256:271f551faf3e459183db4014002ca92c3e50298743290ee102e057dc9b5fd0ab",
+    "reviewed_package_hash": "sha256:271f551faf3e459183db4014002ca92c3e50298743290ee102e057dc9b5fd0ab",
+    "xml_validation_result": "passed",
+    "attachment_list_hash": "sha256:6ca52dc1b677e58d1362bcd5f01b4cd0625f8a6408a5d42dbad3402957a0cb5d"
+  },
+  "evidence": {
+    "receipt_capture_plan": "../official-channel-preflight-to-ready/receipt-capture-plan.yaml",
+    "receipt_capture_plan_hash": "sha256:c2a45654e113de8076f8c98e18875eb15f53c29468215d7cf449102e0642bc0c",
+    "audit_log_entry_plan": "audit-log-entry-plan.yaml",
+    "audit_log_entry_plan_hash": "sha256:c95bc502f85b7598b42061b15bed3bd2a9a26ae36db1a28c8e89d283d38a3d2e",
+    "docket_entry_plan": "docket-entry-plan.yaml",
+    "docket_entry_plan_hash": "sha256:0e063307d637021b4fed56a3059ac7d5903053b16851d5a0579810dbd8b7d164"
+  },
+  "credential_handling": {
+    "raw_credentials_in_request": false,
+    "private_keys_in_request": false,
+    "captcha_bypass": false,
+    "mfa_secret_in_request": false,
+    "session_token_in_request": false,
+    "stores_credentials": false
+  },
+  "execution_controls": {
+    "requested_action": "submit_package",
+    "payment_allowed": true,
+    "stop_on_hash_mismatch": true,
+    "stop_on_human_only_step": true,
+    "stop_on_access_control_bypass": true,
+    "receipt_capture_required": true,
+    "audit_log_required": true,
+    "docket_update_required": true
+  },
+  "decision": {
+    "status": "approved_for_adapter_execution",
+    "reason": "All legal, production adapter readiness, adapter security, official-channel, package, receipt, audit, docket, and credential-handling gates are present. This preflight does not execute official submission.",
+    "next_status_if_success": "submitted_pending_receipt"
+  }
+}

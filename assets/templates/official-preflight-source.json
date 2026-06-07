@@ -1,0 +1,37 @@
+{
+  "case_id": "",
+  "checked_by": "",
+  "account": {
+    "role": "authorized filing account",
+    "authorization_evidence": ""
+  },
+  "signature": {
+    "authority_holder": "",
+    "authority_evidence": "",
+    "human_only": false
+  },
+  "automation": {
+    "automation_allowed": true,
+    "adapter_name": "",
+    "adapter_version": "",
+    "bypasses_access_controls": false
+  },
+  "fees": {
+    "payment_method_reference": ""
+  },
+  "receipt_capture": {
+    "destination": "",
+    "responsible_owner": "",
+    "planned_docket_entry_id": "",
+    "next_deadlines": [
+      {
+        "name": "capture official receipt after submission",
+        "due_date": "on submission day"
+      }
+    ]
+  },
+  "decision": {
+    "status": "ready_for_authorized_filing",
+    "reason": ""
+  }
+}

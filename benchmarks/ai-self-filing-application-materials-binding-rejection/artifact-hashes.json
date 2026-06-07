@@ -1,0 +1,11 @@
+{
+    "case_id":  "AI-SELF-FILING-APPLICATION-MATERIALS-BINDING-REJECTION",
+    "generated_at":  "2026-06-02T18:21:32+08:00",
+    "files":  [
+                  {
+                      "path":  "rejection-cases.json",
+                      "sha256":  "sha256:6f462c9a3f24395c8435adb03e3107ef84762a280b3d253f8fcec999deab4196",
+                      "bytes":  1518
+                  }
+              ]
+}

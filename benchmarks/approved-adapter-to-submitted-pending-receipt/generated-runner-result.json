@@ -1,0 +1,38 @@
+{
+  "queue_id": "APPROVED-ADAPTER-TO-SUBMITTED-PENDING-RECEIPT-QUEUE-001",
+  "processed_at": "2026-06-02T00:51:29+08:00",
+  "execution_mode": "dry_run",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 0
+  },
+  "results": [
+    {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "input_status": "submitted_pending_receipt",
+      "output_status": "submitted_pending_receipt",
+      "expected_outcome": "adapter_execution",
+      "decision": "adapter_execution_result_captured",
+      "outcome": "passed",
+      "validators_run": [
+        "validate_generated_adapter_execution_result_benchmark"
+      ],
+      "errors": [],
+      "warnings": [
+        "validate_generated_adapter_execution_result_benchmark: adapter_execution_result: benchmark_mock_not_real_official_submission",
+        "validate_generated_adapter_execution_result_benchmark: adapter_response: submitted_pending_receipt_requires_receipt_capture_followup"
+      ],
+      "next_action": "Capture official receipt evidence before marking receipt received, accepted, or application-number status.",
+      "owner": "Adapter execution result operator",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": []
+}

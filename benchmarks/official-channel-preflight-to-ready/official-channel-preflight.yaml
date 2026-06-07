@@ -1,0 +1,33 @@
+case_id: "OFFICIAL-PREFLIGHT-READY-001"
+jurisdiction: "CN"
+official_system: "CNIPA patent business processing system"
+checked_at: "2026-06-01T20:20:00+08:00"
+checked_by: "Patent Capital OS benchmark"
+account:
+  owner: "Example IP Firm"
+  role: "authorized filing account"
+  authorization_evidence: "poa.pdf"
+signature:
+  authority_holder: "Example IP Firm filing account"
+  authority_evidence: "signature-authority-record.pdf"
+  human_only: false
+automation:
+  automation_allowed: true
+  adapter_name: "benchmark-adapter"
+  adapter_version: "0.0.0-dry-run"
+  bypasses_access_controls: false
+package:
+  final_package_hash: "sha256:a9ac2f75512f842fc564dd7b02c25f257616e971dff3f1c6644a0d7c6bf386f6"
+  reviewed_package_hash: "sha256:a9ac2f75512f842fc564dd7b02c25f257616e971dff3f1c6644a0d7c6bf386f6"
+  xml_validation_result: "passed"
+  attachment_list_hash: "sha256:f9458fa093698dc597bdb44dfd765e348d42c55918f14ef14174b55ff8594182"
+fees:
+  payer: "Example Applicant Ltd."
+  auto_pay_authorized: true
+  payment_method_reference: "benchmark-payment-authority"
+receipt_capture:
+  destination: "case-vault/OFFICIAL-PREFLIGHT-READY-001/receipts"
+  responsible_owner: "Filing operator"
+decision:
+  status: "ready_for_authorized_filing"
+  reason: "Official-channel preflight fields pass in dry-run benchmark. No official submission performed."

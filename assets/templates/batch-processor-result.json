@@ -1,0 +1,33 @@
+{
+  "queue_id": "",
+  "processed_at": "",
+  "execution_mode": "dry_run",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "summary": {
+    "total": 0,
+    "passed": 0,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 0
+  },
+  "results": [
+    {
+      "case_id": "",
+      "input_status": "",
+      "output_status": "",
+      "expected_outcome": "",
+      "decision": "",
+      "outcome": "",
+      "validators_run": [],
+      "errors": [],
+      "warnings": [],
+      "next_action": "",
+      "owner": "",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": []
+}

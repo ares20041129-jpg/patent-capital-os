@@ -1,0 +1,3 @@
+Prototype logs show that the controller compares motor-current ripple, bowl temperature, and timed rest intervals to classify dough hydration and elasticity state.
+When the classified state crosses a threshold, the controller changes kneading torque and rest timing to reduce under-fermentation and over-mixing.
+The applicant evidence is internal R&D material and is not copied from cited reference patents.

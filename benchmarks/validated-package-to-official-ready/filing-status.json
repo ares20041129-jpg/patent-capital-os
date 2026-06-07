@@ -1,0 +1,19 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "previous_status": "package_valid_official_preflight_pending",
+  "status": "ready_for_authorized_filing",
+  "legal_gate": "passed",
+  "legal_gate_mode": "counsel_or_agent_review",
+  "package_validation": "passed",
+  "official_channel_preflight": "passed",
+  "receipt_capture_plan": "planned",
+  "failed_gates": [],
+  "decision": "ready_for_authorized_filing",
+  "final_package_hash": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d",
+  "reviewed_package_hash": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "updated_at": "2026-06-02T20:02:16+08:00"
+}

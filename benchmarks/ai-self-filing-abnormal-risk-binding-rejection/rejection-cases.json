@@ -1,0 +1,28 @@
+{
+  "case_id": "AI-SELF-FILING-ABNORMAL-RISK-BINDING-REJECTION",
+  "base_source": "../ai-self-filing-package-validation/ai-self-filing-source.json",
+  "draft_package_dir": "../draft-package-generation",
+  "cases": [
+    {
+      "id": "missing_assessment_path_rejected",
+      "remove_paths": [
+        "ai_compliance_review.abnormal_filing_risk_assessment.artifact_path"
+      ],
+      "expected_error": "abnormal_filing_risk_assessment_artifact_path_missing"
+    },
+    {
+      "id": "missing_assessment_artifact_rejected",
+      "mutations": {
+        "ai_compliance_review.abnormal_filing_risk_assessment.artifact_path": "../missing/abnormal-filing-risk-assessment.json"
+      },
+      "expected_error": "abnormal_filing_risk_assessment_artifact_not_found"
+    },
+    {
+      "id": "assessment_hash_mismatch_rejected",
+      "mutations": {
+        "ai_compliance_review.abnormal_filing_risk_assessment.artifact_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_error": "abnormal_filing_risk_assessment_hash_mismatch"
+    }
+  ]
+}

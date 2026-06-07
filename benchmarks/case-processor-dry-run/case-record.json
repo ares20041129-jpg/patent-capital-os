@@ -1,0 +1,44 @@
+{
+  "case_id": "CASE-PROCESSOR-DRY-RUN-001",
+  "previous_status": "package_valid_official_preflight_pending",
+  "current_status": "ready_for_authorized_filing",
+  "target_status": "ready_for_authorized_filing",
+  "decision": "ready_for_authorized_filing",
+  "execution_mode": "dry_run",
+  "case_owner": "Patent Capital OS benchmark",
+  "legal_owner": "Example IP Firm",
+  "filing_owner": "Filing operator",
+  "artifacts": {
+    "source_material_manifest": "",
+    "invention_disclosure": "",
+    "patent_application_draft": "",
+    "claim_support_map": "",
+    "submission_authorization_packet": "../authorized-cn-ready-for-filing/submission-packet.json",
+    "filing_package_manifest": "../draft-to-filing-package-validation/filing-package-manifest.yaml",
+    "official_channel_preflight": "../official-channel-preflight-to-ready/official-channel-preflight.yaml",
+    "receipt_capture": "../official-channel-preflight-to-ready/receipt-capture-plan.yaml",
+    "filing_status": "filing-status.json",
+    "artifact_hashes": "artifact-hashes.json"
+  },
+  "validators_required": [
+    "validate_case_record",
+    "validate_filing_adapter_request",
+    "validate_filing_adapter_response",
+    "validate_filing_status_transition"
+  ],
+  "validators_run": [
+    "validate_case_record",
+    "validate_filing_adapter_request",
+    "validate_filing_adapter_response",
+    "validate_filing_status_transition"
+  ],
+  "failed_gates": [],
+  "next_allowed_states": [
+    "submitted_pending_receipt"
+  ],
+  "audit": {
+    "audit_log_entry": "audit-log-entry.yaml",
+    "artifact_hash_manifest": "artifact-hashes.json"
+  },
+  "notes": "Dry-run processor keeps the case ready for authorized filing and produces handoff. No official system is touched."
+}

@@ -1,0 +1,92 @@
+{
+  "case_id": "SOURCE-MATERIAL-FILE-BINDING-REJECTION",
+  "base_manifest": "../incoming-disclosure-to-application/source-material-manifest.yaml",
+  "base_dir": "../incoming-disclosure-to-application",
+  "cases": [
+    {
+      "id": "missing_material_file_rejected",
+      "mutations": {
+        "materials[0].filename": "missing-raw-invention-note.txt"
+      },
+      "expected_error": "material_1_file_not_found"
+    },
+    {
+      "id": "absolute_material_path_rejected",
+      "mutations": {
+        "materials[0].filename": "C:/tmp/raw-invention-note.txt"
+      },
+      "expected_error": "material_1_unsafe_material_filename"
+    },
+    {
+      "id": "traversal_material_path_rejected",
+      "mutations": {
+        "materials[0].filename": "../incoming-disclosure-to-application/00-intake/source-files/raw-invention-note.txt"
+      },
+      "expected_error": "material_1_unsafe_material_filename"
+    },
+    {
+      "id": "material_hash_mismatch_rejected",
+      "mutations": {
+        "materials[0].hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_error": "material_1_hash_mismatch"
+    },
+    {
+      "id": "source_package_hash_shape_rejected",
+      "mutations": {
+        "source_package_hash": "sha256:not-a-real-source-package-hash"
+      },
+      "expected_error": "source_package_hash_must_be_sha256_64_hex"
+    },
+    {
+      "id": "source_package_hash_mismatch_rejected",
+      "mutations": {
+        "source_package_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_error": "source_package_hash_mismatch"
+    },
+    {
+      "id": "material_hash_shape_rejected",
+      "mutations": {
+        "materials[1].hash": "sha256:not-a-real-material-hash"
+      },
+      "expected_error": "material_2.hash_must_be_sha256_64_hex"
+    },
+    {
+      "id": "chain_of_custody_hash_shape_rejected",
+      "mutations": {
+        "chain_of_custody[0].output_hash": "sha256:not-a-real-custody-hash"
+      },
+      "expected_error": "chain_of_custody_1.output_hash_must_be_sha256_64_hex"
+    },
+    {
+      "id": "claim_support_evidence_hash_shape_rejected",
+      "mutations": {
+        "claim_support_links[0].evidence_hash": "sha256:not-a-real-evidence-hash"
+      },
+      "expected_error": "claim_support_link_1.evidence_hash_must_be_sha256_64_hex"
+    },
+    {
+      "id": "unknown_claim_support_material_rejected",
+      "mutations": {
+        "claim_support_links[0].material_id": "M-999"
+      },
+      "expected_error": "claim_support_link_1_unknown_material_id"
+    },
+    {
+      "id": "prior_art_usable_for_claim_support_rejected",
+      "mutations": {
+        "materials[3].usable_for_claim_support": true
+      },
+      "expected_error": "material_4_prior_art_must_not_be_usable_for_claim_support"
+    },
+    {
+      "id": "claim_support_link_to_prior_art_rejected",
+      "mutations": {
+        "claim_support_links[0].material_id": "M-004",
+        "claim_support_links[0].evidence_hash": "sha256:ea5e9c223ca8b0e809cc609fc4a95fff71712acbbeea47e426a5137dcbd0e315"
+      },
+      "expected_error": "claim_support_link_1_material_not_usable_for_claim_support"
+    }
+  ]
+}

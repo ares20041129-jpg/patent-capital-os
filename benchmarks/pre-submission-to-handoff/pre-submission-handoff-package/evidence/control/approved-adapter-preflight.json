@@ -1,0 +1,121 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-001",
+  "execution_mode": "approved_adapter",
+  "adapter": {
+    "name": "authorized-cnipa-ai-self-filing-adapter",
+    "version": "1.0.0-security-reviewed",
+    "approved_for_production": true,
+    "registry_entry_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "dry_run_result_hash": "sha256:7eab6eceed08131e110741f4d06f1bc7ac98033a4d91fa0f56616abd98851318",
+    "security_review": {
+      "reviewed_by": "Security Reviewer",
+      "reviewed_at": "2026-06-01T23:35:00+08:00",
+      "result": "passed",
+      "review_artifact_hash": "sha256:c3528d14ad8a3bb4ae5fd163b9937bd4d407c3bbe4a9c852bdbc7f32be9b721c",
+      "scope": "Credential isolation, no access-control bypass, official-channel action scope, audit logging, docket update, and receipt capture planning."
+    },
+    "production_readiness": {
+      "readiness_gate": "production_adapter_readiness_gate",
+      "evidence_mode": "production_adapter_readiness",
+      "packet": "../../../production-adapter-readiness-gate/production-ready/ai-self-filing-adapter-readiness-packet.json",
+      "packet_hash": "sha256:d8a70abc8fb1e8e19dbc74c6979bf2532cbc14e9cefab6d29949461595cb47a8",
+      "validation_result": "passed",
+      "approved_for_real_execution": true,
+      "adapter_name": "authorized-cnipa-ai-self-filing-adapter",
+      "adapter_version": "1.0.0-security-reviewed",
+      "registry_entry_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    }
+  },
+  "authorization": {
+    "submission_authorization_packet": "../ai-self-filing-package-validation/ai-self-filing-authorization-packet.json",
+    "submission_authorization_packet_hash": "sha256:742774737cc6cdd5da5ed21e76fb64a2777c939b2b2994300e02666dfe2ad1c3",
+    "authorization_packet_type": "ai_self_filing_no_external_lawyer",
+    "applicant_authorization_confirmed": true,
+    "counsel_review_confirmed": false,
+    "ai_self_filing_confirmed": true,
+    "external_lawyer_involved": false,
+    "self_filing_allowed": true,
+    "mandatory_agent_required": false,
+    "foreign_or_hmt_applicant": false,
+    "agency_bypass_requested": false,
+    "account_owner_authorization": "applicant-account-owner-adapter-authorization.pdf",
+    "signature_authority_evidence": "applicant-electronic-signature-authority-record.pdf",
+    "payment_authority_evidence": "benchmark-applicant-payment-account",
+    "allowed_actions": [
+      "submit",
+      "file",
+      "pay official fees"
+    ],
+    "two_person_approval": {
+      "legal_approver": "Patent Capital OS AI self-filing legal/compliance gate",
+      "ops_approver": "Applicant Filing Operator",
+      "approved_at": "2026-06-03T06:51:11+08:00",
+      "evidence_hash": "sha256:ed416c210619653f3c2915dfc56ca992fc80a40d27a77705a108c2ba7d883cdf"
+    }
+  },
+  "official_channel": {
+    "preflight_file": "../ai-self-filing-official-ready/official-channel-preflight.yaml",
+    "preflight_hash": "sha256:5e955fad275a2cd8901dad21e358a7c1070fa7cf9bef5fd13acd78581cc3fb0a",
+    "official_system": "CNIPA patent business processing system",
+    "automation_allowed": true,
+    "bypasses_access_controls": false,
+    "human_only_steps": [],
+    "human_only_steps_resolved": true,
+    "session_authorization": {
+      "session_gate": "official_session_authorization_gate",
+      "evidence_mode": "official_session_authorization",
+      "packet": "../../../official-session-authorization-gate/production-ready/ai-self-filing-session-authorization-packet.json",
+      "packet_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+      "validation_result": "passed",
+      "approved_for_real_execution": true,
+      "official_account_role": "applicant_self_filing_account_owner",
+      "session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "authorization_scope_hash": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    }
+  },
+  "package": {
+    "manifest_file": "../ai-self-filing-package-validation/filing-package-manifest.yaml",
+    "manifest_hash": "sha256:45b54a17b6bb570f8133f94e990c50805bb3e8cf3fb2553a245a78bf632f0954",
+    "final_package_hash": "sha256:e71723b2196242c7a973046c4b9bd75424ce0405d8c080c2c0d51a7573ab21e5",
+    "reviewed_package_hash": "sha256:e71723b2196242c7a973046c4b9bd75424ce0405d8c080c2c0d51a7573ab21e5",
+    "xml_validation_result": "passed",
+    "attachment_list_hash": "sha256:b5deaac9d6edaaa0c04c20f37c6715313b6dc0bcbfdf49daff09d6c2f84ea207"
+  },
+  "application_materials": {
+    "path": "../application-materials-pipeline/application-materials/application-materials.json",
+    "hash": "sha256:99a6667e31eb1fc58a5b95e0a41912e44a629cec915bd4f3529c3f5d33c076af",
+    "status": "application_materials_generated_official_preflight_pending",
+    "decision": "materials_generated_official_preflight_required"
+  },
+  "evidence": {
+    "receipt_capture_plan": "../ai-self-filing-official-ready/receipt-capture-plan.yaml",
+    "receipt_capture_plan_hash": "sha256:a18a9ea837d4803908d5712b691e3eae6f76347b323ec6a055e3d959ebb7c785",
+    "audit_log_entry_plan": "audit-log-entry-plan.yaml",
+    "audit_log_entry_plan_hash": "sha256:8048fd82cadb6a34b034a6b588ae04dffa91dcffcb3661cd6500f59be4e6cba9",
+    "docket_entry_plan": "docket-entry-plan.yaml",
+    "docket_entry_plan_hash": "sha256:347485f6e8bcfb95fda069b2254f9e992a0a33b12eeebc64d7767781488cf48e"
+  },
+  "credential_handling": {
+    "raw_credentials_in_request": false,
+    "private_keys_in_request": false,
+    "captcha_bypass": false,
+    "mfa_secret_in_request": false,
+    "session_token_in_request": false,
+    "stores_credentials": false
+  },
+  "execution_controls": {
+    "requested_action": "submit_package",
+    "payment_allowed": true,
+    "stop_on_hash_mismatch": true,
+    "stop_on_human_only_step": true,
+    "stop_on_access_control_bypass": true,
+    "receipt_capture_required": true,
+    "audit_log_required": true,
+    "docket_update_required": true
+  },
+  "decision": {
+    "status": "approved_for_adapter_execution",
+    "reason": "Approved-adapter preflight evidence is complete for the local pre-submission pipeline. This does not execute the adapter or submit.",
+    "next_status_if_success": "submitted_pending_receipt"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "case_id": "",
+  "disclosure_status": "scaffold_pending_confirmation",
+  "normalized_at": "",
+  "source_material_manifest": "",
+  "source_package_hash": "",
+  "invention_disclosure": {
+    "case_id": "",
+    "title": "",
+    "jurisdiction_plan": {
+      "first_filing": "CN",
+      "later_foreign_or_pct": null
+    },
+    "business_goal": "",
+    "applicant_context": {
+      "applicant_name": "TBD",
+      "product_or_project": "",
+      "actual_r_and_d_basis": ""
+    },
+    "inventor_input": {
+      "inventors": [],
+      "contribution_confirmed": false
+    },
+    "technical_problem": "",
+    "technical_solution": {
+      "required_features": [],
+      "optional_features": []
+    },
+    "technical_effects": [],
+    "embodiments": [],
+    "drawings_needed": [],
+    "known_prior_art": [],
+    "similarity_control": {
+      "uses_reference_patents": false,
+      "no_copying_or_synonym_substitution_confirmed": false,
+      "real_technical_contribution_summary": ""
+    },
+    "data_and_evidence": {
+      "prototypes": [],
+      "experiments": [],
+      "logs_or_measurements": [],
+      "source_hashes": []
+    },
+    "secrecy": {
+      "invention_completed_in_china": null,
+      "foreign_or_pct_planned": null,
+      "secrecy_review_status": "unknown"
+    },
+    "ai_legal_compliance_questions": []
+  },
+  "scaffold_controls": {
+    "inventor_confirmation_pending": true,
+    "legal_gate_pending": true,
+    "no_copying_confirmation_pending": true,
+    "filing_allowed": false,
+    "draft_generation_allowed": false
+  }
+}

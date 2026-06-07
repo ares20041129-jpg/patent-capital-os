@@ -1,0 +1,66 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-001",
+  "generated_at": "2026-06-03T06:51:10+08:00",
+  "files": [
+    {
+      "path": "claims-material.md",
+      "sha256": "sha256:b9a0ad53d925ce0483c1bb2d3748128ff9b0c02586267dbc1068ebb292d30f07",
+      "bytes": 848
+    },
+    {
+      "path": "specification-material.md",
+      "sha256": "sha256:9aeac9929166455861f1063bbaae9d95129418bfec73e8c266fb8cbc903d1b4c",
+      "bytes": 2952
+    },
+    {
+      "path": "abstract-material.md",
+      "sha256": "sha256:039b11694aa96e3dabfca8360cae03feb0e56745032daa5ba5b6d467098fb3cb",
+      "bytes": 801
+    },
+    {
+      "path": "drawings-materials-plan.md",
+      "sha256": "sha256:b486f7ce43f55d4cb665461fbe601a68d4aae5458d85bb3ca9f4a7a88729f505",
+      "bytes": 578
+    },
+    {
+      "path": "request-form-metadata.json",
+      "sha256": "sha256:38cdc85d7ce9ef5bfa40623d9088742e0c172d894186e0d7738023393bb137e2",
+      "bytes": 1605
+    },
+    {
+      "path": "xml-readiness-checklist.json",
+      "sha256": "sha256:2596eef5aaa37427c2ec57751c045f47b46e4764476b6ba4cfb080937c6ce538",
+      "bytes": 675
+    },
+    {
+      "path": "document-generation-plan.json",
+      "sha256": "sha256:447bf74ed533ed8ac305e6e9d6cbe67af825604c4f70c97e08ae6edde4cb4e8b",
+      "bytes": 1945
+    },
+    {
+      "path": "draft-evidence-provenance.json",
+      "sha256": "sha256:134376d682edb37da7e06793b242113c24e0d61e7ffdc1f34f8d39af87a5c742",
+      "bytes": 1971
+    },
+    {
+      "path": "abnormal-filing-risk-assessment.json",
+      "sha256": "sha256:1548db459e62db4453d6e56bd355e94a1b4dbb1d67208ff7276bbea0c54719a2",
+      "bytes": 4634
+    },
+    {
+      "path": "application-materials.json",
+      "sha256": "sha256:99a6667e31eb1fc58a5b95e0a41912e44a629cec915bd4f3529c3f5d33c076af",
+      "bytes": 9797
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:9797599c78ecd32aecc0bab9e42794122ae322876e41f811efa6df9151a00a97",
+      "bytes": 949
+    },
+    {
+      "path": "application-materials-report.md",
+      "sha256": "sha256:b07bdfeef7d95809196f9632e28db458458af6a83f308c859afc5f482c936663",
+      "bytes": 1657
+    }
+  ]
+}

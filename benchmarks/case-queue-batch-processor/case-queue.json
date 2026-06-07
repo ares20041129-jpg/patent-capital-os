@@ -1,0 +1,58 @@
+{
+  "queue_id": "QUEUE-BATCH-001",
+  "created_at": "2026-06-03T00:27:15+08:00",
+  "execution_mode": "dry_run",
+  "official_submission_allowed": false,
+  "official_system_touch_allowed": false,
+  "queue_owner": "Patent Capital OS benchmark",
+  "items": [
+    {
+      "case_id": "INCOMING-DISCLOSURE-APP-001",
+      "priority": 1,
+      "current_status": "draft_only",
+      "target_status": "draft_only",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "external_lawyer_involved": false,
+      "case_record": "../incoming-disclosure-to-application/filing-status.json",
+      "case_folder": "../incoming-disclosure-to-application",
+      "expected_outcome": "deficiency",
+      "owner": "Patent Capital OS benchmark",
+      "required_validators": [
+        "validate_incoming_application_benchmark"
+      ],
+      "notes": "Generated from filing-status.json by build_case_queue.py."
+    },
+    {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "priority": 2,
+      "current_status": "package_valid_official_preflight_pending",
+      "target_status": "package_valid_official_preflight_pending",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "external_lawyer_involved": false,
+      "case_record": "../ai-self-filing-package-validation/filing-package-manifest.yaml",
+      "case_folder": "../ai-self-filing-package-validation",
+      "expected_outcome": "ai_self_filing_package_validation",
+      "owner": "AI self-filing package validation operator",
+      "required_validators": [
+        "validate_ai_self_filing_package_benchmark"
+      ],
+      "notes": "Generated from filing-package-manifest.yaml by build_case_queue.py."
+    },
+    {
+      "case_id": "CASE-INTAKE-ORCH-001-legal_advice_claim_rejected",
+      "priority": 3,
+      "current_status": "legal_gate_failed",
+      "target_status": "legal_gate_failed",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "external_lawyer_involved": false,
+      "case_record": "../ai-self-filing-deficiency-report/filing-status.json",
+      "case_folder": "../ai-self-filing-deficiency-report",
+      "expected_outcome": "deficiency",
+      "owner": "Patent Capital OS benchmark",
+      "required_validators": [
+        "validate_ai_self_filing_deficiency_report_benchmark"
+      ],
+      "notes": "Generated from filing-status.json by build_case_queue.py."
+    }
+  ]
+}

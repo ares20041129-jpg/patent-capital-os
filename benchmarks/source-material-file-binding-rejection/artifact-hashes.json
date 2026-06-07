@@ -1,0 +1,11 @@
+{
+  "case_id": "SOURCE-MATERIAL-FILE-BINDING-REJECTION",
+  "generated_at": "2026-06-03T01:34:00+08:00",
+  "files": [
+    {
+      "path": "rejection-cases.json",
+      "sha256": "sha256:47376070e70e328f13432a8128fc5947a3894b688daa150bff36ee48539f133e",
+      "bytes": 3198
+    }
+  ]
+}

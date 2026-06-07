@@ -1,0 +1,61 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-001",
+  "generated_at": "2026-06-03T06:51:10+08:00",
+  "files": [
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:1568e64175abb90a0f29f46cbb4676d55b6eb45c3cd6a5b7f6abd5cb344ecf66",
+      "bytes": 4717
+    },
+    {
+      "path": "abnormal-filing-risk-assessment.json",
+      "sha256": "sha256:1548db459e62db4453d6e56bd355e94a1b4dbb1d67208ff7276bbea0c54719a2",
+      "bytes": 4634
+    },
+    {
+      "path": "ai-self-filing-authorization-packet.json",
+      "sha256": "sha256:742774737cc6cdd5da5ed21e76fb64a2777c939b2b2994300e02666dfe2ad1c3",
+      "bytes": 4183
+    },
+    {
+      "path": "claims-ai-self-filing-final.xml",
+      "sha256": "sha256:53290e3ab740eb542b8dc626dbbd00fc93f37d4b4351b672ba1d705793281b30",
+      "bytes": 385
+    },
+    {
+      "path": "specification-ai-self-filing-final.xml",
+      "sha256": "sha256:9bab96ef096d102475386ed4d499ab6859549899e91f3565f4b3026c9e4801eb",
+      "bytes": 392
+    },
+    {
+      "path": "abstract-ai-self-filing-final.xml",
+      "sha256": "sha256:db2fec0e69620c4d2ec19b822e1291a5cd3c979922735434fd64ee1ee3c2868f",
+      "bytes": 387
+    },
+    {
+      "path": "drawings-ai-self-filing-final.pdf",
+      "sha256": "sha256:084923e405524638c3ac8535eef8f2855784898a51cc1936eaf1172cad9bc873",
+      "bytes": 336
+    },
+    {
+      "path": "request_metadata-ai-self-filing-final.xml",
+      "sha256": "sha256:ee0534cae9b8ed389a04494da53d6872c779e28c57db0347e98a524013b0618f",
+      "bytes": 395
+    },
+    {
+      "path": "filing-package-manifest.yaml",
+      "sha256": "sha256:45b54a17b6bb570f8133f94e990c50805bb3e8cf3fb2553a245a78bf632f0954",
+      "bytes": 2799
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:b1ef3101c9e92085241056e89aa1a9400aea914a5895b63c0e9ec38ebc39fd93",
+      "bytes": 943
+    },
+    {
+      "path": "ai-self-filing-package-report.md",
+      "sha256": "sha256:30d47db315e5ea0fcde5fa78a9994ac9c10efd37dedee9bb00acf300a400fd68",
+      "bytes": 1209
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "case_id": "AI-SELF-FILING-APPLICATION-MATERIALS-BINDING-REJECTION",
+  "base_source": "../ai-self-filing-official-ready/official-preflight-source.json",
+  "validated_package_dir": "../ai-self-filing-package-validation",
+  "cases": [
+    {
+      "id": "missing_materials_path_rejected",
+      "remove_paths": [
+        "application_materials.path"
+      ],
+      "expected_error": "application_materials_path_missing"
+    },
+    {
+      "id": "missing_materials_hash_rejected",
+      "remove_paths": [
+        "application_materials.hash"
+      ],
+      "expected_error": "application_materials_hash_missing_or_invalid"
+    },
+    {
+      "id": "materials_hash_mismatch_rejected",
+      "mutations": {
+        "application_materials.hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_error": "application_materials_hash_mismatch"
+    },
+    {
+      "id": "missing_materials_file_rejected",
+      "mutations": {
+        "application_materials.path": "../missing/application-materials.json"
+      },
+      "expected_error": "application_materials_file_not_found"
+    },
+    {
+      "id": "wrong_artifact_type_rejected",
+      "mutations": {
+        "application_materials.path": "../ai-self-filing-application-materials/request-form-metadata.json",
+        "application_materials.hash": "sha256:46517c82e8a98bf02408393bfb653e62b74bb5730f85dc84103d5bd53e6cbd14"
+      },
+      "expected_error": "application_materials: missing_required_field: status"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+batch_id,window,torque_slope,image_pore_proxy,voc_rate,humidity_deviation,controller_observation
+B-001,kneading_to_fermentation,0.42,0.18,0.07,0.03,torque and image agreed before timer endpoint
+B-002,fermentation_to_baking,0.11,0.36,0.22,0.05,voc and image indicated readiness while torque stayed stable
+B-003,overproof_risk,0.04,0.51,0.31,0.09,image and voc exceeded collapse-risk thresholds

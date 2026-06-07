@@ -1,0 +1,22 @@
+{
+  "queue_id": "",
+  "created_at": "",
+  "execution_mode": "dry_run",
+  "official_submission_allowed": false,
+  "official_system_touch_allowed": false,
+  "queue_owner": "",
+  "items": [
+    {
+      "case_id": "",
+      "priority": 1,
+      "current_status": "intake_received",
+      "target_status": "draft_only",
+      "case_record": "",
+      "case_folder": "",
+      "expected_outcome": "",
+      "owner": "",
+      "required_validators": [],
+      "notes": ""
+    }
+  ]
+}

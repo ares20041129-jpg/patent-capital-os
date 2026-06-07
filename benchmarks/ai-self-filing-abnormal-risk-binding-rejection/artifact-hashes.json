@@ -1,0 +1,11 @@
+{
+  "case_id": "AI-SELF-FILING-ABNORMAL-RISK-BINDING-REJECTION",
+  "generated_at": "2026-06-02T02:45:15+08:00",
+  "files": [
+    {
+      "path": "rejection-cases.json",
+      "sha256": "sha256:6dce8a1528e86eafa82e162bdd22a3b1d42bd28a81af2d0a6b3937a9702f48ac",
+      "bytes": 1088
+    }
+  ]
+}

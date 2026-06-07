@@ -1,0 +1,103 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "filing_type": "CN invention patent",
+  "jurisdiction": "CN",
+  "source_draft_hash": "sha256:8a7f5fd82ef6a44845a9e54e9d06b98158380298ab97104e37a0aa0885feeaf4",
+  "final_package_hash": "sha256:d69aec78f0c470f2cfac50ba4a0a83b688ffeab129610b1c897ad9f665b0975b",
+  "external_lawyer_involved": false,
+  "self_filing_eligibility": {
+    "applicant_region": "Mainland China",
+    "applicant_type": "enterprise applicant using own official account",
+    "self_filing_allowed": true,
+    "mandatory_agent_required": false,
+    "foreign_or_hmt_applicant": false,
+    "agency_bypass_requested": false,
+    "basis": "Applicant self-filing route; no external lawyer or patent agent in default production path."
+  },
+  "ai_compliance_review": {
+    "engine_name": "Patent Capital OS AI self-filing gate",
+    "engine_version": "2026-06-01.benchmark",
+    "checked_at": "2026-06-01T23:20:00+08:00",
+    "reviewed_artifacts_hash": "sha256:d5959f8ee1ed187cef0e90373276fbeb173c6adcd26951c3310d469fb028df63",
+    "no_copying_check": "passed",
+    "claim_support_check": "passed",
+    "abnormal_filing_risk": "low",
+    "abnormal_filing_risk_assessment": {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "status": "abnormal_filing_risk_assessed",
+      "gate": "G8 Non-abnormal filing check",
+      "risk_level": "low",
+      "artifact_hash": "sha256:b50406646ebf5478ebb5cadbe77326032ced9bb16a81d323a370f5fd3d5940cd",
+      "artifact_path": "../ai-self-filing-abnormal-risk-gate/abnormal-filing-risk-assessment.json"
+    },
+    "official_format_check": "passed",
+    "limitations": [
+      "Benchmark only; official submission requires official-channel preflight evidence.",
+      "AI compliance review is not lawyer review and does not claim legal advice."
+    ],
+    "legal_gate_review": {
+      "review_record_hash": "sha256:630f0d34bc1666c1a42067a085bac9937d5d189e8444c4de7813ca14116ba0d4",
+      "authorization_scope_check": "passed",
+      "self_filing_eligibility_check": "passed",
+      "inventor_ownership_check": "passed",
+      "secrecy_check": "passed",
+      "fee_authority_check": "passed",
+      "official_channel_boundary_check": "passed",
+      "stop_conditions_checked": [
+        "mandatory_agent_condition",
+        "foreign_or_hmt_applicant_condition",
+        "agency_bypass_request",
+        "access_control_bypass",
+        "official_submission_claim_without_evidence"
+      ],
+      "legal_advice_claimed": false,
+      "lawyer_or_agent_review_claimed": false
+    }
+  },
+  "applicant_authorization": {
+    "applicant_name": "Benchmark Applicant Ltd.",
+    "authorized_person": "Applicant Filing Operator",
+    "authority_basis": "internal applicant self-filing authorization record",
+    "allowed_actions": [
+      "validate package",
+      "submit filing through applicant account",
+      "pay official fees"
+    ],
+    "timestamp": "2026-06-01T23:21:00+08:00"
+  },
+  "inventor_confirmation": {
+    "inventors": [
+      "Benchmark Inventor A"
+    ],
+    "contribution_confirmed": true
+  },
+  "ownership": {
+    "basis": "employee service invention assigned to applicant",
+    "evidence": "benchmark-ownership-record.pdf",
+    "dispute_absent": true
+  },
+  "secrecy_review": {
+    "china_completed": true,
+    "foreign_or_pct_planned": false,
+    "status": "not_required"
+  },
+  "filing_channel": {
+    "official_system": "CNIPA patent business processing system",
+    "account_owner": "Benchmark Applicant Ltd.",
+    "official_account_registered": true,
+    "signature_authority": "applicant electronic signature authority record",
+    "automation_allowed": true,
+    "bypasses_access_controls": false,
+    "human_only_steps": []
+  },
+  "fees": {
+    "payer": "Benchmark Applicant Ltd.",
+    "fee_reduction": false,
+    "auto_pay_authorized": true,
+    "payment_account_reference": "benchmark-applicant-payment-account"
+  },
+  "decision": {
+    "status": "ready_for_package_validation",
+    "reason": "AI self-filing gate passes for benchmark applicant self-filing route without external lawyer or patent-agent involvement."
+  }
+}

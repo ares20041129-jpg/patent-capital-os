@@ -1,0 +1,24 @@
+{
+  "queue_id": "CASE-PRODUCTION-OFFICIAL-EVIDENCE-GATE-QUEUE",
+  "created_at": "2026-06-02T00:51:15+08:00",
+  "execution_mode": "dry_run",
+  "official_submission_allowed": false,
+  "official_system_touch_allowed": false,
+  "queue_owner": "Patent Capital OS",
+  "items": [
+    {
+      "case_id": "CASE-PRODUCTION-SHAPE-001",
+      "priority": 1,
+      "current_status": "accepted_or_application_number_received",
+      "target_status": "accepted_or_application_number_received",
+      "case_record": "production-official-evidence-gate-report.md",
+      "case_folder": ".",
+      "expected_outcome": "production_official_evidence",
+      "owner": "Production official evidence gate operator",
+      "required_validators": [
+        "validate_production_official_evidence_gate_benchmark"
+      ],
+      "notes": "Generated from production-official-evidence-gate-report.md by build_case_queue.py."
+    }
+  ]
+}

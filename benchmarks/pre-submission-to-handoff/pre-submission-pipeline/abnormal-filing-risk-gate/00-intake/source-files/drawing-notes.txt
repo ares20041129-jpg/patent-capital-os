@@ -1,0 +1,3 @@
+Figure 1: appliance controller, motor sensor, temperature sensor, and state classifier.
+
+Figure 2: flow from sensor sampling to dough-state classification to adaptive mixing parameter update.

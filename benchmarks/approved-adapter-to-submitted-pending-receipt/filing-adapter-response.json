@@ -1,0 +1,33 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "execution_mode": "approved_adapter",
+  "adapter_name": "authorized-cnipa-counsel-reviewed-adapter",
+  "adapter_version": "1.0.0-security-reviewed",
+  "response_state": "submitted_pending_receipt",
+  "official_system_touched": true,
+  "official_submission_performed": true,
+  "generator_official_system_touched": false,
+  "generator_official_submission_performed": false,
+  "generator_adapter_execution_performed": false,
+  "evidence_claims_official_system_touched": true,
+  "evidence_claims_official_submission_performed": true,
+  "evidence_claims_adapter_execution_performed": true,
+  "final_package_hash": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d",
+  "reviewed_package_hash": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d",
+  "receipt_capture_status": "submitted_pending_receipt",
+  "next_status": "submitted_pending_receipt",
+  "handoff_required": false,
+  "human_action": "",
+  "errors": [],
+  "warnings": [
+    "receipt_capture_followup_required",
+    "mock_adapter_execution_for_benchmark_only"
+  ],
+  "approved_adapter_preflight_hash": "sha256:68ffa4d7535b059a31aef92f5727305eff4ae8fdd5541fa67499a06ece85ee66",
+  "adapter_production_readiness_hash": "sha256:2e98aee405d11b9e7e5f0a480a81f2d2b322121ce4406040db297a1a438215fd",
+  "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+  "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "adapter_execution_result": "adapter-execution-result.json",
+  "adapter_execution_result_hash": "sha256:a614160e7c4b52a1d20a6c71e7c4b76ddb3d278309c694e469e487dbf700bafe",
+  "audit_log_entry": "audit-log-entry.yaml"
+}

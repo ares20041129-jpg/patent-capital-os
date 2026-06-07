@@ -1,0 +1,35 @@
+{
+  "queue_id": "OFFICIAL-READY-QUEUE-001",
+  "processed_at": "2026-06-01T21:06:05+08:00",
+  "execution_mode": "dry_run",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "summary": {
+    "total": 1,
+    "passed": 0,
+    "blocked": 0,
+    "handoff": 1,
+    "deficiency": 0
+  },
+  "results": [
+    {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "input_status": "ready_for_authorized_filing",
+      "output_status": "ready_for_authorized_filing",
+      "expected_outcome": "handoff",
+      "decision": "handoff_required",
+      "outcome": "handoff",
+      "validators_run": [
+        "validate_ready_for_authorized_filing_benchmark"
+      ],
+      "errors": [],
+      "warnings": [],
+      "next_action": "Authorized filing operator performs final official-system action or approves a lawful adapter run.",
+      "owner": "Official channel preflight operator",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": []
+}

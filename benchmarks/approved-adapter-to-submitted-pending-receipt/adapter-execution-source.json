@@ -1,0 +1,34 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "execution_mode": "approved_adapter",
+  "adapter": {
+    "name": "authorized-cnipa-counsel-reviewed-adapter",
+    "version": "1.0.0-security-reviewed"
+  },
+  "execution": {
+    "action_started_at": "2026-06-01T22:20:00+08:00",
+    "action_completed_at": "2026-06-01T22:21:00+08:00",
+    "response_state": "submitted_pending_receipt",
+    "official_system_touched": true,
+    "official_submission_performed": true,
+    "adapter_execution_performed": true,
+    "submission_reference": "MOCK-SUBMISSION-PENDING-CASE-INTAKE-ORCH-001",
+    "official_status_snapshot_file": "mock-submitted-status-snapshot-case-intake-orch-001.png",
+    "official_status_snapshot_hash": "sha256:9522847efa9900bcf2c3ff1984d49a931c077e72e246487bcb28cde0e50c2662",
+    "submitted_file_list_file": "mock-submitted-file-list-case-intake-orch-001.txt",
+    "submitted_file_list_hash": "sha256:81af2e9f153bc7af83a7baf368e044bc1f89838debc3588fc7060807472ec84f",
+    "payment_status": "pending",
+    "payment_receipt_hash": "",
+    "benchmark_mock": true
+  },
+  "receipt_followup": {
+    "docket_entry_id": "DOCKET-ADAPTER-EXECUTION-MOCK-CASE-INTAKE-ORCH-001",
+    "next_deadline_name": "capture official filing receipt",
+    "next_deadline_due_date": "2026-06-02",
+    "evidence_notes": "Benchmark mock only. This is not a real official submission; receipt is pending."
+  },
+  "decision": {
+    "status": "submitted_pending_receipt",
+    "reason": "Mock adapter result proves the required evidence shape for a post-submission, pre-receipt state. It is not a real official submission."
+  }
+}

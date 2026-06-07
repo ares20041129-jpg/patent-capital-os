@@ -1,0 +1,21 @@
+{
+    "case_id":  "BUILDER-QUEUE-001",
+    "generated_at":  "2026-06-03T00:29:45+08:00",
+    "files":  [
+                  {
+                      "path":  "generated-case-queue.json",
+                      "sha256":  "sha256:7c0778e40ea51af6173ab8f715a06d5b0d0a5be59ee226736f43f34bd845a53b",
+                      "bytes":  2435
+                  },
+                  {
+                      "path":  "builder-report.md",
+                      "sha256":  "sha256:a365dacbc03946d45e0e87ad8da37b26d80652f28cc773d0d9242d621bc22c7d",
+                      "bytes":  1466
+                  },
+                  {
+                      "path":  "results.tsv",
+                      "sha256":  "sha256:c1c6c1d804d159065f68e261ee68349aade3c6f0c2182746ea59da7d308782b8",
+                      "bytes":  399
+                  }
+              ]
+}

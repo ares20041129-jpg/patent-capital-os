@@ -1,0 +1,19 @@
+{
+  "case_id": "DRAFT-TO-PACKAGE-001",
+  "status": "package_valid_official_preflight_pending",
+  "legal_gate": "passed",
+  "package_validation": "passed",
+  "official_channel_preflight": "pending",
+  "failed_gates": [
+    "official_channel_preflight_pending",
+    "receipt_capture_pending"
+  ],
+  "decision": "do_not_file_until_official_preflight",
+  "final_package_hash": "sha256:6c2e86ed80848e88d165a34ea5784f87e5beee72f185804cace48dba714b64da",
+  "reviewed_package_hash": "sha256:6c2e86ed80848e88d165a34ea5784f87e5beee72f185804cace48dba714b64da",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "official_submission_performed": false,
+  "official_system_touched": false,
+  "updated_at": "2026-06-01T19:50:00+08:00"
+}

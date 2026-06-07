@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T06:51:21+08:00",
+  "files": [
+    {
+      "path": "approved-adapter-preflight.json",
+      "sha256": "sha256:3ed1dea51677bbe65257cd90a4b129d24b8985594c4e3a283463a1af58fed09f",
+      "bytes": 6665
+    },
+    {
+      "path": "filing-adapter-request.json",
+      "sha256": "sha256:2a716007540fe91c454680c489d04280b5bee9a052a3f1364f13ee2349876d8b",
+      "bytes": 2187
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:6a3bd940bec41e501928509e2505fa82c80fd5a26ec613e0d14bef3d285bd9fc",
+      "bytes": 1636
+    },
+    {
+      "path": "adapter-boundary-report.md",
+      "sha256": "sha256:a42036a5accb4fb3ed38010240b92ee85042c94e34d2c7ce50fd7aa28ae7d31b",
+      "bytes": 1467
+    },
+    {
+      "path": "audit-log-entry-plan.yaml",
+      "sha256": "sha256:952705bff3fce2d073c684fb235cdd37995afdeb0060d11df564a3b5227f42a1",
+      "bytes": 1265
+    },
+    {
+      "path": "docket-entry-plan.yaml",
+      "sha256": "sha256:2bef108438aefc0ad785b38088a373eb36857136869006371dc0173eb0fffb82",
+      "bytes": 492
+    }
+  ]
+}

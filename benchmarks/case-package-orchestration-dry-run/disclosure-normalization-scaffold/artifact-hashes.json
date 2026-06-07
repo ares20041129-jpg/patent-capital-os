@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-03T00:38:01+08:00",
+  "files": [
+    {
+      "path": "invention-disclosure-scaffold.json",
+      "sha256": "sha256:549d55ce75e4cc2d96201cd937aee4cb811da89b28caae72bc894bb388c1c18a",
+      "bytes": 3820
+    },
+    {
+      "path": "normalization-report.md",
+      "sha256": "sha256:578b02ecbeb37f3d9fe013896ffcf2de3119f496c824905807a3150d5b2b6908",
+      "bytes": 681
+    }
+  ]
+}

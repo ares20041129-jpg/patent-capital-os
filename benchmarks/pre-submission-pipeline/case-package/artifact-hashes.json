@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE-PRE-SUB-001",
+  "generated_at": "2026-06-03T06:11:16+08:00",
+  "files": [
+    {
+      "path": "case-package-manifest.json",
+      "sha256": "sha256:3a9f0fe50050153cffbdcd4c232abb805c578fe04095b5e75efc91e2a91a932e",
+      "bytes": 3055
+    },
+    {
+      "path": "01-normalized/source-material-manifest.json",
+      "sha256": "sha256:fdaae9d9037fac9be22cdc6c8e8cbb40cc02930a4918c1d89c8c106fc178cdf1",
+      "bytes": 2304
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:04074419c226174941c5d3c40289a7fbb9d938b8b14630fe2fb74fd99ba5c5b7",
+      "bytes": 425
+    },
+    {
+      "path": "intake-report.md",
+      "sha256": "sha256:aba4348834905425b06347d6d7b57093204de4bab31dafcb6c85651d11e21121",
+      "bytes": 757
+    }
+  ]
+}

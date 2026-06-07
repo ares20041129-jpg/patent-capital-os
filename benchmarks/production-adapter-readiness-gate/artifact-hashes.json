@@ -1,0 +1,31 @@
+{
+    "case_id":  "CASE-PRODUCTION-ADAPTER-READINESS-BENCHMARK",
+    "generated_at":  "2026-06-02T00:18:00+08:00",
+    "files":  [
+                  {
+                      "path":  "production-shape\\production-adapter-readiness-packet.json",
+                      "sha256":  "sha256:821a42748e26ad4a979b959c61f7d271881c59963abe44e71984655418898e8b",
+                      "bytes":  3737
+                  },
+                  {
+                      "path":  "production-ready\\counsel-reviewed-adapter-readiness-packet.json",
+                      "sha256":  "sha256:2e98aee405d11b9e7e5f0a480a81f2d2b322121ce4406040db297a1a438215fd",
+                      "bytes":  3680
+                  },
+                  {
+                      "path":  "production-ready\\ai-self-filing-adapter-readiness-packet.json",
+                      "sha256":  "sha256:d8a70abc8fb1e8e19dbc74c6979bf2532cbc14e9cefab6d29949461595cb47a8",
+                      "bytes":  3703
+                  },
+                  {
+                      "path":  "unsafe-rejection\\production-adapter-readiness-packet.json",
+                      "sha256":  "sha256:26c881b5a595666c333c7486f7d06f9b42831e0c6e18a2ba9f32b6150c9bd534",
+                      "bytes":  3664
+                  },
+                  {
+                      "path":  "production-adapter-readiness-report.md",
+                      "sha256":  "sha256:b7e5da1cac2a9ab43d802d569590bb9317be0fe2dca4cd946b4344fda9d88e98",
+                      "bytes":  827
+                  }
+              ]
+}

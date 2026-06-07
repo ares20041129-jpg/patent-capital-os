@@ -1,0 +1,86 @@
+{
+  "case_id": "APPROVED-ADAPTER-PREFLIGHT-READINESS-BYPASS-001",
+  "execution_mode": "approved_adapter",
+  "adapter": {
+    "name": "authorized-cnipa-counsel-reviewed-adapter",
+    "version": "1.0.0-security-reviewed",
+    "approved_for_production": true,
+    "registry_entry_hash": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "dry_run_result_hash": "sha256:8a8876e6338fae21bb2ee7023600651c0314a684ddaa714b680ea86647f2da38",
+    "security_review": {
+      "reviewed_by": "Security reviewer",
+      "reviewed_at": "2026-06-01T22:00:00+08:00",
+      "result": "passed",
+      "review_artifact_hash": "sha256:53e26bdfd89fc336c3452383e257708be369076c8d6114f6e0b7a784034d763c",
+      "scope": "Credential isolation, no control bypass, audit logging, receipt capture, and package hash immutability."
+    }
+  },
+  "authorization": {
+    "submission_authorization_packet": "../authorized-cn-ready-for-filing/submission-packet.json",
+    "submission_authorization_packet_hash": "sha256:c8850ff0d5797239b0b32183fe38eafd073f34d7a5bfe8aa091cf4177e686494",
+    "applicant_authorization_confirmed": true,
+    "counsel_review_confirmed": true,
+    "account_owner_authorization": "account-owner-adapter-authorization.pdf",
+    "signature_authority_evidence": "signature-authority-record.pdf",
+    "payment_authority_evidence": "benchmark-payment-authority",
+    "allowed_actions": [
+      "submit",
+      "file",
+      "pay official fees"
+    ],
+    "two_person_approval": {
+      "legal_approver": "Patent Agent",
+      "ops_approver": "Filing Operator",
+      "approved_at": "2026-06-01T22:02:00+08:00",
+      "evidence_hash": "sha256:a2f461aa002b5b8a9c41ea467ce08831dd358d9b6c5e137da1b2ac7e60c46676"
+    }
+  },
+  "official_channel": {
+    "preflight_file": "../authorized-cn-ready-for-filing/official-channel-preflight.yaml",
+    "preflight_hash": "sha256:ba56fd1b0bcff3f2c93777e378236ef48470e0543875a3d4ba3ccbdd998df303",
+    "official_system": "CNIPA patent business processing system",
+    "automation_allowed": true,
+    "bypasses_access_controls": false,
+    "human_only_steps": [],
+    "human_only_steps_resolved": true
+  },
+  "package": {
+    "manifest_file": "../draft-to-filing-package-validation/filing-package-manifest.yaml",
+    "manifest_hash": "sha256:c2c4ddd3f8e3c7fdba6cbe6fb9418276dbbefa27c1b645d3d450b35db4f50ea5",
+    "final_package_hash": "sha256:271f551faf3e459183db4014002ca92c3e50298743290ee102e057dc9b5fd0ab",
+    "reviewed_package_hash": "sha256:271f551faf3e459183db4014002ca92c3e50298743290ee102e057dc9b5fd0ab",
+    "xml_validation_result": "passed",
+    "attachment_list_hash": "sha256:6ca52dc1b677e58d1362bcd5f01b4cd0625f8a6408a5d42dbad3402957a0cb5d"
+  },
+  "evidence": {
+    "receipt_capture_plan": "../official-channel-preflight-to-ready/receipt-capture-plan.yaml",
+    "receipt_capture_plan_hash": "sha256:c2a45654e113de8076f8c98e18875eb15f53c29468215d7cf449102e0642bc0c",
+    "audit_log_entry_plan": "audit-log-entry-plan.yaml",
+    "audit_log_entry_plan_hash": "sha256:d757af567b04f73bce58e2ede3f6ab1bbd3d931e95a5f42b6f047c51205d62b9",
+    "docket_entry_plan": "docket-entry-plan.yaml",
+    "docket_entry_plan_hash": "sha256:c9cfd9d94f80d4c89cc3561d41be20c602ce5082cd0a4cdc5c7bbb7a9b3452b8"
+  },
+  "credential_handling": {
+    "raw_credentials_in_request": false,
+    "private_keys_in_request": false,
+    "captcha_bypass": false,
+    "mfa_secret_in_request": false,
+    "session_token_in_request": false,
+    "stores_credentials": false
+  },
+  "execution_controls": {
+    "requested_action": "submit_package",
+    "payment_allowed": true,
+    "stop_on_hash_mismatch": true,
+    "stop_on_human_only_step": true,
+    "stop_on_access_control_bypass": true,
+    "receipt_capture_required": true,
+    "audit_log_required": true,
+    "docket_update_required": true
+  },
+  "decision": {
+    "status": "approved_for_adapter_execution",
+    "reason": "This intentionally omits production adapter readiness and must fail.",
+    "next_status_if_success": "submitted_pending_receipt"
+  }
+}

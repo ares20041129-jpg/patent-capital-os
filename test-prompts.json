@@ -1,0 +1,362 @@
+[
+  {
+    "id": "stp-reviewed-cn-filing",
+    "prompt": "A China invention patent package has already been reviewed by a patent agent. The applicant authorizes automatic submission. Use patent-capital-os to run the legal gate, filing-purpose analysis, CNIPA XML readiness, stop conditions, receipt capture, and docketing plan.",
+    "expected": "Routes to reviewed filing package plus filing ops, verifies authorization packet, preserves legal gate, distinguishes ready-to-submit from filed, and lists deficiencies or submission steps."
+  },
+  {
+    "id": "smart-appliance-benchmark",
+    "prompt": "Use the cited bread maker and dough fermentation control patents as references. Build an IP investment memo, prior-art matrix, inventive concept, claim architecture, claim support map, and red-team report for a new smart dough-state control invention.",
+    "expected": "Runs scripts/prepare_reference_patent_delta.py and scripts/validate_reference_patent_delta_benchmark.py when the cited patents are supplied as a concrete set; produces reference-patent-delta.json, claim-strategy.md, reference-patent-delta-report.md, and artifact-hashes.json; treats the cited patents as boundary evidence only; requires applicant-owned file-bound support for every claim element, a delta row for every claim element, no reference/prior-art material as applicant support, no novelty or patentability guarantee, no official action, and no external lawyer."
+  },
+  {
+    "id": "legal-gate-failure",
+    "prompt": "The user wants immediate patent filing, but the materials lack applicant authorization and secrecy review status. Handle the request.",
+    "expected": "Stops filing, reports failed legal gates, explains cure actions, allows draft-only work but no submission."
+  },
+  {
+    "id": "karpathy-preflight-required",
+    "prompt": "Execute submission and fee payment for a reviewed patent package. The user requires a Karpathy-style check before every action.",
+    "expected": "Produces a Karpathy Preflight before filing and payment, checks assumptions, smallest step, legal and fee evidence, AI-brittle points, success criteria, stop rules, then proceeds only if gates pass."
+  },
+  {
+    "id": "agent-team-review",
+    "prompt": "Use all relevant person skills and an agent team to design a patent-generation and authorized-filing workflow. Keep the legal step mandatory.",
+    "expected": "Uses advisory roles with bounded authority, records seat-by-seat findings, preserves the legal/compliance gate, and does not let personas approve filing."
+  },
+  {
+    "id": "invention-disclosure-generation",
+    "prompt": "The user sends rough technical materials and similar patent numbers, asking the system to generate a similar patent. Process it with patent-capital-os.",
+    "expected": "Normalizes an invention disclosure, runs anti-abnormal and no-copying checks, builds prior-art deltas, drafts only from supported technical evidence, generates a patent application draft and claim support map, and stops before filing unless legal authorization passes."
+  },
+  {
+    "id": "incoming-disclosure-to-application",
+    "prompt": "Given a source material manifest, invention disclosure, prototype evidence, drawing notes, and similar patent references, generate an AI self-filing legal/compliance-ready patent application draft while preserving the legal gate.",
+    "expected": "Validates file-bound source material manifest hashes and disclosure, generates title, field, background, problem, solution, effects, drawings, embodiments, claims, abstract, AI legal/compliance questions, claim support map with exact evidence hashes, legal_gate_mode=ai_self_filing_no_external_lawyer, draft-only status, do_not_file decision, no default attorney/lawyer/counsel/patent-agent review wording, and no official action."
+  },
+  {
+    "id": "source-material-file-binding-rejection",
+    "prompt": "Prove that malformed received invention materials cannot enter patent drafting or filing when files are missing, hashes are mismatched, hash shapes are invalid, or prior-art evidence is used as claim support.",
+    "expected": "Runs scripts/validate_source_material_file_binding_rejection_benchmark.py; confirms missing material files, unsafe absolute or path-traversing material filenames, material hash mismatches, source-package hash mismatches, malformed source/package/chain/claim-support hashes, unknown claim-support material IDs, prior-art marked usable for claim support, and claim-support links to prior art are rejected before drafting or filing; validates artifact-hashes.json and performs no official action."
+  },
+  {
+    "id": "case-package-intake",
+    "prompt": "The user sends a folder of raw invention materials. Normalize it into a standard Patent Capital OS case package before drafting or filing.",
+    "expected": "Creates standard case folders, rejects symlinks or linked raw files, copies only raw files that resolve inside the raw input directory into package targets inside 00-intake/source-files, computes exact sha256 hashes, writes case-package-manifest.json, source-material-manifest.json, filing-status.json, intake-report.md, and artifact-hashes.json with legal_gate_mode=ai_self_filing_no_external_lawyer, AI legal/compliance confirmation pending, filing_allowed=false, no default attorney/lawyer/counsel/patent-agent review wording, and no official actions."
+  },
+  {
+    "id": "case-package-orchestration-dry-run",
+    "prompt": "The user sends raw invention materials and wants one offline command to package, normalize, validate, report, and hash the intake before any drafting or filing.",
+    "expected": "Runs case intake orchestration to produce a case package, disclosure scaffold with AI legal/compliance questions, dry-run queue, batch result, intake orchestration report, and artifact-hashes.json while preserving legal_gate_mode=ai_self_filing_no_external_lawyer and external_lawyer_involved=false across package, scaffold, queue, and result; keeps status intake_received, disclosure scaffold_pending_confirmation, AI legal/compliance confirmation pending, filing_allowed=false, draft_generation_allowed=false, no default attorney/lawyer/counsel/patent-agent review wording, and no official actions."
+  },
+  {
+    "id": "disclosure-normalization-scaffold",
+    "prompt": "A validated Patent Capital OS case package is available. Normalize it into an invention disclosure scaffold, but do not treat it as confirmed for drafting or filing.",
+    "expected": "Creates invention-disclosure-scaffold.json, normalization-report.md, and artifact-hashes.json; preserves legal_gate_mode=ai_self_filing_no_external_lawyer and external_lawyer_involved=false on the scaffold and scaffold_controls; keeps inventor confirmation, AI legal/compliance gate, and no-copying confirmation pending; uses ai_legal_compliance_questions instead of counsel_questions; sets filing_allowed=false and draft_generation_allowed=false; and does not default to attorney/lawyer/counsel/patent-agent review wording."
+  },
+  {
+    "id": "scaffold-confirmation-to-disclosure",
+    "prompt": "A pending invention disclosure scaffold now has inventor, applicant/ownership, no-copying, evidence, secrecy, and AI legal/compliance draft-review confirmations. Promote it to a confirmed invention disclosure for draft generation only.",
+    "expected": "Validates the disclosure confirmation packet with AI-only draft review, exact sha256 source/evidence hashes, separated prohibited reference hashes, and external_lawyer_involved=false; creates invention-disclosure.json, filing-status.json, confirmation-report.md, and artifact-hashes.json; sets draft_generation_allowed=true, filing_allowed=false, status=draft_only, legal_gate=failed, decision=do_not_file, and no official actions."
+  },
+  {
+    "id": "disclosure-confirmation-rejection",
+    "prompt": "Prove that unsafe disclosure confirmations cannot promote a scaffold when they claim lawyer or patent-agent review, include an external-lawyer flag, use malformed hashes, use unknown technical-effect hashes, or mix prohibited reference hashes into applicant evidence.",
+    "expected": "Runs scripts/validate_disclosure_confirmation_rejection_benchmark.py; confirms every unsafe mutation is rejected while the base AI-only confirmation packet still passes; validates artifact-hashes.json and performs no official action."
+  },
+  {
+    "id": "draft-package-generation",
+    "prompt": "A confirmed invention disclosure is available. Generate a patent application draft and claim support map for AI self-filing legal/compliance authorization only, with no external lawyer or patent agent.",
+    "expected": "Creates patent-application-draft.md, claim-support-map.md, filing-status.json, draft-package-report.md, and artifact-hashes.json; when reference-patent-delta.json is supplied, validates matching case ID and binds its claim elements, distinguishing features, technical-effect evidence, claim strategy, and fallback positions into the draft and claim support map; validates draft and claim support map in allow-draft mode; keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, status=draft_only, legal_gate=failed, filing_allowed=false, no default attorney/lawyer/counsel/patent-agent review wording, and no official receipt or application number."
+  },
+  {
+    "id": "draft-evidence-provenance-gate",
+    "prompt": "A draft patent package and source material manifest are available. Prove that the generated claim limitations are supported by applicant evidence and not copied from reference patents.",
+    "expected": "Runs scripts/prepare_draft_evidence_provenance.py and scripts/validate_draft_evidence_provenance_benchmark.py; creates draft-evidence-provenance.json, draft-evidence-provenance-report.md, copied source files, and artifact-hashes.json; confirms every claim support row uses exact file-bound applicant/inventor/R&D source evidence, prior-art/reference material is prohibited as own claim support, and when reference-patent-delta.json is present it is copied, validated, and hash-bound as boundary evidence only; status remains draft-only, and no official action or external lawyer involvement occurs."
+  },
+  {
+    "id": "abnormal-filing-risk-gate",
+    "prompt": "A source-backed draft patent package has passed evidence provenance. Assess whether it has abnormal filing risk before any AI self-filing authorization path continues.",
+    "expected": "Runs scripts/prepare_abnormal_filing_risk_assessment.py and scripts/validate_abnormal_filing_risk_benchmark.py; creates abnormal-filing-risk-assessment.json, abnormal-filing-risk-report.md, copied source files, and artifact-hashes.json; confirms exact applicant-source hashes plus G8 checks for real inventive activity, random generation, copied or simply replaced prior art, supported effects, obvious patchwork, unreasonable degradation, non-necessary narrowing, malicious batch filings, inventor/applicant consistency, and when reference_patent_delta_hash is present, reference_delta_boundary_preserved plus delta row/element counts; keeps draft-only status, no official action, and no external lawyer involvement."
+  },
+  {
+    "id": "abnormal-filing-risk-rejection",
+    "prompt": "Prove that abnormal filing risk checks reject unsafe draft mutations before any AI self-filing authorization path continues.",
+    "expected": "Runs scripts/validate_abnormal_filing_risk_rejection_benchmark.py; confirms random generation, simple replacement or synonym substitution, unsupported technical effects, missing prior-art delta, malicious batch filing language, and unconfirmed inventor contribution are rejected while the base abnormal-filing-risk gate still passes; performs no official action and involves no external lawyer."
+  },
+  {
+    "id": "draft-package-to-filing-validation",
+    "prompt": "A draft package and separate submission authorization packet with final counsel review, applicant filing authorization, agency authority, fee authority, and final package hashes are available. Validate the filing package without submitting.",
+    "expected": "Validates the submission packet and filing package manifest with exact sha256 file binding for source draft, authorization packet, claims, specification, abstract, drawings, and request metadata; writes filing-status.json, package-validation-report.md, and artifact-hashes.json; advances only to package_valid_official_preflight_pending with official_channel_preflight=pending, no submission, no receipt, and no application number."
+  },
+  {
+    "id": "ai-self-filing-package-validation",
+    "prompt": "A confirmed patent application draft and separate AI self-filing authorization packet are available. The applicant wants no external lawyer or patent agent. Validate the package without submitting.",
+    "expected": "Validates AI self-filing eligibility, no mandatory-agent condition, applicant authorization, inventor/ownership/secrecy evidence, AI compliance checks, explicit AI legal gate review checks, exact sha256 hash fields, same-case abnormal-filing risk assessment artifact path/hash binding, and file-bound filing package manifest; when the abnormal assessment includes reference_patent_delta_hash, preserves reference_delta_boundary_preserved=true plus delta row/element counts in the authorization packet while keeping reference patents as boundary evidence only; writes source draft and final material files into the package; rejects any legal-advice, lawyer-review, or patent-agent-review claim; sets legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, package_valid_official_preflight_pending, and no official action."
+  },
+  {
+    "id": "ai-self-filing-application-materials",
+    "prompt": "An AI self-filing package has passed package validation. Generate the patent application materials needed before official-channel preflight without submitting.",
+    "expected": "Runs scripts/prepare_patent_application_materials.py and validators; creates application-materials.json, request-form-metadata.json, document-generation-plan.json, claims-material.md, specification-material.md, abstract-material.md, drawings-materials-plan.md, xml-readiness-checklist.json, filing-status.json, application-materials-report.md, and artifact-hashes.json; binds exact sha256 source package hashes, source filing-package manifest inventory, draft-evidence-provenance hash, same-case low-risk abnormal-filing assessment hash, generated material hashes, request metadata, document generation plan, XML readiness, own-support hashes, prohibited-reference hashes, and XML validation report hash; when reference_patent_delta_hash is present, preserves matching delta hash, row count, claim-element count, and reference_delta_boundary_preserved=true across evidence_provenance and abnormal_filing_risk_assessment summaries without treating reference patents as applicant support; confirms generated material paths are relative, stay inside the materials bundle, recompute against local copied provenance/risk files and generated artifacts, and do not contain missing-section placeholders; runs the separate application-materials quality review before official preflight; preserves legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, package_valid_official_preflight_pending, and no official upload, signature, payment, submission, receipt, or application number."
+  },
+  {
+    "id": "application-materials-quality-gate",
+    "prompt": "A generated AI self-filing application-materials bundle is ready. Run the independent quality gate before official-channel preflight.",
+    "expected": "Creates application-materials-quality-review.json, application-materials-quality-report.md, and artifact-hashes.json; recomputes the reviewed application-materials hash; validates the underlying materials; scores claim architecture, specification enablement, abstract/drawings, evidence binding, filing readiness, legal/safety, and auditability from exact expected dimension check IDs; requires at least 85 overall and every dimension at least 7/10; rejects hash mismatch, missing or changed quality check IDs, forged dimension scores, low dimension score, or failed quality gate mutations; keeps official_system_touched=false, official_submission_performed=false, and external_lawyer_involved=false."
+  },
+  {
+    "id": "application-materials-pipeline",
+    "prompt": "An AI self-filing package has passed package validation. Generate application materials and run the independent quality gate in one local command before official-channel preflight.",
+    "expected": "Runs scripts/orchestrate_application_materials_pipeline.py; creates nested application-materials and application-materials-quality-gate folders plus application-materials-pipeline-result.json, application-materials-pipeline-report.md, and artifact-hashes.json; validates the nested materials bundle, nested quality review with exact quality check IDs and recomputed dimension scores, top-level pipeline result, and all artifact hashes; when reference_patent_delta_hash is present in the nested materials bundle, confirms the delta hash/count/boundary fields survive through application materials and quality-gate validation; keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, status=package_valid_official_preflight_pending, decision=official_channel_preflight_required, official_system_touched=false, official_submission_performed=false, and no upload, signature, payment, submission, receipt, or application number."
+  },
+  {
+    "id": "pre-submission-pipeline",
+    "prompt": "The user sends raw invention materials and AI-only authorization templates. Run every local pre-submission step, but do not automatically submit.",
+    "expected": "Runs scripts/orchestrate_pre_submission_pipeline.py; creates raw-input, case-package, disclosure-normalization-scaffold, scaffold-confirmation-to-disclosure, optional reference-patent-delta when --reference-delta-source is supplied, draft-package-generation, draft-evidence-provenance-gate, abnormal-filing-risk-gate, ai-self-filing-package-validation, application-materials-pipeline, ai-self-filing-official-ready, ai-self-filing-approved-adapter-preflight, case-lifecycle-trace, pre-submission-pipeline-result.json, pre-submission-pipeline-report.md, and artifact-hashes.json; validates every nested stage plus the top-level pipeline; recomputes scaffold, reference-delta, draft, abnormal-risk, AI legal gate, package, material, quality, official-preflight, approved-adapter preflight, lifecycle trace, adapter request, audit, docket, and manifest hashes; requires pre_submission_lifecycle_gate=passed and a lifecycle_trace_hash matching case-lifecycle-trace/case-lifecycle-trace.json; when reference_patent_delta_hash is present, preserves the same hash through the result, AI self-filing source, nested materials, and lifecycle trace with reference_delta_boundary_preserved=true while keeping references as boundary evidence only; generated queue/batch consumption must run validate_pre_submission_pipeline_benchmark and keep next_action gated on the lifecycle audit gate; keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, status=approved_for_adapter_execution, decision=approved_for_adapter_execution_no_auto_submit, official_system_touched=false, official_submission_performed=false, adapter_execution_performed=false, automatic_submission_performed=false, and no login, upload, signature, payment, submission, receipt, application number, or automatic adapter execution."
+  },
+  {
+    "id": "pre-submission-to-handoff",
+    "prompt": "The user sends raw invention materials and AI-only authorization templates. Run the whole local pre-submission pipeline and produce the read-only handoff package in one command, without executing the adapter.",
+    "expected": "Runs scripts/orchestrate_pre_submission_to_handoff.py and scripts/validate_pre_submission_to_handoff_benchmark.py; creates nested pre-submission-pipeline and pre-submission-handoff-package folders plus pre-submission-to-handoff-result.json, pre-submission-to-handoff-report.md, and artifact-hashes.json; validates the nested pre-submission pipeline, nested handoff package, wrapper result, source pre-submission hash, handoff package hash, lifecycle trace hash, top-level manifest, and generated queue/batch consumption through validate_pre_submission_to_handoff_benchmark; when reference_patent_delta_hash is present, preserves the same delta hash/count/boundary fields through the pipeline, lifecycle trace, handoff package, and wrapper result; keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, status=approved_for_adapter_execution, decision=handoff_ready_no_auto_submit, official_system_touched=false, official_submission_performed=false, adapter_execution_performed=false, automatic_submission_performed=false, and does not log in, upload, sign, pay, execute an adapter, submit, capture a receipt, or claim an application number."
+  },
+  {
+    "id": "inbox-to-handoff",
+    "prompt": "A production inbox contains multiple received raw invention-material case folders. Process every case into read-only handoff packages without executing the adapter or touching any official system.",
+    "expected": "Runs scripts/orchestrate_inbox_to_handoff.py and scripts/validate_inbox_to_handoff_benchmark.py; each child folder in inbox is treated as one case, optional case-config.json may set case_id, raw_input_dir, and reference_delta_source; creates processed-cases, case-queue.json, batch-processor-result.json, inbox-to-handoff-result.json, inbox-to-handoff-report.md, and artifact-hashes.json; validates every processed case with validate_pre_submission_to_handoff_benchmark, validates the nested queue and batch result, requires at least one reference-delta configured case, preserves reference-delta boundary evidence for that case, generated queue/batch consumption uses validate_inbox_to_handoff_benchmark, keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, status=approved_for_adapter_execution, decision=handoff_ready_no_auto_submit, official_system_touched=false, official_submission_performed=false, adapter_execution_performed=false, automatic_submission_performed=false, and does not log in, upload, sign, pay, execute an adapter, submit, capture a receipt, or claim an application number."
+  },
+  {
+    "id": "inbox-to-handoff-rejection",
+    "prompt": "Prove that unsafe production inbox inputs are rejected before any pre-submission-to-handoff generation starts.",
+    "expected": "Runs scripts/validate_inbox_to_handoff_rejection_benchmark.py; confirms raw-input path traversal, reference-delta path traversal, missing raw input, empty inbox, and stale output reuse all fail with expected errors while the base inbox-to-handoff benchmark still passes; validates artifact-hashes.json; generated queue/batch consumption uses validate_inbox_to_handoff_rejection_benchmark; keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, official_system_touched=false, official_submission_performed=false, generator_official_system_touched=false, generator_official_submission_performed=false, generator_adapter_execution_performed=false, and does not log in, upload, sign, pay, execute an adapter, submit, capture a receipt, or claim an application number."
+  },
+  {
+    "id": "pre-submission-handoff-package",
+    "prompt": "A full local pre-submission pipeline has passed through approved-adapter preflight and lifecycle audit. Create the final read-only handoff package without executing the adapter.",
+    "expected": "Runs scripts/prepare_pre_submission_handoff_package.py and scripts/validate_pre_submission_handoff_package.py; creates pre-submission-handoff-package.json, pre-submission-handoff-report.md, copied evidence files, and artifact-hashes.json; revalidates the source pre-submission pipeline; copies and hash-binds final official documents, source-bound application materials, official-channel preflight, receipt plan, approved-adapter preflight, filing-adapter request, lifecycle trace, audit plan, and docket plan; when reference_patent_delta_hash is present, preserves the same delta hash/count/boundary fields from lifecycle trace; generated queue/batch consumption uses validate_pre_submission_handoff_package; keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, status=approved_for_adapter_execution, decision=handoff_ready_no_auto_submit, official_system_touched=false, official_submission_performed=false, adapter_execution_performed=false, automatic_submission_performed=false, and does not log in, upload, sign, pay, execute an adapter, submit, capture a receipt, or claim an application number."
+  },
+  {
+    "id": "pre-submission-handoff-rejection",
+    "prompt": "Prove that malformed pre-submission handoff packages are rejected before adapter execution.",
+    "expected": "Runs scripts/validate_pre_submission_handoff_rejection_benchmark.py; confirms lifecycle hash mismatch, official submission flag mutation, missing filing-adapter request evidence role, copied lifecycle evidence tamper, and reference-delta boundary mutation fail with expected errors; validates artifact-hashes.json; generated queue/batch consumption uses validate_pre_submission_handoff_rejection_benchmark; keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, official_system_touched=false, official_submission_performed=false, generator_official_system_touched=false, generator_official_submission_performed=false, generator_adapter_execution_performed=false, and does not log in, upload, sign, pay, execute an adapter, submit, capture a receipt, or claim an application number."
+  },
+  {
+    "id": "ai-self-filing-application-materials-binding-rejection",
+    "prompt": "Prove that AI self-filing official-ready generation cannot proceed when the application materials bundle path or hash is missing, mismatched, missing on disk, or points to the wrong artifact type.",
+    "expected": "Runs scripts/validate_ai_self_filing_application_materials_binding_rejection_benchmark.py; confirms every unsafe mutation is rejected before ready_for_authorized_filing, including missing materials path, missing materials hash, hash mismatch, missing materials file, and wrong artifact type; validates artifact-hashes.json; performs no official action and involves no external lawyer."
+  },
+  {
+    "id": "patent-application-materials-rejection",
+    "prompt": "Prove that malformed patent application materials are rejected before official-channel preflight.",
+    "expected": "Runs scripts/validate_patent_application_materials_rejection_benchmark.py; confirms missing applicant/inventor metadata, missing generated claims material, hash-correct missing-section placeholder material, malformed hash fields, missing or hash-mismatched document generation plan, official inventory source-manifest mismatch, source manifest hash mismatch, failed XML readiness, prior-art claim support, final package hash mismatch, and missing safeguards are rejected; validates artifact-hashes.json; performs no official action and involves no external lawyer."
+  },
+  {
+    "id": "ai-self-filing-legal-gate-rejection",
+    "prompt": "Test AI self-filing legal gate rejection behavior against dangerous packets that claim legal advice, claim lawyer or patent-agent review, omit a required stop condition, fail fee-authority review, or omit the AI legal gate review.",
+    "expected": "Runs scripts/validate_ai_self_filing_legal_gate_rejection_benchmark.py; confirms every unsafe mutation is rejected for the expected reason, including missing or high-risk abnormal-filing assessment evidence, invalid sha256 shape, abnormal-risk artifact hash mismatch, and missing abnormal-risk artifact file, while the base AI self-filing packet still passes; validates artifact-hashes.json; performs no official action and involves no external lawyer."
+  },
+  {
+    "id": "ai-self-filing-abnormal-risk-binding-rejection",
+    "prompt": "Prove that AI self-filing package generation cannot proceed when the abnormal-filing risk assessment artifact is missing or the supplied hash does not match.",
+    "expected": "Runs scripts/validate_ai_self_filing_abnormal_risk_binding_rejection_benchmark.py; confirms missing artifact path, missing artifact file, and assessment hash mismatch all stop package generation before filing readiness; performs no official action and involves no external lawyer."
+  },
+  {
+    "id": "ai-self-filing-deficiency-report",
+    "prompt": "An AI self-filing authorization packet fails the legal gate. Produce the required deficiency report and stop without filing.",
+    "expected": "Runs scripts/prepare_ai_self_filing_deficiency_report.py; creates ai-self-filing-authorization-packet.json, deficiency-report.json, filing-status.json, deficiency-report.md, and artifact-hashes.json; validates the deficiency benchmark; sets status=legal_gate_failed, decision=do_not_file, draft_only_work_allowed=true, official_system_touched=false, official_submission_performed=false, and external_lawyer_involved=false."
+  },
+  {
+    "id": "ai-self-filing-cure-revalidation",
+    "prompt": "An AI self-filing deficiency report has been cured by corrected applicant evidence. Revalidate the cure without filing.",
+    "expected": "Runs scripts/prepare_ai_self_filing_cure_revalidation.py; preserves the source deficiency report and failed packet, writes cured-ai-self-filing-authorization-packet.json, cure-revalidation.json, filing-status.json, cure-revalidation-report.md, and artifact-hashes.json; validates that the original packet still fails, the cured packet passes, status advances only to ready_for_package_validation, package validation remains required, and no official action or external lawyer involvement occurs."
+  },
+  {
+    "id": "authorized-cn-ready-for-filing",
+    "prompt": "A CN invention filing package has patent-agent approval tied to the final hash, applicant authorization to submit and pay fees, inventor and ownership confirmation, final XML hash, official CNIPA account authority, and receipt-capture destination. Process it without actually filing.",
+    "expected": "Validates the submission packet, official-channel preflight, and filing-status transition with exact sha256 final-document file binding, sets status to ready_for_authorized_filing with official_system_touched=false, and explicitly does not mark submitted, filed, receipted, accepted, or application-number received."
+  },
+  {
+    "id": "draft-to-filing-package-validation",
+    "prompt": "A counsel-reviewed patent application draft and applicant authorization packet are available. Validate the CN filing package manifest and decide whether it can proceed to official-channel preflight.",
+    "expected": "Validates legal authorization, exact sha256 document hashes, source draft, authorization packet, XML/package manifest, required attachments, artifact-hashes.json, and cross-checks; sets package_valid_official_preflight_pending; does not file or claim receipt."
+  },
+  {
+    "id": "official-channel-preflight-to-ready",
+    "prompt": "A validated CN filing package now has official account authority, signature authority, automation permission, fee authority, and receipt-capture destination. Advance it only as far as is lawful without submitting.",
+    "expected": "Validates official-channel preflight with exact package hashes and receipt-capture plan, advances to ready_for_authorized_filing, keeps official_system_touched=false and official_submission_performed=false, and explicitly does not mark submitted_pending_receipt or official_receipt_received."
+  },
+  {
+    "id": "validated-package-to-official-ready",
+    "prompt": "A validated filing package and independent official-channel preflight source are available. Prepare the case for authorized filing handoff without touching the official system.",
+    "expected": "Creates official-channel-preflight.yaml, receipt-capture-plan.yaml, filing-status.json, readiness-report.md, and artifact-hashes.json; advances to ready_for_authorized_filing with official_system_touched=false, no upload, signature, payment, submission, receipt, or application number."
+  },
+  {
+    "id": "ai-self-filing-official-ready",
+    "prompt": "An AI self-filing package has passed package validation and an independent official-channel preflight source is available. Prepare it for authorized applicant self-filing without touching the official system.",
+    "expected": "Requires a validated application-materials.json path and hash in official-preflight-source.json; creates official-channel-preflight.yaml, receipt-capture-plan.yaml, filing-status.json, readiness-report.md, and artifact-hashes.json; preserves legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, application_materials_generation=passed, and application_materials_hash binding; advances only to ready_for_authorized_filing with no upload, signature, payment, submission, receipt, or application number."
+  },
+  {
+    "id": "ai-self-filing-official-ready-reference-delta",
+    "prompt": "An AI self-filing package with reference-delta application materials has passed package validation. Prepare official-ready evidence without touching the official system.",
+    "expected": "Runs scripts/prepare_ready_for_authorized_filing.py and scripts/validate_ready_for_authorized_filing_benchmark.py; creates official-channel-preflight.yaml, receipt-capture-plan.yaml, filing-status.json, readiness-report.md, and artifact-hashes.json; preserves application_materials.hash, reference_patent_delta_hash, positive reference-delta row and claim-element counts, and reference_delta_boundary_preserved=true through official preflight, status, and report; treats reference patents as boundary evidence only; keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, official_system_touched=false, official_submission_performed=false, and no upload, signature, payment, submission, receipt, or application number."
+  },
+    {
+        "id": "receipt-capture-evidence",
+        "prompt": "After a lawful official filing action, capture and validate the receipt evidence and docket data before marking receipt status.",
+        "expected": "Requires receipt id/file/hash, official session authorization hash, official session-reference hash, official file list hash, filing date, fee status, docket entry, and application number when issued; recomputes receipt/payment file hashes when files are present; does not accept receipt status without evidence."
+    },
+    {
+        "id": "submitted-pending-receipt-to-official-receipt",
+        "prompt": "A submitted_pending_receipt case now has independently supplied official receipt evidence, fee status, official file-list hash, filing date, and docket deadlines. Convert it to receipt received without marking accepted status.",
+        "expected": "Creates receipt-capture.yaml, filing-status.json, receipt-report.md, and artifact-hashes.json; validates receipt evidence with exact sha256 file binding, preserves official session authorization and session-reference hashes from adapter execution through receipt/status, advances only to official_receipt_received, records official_system_touched=true from official evidence while generator_official_system_touched=false, keeps benchmark/mock labels when applicable, and requires separate application-number evidence before accepted_or_application_number_received."
+    },
+    {
+        "id": "case-processor-dry-run",
+    "prompt": "Process a ready_for_authorized_filing case through the case processor and filing adapter interface in dry_run mode.",
+    "expected": "Validates the case record, adapter request, adapter response, exact sha256 package hashes, and status transition; produces handoff_required or dry_run_ok; keeps official_system_touched=false and does not advance to submitted_pending_receipt."
+  },
+  {
+    "id": "case-queue-batch-processor",
+    "prompt": "Process a queue of patent cases containing a draft-only case, a package-validation case, and a ready-for-authorized-filing case in dry_run mode.",
+    "expected": "Validates the queue and batch result, runs per-case validators, reports independent outcomes and next actions, preserves legal_gate_mode and external_lawyer_involved=false, keeps draft-only next actions on the AI self-filing legal/compliance authorization path with no default attorney/lawyer/counsel/patent-agent review wording, and confirms no official system touch or submission occurred."
+  },
+  {
+    "id": "case-queue-builder-dry-run",
+    "prompt": "A folder of received AI self-filing patent cases contains one draft-only case, one package-validation case, and one legal-gate-failed deficiency case. Build a dry-run processing queue from those folders.",
+    "expected": "Creates a validated case queue with inferred statuses, expected outcomes, required validators, owners, legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, and official_submission_allowed=false plus official_system_touch_allowed=false."
+  },
+    {
+    "id": "approved-adapter-preflight-ready",
+    "prompt": "A case is ready_for_authorized_filing and the account owner wants to use a real approved filing adapter. Build the final pre-execution safety package without submitting.",
+    "expected": "Requires strict production adapter readiness, strict official session authorization, exact sha256 hash fields, file-bound authorization/preflight/package/receipt/audit/docket evidence, exact internal audit/docket plan hashes or plain pending markers for downstream materialization, adapter security review, account-owner authorization, two-person approval, no credential leakage, no access-control bypass, package hash match, receipt/audit/docket plans, and status approved_for_adapter_execution without official submission."
+  },
+    {
+        "id": "official-ready-to-approved-adapter-preflight",
+        "prompt": "A case is ready_for_authorized_filing and an independently supplied approved-adapter source provides registry approval, strict production adapter readiness, dry-run result, security review, two-person approval, credential handling, and allowed actions. Prepare the adapter preflight without executing.",
+        "expected": "Creates approved-adapter-preflight.json, filing-adapter-request.json, filing-status.json, adapter-boundary-report.md, audit-log-entry-plan.yaml, docket-entry-plan.yaml, and artifact-hashes.json; requires exact sha256 hash fields; binds and recomputes approved preflight, production adapter readiness, strict official session authorization, and session-reference hashes through preflight/request/status; advances only to approved_for_adapter_execution and does not touch the official system, execute the adapter, submit, pay, sign, receipt, or create an application number."
+    },
+    {
+        "id": "ai-self-filing-approved-adapter-preflight",
+        "prompt": "An AI self-filing case is ready_for_authorized_filing and an independently supplied approved-adapter source provides registry approval, strict production adapter readiness, dry-run result, security review, two-person approval, credential handling, and allowed actions. Prepare the adapter preflight without executing.",
+        "expected": "Creates approved-adapter-preflight.json, filing-adapter-request.json, filing-status.json, adapter-boundary-report.md, audit-log-entry-plan.yaml, docket-entry-plan.yaml, and artifact-hashes.json; preserves AI self-filing legal/compliance gate evidence with no external lawyer; requires exact sha256 hash fields; binds and recomputes approved preflight, production adapter readiness, strict official session authorization, and session-reference hashes through preflight/request/status; advances only to approved_for_adapter_execution and does not touch the official system, execute the adapter, submit, pay, sign, receipt, or create an application number."
+    },
+    {
+        "id": "ai-self-filing-approved-adapter-preflight-reference-delta",
+        "prompt": "An AI self-filing official-ready case includes reference-delta application materials. Prepare approved-adapter preflight without executing the adapter.",
+        "expected": "Runs scripts/prepare_approved_adapter_preflight.py and scripts/validate_generated_approved_adapter_preflight_benchmark.py; creates approved-adapter-preflight.json, filing-adapter-request.json, filing-status.json, adapter-boundary-report.md, audit-log-entry-plan.yaml, docket-entry-plan.yaml, and artifact-hashes.json; preserves application_materials.hash, reference_patent_delta_hash, positive reference-delta row and claim-element counts, and reference_delta_boundary_preserved=true through approved preflight, adapter request, filing status, audit input hashes, and report; treats reference patents as boundary evidence only; preserves AI self-filing legal/compliance gate evidence with no external lawyer; keeps official_system_touched=false, official_submission_performed=false, adapter_execution_performed=false, and no upload, execution, signature, payment, submission, receipt, or application number."
+    },
+    {
+        "id": "approved-adapter-to-submitted-pending-receipt",
+        "prompt": "An approved filing adapter has returned independently supplied execution evidence showing submitted_pending_receipt, but no official receipt has been captured. Convert the evidence into a validated case state without creating a receipt or application number.",
+        "expected": "Creates adapter-execution-result.json, filing-adapter-response.json, receipt-capture-pending.yaml, filing-status.json, adapter-execution-report.md, audit-log-entry.yaml, docket-entry.yaml, and artifact-hashes.json; recomputes adapter request, approved preflight, receipt-plan, audit, docket, submitted status snapshot, submitted file-list, and adapter-execution-result hashes across source/result/response validation; response hashes must match the referenced execution result; preserves production adapter readiness hash, official session authorization hash, and official session-reference hash from approved-adapter preflight through response/status; marks benchmark evidence as mock when applicable; advances only to submitted_pending_receipt with official_system_touched=true from evidence and generator_official_system_touched=false; requires receipt-capture follow-up; and does not claim receipt, acceptance, or application number."
+    },
+    {
+        "id": "approved-adapter-evidence-queue",
+        "prompt": "A queue receives an approved adapter evidence folder that is already at submitted_pending_receipt. Validate it in approved_adapter mode without executing the adapter.",
+        "expected": "Requires execution_mode=approved_adapter plus approved_adapter_evidence_mode=true; validates the supplied adapter execution evidence folder with validate_generated_adapter_execution_result_benchmark; keeps the queue item and result readonly at submitted_pending_receipt; preserves legal_gate_mode=ai_self_filing_no_external_lawyer and external_lawyer_involved=false; keeps official_system_touched=false, official_submission_performed=false, generator_official_system_touched=false, generator_official_submission_performed=false, and generator_adapter_execution_performed=false; and does not claim receipt, acceptance, application number, login, upload, signature, payment, submission, or real adapter execution."
+    },
+    {
+        "id": "ai-self-filing-adapter-to-submitted-pending-receipt",
+        "prompt": "An AI self-filing approved adapter has returned independently supplied mock execution evidence showing submitted_pending_receipt, but no official receipt has been captured. Convert the evidence into a validated case state.",
+        "expected": "Creates adapter-execution-result.json, filing-adapter-response.json, receipt-capture-pending.yaml, filing-status.json, adapter-execution-report.md, audit-log-entry.yaml, docket-entry.yaml, and artifact-hashes.json; recomputes adapter request, approved preflight, receipt-plan, audit, docket, submitted status snapshot, submitted file-list, and adapter-execution-result hashes across source/result/response validation; preserves legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, production adapter readiness hash, official session authorization hash, and official session-reference hash; advances only to submitted_pending_receipt, records official_system_touched=true from evidence and generator_official_system_touched=false, and does not claim receipt, acceptance, or application number."
+    },
+    {
+        "id": "ai-self-filing-adapter-to-submitted-pending-receipt-reference-delta",
+        "prompt": "An AI self-filing reference-delta approved adapter preflight has independently supplied mock execution evidence showing submitted_pending_receipt. Convert it into a validated case state without receipt or application number.",
+        "expected": "Runs scripts/prepare_adapter_execution_result.py and scripts/validate_generated_adapter_execution_result_benchmark.py; creates adapter-execution-result.json, filing-adapter-response.json, receipt-capture-pending.yaml, filing-status.json, adapter-execution-report.md, audit-log-entry.yaml, docket-entry.yaml, and artifact-hashes.json; preserves application_materials_hash, reference_patent_delta_hash, positive reference-delta row and claim-element counts, and reference_delta_boundary_preserved=true through execution result, response, status, audit input hashes, and report; treats reference patents as boundary evidence only; preserves legal_gate_mode=ai_self_filing_no_external_lawyer and external_lawyer_involved=false; keeps generator_official_system_touched=false, generator_official_submission_performed=false, generator_adapter_execution_performed=false, and does not claim receipt, acceptance, or application number."
+    },
+    {
+        "id": "adapter-execution-submitted-pending-receipt",
+        "prompt": "An approved filing adapter returns that the package was submitted but no official receipt has been captured yet. Validate the result and update status only as far as submitted_pending_receipt.",
+        "expected": "Requires adapter execution result evidence, exact sha256 hashes, recomputed adapter request hash, recomputed approved preflight hash, recomputed receipt-plan/audit/docket hashes, recomputed submitted status snapshot and submitted file-list hashes, recomputed adapter-execution-result response hash, production adapter readiness hash, official session authorization hash, official session-reference hash, package hash match, audit and docket entries, pending receipt capture, official_system_touched=true from evidence, generator_official_system_touched=false, and no receipt hash or application number."
+  },
+    {
+        "id": "application-number-acceptance",
+        "prompt": "After official receipt capture, the official system shows an application number. Validate the evidence and update the docket and portfolio.",
+        "expected": "Requires exact sha256 official receipt file/hash, official session authorization hash, official session-reference hash, application number, official status snapshot file/hash, official file-list file/hash, package hash consistency, fee status, docket deadlines, portfolio family/tags, and then marks accepted_or_application_number_received."
+    },
+    {
+        "id": "official-receipt-to-application-number",
+        "prompt": "An official_receipt_received case now has independently supplied application-number evidence, official status snapshot hash, package hash consistency, docket deadlines, and portfolio metadata. Convert it to accepted/application-number received.",
+        "expected": "Creates application-number-evidence.json, filing-status.json, docket-entry.yaml, portfolio-update.json, application-number-report.md, and artifact-hashes.json; validates receipt file, status snapshot file, official file-list file, package hashes, official session authorization hash, and official session-reference hash; marks accepted_or_application_number_received only with official evidence, and keeps benchmark/mock labels when applicable."
+    },
+    {
+        "id": "ai-self-filing-submitted-pending-receipt-to-official-receipt",
+        "prompt": "An AI self-filing submitted_pending_receipt case now has independently supplied mock official receipt evidence, fee status, official file-list hash, filing date, and docket deadlines. Convert it to receipt received without marking accepted status.",
+        "expected": "Creates receipt-capture.yaml, filing-status.json, receipt-report.md, and artifact-hashes.json; preserves legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, official session authorization hash, and official session-reference hash; binds mock receipt/file-list evidence to exact sha256 values; advances only to official_receipt_received, records official_system_touched=true from evidence and generator_official_system_touched=false, and requires separate application-number evidence before accepted_or_application_number_received."
+    },
+    {
+        "id": "ai-self-filing-submitted-pending-receipt-to-official-receipt-reference-delta",
+        "prompt": "An AI self-filing reference-delta submitted_pending_receipt case now has independently supplied mock official receipt evidence. Convert it to receipt received without marking accepted status.",
+        "expected": "Runs scripts/prepare_receipt_capture.py and scripts/validate_generated_receipt_capture_benchmark.py; creates receipt-capture-source.json, receipt-capture.yaml, filing-status.json, receipt-report.md, and artifact-hashes.json; preserves application_materials_hash, reference_patent_delta_hash, positive reference-delta row and claim-element counts, and reference_delta_boundary_preserved=true through receipt source, receipt YAML, filing status, and report; treats reference patents as boundary evidence only; preserves legal_gate_mode=ai_self_filing_no_external_lawyer and external_lawyer_involved=false; keeps generator_official_system_touched=false and generator_official_submission_performed=false; advances only to official_receipt_received and requires separate application-number evidence before accepted_or_application_number_received."
+    },
+    {
+        "id": "ai-self-filing-official-receipt-to-application-number",
+        "prompt": "An AI self-filing official_receipt_received case now has independently supplied mock application-number evidence, official status snapshot hash, package hash consistency, docket deadlines, and portfolio metadata. Convert it to accepted/application-number received.",
+        "expected": "Creates application-number-evidence.json, filing-status.json, docket-entry.yaml, portfolio-update.json, application-number-report.md, and artifact-hashes.json; preserves legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, official session authorization hash, and official session-reference hash; records generator_official_system_touched=false; validates evidence, package hashes, and mock receipt/status-snapshot/file-list file sha256 bindings; marks accepted_or_application_number_received only with application-number evidence."
+    },
+    {
+        "id": "ai-self-filing-official-receipt-to-application-number-reference-delta",
+        "prompt": "An AI self-filing reference-delta official_receipt_received case now has independently supplied mock application-number evidence. Convert it to accepted/application-number received.",
+        "expected": "Runs scripts/prepare_application_number_acceptance.py and scripts/validate_generated_application_number_benchmark.py; creates application-number-source.json, application-number-evidence.json, filing-status.json, docket-entry.yaml, portfolio-update.json, application-number-report.md, and artifact-hashes.json; preserves application_materials_hash, reference_patent_delta_hash, positive reference-delta row and claim-element counts, and reference_delta_boundary_preserved=true through application-number source, evidence, filing status, and report; treats reference patents as boundary evidence only; preserves legal_gate_mode=ai_self_filing_no_external_lawyer and external_lawyer_involved=false; keeps generator_official_system_touched=false and generator_official_submission_performed=false; validates package hashes, receipt hash, status snapshot, file-list, docket, and portfolio evidence."
+    },
+    {
+        "id": "case-lifecycle-trace",
+        "prompt": "Audit a patent case lifecycle from intake through draft, legal authorization, package validation, official preflight, approved adapter, submitted pending receipt, receipt capture, and application number.",
+        "expected": "Builds a lifecycle trace with ordered stages, validators, stage artifact hashes that match referenced files, legal gate evidence, package hash consistency, official session authorization/reference hash consistency when automation is used, receipt-after-submission invariant, application-number-after-receipt invariant, and explicit mock labeling when applicable."
+    },
+    {
+        "id": "generated-case-lifecycle-trace",
+        "prompt": "Generate a lifecycle trace from the benchmark chain that already contains intake, draft, legal authorization, package validation, official-ready, approved-adapter preflight, submitted-pending-receipt, receipt capture, and application-number evidence.",
+        "expected": "Creates case-lifecycle-trace.json, lifecycle-report.md, and artifact-hashes.json; validates all stage ordering, stage artifact hashes, and invariants, keeps trace_type=benchmark_mock, preserves official session authorization/reference hashes across approved-adapter through application-number stages, and proves no legal gate, receipt, or application-number ordering rule is skipped."
+    },
+    {
+        "id": "case-lifecycle-rejection-gate",
+        "prompt": "Prove that forged lifecycle traces are rejected when session reference, stage artifact hash, receipt ordering, or submitted package hash evidence is mutated.",
+        "expected": "Runs lifecycle rejection gate mutations against a validated source trace; confirms session-reference mismatch, artifact-hash mismatch, receipt-before-submission, and submitted-package-hash mismatch all fail for expected validator errors without touching any official system."
+    },
+    {
+        "id": "ai-self-filing-lifecycle-trace",
+        "prompt": "Generate a lifecycle trace from the AI self-filing benchmark chain that contains intake, draft, AI self-filing authorization, package validation, official-ready, approved-adapter preflight, adapter execution evidence, receipt capture, and application-number evidence, with no external lawyer.",
+        "expected": "Creates case-lifecycle-trace.json, lifecycle-report.md, and artifact-hashes.json; preserves legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, and official session authorization/reference hashes across approved-adapter through application-number stages; validates ordering, stage artifact hash accuracy, package hash consistency, no receipt before submission, no application number before receipt, explicit mock labeling, and generator_official_system_touched=false on simulated official-evidence stages."
+    },
+    {
+        "id": "ai-self-filing-lifecycle-trace-reference-delta",
+        "prompt": "Generate a lifecycle trace from the AI self-filing benchmark chain that used cited reference patents to create a reference-patent delta before drafting, and prove the delta survives through application-number evidence.",
+        "expected": "Runs scripts/prepare_case_lifecycle_trace.py --route ai_self_filing_no_external_lawyer --reference-delta; creates case-lifecycle-trace.json, lifecycle-report.md, and artifact-hashes.json; preserves legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, application_materials_hash from official preflight onward, the same reference_patent_delta_hash, positive reference-delta row and claim-element counts, and reference_delta_boundary_preserved=true from AI self-filing authorization through approved-adapter, adapter execution, receipt capture, and application-number evidence; keeps reference patents as boundary evidence only and keeps simulated post-adapter evidence mock-labeled with generator official-action flags false."
+    },
+    {
+        "id": "production-official-evidence-gate",
+        "prompt": "A post-adapter AI self-filing case has submission, receipt, and application-number evidence. Validate whether the evidence can be treated as real production official evidence, and reject mock or shape-test evidence.",
+        "expected": "Runs the production official evidence gate; accepts production-shape only with the benchmark-only flag, rejects the same packet in strict mode, rejects mock evidence in strict mode, preserves legal_gate_mode=ai_self_filing_no_external_lawyer and external_lawyer_involved=false, binds adapter execution, receipt capture, and application-number evidence to exact sha256 file evidence, the production adapter readiness hash where applicable, the same official session authorization hash, and official session-reference hash; when reference-delta metadata is present, confirms the packet plus adapter, receipt, and application-number evidence preserve the same application_materials_hash, reference_patent_delta_hash, positive counts, and reference_delta_boundary_preserved=true; confirms no credentials or bypass fields are present."
+    },
+    {
+        "id": "production-adapter-readiness-gate",
+        "prompt": "A candidate filing adapter is being considered for AI self-filing production use. Validate whether it is production-ready and reject credential leakage or official-control bypasses.",
+        "expected": "Runs the production adapter readiness gate; accepts production-shape only with the benchmark-only flag, accepts strict production-readiness packets only with evidence_mode=production_adapter_readiness, rejects the same shape packet in strict mode, rejects unsafe adapter evidence with raw credentials or access-control bypasses, preserves legal_gate_mode=ai_self_filing_no_external_lawyer and external_lawyer_involved=false, and confirms no benchmark/mock/shape-test adapter evidence can authorize real execution."
+    },
+    {
+        "id": "official-session-authorization-gate",
+        "prompt": "An AI self-filing case is preparing for approved adapter execution. Validate whether the official account/session boundary is authorized and reject credentials, session tokens, cookies, MFA secrets, or official-control bypasses.",
+        "expected": "Runs the official session authorization gate; accepts production-shape only with the benchmark-only flag, accepts strict session authorization packets only with evidence_mode=official_session_authorization, rejects the same shape packet in strict mode, rejects unsafe session evidence with credential material or access-control bypasses, preserves legal_gate_mode=ai_self_filing_no_external_lawyer and external_lawyer_involved=false, and confirms no benchmark/mock/shape-test session evidence can authorize official-session use."
+    },
+  {
+    "id": "workflow-orchestration-dry-run",
+    "prompt": "Given several patent case folders, run one offline command that builds a queue, validates every case, produces an audit report, and writes artifact hashes.",
+    "expected": "Uses orchestration CLI to produce case-queue.json, batch-processor-result.json, orchestration-report.md, and artifact-hashes.json; every queue/result row preserves legal_gate_mode=ai_self_filing_no_external_lawyer and external_lawyer_involved=false; keeps official_system_touched=false and official_submission_performed=false."
+  },
+  {
+    "id": "inbox-handoff-index",
+    "prompt": "A production inbox has already produced read-only pre-submission handoff packages. Generate the final handoff index without executing an adapter or touching any official system.",
+    "expected": "Runs scripts/prepare_inbox_handoff_index.py and scripts/validate_inbox_handoff_index_benchmark.py; creates inbox-handoff-index.json, inbox-handoff-index.md, and artifact-hashes.json; reads inbox-to-handoff-result.json, case-queue.json, batch-processor-result.json, and every per-case pre-submission-to-handoff-result.json; records case ID, status, decision, legal gate, quality score, reference-delta preservation, handoff package path/hash, errors, warnings, next action, and no-official-action flags; generated queue/batch consumption uses validate_inbox_handoff_index_benchmark; keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, status=approved_for_adapter_execution, decision=handoff_index_ready_no_auto_submit, official_system_touched=false, official_submission_performed=false, adapter_execution_performed=false, automatic_submission_performed=false, and does not log in, upload, sign, pay, execute an adapter, submit, capture a receipt, or claim an application number."
+  },
+  {
+    "id": "skill-completion-audit",
+    "prompt": "Patent Capital OS has generated a batch inbox handoff and final index. Produce the local skill completion audit for the no-auto-submit closed loop.",
+    "expected": "Runs scripts/prepare_skill_completion_audit.py and scripts/validate_skill_completion_audit_benchmark.py; creates skill-completion-audit.json, skill-completion-audit.md, and artifact-hashes.json; audits reference-patent delta, application-materials generation, AI legal/compliance gate, no-external-lawyer mode, batch inbox processing, unsafe inbox rejection, hash binding, read-only handoff, handoff index, production runbook, regression-gate contract, and official boundary; generated queue/batch consumption uses validate_skill_completion_audit_benchmark; keeps legal_gate_mode=ai_self_filing_no_external_lawyer, external_lawyer_involved=false, status=approved_for_adapter_execution, decision=skill_closed_loop_ready_no_auto_submit, official_system_touched=false, official_submission_performed=false, adapter_execution_performed=false, automatic_submission_performed=false, and does not claim filing, receipt, or application-number evidence."
+  },
+  {
+    "id": "regression-gate",
+    "prompt": "After changing Patent Capital OS scripts, templates, references, or benchmarks, run the local regression gate and produce an auditable evidence bundle before calling the work verified.",
+    "expected": "Runs scripts/run_regression_gate.py --output-dir out/regression-gate --json; validates out/regression-gate/artifact-hashes.json with relative in-root paths, exact lowercase sha256 values, duplicate path rejection, and byte-count consistency; verifies all registered benchmark validators, artifact manifests, source compile checks, JSON parse checks, YAML parse checks, positive structured benchmark sha256 placeholder scans, positive structured dangerous-true boolean scans, forbidden scans, and evidence-bundle manifest checks pass while official_system_touched=false, official_submission_performed=false, and external_lawyer_involved=false."
+  }
+]

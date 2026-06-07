@@ -1,0 +1,96 @@
+{
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "generated_at": "2026-06-03T06:11:17+08:00",
+  "files": [
+    {
+      "path": "case-package/artifact-hashes.json",
+      "sha256": "sha256:a55e8575d9c4bf4241eb6d4994b224411b16bd4e36148946a7483644ad7db50c",
+      "bytes": 799
+    },
+    {
+      "path": "disclosure-normalization-scaffold/artifact-hashes.json",
+      "sha256": "sha256:355b9386bd9eb5ad00e156bdf3427003de0b3d73c5bf2cdbe0a0f255a5969b8c",
+      "bytes": 460
+    },
+    {
+      "path": "scaffold-confirmation-to-disclosure/artifact-hashes.json",
+      "sha256": "sha256:f426b78e0c8aad6b3cc7e2ae36b104168e9e527093997ea3471508172a2f89ec",
+      "bytes": 615
+    },
+    {
+      "path": "draft-package-generation/artifact-hashes.json",
+      "sha256": "sha256:6bbd434669687e71d14f9443b3476734be245062076ba63ea87a07936881e2ae",
+      "bytes": 1312
+    },
+    {
+      "path": "draft-evidence-provenance-gate/artifact-hashes.json",
+      "sha256": "sha256:2820573ed2466c234af5c226bff477cdcd5b774d4f6a2e807f6b9558f05062c5",
+      "bytes": 2245
+    },
+    {
+      "path": "abnormal-filing-risk-gate/artifact-hashes.json",
+      "sha256": "sha256:e395a9dc1519f6e1a95ea9b01bcfc65579e6c31c02590d3108f59096361b65e1",
+      "bytes": 2423
+    },
+    {
+      "path": "reference-patent-delta/artifact-hashes.json",
+      "sha256": "sha256:e2ab15a47500fc657927a39929197661c9c26b72e0eb65a26cb3ff93c7414e1c",
+      "bytes": 626
+    },
+    {
+      "path": "reference-patent-delta/reference-delta-source.json",
+      "sha256": "sha256:32b3a6c8c033ae96705146f1d9fdc63bf0f6d6754c40647be3325d8244e4de69",
+      "bytes": 6080
+    },
+    {
+      "path": "ai-self-filing-package-validation/ai-self-filing-source.json",
+      "sha256": "sha256:404b5970bee9910de641f6997d01ac36e3a234aaded34adeae181674122a5c9e",
+      "bytes": 4550
+    },
+    {
+      "path": "ai-self-filing-package-validation/artifact-hashes.json",
+      "sha256": "sha256:cc445467f9fd6a26fcae1d271c531e681614eb430c5f528d9437f8a0bd3de52d",
+      "bytes": 2078
+    },
+    {
+      "path": "application-materials-pipeline/artifact-hashes.json",
+      "sha256": "sha256:553bd37253c8e1a55b2e839b529ec8bddd24296936477235fc29f8801d681305",
+      "bytes": 1295
+    },
+    {
+      "path": "ai-self-filing-official-ready/official-preflight-source.json",
+      "sha256": "sha256:e34aa4fd574a293eaa61060fc7d72b2da28994b5b9d02853f67280d9638bfb57",
+      "bytes": 1615
+    },
+    {
+      "path": "ai-self-filing-official-ready/artifact-hashes.json",
+      "sha256": "sha256:3d5a6f49366a37b8d19d3c39c36da652a230d2e06165d4ff104a697c94e396c4",
+      "bytes": 790
+    },
+    {
+      "path": "ai-self-filing-approved-adapter-preflight/approved-adapter-source.json",
+      "sha256": "sha256:8e467c192832f1c5e1656696ad025a4b3b338a05a28981e4c590762e76765840",
+      "bytes": 2218
+    },
+    {
+      "path": "ai-self-filing-approved-adapter-preflight/artifact-hashes.json",
+      "sha256": "sha256:c56bc923768c9fa2d2f2a8ad5e9401769bcfd2830f134bc0c2649ef8e6d31b38",
+      "bytes": 1140
+    },
+    {
+      "path": "case-lifecycle-trace/artifact-hashes.json",
+      "sha256": "sha256:5dd72b4804892f06f84d13187d024da5e0bb66f63d404b1be2022a0ab993430a",
+      "bytes": 448
+    },
+    {
+      "path": "pre-submission-pipeline-result.json",
+      "sha256": "sha256:fb65fd937d2933348eb7bf58a59fa958b2a17f765425012ed35deae163ff4f6f",
+      "bytes": 18491
+    },
+    {
+      "path": "pre-submission-pipeline-report.md",
+      "sha256": "sha256:3e53494ba0c62e13d60be4e9f29915171d48c0c297fbdbe2ef5fa80fabc76caf",
+      "bytes": 5519
+    }
+  ]
+}

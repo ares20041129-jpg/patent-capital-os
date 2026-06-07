@@ -1,0 +1,146 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T07:03:15+08:00",
+  "files": [
+    {
+      "path": "pre-submission-handoff-package.json",
+      "sha256": "sha256:77e362bbbdf23ee8c081ea1130f24aa1c3e1d6ce50bf38770eefb04ca9c7ac7d",
+      "bytes": 14914
+    },
+    {
+      "path": "pre-submission-handoff-report.md",
+      "sha256": "sha256:5ea35dde8807b1fb8cdf48e3167b0ad47e7d5aa45e8630a40542f7e6ac971762",
+      "bytes": 4872
+    },
+    {
+      "path": "evidence/control/pre-submission-pipeline-result.json",
+      "sha256": "sha256:c83f065307ac888ce87dd993cb81dda1a8c90895bc8fee0ce0ec37c55ad4e3d9",
+      "bytes": 22679
+    },
+    {
+      "path": "evidence/control/pre-submission-pipeline-report.md",
+      "sha256": "sha256:196daae47e7dd728cdbe7a37863172afcf53e6f14e7fdd9194f56632d998542e",
+      "bytes": 6101
+    },
+    {
+      "path": "evidence/application-materials/application-materials.json",
+      "sha256": "sha256:c8197ec8fb3b9ab731b51bd84663813c1bd8841debbce97a743f4cb24c478008",
+      "bytes": 10250
+    },
+    {
+      "path": "evidence/application-materials/request-form-metadata.json",
+      "sha256": "sha256:02bcd66ae54b34d5ee6b4016960eafce518a63b7d682196d8f717ccc4e047475",
+      "bytes": 1607
+    },
+    {
+      "path": "evidence/application-materials/document-generation-plan.json",
+      "sha256": "sha256:2c4064980d84e0dfd3092a208dba79fe79e8d2e5738aa20bff92e4a4d96e5780",
+      "bytes": 2144
+    },
+    {
+      "path": "evidence/application-materials/claims-material.md",
+      "sha256": "sha256:37f88b913675eac807e771689f8f9425dc589ff343660569d97324d14e0a1811",
+      "bytes": 1187
+    },
+    {
+      "path": "evidence/application-materials/specification-material.md",
+      "sha256": "sha256:ff1b174be88ddecd6fddcf388e80122c5480de91a34b94cbaeb26004ac62d033",
+      "bytes": 3063
+    },
+    {
+      "path": "evidence/application-materials/abstract-material.md",
+      "sha256": "sha256:f80eac346fc52cfdc5fabec1f1738360f85e5f0b4d9933f277164627172644d2",
+      "bytes": 907
+    },
+    {
+      "path": "evidence/application-materials/drawings-materials-plan.md",
+      "sha256": "sha256:dc1e7ba9f1291e285889a152429bb933fd3d0de99961ab8271a3779cbfda3e63",
+      "bytes": 580
+    },
+    {
+      "path": "evidence/application-materials/xml-readiness-checklist.json",
+      "sha256": "sha256:2be48181a8af943832f1462c615e15627afa59d3f18cb696b83ff896758f56f5",
+      "bytes": 677
+    },
+    {
+      "path": "evidence/final-package/claims-ai-self-filing-final.xml",
+      "sha256": "sha256:63fc66b99102f5ed3d5627c10473247c3175f50f3e2c6760411a317cbd0ab1bb",
+      "bytes": 387
+    },
+    {
+      "path": "evidence/final-package/specification-ai-self-filing-final.xml",
+      "sha256": "sha256:8dc29333155c16a43b7cab048676851e9488cbe30b26ecfbe07a47022e50b558",
+      "bytes": 394
+    },
+    {
+      "path": "evidence/final-package/abstract-ai-self-filing-final.xml",
+      "sha256": "sha256:9a76c12fd4f4b5f87144ac5a6217cda9aa28c3af3638de241a35d11c7e856690",
+      "bytes": 389
+    },
+    {
+      "path": "evidence/final-package/drawings-ai-self-filing-final.pdf",
+      "sha256": "sha256:9b8c0c11543dbb5589ceba4a974ec3580a46d7a0ff1caaca289cd83714312ed8",
+      "bytes": 338
+    },
+    {
+      "path": "evidence/final-package/request_metadata-ai-self-filing-final.xml",
+      "sha256": "sha256:392bfca4eb7c1b0b8d3de76f640e2e76629b2c1700bb22979f4160843077b314",
+      "bytes": 397
+    },
+    {
+      "path": "evidence/final-package/filing-package-manifest.yaml",
+      "sha256": "sha256:5da19763365756df3350dc6b55c17cce862c4431658015ccbc9b827f1b85925c",
+      "bytes": 2801
+    },
+    {
+      "path": "evidence/final-package/ai-self-filing-authorization-packet.json",
+      "sha256": "sha256:819669a49b1827cf28ef3ed9a489c80c694e6e75cadb6aee2074ec7698dc9235",
+      "bytes": 4562
+    },
+    {
+      "path": "evidence/control/official-channel-preflight.yaml",
+      "sha256": "sha256:100185b1ca9860f7a33953e0713650cb8e402200d940fe7cc65976a50dbab442",
+      "bytes": 2130
+    },
+    {
+      "path": "evidence/control/receipt-capture-plan.yaml",
+      "sha256": "sha256:1286f3fd32d84924b8954a8ba89f7a449a9bea3060c906873ce470fd09840ce1",
+      "bytes": 767
+    },
+    {
+      "path": "evidence/control/approved-adapter-preflight.json",
+      "sha256": "sha256:41498e6eda05f683aed80a56172d8ace34a32e10bf7a007af3f2cb78e1aaaf2b",
+      "bytes": 6675
+    },
+    {
+      "path": "evidence/control/filing-adapter-request.json",
+      "sha256": "sha256:93912c2f6e965b20aa6dec9017ce2dfaf0b475bcb33d0484bbd865e21b209e00",
+      "bytes": 2195
+    },
+    {
+      "path": "evidence/control/audit-log-entry-plan.yaml",
+      "sha256": "sha256:4b93dbdd35ac2fbe40e6372f411742a054fc42d298653d6ec41fc99fc0e505ae",
+      "bytes": 1261
+    },
+    {
+      "path": "evidence/control/docket-entry-plan.yaml",
+      "sha256": "sha256:4c32e1c05dc395a68b0b36c6571f6d105b17d7b3916b56f1aa0509c0d74572f5",
+      "bytes": 488
+    },
+    {
+      "path": "evidence/control/case-lifecycle-trace.json",
+      "sha256": "sha256:28a5bb45cf844c8a01455d2efbd3e1e5876153ab3ead26accfc361dcc494aee1",
+      "bytes": 10358
+    },
+    {
+      "path": "evidence/control/lifecycle-report.md",
+      "sha256": "sha256:68aaa74891f0ed720386ffb8b56d07da5f6bb57c14ba23a841169760f635b605",
+      "bytes": 754
+    },
+    {
+      "path": "evidence/reference-patent-delta/reference-patent-delta.json",
+      "sha256": "sha256:7646c4927380af88ef771d2f2da125d7bd7e5f309a09df7350bfff53125a1d12",
+      "bytes": 7128
+    }
+  ]
+}

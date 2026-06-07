@@ -1,0 +1,195 @@
+{
+  "ok": true,
+  "case_id": "CASE-PRE-SUB-001",
+  "pipeline_type": "pre_submission_ai_self_filing_no_external_lawyer",
+  "created_at": "2026-06-03T06:11:17+08:00",
+  "status": "approved_for_adapter_execution",
+  "decision": "approved_for_adapter_execution_no_auto_submit",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "adapter_execution_performed": false,
+  "automatic_submission_performed": false,
+  "pre_submission_lifecycle_gate": "passed",
+  "lifecycle_trace_hash": "sha256:45fd8dfbf61044d83cf3b02a94afe9d9acc6a605ca0264bab87a73b0d9052f22",
+  "stages": {
+    "case_package": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-package",
+      "artifacts": {
+        "case_package_manifest": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-package\\case-package-manifest.json",
+        "source_material_manifest": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-package\\01-normalized\\source-material-manifest.json",
+        "filing_status": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-package\\filing-status.json",
+        "intake_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-package\\intake-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-package\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [
+        "source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "source_file_3_not_marked_usable_for_claim_support",
+        "material_3_not_marked_usable_for_claim_support"
+      ],
+      "boundary": "local_pre_submission_only"
+    },
+    "disclosure_scaffold": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\disclosure-normalization-scaffold",
+      "artifacts": {
+        "invention_disclosure_scaffold": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\disclosure-normalization-scaffold\\invention-disclosure-scaffold.json",
+        "normalization_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\disclosure-normalization-scaffold\\normalization-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\disclosure-normalization-scaffold\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [
+        "source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "source_file_3_not_marked_usable_for_claim_support"
+      ],
+      "boundary": "local_pre_submission_only"
+    },
+    "disclosure_confirmation": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\scaffold-confirmation-to-disclosure",
+      "artifacts": {
+        "invention_disclosure": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\scaffold-confirmation-to-disclosure\\invention-disclosure.json",
+        "filing_status": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\scaffold-confirmation-to-disclosure\\filing-status.json",
+        "confirmation_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\scaffold-confirmation-to-disclosure\\confirmation-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\scaffold-confirmation-to-disclosure\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [],
+      "boundary": "local_pre_submission_only"
+    },
+    "draft_package": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-package-generation",
+      "artifacts": {
+        "patent_application_draft": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-package-generation\\patent-application-draft.md",
+        "invention_disclosure": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-package-generation\\invention-disclosure.json",
+        "claim_support_map": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-package-generation\\claim-support-map.md",
+        "filing_status": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-package-generation\\filing-status.json",
+        "draft_package_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-package-generation\\draft-package-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-package-generation\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [],
+      "boundary": "local_pre_submission_only"
+    },
+    "draft_evidence_provenance": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-evidence-provenance-gate",
+      "artifacts": {
+        "source_material_manifest": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-evidence-provenance-gate\\source-material-manifest.yaml",
+        "invention_disclosure": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-evidence-provenance-gate\\invention-disclosure.json",
+        "patent_application_draft": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-evidence-provenance-gate\\patent-application-draft.md",
+        "claim_support_map": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-evidence-provenance-gate\\claim-support-map.md",
+        "filing_status": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-evidence-provenance-gate\\filing-status.json",
+        "draft_evidence_provenance": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-evidence-provenance-gate\\draft-evidence-provenance.json",
+        "draft_evidence_provenance_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-evidence-provenance-gate\\draft-evidence-provenance-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\draft-evidence-provenance-gate\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [
+        "source_manifest: material_3_not_marked_usable_for_claim_support",
+        "claim_support_map: row_1_draft_status: draft_supported"
+      ],
+      "boundary": "local_pre_submission_only"
+    },
+    "abnormal_filing_risk": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\abnormal-filing-risk-gate",
+      "artifacts": {
+        "abnormal_filing_risk_assessment": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\abnormal-filing-risk-gate\\abnormal-filing-risk-assessment.json",
+        "abnormal_filing_risk_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\abnormal-filing-risk-gate\\abnormal-filing-risk-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\abnormal-filing-risk-gate\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [],
+      "boundary": "local_pre_submission_only"
+    },
+    "ai_self_filing_package_validation": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-package-validation",
+      "artifacts": {
+        "ai_self_filing_authorization_packet": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-package-validation\\ai-self-filing-authorization-packet.json",
+        "abnormal_filing_risk_assessment": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-package-validation\\abnormal-filing-risk-assessment.json",
+        "filing_package_manifest": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-package-validation\\filing-package-manifest.yaml",
+        "filing_status": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-package-validation\\filing-status.json",
+        "ai_self_filing_package_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-package-validation\\ai-self-filing-package-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-package-validation\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [],
+      "boundary": "local_pre_submission_only"
+    },
+    "application_materials_pipeline": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\application-materials-pipeline",
+      "artifacts": {
+        "application_materials_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\application-materials-pipeline\\application-materials",
+        "quality_gate_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\application-materials-pipeline\\application-materials-quality-gate",
+        "pipeline_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\application-materials-pipeline\\application-materials-pipeline-result.json",
+        "pipeline_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\application-materials-pipeline\\application-materials-pipeline-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\application-materials-pipeline\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [],
+      "boundary": "local_pre_submission_only"
+    },
+    "ai_self_filing_official_ready": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-official-ready",
+      "artifacts": {
+        "official_channel_preflight": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-official-ready\\official-channel-preflight.yaml",
+        "receipt_capture_plan": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-official-ready\\receipt-capture-plan.yaml",
+        "filing_status": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-official-ready\\filing-status.json",
+        "readiness_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-official-ready\\readiness-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-official-ready\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [],
+      "boundary": "local_pre_submission_only"
+    },
+    "ai_self_filing_approved_adapter_preflight": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-approved-adapter-preflight",
+      "artifacts": {
+        "approved_adapter_preflight": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-approved-adapter-preflight\\approved-adapter-preflight.json",
+        "filing_adapter_request": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-approved-adapter-preflight\\filing-adapter-request.json",
+        "filing_status": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-approved-adapter-preflight\\filing-status.json",
+        "adapter_boundary_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-approved-adapter-preflight\\adapter-boundary-report.md",
+        "audit_log_entry_plan": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-approved-adapter-preflight\\audit-log-entry-plan.yaml",
+        "docket_entry_plan": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-approved-adapter-preflight\\docket-entry-plan.yaml",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-approved-adapter-preflight\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [],
+      "boundary": "local_pre_submission_only"
+    },
+    "case_lifecycle_trace": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-lifecycle-trace",
+      "artifacts": {
+        "case_lifecycle_trace": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-lifecycle-trace\\case-lifecycle-trace.json",
+        "lifecycle_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-lifecycle-trace\\lifecycle-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-lifecycle-trace\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": [],
+      "boundary": "local_pre_submission_only"
+    }
+  },
+  "artifacts": {
+    "raw_input": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\raw-input",
+    "ai_self_filing_source": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-package-validation\\ai-self-filing-source.json",
+    "official_preflight_source": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-official-ready\\official-preflight-source.json",
+    "approved_adapter_source": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\ai-self-filing-approved-adapter-preflight\\approved-adapter-source.json",
+    "case_lifecycle_trace": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\case-lifecycle-trace\\case-lifecycle-trace.json",
+    "pre_submission_pipeline_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\pre-submission-pipeline-result.json",
+    "pre_submission_pipeline_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\pre-submission-pipeline-report.md",
+    "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline\\artifact-hashes.json"
+  },
+  "next_action": "Execute only through a separately authorized adapter execution step; automatic submission remains out of scope.",
+  "manifest_errors": [],
+  "manifest_warnings": []
+}

@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-02T20:25:38+08:00",
+  "files": [
+    {
+      "path": "approved-adapter-preflight.json",
+      "sha256": "sha256:68ffa4d7535b059a31aef92f5727305eff4ae8fdd5541fa67499a06ece85ee66",
+      "bytes": 5994
+    },
+    {
+      "path": "filing-adapter-request.json",
+      "sha256": "sha256:c7d170698f7d1e70672f963bad938fc7996e7f1c6eb07976220531434e030175",
+      "bytes": 1845
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:f1368f0c4ed962baaa393f56e39fbf4d62d44786a6d27c2e729170a40e5cd91b",
+      "bytes": 1280
+    },
+    {
+      "path": "adapter-boundary-report.md",
+      "sha256": "sha256:6800211e91b01af0d29649c87c1f92f8abef0a38537272f6957107bfc2e8574b",
+      "bytes": 950
+    },
+    {
+      "path": "audit-log-entry-plan.yaml",
+      "sha256": "sha256:255cc256b3a55a6db71c9faf0d057bec5a9cbd5ae7100158d29bba8c08bd95f5",
+      "bytes": 1093
+    },
+    {
+      "path": "docket-entry-plan.yaml",
+      "sha256": "sha256:9d68e337d47743dfa358655ee6a65099e9f378a8747022907ebdaa9bc64bce69",
+      "bytes": 466
+    }
+  ]
+}

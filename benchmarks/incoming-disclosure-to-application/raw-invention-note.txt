@@ -1,0 +1,9 @@
+Case ID: INCOMING-DISCLOSURE-APP-001
+Material ID: M-001
+Source owner: Inventor team
+
+Raw invention note for a multi-modal dough-state controller.
+
+The appliance acquires synchronized torque, image, VOC, humidity, temperature, and chamber environment signals during kneading, fermentation, proofing, and baking transition windows. The controller extracts modality-specific features, builds a dough-state confidence vector, and permits a stage transition only when at least two modalities satisfy a confidence-consistency condition.
+
+The note supports claims directed to signal acquisition, feature extraction, state-vector generation, confidence-consistency gating, control command generation, and recipe-specific threshold updates.

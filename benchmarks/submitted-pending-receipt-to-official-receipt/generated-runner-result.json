@@ -1,0 +1,35 @@
+{
+  "queue_id": "SUBMITTED-PENDING-RECEIPT-TO-OFFICIAL-RECEIPT-QUEUE-REGRESSION",
+  "processed_at": "2026-06-01T23:28:27+08:00",
+  "execution_mode": "dry_run",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 0
+  },
+  "results": [
+    {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "input_status": "official_receipt_received",
+      "output_status": "official_receipt_received",
+      "expected_outcome": "receipt_capture",
+      "decision": "official_receipt_captured",
+      "outcome": "passed",
+      "validators_run": [
+        "validate_generated_receipt_capture_benchmark"
+      ],
+      "errors": [],
+      "warnings": [],
+      "next_action": "Validate application-number evidence before marking accepted or application-number received.",
+      "owner": "Receipt capture operator",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": []
+}

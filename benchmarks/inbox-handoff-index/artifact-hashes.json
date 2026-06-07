@@ -1,0 +1,16 @@
+{
+  "case_id": "INBOX-HANDOFF-INDEX-001",
+  "generated_at": "2026-06-03T13:27:08+08:00",
+  "files": [
+    {
+      "path": "inbox-handoff-index.json",
+      "sha256": "sha256:6bc88dbc9868b01f53c8aa00f26ced0115017c4ed51e0d7ff0ff98246f49ca8e",
+      "bytes": 13488
+    },
+    {
+      "path": "inbox-handoff-index.md",
+      "sha256": "sha256:1a80380bc7733464394b08e29b70f0b01568633fe5f90de94368f39f1d83e229",
+      "bytes": 1189
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "case_id":  "PATENT-APPLICATION-MATERIALS-REJECTION",
+    "generated_at":  "2026-06-03T02:00:34+08:00",
+    "files":  [
+                  {
+                      "path":  "rejection-cases.json",
+                      "sha256":  "sha256:ab02e4719665276d956c2c23235e18fc0f910903aa971f504d5e8e3081e9ce72",
+                      "bytes":  4829
+                  },
+                  {
+                      "path":  "placeholder-claims-material.md",
+                      "sha256":  "sha256:8d1c38ce19be4aae422b75328cf79c3334a3d0798608f09b0cbb024671bd68d4",
+                      "bytes":  449
+                  }
+              ]
+}

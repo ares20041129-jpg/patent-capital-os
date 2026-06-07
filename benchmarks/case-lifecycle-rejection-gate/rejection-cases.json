@@ -1,0 +1,67 @@
+{
+  "case_id": "CASE-LIFECYCLE-REJECTION-GATE",
+  "source_trace": "../generated-case-lifecycle-trace/case-lifecycle-trace.json",
+  "cases": [
+    {
+      "id": "session_reference_mismatch",
+      "description": "Mutates the receipt-capture stage to a different official session-reference hash.",
+      "mutations": [
+        {
+          "path": "stages.7.official_session_reference_hash",
+          "value": "sha256:dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+        }
+      ],
+      "expected_error_fragments": [
+        "stage_8_official_session_reference_hash_changed"
+      ]
+    },
+    {
+      "id": "artifact_hash_mismatch",
+      "description": "Mutates the application-number stage artifact hash away from the referenced file hash.",
+      "mutations": [
+        {
+          "path": "stages.8.artifact_hash",
+          "value": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      "expected_error_fragments": [
+        "stage_9_artifact_hash_mismatch"
+      ]
+    },
+    {
+      "id": "receipt_before_submission",
+      "description": "Removes all official-submission markers while keeping receipt/application-number evidence.",
+      "mutations": [
+        {
+          "path": "stages.6.official_submission_performed",
+          "value": false
+        },
+        {
+          "path": "stages.7.official_submission_performed",
+          "value": false
+        },
+        {
+          "path": "stages.8.official_submission_performed",
+          "value": false
+        }
+      ],
+      "expected_error_fragments": [
+        "stage_8_receipt_before_submission",
+        "stage_9_receipt_before_submission"
+      ]
+    },
+    {
+      "id": "submitted_package_hash_mismatch",
+      "description": "Mutates submitted package hash at application-number evidence stage.",
+      "mutations": [
+        {
+          "path": "stages.8.submitted_package_hash",
+          "value": "sha256:2222222222222222222222222222222222222222222222222222222222222222"
+        }
+      ],
+      "expected_error_fragments": [
+        "stage_9_submitted_package_hash_changed"
+      ]
+    }
+  ]
+}

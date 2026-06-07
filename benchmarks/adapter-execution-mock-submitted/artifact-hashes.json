@@ -1,0 +1,61 @@
+{
+    "case_id":  "APPROVED-ADAPTER-PREFLIGHT-001",
+    "generated_at":  "2026-06-02T19:35:42+08:00",
+    "files":  [
+                  {
+                      "path":  "adapter-execution-result.json",
+                      "sha256":  "sha256:3e2aa29ecdb039b862e9c70b5d3019fcb39f2cc0e519fd223c5bd4304fc0e5df",
+                      "bytes":  3041
+                  },
+                  {
+                      "path":  "filing-adapter-response.json",
+                      "sha256":  "sha256:0f7e17acb89ceb944e7fac58084f4052d578f1e594a552a286827cf101c5bbfe",
+                      "bytes":  1479
+                  },
+                  {
+                      "path":  "receipt-capture-pending.yaml",
+                      "sha256":  "sha256:91fc92b3ff1ad273eff826bf7ba2a36dc91825e1040d7bd4cdafedb428c86cc1",
+                      "bytes":  729
+                  },
+                  {
+                      "path":  "filing-status.json",
+                      "sha256":  "sha256:4b71c46bebc4d829ef64ea4344a9136386bf325efef13bccaa18a5a1a7cf7bdf",
+                      "bytes":  1242
+                  },
+                  {
+                      "path":  "adapter-execution-report.md",
+                      "sha256":  "sha256:d69836118657a8bbc927483de971237f7cba427e2a35c69f97183b3a31a4fd06",
+                      "bytes":  1037
+                  },
+                  {
+                      "path":  "audit-log-entry.yaml",
+                      "sha256":  "sha256:e796aeb740e16e944edd72d4754202ca63247891771bceb546def0f69812125d",
+                      "bytes":  1221
+                  },
+                  {
+                      "path":  "docket-entry.yaml",
+                      "sha256":  "sha256:e60928a5abb35fe78878f098344daf1b6b4863633b7a9d682b5f64672857555e",
+                      "bytes":  459
+                  },
+                  {
+                      "path":  "results.tsv",
+                      "sha256":  "sha256:c305a9832b3d41c8e6663a5d0b834f4290e0d3330c6c3018b9a8523694c382b7",
+                      "bytes":  479
+                  },
+                  {
+                      "path":  "mock-submitted-package.txt",
+                      "sha256":  "sha256:0d03edad83fe8418fd41462106631245ba1fd9ffa6faf66bcb979c1fe112f012",
+                      "bytes":  182
+                  },
+                  {
+                      "path":  "mock-submitted-status-snapshot.png",
+                      "sha256":  "sha256:f87a952e654f4b89a446a518016c3c59f25d7284a17b493e723f204ca71f2a09",
+                      "bytes":  181
+                  },
+                  {
+                      "path":  "mock-submitted-file-list.txt",
+                      "sha256":  "sha256:928fb086dd2ebc6f2620229a5d8ee63bca0e7a2bfdadc8e6b5c9638f58eb0ffa",
+                      "bytes":  175
+                  }
+              ]
+}

@@ -1,0 +1,243 @@
+{
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "status": "application_materials_generated_official_preflight_pending",
+  "decision": "materials_generated_official_preflight_required",
+  "jurisdiction": "CN",
+  "filing_type": "CN invention patent",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "final_package_hash": "sha256:ef2cc972d272acc6384331557f6835c96c841b8724da970e2e5798f4b137469c",
+  "filing_allowed": false,
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "external_lawyer_involved": false,
+  "source_package": {
+    "package_dir": "../../ai-self-filing-package-validation",
+    "package_status": "package_valid_official_preflight_pending",
+    "authorization_packet_hash": "sha256:404b5970bee9910de641f6997d01ac36e3a234aaded34adeae181674122a5c9e",
+    "filing_package_manifest_hash": "sha256:49cf318bd1b6b1d770ff23ec74c0c486df57e24deae343a7d82850cbb3f1746e",
+    "filing_status_hash": "sha256:0672026a9a0888e063d965cdd40d74bc200f274938baefca9d4209348bd5ad1f",
+    "source_draft_hash": "sha256:801705f23d3838346232056a39baf5671bb769a76e29f847192771b1dbfc5355",
+    "final_package_hash": "sha256:ef2cc972d272acc6384331557f6835c96c841b8724da970e2e5798f4b137469c"
+  },
+  "evidence_provenance": {
+    "case_id": "CASE-PRE-SUB-REF-001",
+    "path": "draft-evidence-provenance.json",
+    "artifact_hash": "sha256:b302866df2ac520cd8927bdecb728a0d69329548873c744d6018b49448e4f789",
+    "source_material_manifest_hash": "sha256:adbe596949de2f6790b70ef089b5079607acea390c8a2aeb84c2f76377c4c8ca",
+    "patent_application_draft_hash": "sha256:801705f23d3838346232056a39baf5671bb769a76e29f847192771b1dbfc5355",
+    "claim_support_map_hash": "sha256:5aef4aa182583f62a0ab246076773c3b01d3b71f0bb477fd885959057a331ce6",
+    "own_support_hashes": [
+      "sha256:36938c5922b3d40d2d16a0e50d7edacb676dd227621189f3a8d261ef7c235771",
+      "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c"
+    ],
+    "prohibited_reference_hashes": [
+      "sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e"
+    ],
+    "claim_support_rows_count": 3,
+    "no_reference_or_prior_art_used_as_claim_support": true,
+    "reference_patent_delta_hash": "sha256:a2f17ad5f302f8790687517cba049e659368b51284dc93252ca87b0cae599372",
+    "reference_delta_rows_count": 3,
+    "reference_delta_claim_elements_count": 3
+  },
+  "abnormal_filing_risk_assessment": {
+    "case_id": "CASE-PRE-SUB-REF-001",
+    "path": "abnormal-filing-risk-assessment.json",
+    "artifact_hash": "sha256:075f6a01706646b54e5f18f938a56f1b826c8f2f41ddd18dec162392a5aaf008",
+    "gate": "G8 Non-abnormal filing check",
+    "risk_level": "low",
+    "status": "abnormal_filing_risk_assessed",
+    "reference_patent_delta_hash": "sha256:a2f17ad5f302f8790687517cba049e659368b51284dc93252ca87b0cae599372",
+    "reference_delta_rows_count": 3,
+    "reference_delta_claim_elements_count": 3,
+    "reference_delta_boundary_preserved": true
+  },
+  "request_form_metadata": {
+    "path": "request-form-metadata.json",
+    "hash": "sha256:331810d0a8eac1a9aa38a9a5ecf401c56acdf604217ee4489cd7dcab8d5c2c65",
+    "case_id": "CASE-PRE-SUB-REF-001",
+    "jurisdiction": "CN",
+    "filing_type": "CN invention patent",
+    "applicant_name": "Benchmark Applicant Ltd.",
+    "applicant_type": "enterprise applicant using own official account",
+    "applicant_region": "Mainland China",
+    "inventors": [
+      "Benchmark Inventor A"
+    ],
+    "inventor_contribution_confirmed": true,
+    "ownership_basis": "employee service invention assigned to applicant",
+    "ownership_dispute_absent": true,
+    "priority_claims": [],
+    "foreign_or_pct_planned": false,
+    "secrecy_review_status": "not_required",
+    "china_secrecy_review_completed": true,
+    "official_system": "CNIPA patent business processing system",
+    "official_account_owner": "Benchmark Applicant Ltd.",
+    "official_account_registered": true,
+    "signature_authority": "applicant electronic signature authority record",
+    "automation_allowed": true,
+    "bypasses_access_controls": false,
+    "fee_payer": "Benchmark Applicant Ltd.",
+    "fee_reduction": false,
+    "auto_pay_authorized": true,
+    "payment_account_reference": "benchmark-applicant-payment-account",
+    "authorized_person": "Applicant Filing Operator",
+    "authority_basis": "internal applicant self-filing authorization record",
+    "allowed_actions": [
+      "validate package",
+      "submit filing through applicant account",
+      "pay official fees"
+    ],
+    "authorization_timestamp": "2026-06-03T06:11:16+08:00",
+    "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+    "legal_advice_claimed": false,
+    "lawyer_or_agent_review_claimed": false,
+    "external_lawyer_involved": false
+  },
+  "document_generation_plan": {
+    "path": "document-generation-plan.json",
+    "hash": "sha256:711d6b61be1d27f899dc77e87dda8a34a8f2e003d2028ffb45ecde1bd247ba04"
+  },
+  "document_materials": [
+    {
+      "type": "claims",
+      "path": "claims-material.md",
+      "format": "md",
+      "hash": "sha256:3a6f00fe417eb61b53b86f3090c600a8c4448e5166cf5a437cca1b51f5ac45f5",
+      "required": true,
+      "validation_status": "generated_and_source_bound"
+    },
+    {
+      "type": "specification",
+      "path": "specification-material.md",
+      "format": "md",
+      "hash": "sha256:6edb4da25926d18433cd4ab7e56186c00df3e4e67020e0e96ee49aa1982792b4",
+      "required": true,
+      "validation_status": "generated_and_source_bound"
+    },
+    {
+      "type": "abstract",
+      "path": "abstract-material.md",
+      "format": "md",
+      "hash": "sha256:d29b9d52aadee483e564eb093df5844cbb46d263e48485d3c54077bbcb6f5a45",
+      "required": true,
+      "validation_status": "generated_and_source_bound"
+    },
+    {
+      "type": "drawings",
+      "path": "drawings-materials-plan.md",
+      "format": "md",
+      "hash": "sha256:17d2331865c70b49ca0960aa9310b1ec28bd4560d50314e84e744aa38b84b034",
+      "required": true,
+      "validation_status": "generated_and_source_bound"
+    },
+    {
+      "type": "request_form_metadata",
+      "path": "request-form-metadata.json",
+      "format": "json",
+      "hash": "sha256:331810d0a8eac1a9aa38a9a5ecf401c56acdf604217ee4489cd7dcab8d5c2c65",
+      "required": true,
+      "validation_status": "generated_and_source_bound"
+    },
+    {
+      "type": "xml_readiness_checklist",
+      "path": "xml-readiness-checklist.json",
+      "format": "json",
+      "hash": "sha256:0cb8f4dd9658345fe0baffece97f5389c67f8cd6f01961b13612f424da80a0de",
+      "required": true,
+      "validation_status": "generated_and_source_bound"
+    }
+  ],
+  "official_material_inventory": [
+    {
+      "document_id": "claims",
+      "type": "claims",
+      "filename": "claims-ai-self-filing-final.xml",
+      "format": "xml",
+      "hash": "sha256:24e5ef2e203f19025ffe67432f24f951acef2a11bfaf0e902d3a421545e97add",
+      "required": true,
+      "validation_status": "passed"
+    },
+    {
+      "document_id": "specification",
+      "type": "specification",
+      "filename": "specification-ai-self-filing-final.xml",
+      "format": "xml",
+      "hash": "sha256:af47ba7e64a120794b98e4e903526382eeafa7c536ddb6b7793bf3bddce933c1",
+      "required": true,
+      "validation_status": "passed"
+    },
+    {
+      "document_id": "abstract",
+      "type": "abstract",
+      "filename": "abstract-ai-self-filing-final.xml",
+      "format": "xml",
+      "hash": "sha256:f6b9fe34875da3261b2dd3282351c2a86be3a5ad5f05f571f0f4b347c742c8d8",
+      "required": true,
+      "validation_status": "passed"
+    },
+    {
+      "document_id": "drawings",
+      "type": "drawings",
+      "filename": "drawings-ai-self-filing-final.pdf",
+      "format": "pdf",
+      "hash": "sha256:5e475411ed4bc5fdf490bb39735935bd64780126ee876561a76365e98761dabf",
+      "required": true,
+      "validation_status": "passed"
+    },
+    {
+      "document_id": "request_metadata",
+      "type": "request_metadata",
+      "filename": "request_metadata-ai-self-filing-final.xml",
+      "format": "xml",
+      "hash": "sha256:aec53573a9a82b320b935d725d076ba6839a0fadb57c1ce01ce271e588773d2d",
+      "required": true,
+      "validation_status": "passed"
+    }
+  ],
+  "xml_readiness": {
+    "path": "xml-readiness-checklist.json",
+    "hash": "sha256:0cb8f4dd9658345fe0baffece97f5389c67f8cd6f01961b13612f424da80a0de",
+    "case_id": "CASE-PRE-SUB-REF-001",
+    "xml_required": true,
+    "jurisdiction": "CN",
+    "filing_type": "CN invention patent",
+    "final_xml_hash": "sha256:344e1dc0dd40caba5f8d09783684699c7de590e6c308f47c2b7635d931e18893",
+    "standard_or_tool": "Patent Capital OS AI self-filing offline package validation",
+    "validation_result": "passed",
+    "validation_report_hash": "sha256:45dac380f17cd0231262b218578d9c2e3ba110cf02820112f61a82a133de6e34",
+    "sequence_listing_standard": "not_applicable",
+    "official_channel_preflight_required": true,
+    "official_upload_performed": false,
+    "official_system_touched": false,
+    "official_submission_performed": false
+  },
+  "filing_status": {
+    "path": "filing-status.json",
+    "hash": "sha256:5f09a74a6520678712b997b6486b7cada22a76847c871d3a6785f9452506c33d"
+  },
+  "cnipa_material_baseline": {
+    "basis": "CN invention application materials require request metadata plus application text and package-format readiness before official submission.",
+    "generated_for": [
+      "request form metadata",
+      "claims",
+      "specification",
+      "abstract",
+      "drawings",
+      "xml package readiness"
+    ],
+    "official_reference_urls": [
+      "https://www.cnipa.gov.cn/",
+      "https://cponline.cnipa.gov.cn/"
+    ]
+  },
+  "safeguards": {
+    "no_legal_advice_claimed": true,
+    "no_lawyer_or_agent_review_claimed": true,
+    "no_official_submission_claimed": true,
+    "no_receipt_claimed": true,
+    "no_application_number_claimed": true,
+    "external_lawyer_absent": true,
+    "official_system_touched": false,
+    "official_submission_performed": false
+  }
+}

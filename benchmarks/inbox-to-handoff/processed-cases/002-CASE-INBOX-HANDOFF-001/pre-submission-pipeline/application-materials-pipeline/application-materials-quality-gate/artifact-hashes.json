@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-001",
+  "generated_at": "2026-06-03T07:03:16+08:00",
+  "files": [
+    {
+      "path": "application-materials-quality-review.json",
+      "sha256": "sha256:6144ab6a59817ffe6790c2570a43be5b7453ad041df3e0708e31f0d06b9fe7e1",
+      "bytes": 7226
+    },
+    {
+      "path": "application-materials-quality-report.md",
+      "sha256": "sha256:2c9018f025b9d76bcfc7edcc14e751b271c935fd8a1802b4c924ca15b5edf67b",
+      "bytes": 846
+    }
+  ]
+}

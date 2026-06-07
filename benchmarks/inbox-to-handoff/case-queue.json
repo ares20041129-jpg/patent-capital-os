@@ -1,0 +1,42 @@
+{
+  "queue_id": "INBOX-HANDOFF-001-QUEUE",
+  "created_at": "2026-06-03T07:03:17+08:00",
+  "execution_mode": "dry_run",
+  "official_submission_allowed": false,
+  "official_system_touch_allowed": false,
+  "queue_owner": "Patent Capital OS",
+  "items": [
+    {
+      "case_id": "CASE-INBOX-HANDOFF-REF-001",
+      "priority": 1,
+      "current_status": "approved_for_adapter_execution",
+      "target_status": "approved_for_adapter_execution",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "external_lawyer_involved": false,
+      "case_record": "processed-cases/001-CASE-INBOX-HANDOFF-REF-001/pre-submission-to-handoff-result.json",
+      "case_folder": "processed-cases/001-CASE-INBOX-HANDOFF-REF-001",
+      "expected_outcome": "pre_submission_to_handoff",
+      "owner": "Pre-submission to handoff orchestrator",
+      "required_validators": [
+        "validate_pre_submission_to_handoff_benchmark"
+      ],
+      "notes": "Generated from pre-submission-to-handoff-result.json by build_case_queue.py."
+    },
+    {
+      "case_id": "CASE-INBOX-HANDOFF-001",
+      "priority": 2,
+      "current_status": "approved_for_adapter_execution",
+      "target_status": "approved_for_adapter_execution",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "external_lawyer_involved": false,
+      "case_record": "processed-cases/002-CASE-INBOX-HANDOFF-001/pre-submission-to-handoff-result.json",
+      "case_folder": "processed-cases/002-CASE-INBOX-HANDOFF-001",
+      "expected_outcome": "pre_submission_to_handoff",
+      "owner": "Pre-submission to handoff orchestrator",
+      "required_validators": [
+        "validate_pre_submission_to_handoff_benchmark"
+      ],
+      "notes": "Generated from pre-submission-to-handoff-result.json by build_case_queue.py."
+    }
+  ]
+}

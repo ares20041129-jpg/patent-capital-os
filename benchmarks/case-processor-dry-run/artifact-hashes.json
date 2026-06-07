@@ -1,0 +1,41 @@
+{
+    "case_id":  "CASE-PROCESSOR-DRY-RUN-001",
+    "generated_at":  "2026-06-01T21:10:00+08:00",
+    "files":  [
+                  {
+                      "path":  "case-record.json",
+                      "sha256":  "sha256:10f2eae718c31ca151f4deab11a5a409793968148d9966692aa6872ecaa1c1ff",
+                      "bytes":  1736
+                  },
+                  {
+                      "path":  "filing-adapter-request.json",
+                      "sha256":  "sha256:7e2b264e91c713c30ac3660cb3f0ebe7766185d21a1546abce36124630b584ca",
+                      "bytes":  917
+                  },
+                  {
+                      "path":  "filing-adapter-response.json",
+                      "sha256":  "sha256:654ec3b9ea4c3f7d4bd934ba92645864dfe142ed94677ab022434905e6ddbf35",
+                      "bytes":  850
+                  },
+                  {
+                      "path":  "filing-status.json",
+                      "sha256":  "sha256:5ced36988f541c709e13a949be487bb2ab73e6b04f92be8e83763872a0e07267",
+                      "bytes":  743
+                  },
+                  {
+                      "path":  "audit-log-entry.yaml",
+                      "sha256":  "sha256:f0d86f69520033392255d006fe2b11ed91c92ccdc92d07b6a38a9624a794ddd0",
+                      "bytes":  619
+                  },
+                  {
+                      "path":  "processor-report.md",
+                      "sha256":  "sha256:4891814f30affb7281ffd0a8ce897496c60bb70a383b79726a270f077138c933",
+                      "bytes":  916
+                  },
+                  {
+                      "path":  "results.tsv",
+                      "sha256":  "sha256:7ae42cd7f55143cfe04642732f0aa2e1af27851e154d4ba58b42eabbbf1cd0bb",
+                      "bytes":  488
+                  }
+              ]
+}

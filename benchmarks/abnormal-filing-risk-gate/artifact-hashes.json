@@ -1,0 +1,46 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-02T23:54:22+08:00",
+  "files": [
+    {
+      "path": "source-material-manifest.yaml",
+      "sha256": "sha256:7de6657330ad13a5afa44a2074dc28169148488dcff65d51ba34b70415527dd3",
+      "bytes": 2340
+    },
+    {
+      "path": "invention-disclosure.json",
+      "sha256": "sha256:50b929eeee1b5ce160d5a580414580c78966e35ce1540db6f4309e2e8df23005",
+      "bytes": 5484
+    },
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:8a7f5fd82ef6a44845a9e54e9d06b98158380298ab97104e37a0aa0885feeaf4",
+      "bytes": 4538
+    },
+    {
+      "path": "claim-support-map.md",
+      "sha256": "sha256:f6bdcefef9a173432d3c9d83025fece8cdb18609eedd5eba08cc67f4abab6a16",
+      "bytes": 1759
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:d78a3dbcd95c8529bf72db3495e1ab6202cd3d18caf5278c6e695b046c2ca8b4",
+      "bytes": 808
+    },
+    {
+      "path": "draft-evidence-provenance.json",
+      "sha256": "sha256:ef521a355400eff35fd2631b682378d82f56b12606890f9ae77e2b6e963d6f8c",
+      "bytes": 1967
+    },
+    {
+      "path": "abnormal-filing-risk-assessment.json",
+      "sha256": "sha256:b50406646ebf5478ebb5cadbe77326032ced9bb16a81d323a370f5fd3d5940cd",
+      "bytes": 4630
+    },
+    {
+      "path": "abnormal-filing-risk-report.md",
+      "sha256": "sha256:e55528e2decb98e7010b3ca7e9dcc4201219528229477e48e64c48762a8d2148",
+      "bytes": 3020
+    }
+  ]
+}

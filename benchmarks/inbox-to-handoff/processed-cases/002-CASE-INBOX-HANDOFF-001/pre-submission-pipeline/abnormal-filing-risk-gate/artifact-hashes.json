@@ -1,0 +1,61 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-001",
+  "generated_at": "2026-06-03T07:03:16+08:00",
+  "files": [
+    {
+      "path": "source-material-manifest.yaml",
+      "sha256": "sha256:6072bc7a479b620900a071a737a3b60fc4098fd8c32c6f64073e396fea76a8e6",
+      "bytes": 2366
+    },
+    {
+      "path": "invention-disclosure.json",
+      "sha256": "sha256:1b0b375b950d77af4f9898f41153313c47d173249ead94c1392ac1a0429bbe79",
+      "bytes": 5486
+    },
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:4cc357b2ff9534099ec2d6fae18ace1c2d9d9f22803a9c537fb381895149dd0c",
+      "bytes": 4715
+    },
+    {
+      "path": "claim-support-map.md",
+      "sha256": "sha256:19369ab4acb675a20640f7327a12244673aefcb34882a7d4aa69bdbeeea8e480",
+      "bytes": 1761
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:13d62c483aa72ecdf513a09375d2e2967bfc2a3a563859beca63e65b6f265c37",
+      "bytes": 810
+    },
+    {
+      "path": "draft-evidence-provenance.json",
+      "sha256": "sha256:b15bbe5ff08a85cfa02c3609c20483e94c675c52fc53b6d5c690a1a71a56539d",
+      "bytes": 1975
+    },
+    {
+      "path": "00-intake/source-files/drawing-notes.txt",
+      "sha256": "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+      "bytes": 192
+    },
+    {
+      "path": "00-intake/source-files/invention-disclosure.txt",
+      "sha256": "sha256:36938c5922b3d40d2d16a0e50d7edacb676dd227621189f3a8d261ef7c235771",
+      "bytes": 377
+    },
+    {
+      "path": "00-intake/source-files/prior-art-notes.txt",
+      "sha256": "sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e",
+      "bytes": 194
+    },
+    {
+      "path": "abnormal-filing-risk-assessment.json",
+      "sha256": "sha256:f63d45a5de12d7946b1e382662668212ec60a4862111a612c741261ea3b076bd",
+      "bytes": 4632
+    },
+    {
+      "path": "abnormal-filing-risk-report.md",
+      "sha256": "sha256:ae1a51882893b0014d135f79149cc3a12711e422600c7be588196917a3077097",
+      "bytes": 3265
+    }
+  ]
+}

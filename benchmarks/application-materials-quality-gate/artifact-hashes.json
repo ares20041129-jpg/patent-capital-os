@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-03T02:08:14+08:00",
+  "files": [
+    {
+      "path": "application-materials-quality-review.json",
+      "sha256": "sha256:f0723aa38eed11b5c390d277c55c19cf09cc40c91f6db4d5be83bff9f865c756",
+      "bytes": 7239
+    },
+    {
+      "path": "application-materials-quality-report.md",
+      "sha256": "sha256:93ae01e91cc1ea776833391af3d9c83ad2e21ee0eac63542fef96adcc1f51dae",
+      "bytes": 844
+    }
+  ]
+}

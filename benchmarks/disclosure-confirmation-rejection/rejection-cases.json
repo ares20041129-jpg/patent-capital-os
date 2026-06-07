@@ -1,0 +1,67 @@
+{
+  "case_id": "DISCLOSURE-CONFIRMATION-REJECTION",
+  "base_packet": "../scaffold-confirmation-to-disclosure/disclosure-confirmation-packet.json",
+  "scaffold": "../scaffold-confirmation-to-disclosure/invention-disclosure-scaffold.json",
+  "cases": [
+    {
+      "id": "patent_agent_role_rejected",
+      "mutations": {
+        "legal_drafting_review.reviewed_by.name": "Benchmark Patent Agent",
+        "legal_drafting_review.reviewed_by.role": "patent_agent"
+      },
+      "expected_error": "legal_drafting_review_must_not_claim_lawyer_or_patent_agent_review"
+    },
+    {
+      "id": "attorney_claim_rejected",
+      "mutations": {
+        "legal_drafting_review.reviewed_by.name": "Benchmark Attorney"
+      },
+      "expected_error": "legal_drafting_review.reviewed_by.name_must_not_claim_lawyer_or_patent_agent_review"
+    },
+    {
+      "id": "external_lawyer_true_rejected",
+      "set_operations": [
+        {
+          "path": "controls.external_lawyer_involved",
+          "value": true
+        }
+      ],
+      "expected_error": "confirmation_packet_must_not_involve_external_lawyer"
+    },
+    {
+      "id": "malformed_source_hash_rejected",
+      "mutations": {
+        "data_and_evidence.source_hashes[0]": "sha256:not-a-real-hash"
+      },
+      "expected_error": "data_and_evidence.source_hashes[1]_must_be_sha256_64_hex"
+    },
+    {
+      "id": "malformed_reviewed_scaffold_hash_rejected",
+      "mutations": {
+        "legal_drafting_review.reviewed_scaffold_hash": "sha256:reviewed-scaffold"
+      },
+      "expected_error": "legal_drafting_review.reviewed_scaffold_hash_must_be_sha256_64_hex"
+    },
+    {
+      "id": "prohibited_reference_in_source_hashes_rejected",
+      "mutations": {
+        "data_and_evidence.source_hashes[1]": "sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e"
+      },
+      "expected_error": "source_hash_must_not_include_prohibited_reference_hash"
+    },
+    {
+      "id": "prohibited_reference_in_technical_effect_rejected",
+      "mutations": {
+        "technical_effects[1].evidence": "Drawing notes and reference-only prior-art material in hash sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e."
+      },
+      "expected_error": "technical_effect_2_uses_prohibited_reference_hash"
+    },
+    {
+      "id": "unknown_technical_effect_hash_rejected",
+      "mutations": {
+        "technical_effects[0].evidence": "Prototype log uses unregistered hash sha256:1111111111111111111111111111111111111111111111111111111111111111."
+      },
+      "expected_error": "technical_effect_1_evidence_hash_not_in_source_hashes"
+    }
+  ]
+}

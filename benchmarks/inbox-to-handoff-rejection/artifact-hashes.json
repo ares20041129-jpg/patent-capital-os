@@ -1,0 +1,16 @@
+{
+    "case_id":  "INBOX-TO-HANDOFF-REJECTION",
+    "generated_at":  "2026-06-03T07:07:00+08:00",
+    "files":  [
+                  {
+                      "path":  "rejection-cases.json",
+                      "sha256":  "sha256:ee696a986603753b73eb0487c29992e043b0000f300e281de3a6fa49791817a3",
+                      "bytes":  1603
+                  },
+                  {
+                      "path":  "inbox-rejection-report.md",
+                      "sha256":  "sha256:f131d3e2b6c5d5f35897542de936d3e37be939479c0c286b8e4f0e97f3b11d92",
+                      "bytes":  609
+                  }
+              ]
+}

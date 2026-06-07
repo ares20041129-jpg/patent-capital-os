@@ -1,0 +1,31 @@
+{
+    "case_id":  "QUEUE-BATCH-001",
+    "generated_at":  "2026-06-03T00:29:45+08:00",
+    "files":  [
+                  {
+                      "path":  "case-queue.json",
+                      "sha256":  "sha256:188d4097a51d42f42a4652e322e5a937160f23d7c84df8d93e933eef705c4dc2",
+                      "bytes":  2433
+                  },
+                  {
+                      "path":  "batch-processor-result.json",
+                      "sha256":  "sha256:86797f9010b471ced83f79cdb6bf9743f282d1b4d96f3b3bcb634975b2db27e9",
+                      "bytes":  3482
+                  },
+                  {
+                      "path":  "runner-result.json",
+                      "sha256":  "sha256:86797f9010b471ced83f79cdb6bf9743f282d1b4d96f3b3bcb634975b2db27e9",
+                      "bytes":  3482
+                  },
+                  {
+                      "path":  "batch-report.md",
+                      "sha256":  "sha256:18a1e122d2483fade96135ab104fe11b0b4e339cd86125347c8716e9ebfa029c",
+                      "bytes":  1553
+                  },
+                  {
+                      "path":  "results.tsv",
+                      "sha256":  "sha256:9633f0c2d1b1fa14a5cdbc80471095ae7501697880711d79e1ce44081e316f12",
+                      "bytes":  435
+                  }
+              ]
+}

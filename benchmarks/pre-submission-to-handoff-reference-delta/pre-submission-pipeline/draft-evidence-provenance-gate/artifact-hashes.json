@@ -1,0 +1,66 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T06:51:21+08:00",
+  "files": [
+    {
+      "path": "source-material-manifest.yaml",
+      "sha256": "sha256:7ec4febf64c5894dc88401430c2db1c6ebe97637b7a56ae621ae94758397b9f7",
+      "bytes": 2348
+    },
+    {
+      "path": "00-intake/source-files/drawing-notes.txt",
+      "sha256": "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+      "bytes": 192
+    },
+    {
+      "path": "00-intake/source-files/invention-disclosure.txt",
+      "sha256": "sha256:36938c5922b3d40d2d16a0e50d7edacb676dd227621189f3a8d261ef7c235771",
+      "bytes": 377
+    },
+    {
+      "path": "00-intake/source-files/prior-art-notes.txt",
+      "sha256": "sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e",
+      "bytes": 194
+    },
+    {
+      "path": "applicant-evidence/drawing-notes.txt",
+      "sha256": "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+      "bytes": 192
+    },
+    {
+      "path": "invention-disclosure.json",
+      "sha256": "sha256:4d911eeb112a70ac833bd8c518959bd5b059a0e66162bb81dcbac1cadbfb3c45",
+      "bytes": 5492
+    },
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:80f2539c69aa427fdc0a2c504c8488807f30fe63cd562964a966ee9cc2213877",
+      "bytes": 6356
+    },
+    {
+      "path": "claim-support-map.md",
+      "sha256": "sha256:dfeb029da71a96ba58b952418794bd67c6cec475f72ef0c510bd7c9b31faedeb",
+      "bytes": 2887
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:35fcd9772a8a49936f2983514335a0279cb837fa2195701a7fe589814eeba924",
+      "bytes": 816
+    },
+    {
+      "path": "reference-patent-delta.json",
+      "sha256": "sha256:cfdb203ea3b5ab9cf252ca2eefbcec44edd6e569d54cf843078b49ad9ad3da91",
+      "bytes": 7156
+    },
+    {
+      "path": "draft-evidence-provenance.json",
+      "sha256": "sha256:62764da94b8667ef59c9cfdd36bcfbee80b2fb082af4f29b5a880988e3d18a1c",
+      "bytes": 3166
+    },
+    {
+      "path": "draft-evidence-provenance-report.md",
+      "sha256": "sha256:6e7a30dc02fe90a2e6ed262bb2d2c4b7a997846c8398439cf7bc4fb73b17e830",
+      "bytes": 1798
+    }
+  ]
+}

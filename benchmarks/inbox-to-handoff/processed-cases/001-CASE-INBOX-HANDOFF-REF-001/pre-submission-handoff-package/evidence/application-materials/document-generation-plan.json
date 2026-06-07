@@ -1,0 +1,52 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-REF-001",
+  "status": "application_materials_generation_plan_ready",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "source_hashes": {
+    "source_draft_hash": "sha256:8f225135e27e4d1ac728c5a6fa67298bab05c5cf62516d794028d2352fdcb7c1",
+    "final_package_hash": "sha256:1c9cdad01765d0c9be0ae263738a5b00f580ef0925e4eb1e955c7040d27f99f8",
+    "claim_support_map_hash": "sha256:51d9025f472689776e81fea9e6527160f76ff26a87dc1c68d46fc4dbead0b0f8",
+    "source_material_manifest_hash": "sha256:3ccd90eafaf5ec1687b92f1e4a1decceda28db0b9174c70764c68097a9671836",
+    "reference_patent_delta_hash": "sha256:a3c8fdf36246f82c722d0d27ca56f2e9bf4c8b583547ba7d256490cc64ebb841",
+    "reference_delta_rows_count": 3,
+    "reference_delta_claim_elements_count": 3
+  },
+  "steps": [
+    {
+      "step": "claims_material",
+      "status": "generated_and_source_bound",
+      "source": "patent-application-draft.md Claims Draft section plus provenance rows"
+    },
+    {
+      "step": "specification_material",
+      "status": "generated_and_source_bound",
+      "source": "technical field, background, problem, solution, effects, drawings, embodiments"
+    },
+    {
+      "step": "abstract_material",
+      "status": "generated_and_source_bound",
+      "source": "patent-application-draft.md Abstract section"
+    },
+    {
+      "step": "drawings_material",
+      "status": "generated_and_source_bound",
+      "source": "brief description of drawings and filing manifest drawings document"
+    },
+    {
+      "step": "request_form_metadata",
+      "status": "generated_from_authorization_packet",
+      "source": "applicant authorization, inventor confirmation, ownership, secrecy, channel, and fee fields"
+    },
+    {
+      "step": "xml_readiness",
+      "status": "generated_from_package_manifest",
+      "source": "Patent Capital OS AI self-filing offline package validation"
+    }
+  ],
+  "stop_conditions": [
+    "official_channel_preflight_missing",
+    "official_upload_not_performed",
+    "official_receipt_missing",
+    "application_number_missing"
+  ]
+}

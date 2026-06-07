@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "generated_at": "2026-06-03T06:11:17+08:00",
+  "files": [
+    {
+      "path": "application-materials/application-materials.json",
+      "sha256": "sha256:e1e7c09b5f19dbd36669a407819e913c0a780495bc6c517867a14b0eded11b14",
+      "bytes": 10220
+    },
+    {
+      "path": "application-materials/artifact-hashes.json",
+      "sha256": "sha256:64f0277e0914e4642249e1f5aa134c78ea007641510dba9f6cd4257880522348",
+      "bytes": 2184
+    },
+    {
+      "path": "application-materials-quality-gate/application-materials-quality-review.json",
+      "sha256": "sha256:868b4c40278906d4e542c2d4c246baefd3c3aeb2bddaad1cea3c90dd5279303f",
+      "bytes": 7224
+    },
+    {
+      "path": "application-materials-quality-gate/artifact-hashes.json",
+      "sha256": "sha256:5bce428e3f7fdca674147c25cc15d71effe9c7da521216528d954bf6bda4fcc7",
+      "bytes": 483
+    },
+    {
+      "path": "application-materials-pipeline-result.json",
+      "sha256": "sha256:202d7cb4d7229a21c4a9cbfe0d4388bb396f183485c3dbb4a133687734eb9c07",
+      "bytes": 3558
+    },
+    {
+      "path": "application-materials-pipeline-report.md",
+      "sha256": "sha256:d52a6381debeaeed2afb1e61574d60f6ddaee512bcf6541e0af4f71a11951de5",
+      "bytes": 1752
+    }
+  ]
+}

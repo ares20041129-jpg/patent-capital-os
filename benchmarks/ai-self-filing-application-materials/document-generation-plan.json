@@ -1,0 +1,49 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "status": "application_materials_generation_plan_ready",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "source_hashes": {
+    "source_draft_hash": "sha256:8a7f5fd82ef6a44845a9e54e9d06b98158380298ab97104e37a0aa0885feeaf4",
+    "final_package_hash": "sha256:d69aec78f0c470f2cfac50ba4a0a83b688ffeab129610b1c897ad9f665b0975b",
+    "claim_support_map_hash": "sha256:f6bdcefef9a173432d3c9d83025fece8cdb18609eedd5eba08cc67f4abab6a16",
+    "source_material_manifest_hash": "sha256:7de6657330ad13a5afa44a2074dc28169148488dcff65d51ba34b70415527dd3"
+  },
+  "steps": [
+    {
+      "step": "claims_material",
+      "status": "generated_and_source_bound",
+      "source": "patent-application-draft.md Claims Draft section plus provenance rows"
+    },
+    {
+      "step": "specification_material",
+      "status": "generated_and_source_bound",
+      "source": "technical field, background, problem, solution, effects, drawings, embodiments"
+    },
+    {
+      "step": "abstract_material",
+      "status": "generated_and_source_bound",
+      "source": "patent-application-draft.md Abstract section"
+    },
+    {
+      "step": "drawings_material",
+      "status": "generated_and_source_bound",
+      "source": "brief description of drawings and filing manifest drawings document"
+    },
+    {
+      "step": "request_form_metadata",
+      "status": "generated_from_authorization_packet",
+      "source": "applicant authorization, inventor confirmation, ownership, secrecy, channel, and fee fields"
+    },
+    {
+      "step": "xml_readiness",
+      "status": "generated_from_package_manifest",
+      "source": "Patent Capital OS AI self-filing offline package validation"
+    }
+  ],
+  "stop_conditions": [
+    "official_channel_preflight_missing",
+    "official_upload_not_performed",
+    "official_receipt_missing",
+    "application_number_missing"
+  ]
+}

@@ -1,0 +1,33 @@
+case_id: "CASE-PRODUCTION-SHAPE-001"
+filing_action_id: "CNIPA-SUBMISSION-CASE-PRODUCTION-SHAPE-001"
+status: "official_receipt_received"
+submitted_at: "2026-06-01T10:02:00+08:00"
+official_system: "CNIPA patent business processing system"
+official_session_authorization_hash: "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca"
+official_session_reference_hash: "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+official_receipt:
+  receipt_id: "CNIPA-RECEIPT-CASE-PRODUCTION-SHAPE-001"
+  receipt_file: "official-receipt-case-production-shape-001.pdf"
+  receipt_hash: "sha256:8888888888888888888888888888888888888888888888888888888888888888"
+application:
+  application_number: "CN202699999999.9"
+  filing_date: "2026-06-01"
+  official_file_list_hash: "sha256:9999999999999999999999999999999999999999999999999999999999999999"
+fees:
+  payment_status: "pending"
+  payment_receipt_file: ""
+  payment_receipt_hash: ""
+docket:
+  docket_entry_id: "DOCKET-PRODUCTION-SHAPE-001"
+  next_deadlines:
+    -
+      name: "request substantive examination"
+      due_date: "2029-06-01"
+evidence_notes: "Production-shape test evidence for validator coverage only."
+application_materials_hash: "sha256:451bf6debc7c479dd7802a2adf2c709e11b1e9051d498e33f965c1be8fd268ae"
+reference_patent_delta_hash: "sha256:21afcd8d4569933058a050427f65a6c863a9053f48a5b9a1368475827fb3a4a2"
+reference_delta_rows_count: "3"
+reference_delta_claim_elements_count: "3"
+reference_delta_boundary_preserved: true
+production_shape_test: true
+not_real_official_evidence: true

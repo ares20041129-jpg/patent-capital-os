@@ -1,0 +1,16 @@
+{
+    "case_id":  "CASE-LIFECYCLE-REJECTION-GATE",
+    "generated_at":  "2026-06-02T01:37:37+08:00",
+    "files":  [
+                  {
+                      "path":  "rejection-cases.json",
+                      "sha256":  "sha256:7b6c5854f05aaa1c51dfbba622aebebfac120b2feaaee07e31d032a43a6c4d90",
+                      "bytes":  2140
+                  },
+                  {
+                      "path":  "lifecycle-rejection-report.md",
+                      "sha256":  "sha256:c151203191050d4f4024e859768785ae06272fef6f9a0a289c8f8b591158ed29",
+                      "bytes":  509
+                  }
+              ]
+}

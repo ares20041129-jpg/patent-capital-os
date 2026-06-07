@@ -1,0 +1,25 @@
+case_id: "RECEIPT-CAPTURE-MOCK-001"
+filing_action_id: "mock-official-action-001"
+status: "official_receipt_received"
+submitted_at: "2026-06-01T20:40:00+08:00"
+official_system: "CNIPA patent business processing system"
+official_session_authorization_hash: "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca"
+official_session_reference_hash: "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+official_receipt:
+  receipt_id: "MOCK-RECEIPT-001"
+  receipt_file: "mock-official-receipt.pdf"
+  receipt_hash: "sha256:ec927516989a9be816131149fd835302a9c2a10ec577f31dcb8e6e804dc9709e"
+application:
+  application_number: "MOCK-CN-APPLICATION-001"
+  filing_date: "2026-06-01"
+  official_file_list_hash: "sha256:38a9561756cfffa81e04c4a9138001ead3c455890160144707001b20ee94822d"
+fees:
+  payment_status: "paid"
+  payment_receipt_file: "mock-payment-receipt.pdf"
+  payment_receipt_hash: "sha256:2c7db32b0a9f1b0942bb7de962dd0768a3c3d1f4a03ba510b6d7ddc1e3a01b6e"
+docket:
+  docket_entry_id: "mock-docket-001"
+  next_deadlines:
+    - name: "substantive examination request placeholder"
+      due_date: "mock-date"
+evidence_notes: "Benchmark mock only. This is not a real official receipt or real application number."

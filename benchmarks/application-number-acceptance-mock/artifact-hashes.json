@@ -1,0 +1,61 @@
+{
+    "case_id":  "APPLICATION-NUMBER-MOCK-001",
+    "generated_at":  "2026-06-02T19:24:32+08:00",
+    "files":  [
+                  {
+                      "path":  "application-number-evidence.json",
+                      "sha256":  "sha256:6a11ea3e219ba388873c29f77a6727b5c3310e829ea5a93afa51b220886ee398",
+                      "bytes":  2670
+                  },
+                  {
+                      "path":  "filing-status.json",
+                      "sha256":  "sha256:26725af2b4ba1aa159604032cfb52c90df1b6e04047e5017ece3e61fdd5afbaa",
+                      "bytes":  1187
+                  },
+                  {
+                      "path":  "docket-entry.yaml",
+                      "sha256":  "sha256:f8c66760441418c960f9c474bb1156d583e347901cd9458541d402cc06aba1cc",
+                      "bytes":  491
+                  },
+                  {
+                      "path":  "portfolio-update.json",
+                      "sha256":  "sha256:ce7307e54ca9412d9f47d0c373b33c8aa4b3672b6a32a7029eecf5be8efc9712",
+                      "bytes":  599
+                  },
+                  {
+                      "path":  "application-number-report.md",
+                      "sha256":  "sha256:75b7741886aa450740ed09ac23c82cd97a0a6400488975bc6f72ff278f058cba",
+                      "bytes":  948
+                  },
+                  {
+                      "path":  "results.tsv",
+                      "sha256":  "sha256:97fadb467470bcae4d230e1e8da6f24942468ff4e2a7d573c662a407d1e97959",
+                      "bytes":  449
+                  },
+                  {
+                      "path":  "mock-official-receipt.pdf",
+                      "sha256":  "sha256:cc424b5707959088ad64dd2c32a8ff512589f38ced0c1a3c8cfe2413dbd4d780",
+                      "bytes":  164
+                  },
+                  {
+                      "path":  "mock-official-file-list.txt",
+                      "sha256":  "sha256:1e549459e7d04b76b3351426284f59df4386a6d5138c6691133c7007b5ba8322",
+                      "bytes":  171
+                  },
+                  {
+                      "path":  "mock-payment-receipt.pdf",
+                      "sha256":  "sha256:f6043fe5b5935e553df750bf7b03b435b672ab7b98057d7a45f5a7120940677e",
+                      "bytes":  121
+                  },
+                  {
+                      "path":  "mock-official-status-snapshot.png",
+                      "sha256":  "sha256:d8a961a11d539472bd9f4c5faa656c8ff665a41e662c1b2a8b55f482a0ced3e1",
+                      "bytes":  163
+                  },
+                  {
+                      "path":  "mock-submitted-package.txt",
+                      "sha256":  "sha256:8d7ea1297da68fb475bbf9c16c88bff301afc2abf4583dd327b024e4239f4b22",
+                      "bytes":  180
+                  }
+              ]
+}

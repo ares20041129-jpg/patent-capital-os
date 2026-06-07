@@ -1,0 +1,108 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "created_at": "2026-06-03T04:20:33+08:00",
+  "delta_type": "reference_patent_delta_claim_strategy",
+  "status": "reference_delta_ready_for_draft_strategy",
+  "decision": "use_references_as_boundary_not_claim_support",
+  "source_input": {
+    "path": "reference-delta-source.json",
+    "hash": "sha256:0664b7fb5805f6d848e1ab501ace5a45a8814cbf86b7d1a443af5f38ce804355"
+  },
+  "invention_title": "Adaptive motor control for dough-state estimation",
+  "inventive_concept": "Because existing appliances use fixed mixing schedules and do not adapt to dough state, the invention compares motor-current ripple, bowl temperature, and timed rest intervals to classify dough hydration and elasticity state and adjust kneading torque/rest timing.",
+  "reference_patents": [
+    {
+      "publication": "CN120827118A",
+      "title": "Reference patent for appliance control boundary analysis",
+      "role": "closest_prior_art"
+    },
+    {
+      "publication": "CN120186196A",
+      "title": "Reference patent for dough or fermentation control boundary analysis",
+      "role": "closest_prior_art"
+    },
+    {
+      "publication": "CN121092920A",
+      "title": "Reference patent for food appliance sensing boundary analysis",
+      "role": "background_reference"
+    }
+  ],
+  "claim_elements": [
+    {
+      "element_id": "E1",
+      "text": "compare motor-current ripple, bowl temperature, and timed rest intervals",
+      "support_path": "applicant-evidence/smart-dough-control-evidence.txt",
+      "support_hash": "sha256:0c06cc59c807e97c5e0b217bff8cd552085fac1477cbf837dcbb08fd952e7d3a"
+    },
+    {
+      "element_id": "E2",
+      "text": "classify dough hydration and elasticity state from the comparison",
+      "support_path": "applicant-evidence/smart-dough-control-evidence.txt",
+      "support_hash": "sha256:0c06cc59c807e97c5e0b217bff8cd552085fac1477cbf837dcbb08fd952e7d3a"
+    },
+    {
+      "element_id": "E3",
+      "text": "adjust kneading torque and rest timing when the classified state crosses a threshold",
+      "support_path": "applicant-evidence/smart-dough-control-evidence.txt",
+      "support_hash": "sha256:0c06cc59c807e97c5e0b217bff8cd552085fac1477cbf837dcbb08fd952e7d3a"
+    }
+  ],
+  "delta_rows": [
+    {
+      "element_id": "E1",
+      "closest_references": [
+        "CN120827118A",
+        "CN120186196A"
+      ],
+      "known_in_prior_art": "partial",
+      "applicant_distinguishing_feature": "uses the three-signal comparison as a state-classification input rather than a single fixed schedule parameter",
+      "technical_effect_evidence": "prototype evidence links the comparison to hydration and elasticity classification",
+      "claim_strategy": "place the three-signal comparison in the independent claim as the sensing and classification basis",
+      "fallback_position": "narrow to motor-current ripple plus bowl temperature if rest-interval evidence needs more support",
+      "novelty_risk": "medium",
+      "inventive_step_risk": "medium"
+    },
+    {
+      "element_id": "E2",
+      "closest_references": [
+        "CN120186196A",
+        "CN121092920A"
+      ],
+      "known_in_prior_art": "partial",
+      "applicant_distinguishing_feature": "classifies hydration and elasticity state rather than only monitoring temperature, time, or appliance mode",
+      "technical_effect_evidence": "R&D evidence states that the classified state reduces under-fermentation and over-mixing",
+      "claim_strategy": "tie the state classifier to a concrete dough-state output and avoid result-only optimization wording",
+      "fallback_position": "dependent claim for threshold ranges or state labels supported by experiment data",
+      "novelty_risk": "medium",
+      "inventive_step_risk": "high"
+    },
+    {
+      "element_id": "E3",
+      "closest_references": [
+        "CN120827118A",
+        "CN121092920A"
+      ],
+      "known_in_prior_art": "no",
+      "applicant_distinguishing_feature": "changes kneading torque and rest timing in response to the classified dough state crossing a threshold",
+      "technical_effect_evidence": "prototype logs connect state threshold crossing to changed torque/rest control",
+      "claim_strategy": "make the control action depend on threshold crossing to distinguish from generic bread-maker control",
+      "fallback_position": "dependent claims for torque, rest timing, and exception-handling variants",
+      "novelty_risk": "low",
+      "inventive_step_risk": "medium"
+    }
+  ],
+  "controls": {
+    "reference_patents_used_as_boundary_only": true,
+    "reference_patents_used_as_applicant_claim_support": false,
+    "novelty_guarantee_claimed": false,
+    "patentability_guarantee_claimed": false,
+    "legal_advice_claimed": false,
+    "lawyer_or_agent_review_claimed": false,
+    "filing_authorized": false
+  },
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "external_lawyer_involved": false,
+  "next_action": "Use this delta to draft or revise claims from applicant evidence; do not file from reference-patent similarity alone."
+}

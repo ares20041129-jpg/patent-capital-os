@@ -1,0 +1,2 @@
+timestamp	case_id	skill_version	score	target_dimension	mutation	status	eval_mode	validation_result	legal_gate	filing_status	notes
+2026-06-01T20:20:00+08:00	OFFICIAL-PREFLIGHT-READY-001	local-no-git	89	official_channel_preflight	Created official-channel preflight to ready-for-authorized-filing benchmark.	keep	dry_run	official_preflight=pass; receipt_plan=pass; status_transition=pass; benchmark=pass	passed	ready_for_authorized_filing	Preflight passes; no official submission performed.

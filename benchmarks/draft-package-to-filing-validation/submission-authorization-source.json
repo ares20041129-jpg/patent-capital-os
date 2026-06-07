@@ -1,0 +1,73 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "filing_type": "invention",
+  "jurisdiction": "CN",
+  "business_goal": "Validate a final filing package after attorney or patent-agent review of a generated draft package.",
+  "final_documents": {
+    "claims": "claims-final.xml",
+    "specification": "specification-final.xml",
+    "abstract": "abstract-final.xml",
+    "drawings": "drawings-final.pdf",
+    "request_metadata": "request-metadata.xml"
+  },
+  "hashes": {
+    "source_package": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d",
+    "final_claims": "sha256:2fca59ef96973a2a1cb2d8fa1b84e86f8fc52d7e67d36cd24506004f08d1d891",
+    "final_specification": "sha256:8931680a6df3565a669825cb5a72caa986799ce271ec8bafdf74326ca770b241",
+    "final_abstract": "sha256:91d51a8dcfb543e4c0bad3011dfdfbce7d9c88a8a333bf1ec20fa005bcc9f180",
+    "final_drawings": "sha256:29a665e1c543ee645116b0dfd248e3074c6a1751b61e11b60bc03469186ec0ff",
+    "request_metadata": "sha256:be0c92e29174e81582f6efb1a0708c1e97a6303fb90c3a1f788d1808bb20b1ee",
+    "final_xml": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d"
+  },
+  "counsel_review": {
+    "reviewer_name": "Benchmark Patent Agent",
+    "reviewer_role": "patent agent",
+    "organization": "Patent Capital OS Mock Review Desk",
+    "license_or_agent_identifier": "benchmark-agent-id",
+    "approval_statement": "Approved final package hash for package validation and official-channel preflight only. Official submission still requires official-channel preflight and receipt-capture plan.",
+    "reviewed_hash": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d",
+    "timestamp": "2026-06-01T20:55:00+08:00"
+  },
+  "applicant_authorization": {
+    "applicant_name": "Example Appliance Technology Ltd.",
+    "authorized_person": "Authorized Officer",
+    "authority_basis": "written applicant filing authorization",
+    "allowed_actions": [
+      "validate package",
+      "prepare official-channel preflight",
+      "submit after official-channel preflight passes"
+    ],
+    "timestamp": "2026-06-01T20:56:00+08:00"
+  },
+  "inventor_confirmation": {
+    "inventors": [
+      "Inventor A",
+      "Inventor B"
+    ],
+    "contribution_confirmed": true
+  },
+  "ownership": {
+    "basis": "service invention assignment",
+    "evidence": "internal-assignment-record.pdf"
+  },
+  "secrecy_review": {
+    "china_completed": true,
+    "foreign_or_pct_planned": false,
+    "status": "not_required"
+  },
+  "agency": {
+    "agent_or_firm": "Patent Capital OS Mock Review Desk",
+    "appointment_evidence": "power-of-attorney.pdf"
+  },
+  "filing_channel": {
+    "official_system": "CNIPA patent business processing system",
+    "account_owner": "Patent Capital OS Mock Review Desk",
+    "signature_authority": "documented",
+    "automation_allowed": true
+  },
+  "fees": {
+    "payer": "Example Appliance Technology Ltd.",
+    "fee_reduction": false,
+    "auto_pay_authorized": true
+  }
+}

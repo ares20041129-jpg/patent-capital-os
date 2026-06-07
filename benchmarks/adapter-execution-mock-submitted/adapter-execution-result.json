@@ -1,0 +1,50 @@
+{
+  "case_id": "APPROVED-ADAPTER-PREFLIGHT-001",
+  "execution_mode": "approved_adapter",
+  "adapter_name": "authorized-cnipa-counsel-reviewed-adapter",
+  "adapter_version": "1.0.0-security-reviewed",
+  "adapter_request": "../approved-adapter-preflight-ready/filing-adapter-request.json",
+  "adapter_request_hash": "sha256:c41e77d78d546ba1ca205f00b5e39c27a7b178c1a187b37fdd19916f12f3052a",
+  "approved_adapter_preflight": "../approved-adapter-preflight-ready/approved-adapter-preflight.json",
+  "approved_adapter_preflight_hash": "sha256:b294574df0df61a8b3a1ca575c162edb155e6a3b75886dc90716e019a8ea06c2",
+  "adapter_production_readiness_hash": "sha256:2e98aee405d11b9e7e5f0a480a81f2d2b322121ce4406040db297a1a438215fd",
+  "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+  "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "official_system": "CNIPA patent business processing system",
+  "official_action": "submit_package",
+  "action_started_at": "2026-06-01T22:20:00+08:00",
+  "action_completed_at": "2026-06-01T22:21:00+08:00",
+  "response_state": "submitted_pending_receipt",
+  "next_status": "submitted_pending_receipt",
+  "official_system_touched": true,
+  "official_submission_performed": true,
+  "adapter_execution_performed": true,
+  "final_package_hash": "sha256:0d03edad83fe8418fd41462106631245ba1fd9ffa6faf66bcb979c1fe112f012",
+  "reviewed_package_hash": "sha256:0d03edad83fe8418fd41462106631245ba1fd9ffa6faf66bcb979c1fe112f012",
+  "receipt_capture_status": "submitted_pending_receipt",
+  "receipt_capture_plan": "../official-channel-preflight-to-ready/receipt-capture-plan.yaml",
+  "receipt_capture_plan_hash": "sha256:c2a45654e113de8076f8c98e18875eb15f53c29468215d7cf449102e0642bc0c",
+  "audit_log_entry": "audit-log-entry.yaml",
+  "audit_log_entry_hash": "sha256:e796aeb740e16e944edd72d4754202ca63247891771bceb546def0f69812125d",
+  "docket_entry": "docket-entry.yaml",
+  "docket_entry_hash": "sha256:e60928a5abb35fe78878f098344daf1b6b4863633b7a9d682b5f64672857555e",
+  "official_submission_evidence": {
+    "submission_reference": "MOCK-SUBMISSION-PENDING-001",
+    "official_status_snapshot_file": "mock-submitted-status-snapshot.png",
+    "official_status_snapshot_hash": "sha256:f87a952e654f4b89a446a518016c3c59f25d7284a17b493e723f204ca71f2a09",
+    "submitted_package_hash": "sha256:0d03edad83fe8418fd41462106631245ba1fd9ffa6faf66bcb979c1fe112f012",
+    "submitted_file_list_file": "mock-submitted-file-list.txt",
+    "submitted_file_list_hash": "sha256:928fb086dd2ebc6f2620229a5d8ee63bca0e7a2bfdadc8e6b5c9638f58eb0ffa"
+  },
+  "fees": {
+    "payment_status": "pending",
+    "payment_receipt_hash": ""
+  },
+  "official_receipt_hash": "",
+  "application_number": "",
+  "benchmark_mock": true,
+  "decision": {
+    "status": "submitted_pending_receipt",
+    "reason": "Mock adapter result proves the required shape for a post-submission, pre-receipt state. It is not a real official submission."
+  }
+}

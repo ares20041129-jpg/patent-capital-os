@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T06:51:20+08:00",
+  "files": [
+    {
+      "path": "case-package-manifest.json",
+      "sha256": "sha256:1c0060f335913214052d6a0e8d46a2e1a66488808a583487b386ae9c0d37b55d",
+      "bytes": 3111
+    },
+    {
+      "path": "01-normalized/source-material-manifest.json",
+      "sha256": "sha256:7ec4febf64c5894dc88401430c2db1c6ebe97637b7a56ae621ae94758397b9f7",
+      "bytes": 2348
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:d00544bd55de31121e5c35507ea67f0348eed4496b2bb7605ca736b4db0359a4",
+      "bytes": 437
+    },
+    {
+      "path": "intake-report.md",
+      "sha256": "sha256:198e49de911c22966a32eb11256fa074d6f2d3a1a64e2ab786674dc89ee593ce",
+      "bytes": 769
+    }
+  ]
+}

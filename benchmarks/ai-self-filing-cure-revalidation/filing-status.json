@@ -1,0 +1,23 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "previous_status": "legal_gate_failed",
+  "status": "ready_for_package_validation",
+  "legal_gate": "passed",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "ai_self_filing_gate": "passed",
+  "package_validation": "pending",
+  "failed_gates": [
+    "package_validation_pending",
+    "official_channel_preflight_pending",
+    "receipt_capture_pending"
+  ],
+  "decision": "package_validation_required_before_official_preflight",
+  "final_package_hash": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d",
+  "reviewed_package_hash": "",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "external_lawyer_involved": false,
+  "updated_at": "2026-06-02T02:49:45+08:00"
+}

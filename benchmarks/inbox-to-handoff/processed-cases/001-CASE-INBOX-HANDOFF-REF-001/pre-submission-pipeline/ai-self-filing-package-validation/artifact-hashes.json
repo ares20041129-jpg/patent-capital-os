@@ -1,0 +1,61 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T07:03:14+08:00",
+  "files": [
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:8f225135e27e4d1ac728c5a6fa67298bab05c5cf62516d794028d2352fdcb7c1",
+      "bytes": 6354
+    },
+    {
+      "path": "abnormal-filing-risk-assessment.json",
+      "sha256": "sha256:3022f7e9a4f5201c7e870d356f126f12ff3f1e2c7b7a0f6994222f67198d8908",
+      "bytes": 5427
+    },
+    {
+      "path": "ai-self-filing-authorization-packet.json",
+      "sha256": "sha256:819669a49b1827cf28ef3ed9a489c80c694e6e75cadb6aee2074ec7698dc9235",
+      "bytes": 4562
+    },
+    {
+      "path": "claims-ai-self-filing-final.xml",
+      "sha256": "sha256:63fc66b99102f5ed3d5627c10473247c3175f50f3e2c6760411a317cbd0ab1bb",
+      "bytes": 387
+    },
+    {
+      "path": "specification-ai-self-filing-final.xml",
+      "sha256": "sha256:8dc29333155c16a43b7cab048676851e9488cbe30b26ecfbe07a47022e50b558",
+      "bytes": 394
+    },
+    {
+      "path": "abstract-ai-self-filing-final.xml",
+      "sha256": "sha256:9a76c12fd4f4b5f87144ac5a6217cda9aa28c3af3638de241a35d11c7e856690",
+      "bytes": 389
+    },
+    {
+      "path": "drawings-ai-self-filing-final.pdf",
+      "sha256": "sha256:9b8c0c11543dbb5589ceba4a974ec3580a46d7a0ff1caaca289cd83714312ed8",
+      "bytes": 338
+    },
+    {
+      "path": "request_metadata-ai-self-filing-final.xml",
+      "sha256": "sha256:392bfca4eb7c1b0b8d3de76f640e2e76629b2c1700bb22979f4160843077b314",
+      "bytes": 397
+    },
+    {
+      "path": "filing-package-manifest.yaml",
+      "sha256": "sha256:5da19763365756df3350dc6b55c17cce862c4431658015ccbc9b827f1b85925c",
+      "bytes": 2801
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:8ed365c491d18b5e619350785fbb1799fb8cc2691bd4a0d91cfd06039de5c3ed",
+      "bytes": 945
+    },
+    {
+      "path": "ai-self-filing-package-report.md",
+      "sha256": "sha256:2ac2f8da95f21306c2bb15fc6c716d7c2d4ec2d612ab0fb846b0768b1275962e",
+      "bytes": 1540
+    }
+  ]
+}

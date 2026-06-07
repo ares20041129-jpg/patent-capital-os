@@ -1,0 +1,290 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-REF-001",
+  "handoff_package_type": "pre_submission_approved_adapter_execution_handoff",
+  "created_at": "2026-06-03T07:03:15+08:00",
+  "source_pre_submission_dir": "../pre-submission-pipeline",
+  "source_pre_submission_hash": "sha256:c83f065307ac888ce87dd993cb81dda1a8c90895bc8fee0ce0ec37c55ad4e3d9",
+  "status": "approved_for_adapter_execution",
+  "decision": "handoff_ready_no_auto_submit",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "pre_submission_lifecycle_gate": "passed",
+  "lifecycle_trace_hash": "sha256:28a5bb45cf844c8a01455d2efbd3e1e5876153ab3ead26accfc361dcc494aee1",
+  "copied_lifecycle_trace_hash": "sha256:28a5bb45cf844c8a01455d2efbd3e1e5876153ab3ead26accfc361dcc494aee1",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "adapter_execution_performed": false,
+  "automatic_submission_performed": false,
+  "final_package_hash": "sha256:1c9cdad01765d0c9be0ae263738a5b00f580ef0925e4eb1e955c7040d27f99f8",
+  "application_materials_hash": "sha256:c8197ec8fb3b9ab731b51bd84663813c1bd8841debbce97a743f4cb24c478008",
+  "reference_patent_delta_hash": "sha256:a3c8fdf36246f82c722d0d27ca56f2e9bf4c8b583547ba7d256490cc64ebb841",
+  "reference_delta_rows_count": 3,
+  "reference_delta_claim_elements_count": 3,
+  "reference_delta_boundary_preserved": true,
+  "official_material_inventory": [
+    {
+      "document_id": "claims",
+      "type": "claims",
+      "filename": "claims-ai-self-filing-final.xml",
+      "format": "xml",
+      "hash": "sha256:63fc66b99102f5ed3d5627c10473247c3175f50f3e2c6760411a317cbd0ab1bb",
+      "required": true,
+      "validation_status": "passed"
+    },
+    {
+      "document_id": "specification",
+      "type": "specification",
+      "filename": "specification-ai-self-filing-final.xml",
+      "format": "xml",
+      "hash": "sha256:8dc29333155c16a43b7cab048676851e9488cbe30b26ecfbe07a47022e50b558",
+      "required": true,
+      "validation_status": "passed"
+    },
+    {
+      "document_id": "abstract",
+      "type": "abstract",
+      "filename": "abstract-ai-self-filing-final.xml",
+      "format": "xml",
+      "hash": "sha256:9a76c12fd4f4b5f87144ac5a6217cda9aa28c3af3638de241a35d11c7e856690",
+      "required": true,
+      "validation_status": "passed"
+    },
+    {
+      "document_id": "drawings",
+      "type": "drawings",
+      "filename": "drawings-ai-self-filing-final.pdf",
+      "format": "pdf",
+      "hash": "sha256:9b8c0c11543dbb5589ceba4a974ec3580a46d7a0ff1caaca289cd83714312ed8",
+      "required": true,
+      "validation_status": "passed"
+    },
+    {
+      "document_id": "request_metadata",
+      "type": "request_metadata",
+      "filename": "request_metadata-ai-self-filing-final.xml",
+      "format": "xml",
+      "hash": "sha256:392bfca4eb7c1b0b8d3de76f640e2e76629b2c1700bb22979f4160843077b314",
+      "required": true,
+      "validation_status": "passed"
+    }
+  ],
+  "evidence_files": [
+    {
+      "role": "pre_submission_result",
+      "source_path": "pre-submission-pipeline-result.json",
+      "source_sha256": "sha256:c83f065307ac888ce87dd993cb81dda1a8c90895bc8fee0ce0ec37c55ad4e3d9",
+      "package_path": "evidence/control/pre-submission-pipeline-result.json",
+      "sha256": "sha256:c83f065307ac888ce87dd993cb81dda1a8c90895bc8fee0ce0ec37c55ad4e3d9",
+      "bytes": 22679
+    },
+    {
+      "role": "pre_submission_report",
+      "source_path": "pre-submission-pipeline-report.md",
+      "source_sha256": "sha256:196daae47e7dd728cdbe7a37863172afcf53e6f14e7fdd9194f56632d998542e",
+      "package_path": "evidence/control/pre-submission-pipeline-report.md",
+      "sha256": "sha256:196daae47e7dd728cdbe7a37863172afcf53e6f14e7fdd9194f56632d998542e",
+      "bytes": 6101
+    },
+    {
+      "role": "application_materials",
+      "source_path": "application-materials-pipeline/application-materials/application-materials.json",
+      "source_sha256": "sha256:c8197ec8fb3b9ab731b51bd84663813c1bd8841debbce97a743f4cb24c478008",
+      "package_path": "evidence/application-materials/application-materials.json",
+      "sha256": "sha256:c8197ec8fb3b9ab731b51bd84663813c1bd8841debbce97a743f4cb24c478008",
+      "bytes": 10250
+    },
+    {
+      "role": "request_form_metadata",
+      "source_path": "application-materials-pipeline/application-materials/request-form-metadata.json",
+      "source_sha256": "sha256:02bcd66ae54b34d5ee6b4016960eafce518a63b7d682196d8f717ccc4e047475",
+      "package_path": "evidence/application-materials/request-form-metadata.json",
+      "sha256": "sha256:02bcd66ae54b34d5ee6b4016960eafce518a63b7d682196d8f717ccc4e047475",
+      "bytes": 1607
+    },
+    {
+      "role": "document_generation_plan",
+      "source_path": "application-materials-pipeline/application-materials/document-generation-plan.json",
+      "source_sha256": "sha256:2c4064980d84e0dfd3092a208dba79fe79e8d2e5738aa20bff92e4a4d96e5780",
+      "package_path": "evidence/application-materials/document-generation-plan.json",
+      "sha256": "sha256:2c4064980d84e0dfd3092a208dba79fe79e8d2e5738aa20bff92e4a4d96e5780",
+      "bytes": 2144
+    },
+    {
+      "role": "claims_material",
+      "source_path": "application-materials-pipeline/application-materials/claims-material.md",
+      "source_sha256": "sha256:37f88b913675eac807e771689f8f9425dc589ff343660569d97324d14e0a1811",
+      "package_path": "evidence/application-materials/claims-material.md",
+      "sha256": "sha256:37f88b913675eac807e771689f8f9425dc589ff343660569d97324d14e0a1811",
+      "bytes": 1187
+    },
+    {
+      "role": "specification_material",
+      "source_path": "application-materials-pipeline/application-materials/specification-material.md",
+      "source_sha256": "sha256:ff1b174be88ddecd6fddcf388e80122c5480de91a34b94cbaeb26004ac62d033",
+      "package_path": "evidence/application-materials/specification-material.md",
+      "sha256": "sha256:ff1b174be88ddecd6fddcf388e80122c5480de91a34b94cbaeb26004ac62d033",
+      "bytes": 3063
+    },
+    {
+      "role": "abstract_material",
+      "source_path": "application-materials-pipeline/application-materials/abstract-material.md",
+      "source_sha256": "sha256:f80eac346fc52cfdc5fabec1f1738360f85e5f0b4d9933f277164627172644d2",
+      "package_path": "evidence/application-materials/abstract-material.md",
+      "sha256": "sha256:f80eac346fc52cfdc5fabec1f1738360f85e5f0b4d9933f277164627172644d2",
+      "bytes": 907
+    },
+    {
+      "role": "drawings_materials_plan",
+      "source_path": "application-materials-pipeline/application-materials/drawings-materials-plan.md",
+      "source_sha256": "sha256:dc1e7ba9f1291e285889a152429bb933fd3d0de99961ab8271a3779cbfda3e63",
+      "package_path": "evidence/application-materials/drawings-materials-plan.md",
+      "sha256": "sha256:dc1e7ba9f1291e285889a152429bb933fd3d0de99961ab8271a3779cbfda3e63",
+      "bytes": 580
+    },
+    {
+      "role": "xml_readiness_checklist",
+      "source_path": "application-materials-pipeline/application-materials/xml-readiness-checklist.json",
+      "source_sha256": "sha256:2be48181a8af943832f1462c615e15627afa59d3f18cb696b83ff896758f56f5",
+      "package_path": "evidence/application-materials/xml-readiness-checklist.json",
+      "sha256": "sha256:2be48181a8af943832f1462c615e15627afa59d3f18cb696b83ff896758f56f5",
+      "bytes": 677
+    },
+    {
+      "role": "final_claims_xml",
+      "source_path": "ai-self-filing-package-validation/claims-ai-self-filing-final.xml",
+      "source_sha256": "sha256:63fc66b99102f5ed3d5627c10473247c3175f50f3e2c6760411a317cbd0ab1bb",
+      "package_path": "evidence/final-package/claims-ai-self-filing-final.xml",
+      "sha256": "sha256:63fc66b99102f5ed3d5627c10473247c3175f50f3e2c6760411a317cbd0ab1bb",
+      "bytes": 387
+    },
+    {
+      "role": "final_specification_xml",
+      "source_path": "ai-self-filing-package-validation/specification-ai-self-filing-final.xml",
+      "source_sha256": "sha256:8dc29333155c16a43b7cab048676851e9488cbe30b26ecfbe07a47022e50b558",
+      "package_path": "evidence/final-package/specification-ai-self-filing-final.xml",
+      "sha256": "sha256:8dc29333155c16a43b7cab048676851e9488cbe30b26ecfbe07a47022e50b558",
+      "bytes": 394
+    },
+    {
+      "role": "final_abstract_xml",
+      "source_path": "ai-self-filing-package-validation/abstract-ai-self-filing-final.xml",
+      "source_sha256": "sha256:9a76c12fd4f4b5f87144ac5a6217cda9aa28c3af3638de241a35d11c7e856690",
+      "package_path": "evidence/final-package/abstract-ai-self-filing-final.xml",
+      "sha256": "sha256:9a76c12fd4f4b5f87144ac5a6217cda9aa28c3af3638de241a35d11c7e856690",
+      "bytes": 389
+    },
+    {
+      "role": "final_drawings_pdf",
+      "source_path": "ai-self-filing-package-validation/drawings-ai-self-filing-final.pdf",
+      "source_sha256": "sha256:9b8c0c11543dbb5589ceba4a974ec3580a46d7a0ff1caaca289cd83714312ed8",
+      "package_path": "evidence/final-package/drawings-ai-self-filing-final.pdf",
+      "sha256": "sha256:9b8c0c11543dbb5589ceba4a974ec3580a46d7a0ff1caaca289cd83714312ed8",
+      "bytes": 338
+    },
+    {
+      "role": "final_request_metadata_xml",
+      "source_path": "ai-self-filing-package-validation/request_metadata-ai-self-filing-final.xml",
+      "source_sha256": "sha256:392bfca4eb7c1b0b8d3de76f640e2e76629b2c1700bb22979f4160843077b314",
+      "package_path": "evidence/final-package/request_metadata-ai-self-filing-final.xml",
+      "sha256": "sha256:392bfca4eb7c1b0b8d3de76f640e2e76629b2c1700bb22979f4160843077b314",
+      "bytes": 397
+    },
+    {
+      "role": "filing_package_manifest",
+      "source_path": "ai-self-filing-package-validation/filing-package-manifest.yaml",
+      "source_sha256": "sha256:5da19763365756df3350dc6b55c17cce862c4431658015ccbc9b827f1b85925c",
+      "package_path": "evidence/final-package/filing-package-manifest.yaml",
+      "sha256": "sha256:5da19763365756df3350dc6b55c17cce862c4431658015ccbc9b827f1b85925c",
+      "bytes": 2801
+    },
+    {
+      "role": "ai_self_filing_authorization_packet",
+      "source_path": "ai-self-filing-package-validation/ai-self-filing-authorization-packet.json",
+      "source_sha256": "sha256:819669a49b1827cf28ef3ed9a489c80c694e6e75cadb6aee2074ec7698dc9235",
+      "package_path": "evidence/final-package/ai-self-filing-authorization-packet.json",
+      "sha256": "sha256:819669a49b1827cf28ef3ed9a489c80c694e6e75cadb6aee2074ec7698dc9235",
+      "bytes": 4562
+    },
+    {
+      "role": "official_channel_preflight",
+      "source_path": "ai-self-filing-official-ready/official-channel-preflight.yaml",
+      "source_sha256": "sha256:100185b1ca9860f7a33953e0713650cb8e402200d940fe7cc65976a50dbab442",
+      "package_path": "evidence/control/official-channel-preflight.yaml",
+      "sha256": "sha256:100185b1ca9860f7a33953e0713650cb8e402200d940fe7cc65976a50dbab442",
+      "bytes": 2130
+    },
+    {
+      "role": "receipt_capture_plan",
+      "source_path": "ai-self-filing-official-ready/receipt-capture-plan.yaml",
+      "source_sha256": "sha256:1286f3fd32d84924b8954a8ba89f7a449a9bea3060c906873ce470fd09840ce1",
+      "package_path": "evidence/control/receipt-capture-plan.yaml",
+      "sha256": "sha256:1286f3fd32d84924b8954a8ba89f7a449a9bea3060c906873ce470fd09840ce1",
+      "bytes": 767
+    },
+    {
+      "role": "approved_adapter_preflight",
+      "source_path": "ai-self-filing-approved-adapter-preflight/approved-adapter-preflight.json",
+      "source_sha256": "sha256:41498e6eda05f683aed80a56172d8ace34a32e10bf7a007af3f2cb78e1aaaf2b",
+      "package_path": "evidence/control/approved-adapter-preflight.json",
+      "sha256": "sha256:41498e6eda05f683aed80a56172d8ace34a32e10bf7a007af3f2cb78e1aaaf2b",
+      "bytes": 6675
+    },
+    {
+      "role": "filing_adapter_request",
+      "source_path": "ai-self-filing-approved-adapter-preflight/filing-adapter-request.json",
+      "source_sha256": "sha256:93912c2f6e965b20aa6dec9017ce2dfaf0b475bcb33d0484bbd865e21b209e00",
+      "package_path": "evidence/control/filing-adapter-request.json",
+      "sha256": "sha256:93912c2f6e965b20aa6dec9017ce2dfaf0b475bcb33d0484bbd865e21b209e00",
+      "bytes": 2195
+    },
+    {
+      "role": "audit_log_entry_plan",
+      "source_path": "ai-self-filing-approved-adapter-preflight/audit-log-entry-plan.yaml",
+      "source_sha256": "sha256:4b93dbdd35ac2fbe40e6372f411742a054fc42d298653d6ec41fc99fc0e505ae",
+      "package_path": "evidence/control/audit-log-entry-plan.yaml",
+      "sha256": "sha256:4b93dbdd35ac2fbe40e6372f411742a054fc42d298653d6ec41fc99fc0e505ae",
+      "bytes": 1261
+    },
+    {
+      "role": "docket_entry_plan",
+      "source_path": "ai-self-filing-approved-adapter-preflight/docket-entry-plan.yaml",
+      "source_sha256": "sha256:4c32e1c05dc395a68b0b36c6571f6d105b17d7b3916b56f1aa0509c0d74572f5",
+      "package_path": "evidence/control/docket-entry-plan.yaml",
+      "sha256": "sha256:4c32e1c05dc395a68b0b36c6571f6d105b17d7b3916b56f1aa0509c0d74572f5",
+      "bytes": 488
+    },
+    {
+      "role": "case_lifecycle_trace",
+      "source_path": "case-lifecycle-trace/case-lifecycle-trace.json",
+      "source_sha256": "sha256:28a5bb45cf844c8a01455d2efbd3e1e5876153ab3ead26accfc361dcc494aee1",
+      "package_path": "evidence/control/case-lifecycle-trace.json",
+      "sha256": "sha256:28a5bb45cf844c8a01455d2efbd3e1e5876153ab3ead26accfc361dcc494aee1",
+      "bytes": 10358
+    },
+    {
+      "role": "lifecycle_report",
+      "source_path": "case-lifecycle-trace/lifecycle-report.md",
+      "source_sha256": "sha256:68aaa74891f0ed720386ffb8b56d07da5f6bb57c14ba23a841169760f635b605",
+      "package_path": "evidence/control/lifecycle-report.md",
+      "sha256": "sha256:68aaa74891f0ed720386ffb8b56d07da5f6bb57c14ba23a841169760f635b605",
+      "bytes": 754
+    },
+    {
+      "role": "reference_patent_delta",
+      "source_path": "reference-patent-delta/reference-patent-delta.json",
+      "source_sha256": "sha256:7646c4927380af88ef771d2f2da125d7bd7e5f309a09df7350bfff53125a1d12",
+      "package_path": "evidence/reference-patent-delta/reference-patent-delta.json",
+      "sha256": "sha256:7646c4927380af88ef771d2f2da125d7bd7e5f309a09df7350bfff53125a1d12",
+      "bytes": 7128
+    }
+  ],
+  "handoff_controls": {
+    "read_only_handoff": true,
+    "does_not_authorize_automatic_submission": true,
+    "requires_separate_adapter_execution_result": true,
+    "requires_receipt_capture_after_submission": true,
+    "no_receipt_claimed": true,
+    "no_application_number_claimed": true
+  },
+  "next_action": "Use this read-only package only as approved-adapter execution input evidence; adapter execution, receipt capture, and application-number evidence remain separate gates."
+}

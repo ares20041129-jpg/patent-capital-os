@@ -1,0 +1,42 @@
+case_id: "CASE-INTAKE-ORCH-001"
+jurisdiction: "CN"
+official_system: "CNIPA patent business processing system"
+checked_at: "2026-06-03T05:14:35+08:00"
+checked_by: "Patent Capital OS AI self-filing official preflight"
+account:
+  owner: "Benchmark Applicant Ltd."
+  role: "applicant self-filing official account"
+  authorization_evidence: "applicant-official-account-self-filing-authorization.pdf"
+signature:
+  authority_holder: "Applicant Filing Operator"
+  authority_evidence: "applicant-electronic-signature-authority-record.pdf"
+  human_only: false
+automation:
+  automation_allowed: true
+  adapter_name: "ai-self-filing-benchmark-adapter"
+  adapter_version: "0.0.0-dry-run"
+  bypasses_access_controls: false
+package:
+  final_package_hash: "sha256:d76adb4e8b7c944c1f31c197dc9b9476cc521f51095171411bbd166d27473b98"
+  reviewed_package_hash: "sha256:d76adb4e8b7c944c1f31c197dc9b9476cc521f51095171411bbd166d27473b98"
+  xml_validation_result: "passed"
+  attachment_list_hash: "sha256:6b0257587b2f5d85fced9b66e302e75b65319596ebe642d4db00ee3c7aa0347e"
+application_materials:
+  path: "../ai-self-filing-application-materials-reference-delta/application-materials.json"
+  hash: "sha256:451bf6debc7c479dd7802a2adf2c709e11b1e9051d498e33f965c1be8fd268ae"
+  status: "application_materials_generated_official_preflight_pending"
+  decision: "materials_generated_official_preflight_required"
+  reference_patent_delta_hash: "sha256:21afcd8d4569933058a050427f65a6c863a9053f48a5b9a1368475827fb3a4a2"
+  reference_delta_rows_count: "3"
+  reference_delta_claim_elements_count: "3"
+  reference_delta_boundary_preserved: true
+fees:
+  payer: "Benchmark Applicant Ltd."
+  auto_pay_authorized: true
+  payment_method_reference: "benchmark-applicant-payment-account"
+receipt_capture:
+  destination: "case-vault/CASE-INTAKE-ORCH-001/ai-self-filing-receipts"
+  responsible_owner: "Applicant Filing Operator"
+decision:
+  status: "ready_for_authorized_filing"
+  reason: "AI self-filing official-channel preflight source is complete for the reference-delta benchmark. No official system has been touched."

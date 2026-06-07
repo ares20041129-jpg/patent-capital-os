@@ -1,0 +1,31 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-001",
+  "generated_at": "2026-06-03T07:03:16+08:00",
+  "files": [
+    {
+      "path": "invention-disclosure.json",
+      "sha256": "sha256:1b0b375b950d77af4f9898f41153313c47d173249ead94c1392ac1a0429bbe79",
+      "bytes": 5486
+    },
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:4cc357b2ff9534099ec2d6fae18ace1c2d9d9f22803a9c537fb381895149dd0c",
+      "bytes": 4715
+    },
+    {
+      "path": "claim-support-map.md",
+      "sha256": "sha256:19369ab4acb675a20640f7327a12244673aefcb34882a7d4aa69bdbeeea8e480",
+      "bytes": 1761
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:13d62c483aa72ecdf513a09375d2e2967bfc2a3a563859beca63e65b6f265c37",
+      "bytes": 810
+    },
+    {
+      "path": "draft-package-report.md",
+      "sha256": "sha256:7de197e8e79139816e4480b94f2681dd1ab7463d2648cf01470bc97ad4e1cf2a",
+      "bytes": 684
+    }
+  ]
+}

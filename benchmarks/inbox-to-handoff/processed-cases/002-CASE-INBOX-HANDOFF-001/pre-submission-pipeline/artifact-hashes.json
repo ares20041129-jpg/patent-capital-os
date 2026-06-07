@@ -1,0 +1,86 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-001",
+  "generated_at": "2026-06-03T07:03:16+08:00",
+  "files": [
+    {
+      "path": "case-package/artifact-hashes.json",
+      "sha256": "sha256:fb7a11984abb226508e1d02001273d43e0cc3c543ab346439fa02b3796b1c089",
+      "bytes": 801
+    },
+    {
+      "path": "disclosure-normalization-scaffold/artifact-hashes.json",
+      "sha256": "sha256:4bc2f5578a6585b6cf7e964a1dfcd053c4517932c4706a1ec705cbd387323b74",
+      "bytes": 462
+    },
+    {
+      "path": "scaffold-confirmation-to-disclosure/artifact-hashes.json",
+      "sha256": "sha256:fd4eb09c868782fc0e1156132374b6148bcedd32b200224b5c27f9146c976866",
+      "bytes": 617
+    },
+    {
+      "path": "draft-package-generation/artifact-hashes.json",
+      "sha256": "sha256:27d07085b3598595cc15a71cd3c5b4f1affb2307f33ebabc72ba9b8dc41030f4",
+      "bytes": 958
+    },
+    {
+      "path": "draft-evidence-provenance-gate/artifact-hashes.json",
+      "sha256": "sha256:4391d39bea3370e4b48e3da2cbbbc2e06133ce9e41bff86ba8b1bc7b40b7c1e3",
+      "bytes": 1891
+    },
+    {
+      "path": "abnormal-filing-risk-gate/artifact-hashes.json",
+      "sha256": "sha256:e9c9862b9d6f1046bb3b611a07f14731df9bb90b38e865d1b7fafdbd944912e4",
+      "bytes": 2069
+    },
+    {
+      "path": "ai-self-filing-package-validation/ai-self-filing-source.json",
+      "sha256": "sha256:0ee123bd659c50cd565a15bbf506e76418dd36a53ea552f31d3b1e7dcf733dc1",
+      "bytes": 4179
+    },
+    {
+      "path": "ai-self-filing-package-validation/artifact-hashes.json",
+      "sha256": "sha256:66ee00b4a6d49f89ae60acd571a0000107cfebfc8c0324a661866186121c2c84",
+      "bytes": 2080
+    },
+    {
+      "path": "application-materials-pipeline/artifact-hashes.json",
+      "sha256": "sha256:07b82090cdaacee3c1ca08011282b377342c3cfc2400103655cbadc3deea6462",
+      "bytes": 1296
+    },
+    {
+      "path": "ai-self-filing-official-ready/official-preflight-source.json",
+      "sha256": "sha256:26a49af7e8f710de8afc7907372e7e4277a915368d1aa3b4a8170ee9f6156da8",
+      "bytes": 1621
+    },
+    {
+      "path": "ai-self-filing-official-ready/artifact-hashes.json",
+      "sha256": "sha256:ace8b7a2b1c45dfcdcd23ee4c60366a5e657d813760535bbc8fe14a0bc8125d0",
+      "bytes": 792
+    },
+    {
+      "path": "ai-self-filing-approved-adapter-preflight/approved-adapter-source.json",
+      "sha256": "sha256:7d91540a024aad067752ff82ded16dc660706609d16011afaeff6ee241236d60",
+      "bytes": 2238
+    },
+    {
+      "path": "ai-self-filing-approved-adapter-preflight/artifact-hashes.json",
+      "sha256": "sha256:858f294a9c81bcf35d6072604a94a56e54a57a863287f8ffda4f867e40307ac4",
+      "bytes": 1142
+    },
+    {
+      "path": "case-lifecycle-trace/artifact-hashes.json",
+      "sha256": "sha256:96b218a9ce97abfaa232f4668213bb9dcfcd8b43032ba91bbec9486422a7d2a4",
+      "bytes": 449
+    },
+    {
+      "path": "pre-submission-pipeline-result.json",
+      "sha256": "sha256:fb54065f85ad2f5e68935278b1ff2de29daa66b1d172732e485e7cfd8a0d32ce",
+      "bytes": 20139
+    },
+    {
+      "path": "pre-submission-pipeline-report.md",
+      "sha256": "sha256:4755a7af4978f0e28e61af59f18a9326bae604460c3327cb09e80bcd03137030",
+      "bytes": 5352
+    }
+  ]
+}

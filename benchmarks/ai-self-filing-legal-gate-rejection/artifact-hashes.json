@@ -1,0 +1,11 @@
+{
+  "case_id": "AI-SELF-FILING-LEGAL-GATE-REJECTION",
+  "generated_at": "2026-06-02T02:45:15+08:00",
+  "files": [
+    {
+      "path": "rejection-cases.json",
+      "sha256": "sha256:16ea7b659bf90e871a549d3ee72b59efffe2f6e12a8c64208292d77bd7f3eeee",
+      "bytes": 3545
+    }
+  ]
+}

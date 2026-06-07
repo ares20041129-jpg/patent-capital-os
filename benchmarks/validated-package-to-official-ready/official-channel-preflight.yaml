@@ -1,0 +1,33 @@
+case_id: "CASE-INTAKE-ORCH-001"
+jurisdiction: "CN"
+official_system: "CNIPA patent business processing system"
+checked_at: "2026-06-02T20:02:16+08:00"
+checked_by: "Patent Capital OS benchmark"
+account:
+  owner: "Patent Capital OS Mock Review Desk"
+  role: "authorized filing account"
+  authorization_evidence: "power-of-attorney.pdf and account-owner authorization record"
+signature:
+  authority_holder: "Patent Capital OS Mock Review Desk filing account"
+  authority_evidence: "signature-authority-record.pdf"
+  human_only: false
+automation:
+  automation_allowed: true
+  adapter_name: "benchmark-adapter"
+  adapter_version: "0.0.0-dry-run"
+  bypasses_access_controls: false
+package:
+  final_package_hash: "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d"
+  reviewed_package_hash: "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d"
+  xml_validation_result: "passed"
+  attachment_list_hash: "sha256:48d60ee43010554581052f899f8a67932cfe04a97b55924dd58993d7368ae285"
+fees:
+  payer: "Example Appliance Technology Ltd."
+  auto_pay_authorized: true
+  payment_method_reference: "benchmark-payment-authority"
+receipt_capture:
+  destination: "case-vault/CASE-INTAKE-ORCH-001/receipts"
+  responsible_owner: "Filing operator"
+decision:
+  status: "ready_for_authorized_filing"
+  reason: "Official-channel preflight fields are present for a dry-run benchmark. No official submission, signature, fee payment, or receipt capture has occurred."

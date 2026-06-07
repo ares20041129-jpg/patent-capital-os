@@ -1,0 +1,7 @@
+Benchmark mock submitted file list for APPROVED-ADAPTER-PREFLIGHT-001.
+claims.xml
+specification.xml
+abstract.xml
+drawings.pdf
+request-metadata.xml
+Not real official evidence.

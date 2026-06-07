@@ -1,0 +1,32 @@
+{
+  "case_id": "",
+  "previous_status": "intake_received",
+  "current_status": "intake_received",
+  "target_status": "",
+  "decision": "",
+  "execution_mode": "handoff",
+  "case_owner": "",
+  "legal_owner": "",
+  "filing_owner": "",
+  "artifacts": {
+    "source_material_manifest": "",
+    "invention_disclosure": "",
+    "patent_application_draft": "",
+    "claim_support_map": "",
+    "submission_authorization_packet": "",
+    "filing_package_manifest": "",
+    "official_channel_preflight": "",
+    "receipt_capture": "",
+    "filing_status": "",
+    "artifact_hashes": ""
+  },
+  "validators_required": [],
+  "validators_run": [],
+  "failed_gates": [],
+  "next_allowed_states": [],
+  "audit": {
+    "audit_log_entry": "",
+    "artifact_hash_manifest": ""
+  },
+  "notes": ""
+}

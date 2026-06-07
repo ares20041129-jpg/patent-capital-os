@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-03T00:50:32+08:00",
+  "files": [
+    {
+      "path": "case-lifecycle-trace.json",
+      "sha256": "sha256:760b3f744fa0680b6d5389628e099110d15e9787b1c4ef5bc59a05ef0de5288b",
+      "bytes": 13802
+    },
+    {
+      "path": "lifecycle-report.md",
+      "sha256": "sha256:5d18caa61f00ce6a6876b967a2a0b1d9ea55fbe2b7459c47c3c36b4da301579b",
+      "bytes": 571
+    }
+  ]
+}

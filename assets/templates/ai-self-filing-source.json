@@ -1,0 +1,88 @@
+{
+  "case_id": "",
+  "filing_type": "CN invention patent",
+  "jurisdiction": "CN",
+  "source_draft_hash": "",
+  "final_package_hash": "",
+  "external_lawyer_involved": false,
+  "self_filing_eligibility": {
+    "applicant_region": "",
+    "applicant_type": "",
+    "self_filing_allowed": false,
+    "mandatory_agent_required": true,
+    "foreign_or_hmt_applicant": true,
+    "agency_bypass_requested": false,
+    "basis": ""
+  },
+  "ai_compliance_review": {
+    "engine_name": "Patent Capital OS AI self-filing gate",
+    "engine_version": "",
+    "checked_at": "",
+    "reviewed_artifacts_hash": "",
+    "no_copying_check": "pending",
+    "claim_support_check": "pending",
+    "abnormal_filing_risk": "unknown",
+    "abnormal_filing_risk_assessment": {
+      "case_id": "",
+      "status": "",
+      "gate": "",
+      "risk_level": "",
+      "artifact_hash": "",
+      "artifact_path": ""
+    },
+    "official_format_check": "pending",
+    "limitations": [],
+    "legal_gate_review": {
+      "review_record_hash": "",
+      "authorization_scope_check": "pending",
+      "self_filing_eligibility_check": "pending",
+      "inventor_ownership_check": "pending",
+      "secrecy_check": "pending",
+      "fee_authority_check": "pending",
+      "official_channel_boundary_check": "pending",
+      "stop_conditions_checked": [],
+      "legal_advice_claimed": false,
+      "lawyer_or_agent_review_claimed": false
+    }
+  },
+  "applicant_authorization": {
+    "applicant_name": "",
+    "authorized_person": "",
+    "authority_basis": "",
+    "allowed_actions": [],
+    "timestamp": ""
+  },
+  "inventor_confirmation": {
+    "inventors": [],
+    "contribution_confirmed": false
+  },
+  "ownership": {
+    "basis": "",
+    "evidence": "",
+    "dispute_absent": false
+  },
+  "secrecy_review": {
+    "china_completed": true,
+    "foreign_or_pct_planned": false,
+    "status": "not_required"
+  },
+  "filing_channel": {
+    "official_system": "",
+    "account_owner": "",
+    "official_account_registered": false,
+    "signature_authority": "",
+    "automation_allowed": false,
+    "bypasses_access_controls": false,
+    "human_only_steps": []
+  },
+  "fees": {
+    "payer": "",
+    "fee_reduction": false,
+    "auto_pay_authorized": false,
+    "payment_account_reference": ""
+  },
+  "decision": {
+    "status": "ready_for_package_validation",
+    "reason": ""
+  }
+}

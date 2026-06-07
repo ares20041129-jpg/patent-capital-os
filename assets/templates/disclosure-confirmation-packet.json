@@ -1,0 +1,62 @@
+{
+  "case_id": "",
+  "scaffold_hash": "",
+  "confirmed_at": "",
+  "applicant_context": {
+    "applicant_name": "",
+    "product_or_project": "",
+    "actual_r_and_d_basis": "",
+    "ownership_basis": ""
+  },
+  "inventor_input": {
+    "inventors": [
+      {
+        "name": "",
+        "contribution": ""
+      }
+    ],
+    "contribution_confirmed": true
+  },
+  "technical_effects": [
+    {
+      "effect": "",
+      "evidence": ""
+    }
+  ],
+  "similarity_control": {
+    "uses_reference_patents": true,
+    "no_copying_or_synonym_substitution_confirmed": true,
+    "real_technical_contribution_summary": ""
+  },
+  "data_and_evidence": {
+    "prototypes": [],
+    "experiments": [],
+    "logs_or_measurements": [],
+    "source_hashes": []
+  },
+  "secrecy": {
+    "invention_completed_in_china": true,
+    "foreign_or_pct_planned": false,
+    "secrecy_review_status": "not_required"
+  },
+  "legal_drafting_review": {
+    "reviewed_by": {
+      "name": "",
+      "organization": "",
+      "role": "ai_legal_compliance_reviewer"
+    },
+    "review_timestamp": "",
+    "reviewed_scaffold_hash": "",
+    "approval_scope": "draft_generation_only",
+    "filing_approved": false,
+    "approval_statement": ""
+  },
+  "controls": {
+    "draft_generation_allowed": true,
+    "filing_allowed": false,
+    "external_lawyer_involved": false,
+    "official_system_touched": false,
+    "official_submission_performed": false
+  },
+  "ai_legal_compliance_questions": []
+}

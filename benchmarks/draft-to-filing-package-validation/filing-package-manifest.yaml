@@ -1,0 +1,67 @@
+case_id: "DRAFT-TO-PACKAGE-001"
+jurisdiction: "CN"
+filing_type: "invention"
+package_status: "package_valid_official_preflight_pending"
+source_draft: "patent-application-final.md"
+source_draft_hash: "sha256:6c2e86ed80848e88d165a34ea5784f87e5beee72f185804cace48dba714b64da"
+authorization_packet: "submission-authorization-packet.json"
+authorization_packet_hash: "sha256:1bf86335e4bacb59b73fac883e332f1ed6e717d982dd159744ac20ffae2c120c"
+reviewed_package_hash: "sha256:6c2e86ed80848e88d165a34ea5784f87e5beee72f185804cace48dba714b64da"
+final_package_hash: "sha256:6c2e86ed80848e88d165a34ea5784f87e5beee72f185804cace48dba714b64da"
+official_submission_performed: false
+
+documents:
+  - document_id: "claims"
+    type: "claims"
+    filename: "claims-final.xml"
+    format: "xml"
+    hash: "sha256:b0ea253445a311adf7da7019fd5a621e2a7d10f60ed3e059cde3d04d2d9c3400"
+    required: true
+    validation_status: "passed"
+  - document_id: "specification"
+    type: "specification"
+    filename: "specification-final.xml"
+    format: "xml"
+    hash: "sha256:aa59e3bb63f384e3780840217e45d7f3bc58b7da2fde8a7a34084cb37a57f1e3"
+    required: true
+    validation_status: "passed"
+  - document_id: "abstract"
+    type: "abstract"
+    filename: "abstract-final.xml"
+    format: "xml"
+    hash: "sha256:900a54326f7f04e578ee9f93c87175dbb21a311e701b32d0c20960b2d4d87d09"
+    required: true
+    validation_status: "passed"
+  - document_id: "drawings"
+    type: "drawings"
+    filename: "drawings-final.pdf"
+    format: "pdf"
+    hash: "sha256:20ceb633ad78f3cb399988052963b9aa169e2932a02acd98a9a3eaa3964fd65c"
+    required: true
+    validation_status: "passed"
+  - document_id: "request_metadata"
+    type: "request_metadata"
+    filename: "request-metadata.xml"
+    format: "xml"
+    hash: "sha256:d11261969492e011ee9fed53306e31b38c7a32b0395ca97f8f7afc54537516c9"
+    required: true
+    validation_status: "passed"
+
+xml_validation:
+  final_xml_hash: "sha256:6c2e86ed80848e88d165a34ea5784f87e5beee72f185804cace48dba714b64da"
+  standard_or_tool: "CNIPA XML benchmark validation"
+  validation_result: "passed"
+  validation_report_hash: "sha256:c3b593c1e644a46eb35d306df7f9d639f706a59e40a27f228f2bd066b312d63b"
+  sequence_listing_standard: "not_applicable"
+
+cross_checks:
+  final_package_hash_matches_reviewed_hash: true
+  claims_hash_matches_authorization: true
+  specification_hash_matches_authorization: true
+  drawings_present: true
+  request_metadata_present: true
+
+next_gate:
+  official_channel_preflight_required: true
+  receipt_capture_required: true
+  status_after_package_validation: "package_valid_official_preflight_pending"

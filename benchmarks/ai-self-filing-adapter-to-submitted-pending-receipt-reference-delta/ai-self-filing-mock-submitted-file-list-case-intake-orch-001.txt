@@ -1,0 +1,7 @@
+Benchmark mock submitted file list for AI self-filing CASE-INTAKE-ORCH-001.
+claims-material.md
+specification-material.md
+abstract-material.md
+drawings-materials-plan.md
+request-form-metadata.json
+Not real official evidence.

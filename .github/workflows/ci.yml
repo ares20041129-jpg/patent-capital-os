@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+    inputs:
+      full_regression:
+        description: "Run the full local regression gate"
+        required: false
+        default: "false"
+
+jobs:
+  validate:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Validate prompt JSON
+        shell: pwsh
+        run: python -m json.tool test-prompts.json > $null
+
+      - name: Compile Python scripts
+        shell: pwsh
+        run: |
+          $files = Get-ChildItem scripts -Filter *.py
+          foreach ($file in $files) {
+            python -m py_compile $file.FullName
+          }
+          Write-Host "compiled $($files.Count) scripts"
+
+      - name: Run regression gate
+        if: github.event_name == 'workflow_dispatch' && inputs.full_regression == 'true'
+        run: python -X utf8 scripts/run_regression_gate.py --output-dir out/regression-gate --json
+
+      - name: Validate regression hash manifest
+        if: github.event_name == 'workflow_dispatch' && inputs.full_regression == 'true'
+        run: python -X utf8 scripts/validate_artifact_hash_manifest.py out/regression-gate/artifact-hashes.json --json

@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T07:03:16+08:00",
+  "files": [
+    {
+      "path": "pre-submission-pipeline/artifact-hashes.json",
+      "sha256": "sha256:ee854a91256b01e01c9dfafccff36b6912e3a4aec954bb0ab8f1a4a7304760fc",
+      "bytes": 3651
+    },
+    {
+      "path": "pre-submission-handoff-package/artifact-hashes.json",
+      "sha256": "sha256:375df36b014a78586bb2227a82788ba499573fe8644d09853c11cc45087f9d4e",
+      "bytes": 5645
+    },
+    {
+      "path": "pre-submission-to-handoff-result.json",
+      "sha256": "sha256:d06e4ef06d0b6b307843b8a005f104005ae3145630534539eaf2159fb8b5e08c",
+      "bytes": 11730
+    },
+    {
+      "path": "pre-submission-to-handoff-report.md",
+      "sha256": "sha256:ca951cb3663a0fc87661878e0adc04d931cd3f2fca6c29d904f7c12fa15d6437",
+      "bytes": 3195
+    }
+  ]
+}

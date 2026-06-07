@@ -1,0 +1,3 @@
+Reference patents describe bread maker control and fermentation control.
+
+Open prior-art question: determine whether motor-current ripple plus rest-interval classification is already disclosed.

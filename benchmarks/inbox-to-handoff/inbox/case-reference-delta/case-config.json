@@ -1,0 +1,8 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-REF-001",
+  "received_from": "Patent Capital OS inbox benchmark",
+  "jurisdiction": "CN",
+  "intake_mode": "batch_import",
+  "raw_input_dir": "raw-input",
+  "reference_delta_source": "reference-delta-source.json"
+}

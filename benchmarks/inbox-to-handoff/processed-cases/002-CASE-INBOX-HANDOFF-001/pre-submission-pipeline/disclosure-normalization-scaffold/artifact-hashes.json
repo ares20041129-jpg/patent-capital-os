@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-001",
+  "generated_at": "2026-06-03T07:03:16+08:00",
+  "files": [
+    {
+      "path": "invention-disclosure-scaffold.json",
+      "sha256": "sha256:6ebef214fe8dfff097348f1d66d22f7d5de6e8da28bdaac2fa4bd0da806549bd",
+      "bytes": 3824
+    },
+    {
+      "path": "normalization-report.md",
+      "sha256": "sha256:920deb1cae93a383a5e890fb9d0dac1aade4eaab8f87603bf762b38407e09e22",
+      "bytes": 683
+    }
+  ]
+}

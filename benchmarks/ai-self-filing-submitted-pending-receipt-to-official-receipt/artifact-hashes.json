@@ -1,0 +1,31 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-02T23:56:41+08:00",
+  "files": [
+    {
+      "path": "receipt-capture-source.json",
+      "sha256": "sha256:d247bf8231885fa948b407f3de2989c51decc6ba714dd6e6c140b5c551a35e08",
+      "bytes": 1757
+    },
+    {
+      "path": "receipt-capture.yaml",
+      "sha256": "sha256:b454deeaf91fff9d0f783af2e32820e5b481cd37bf4cdda7cda1795256a05c18",
+      "bytes": 1320
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:19a0c97de7dc0558032f2e25e2b4cf8b3eb6d5ed1a369b92697e07077650c7a6",
+      "bytes": 1578
+    },
+    {
+      "path": "receipt-report.md",
+      "sha256": "sha256:e338f748b19510a68d7e75de4323973545043010c02258c75cf744eba7862235",
+      "bytes": 690
+    },
+    {
+      "path": "ai-self-filing-mock-official-receipt-case-intake-orch-001.pdf",
+      "sha256": "sha256:8df8024236158d3f9db9a1242690cb53fce8904519a38fbf6f8a411568bf0367",
+      "bytes": 196
+    }
+  ]
+}

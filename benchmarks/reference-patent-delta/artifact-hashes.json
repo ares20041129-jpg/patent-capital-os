@@ -1,0 +1,21 @@
+{
+  "case_id": "CASE-REFERENCE-DELTA-001",
+  "generated_at": "2026-06-03T04:10:06+08:00",
+  "files": [
+    {
+      "path": "reference-patent-delta.json",
+      "sha256": "sha256:81bac75cd974b966ccd785b73a72b014cb705beaff5836dc36314b6f19904720",
+      "bytes": 7171
+    },
+    {
+      "path": "claim-strategy.md",
+      "sha256": "sha256:b5619ed90a19037696978d8410380243a393a996ee75a79ce3c1025be18f4773",
+      "bytes": 2081
+    },
+    {
+      "path": "reference-patent-delta-report.md",
+      "sha256": "sha256:d5dd0b1c01eada47b5d180f44753a7249db02b4de3dba4c4e121f93e3f19dd13",
+      "bytes": 514
+    }
+  ]
+}

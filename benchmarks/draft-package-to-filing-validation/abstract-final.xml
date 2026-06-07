@@ -1,0 +1,4 @@
+<abstract case-id="CASE-INTAKE-ORCH-001">
+  <text>The disclosed controller classifies dough hydration and elasticity state from motor current ripple, bowl temperature, and timed rest intervals.</text>
+  <boundary>Mock abstract for offline package validation only; no official submission.</boundary>
+</abstract>

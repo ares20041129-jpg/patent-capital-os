@@ -1,0 +1,21 @@
+{
+  "case_id": "APPLICATION-NUMBER-MOCK-001",
+  "family_id": "FAMILY-MOCK-001",
+  "jurisdiction": "CN",
+  "application_number": "MOCK-CN-202606010001",
+  "asset_status": "pending_application_mock",
+  "portfolio_tags": [
+    "core-product",
+    "cn-invention",
+    "mock-benchmark"
+  ],
+  "maintenance_owner": "Portfolio operator",
+  "licensing_relevance": "benchmark placeholder",
+  "financing_relevance": "benchmark placeholder",
+  "next_actions": [
+    "verify official bibliographic data",
+    "monitor examination deadlines",
+    "confirm fee and annuity docket"
+  ],
+  "benchmark_mock": true
+}

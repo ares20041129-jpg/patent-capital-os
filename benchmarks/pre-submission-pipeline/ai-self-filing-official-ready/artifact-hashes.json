@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE-PRE-SUB-001",
+  "generated_at": "2026-06-03T06:11:17+08:00",
+  "files": [
+    {
+      "path": "official-channel-preflight.yaml",
+      "sha256": "sha256:a665cf9e60a14974865723ff85aea8f1d613580db3ed7011319a137cd5f34aa4",
+      "bytes": 1880
+    },
+    {
+      "path": "receipt-capture-plan.yaml",
+      "sha256": "sha256:d7c297be0b3f6bcdd72a338cb73d826f563d94e033f6c94277454a540563029e",
+      "bytes": 737
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:f5ddb9cb278f706ee099ba441e81d746d99c0a46f22b932ed57271495f332e33",
+      "bytes": 1041
+    },
+    {
+      "path": "readiness-report.md",
+      "sha256": "sha256:58a533d57e9208bb769f6acb725d3705e7d52f29aa20a0a21191ee1e2d2e1567",
+      "bytes": 1236
+    }
+  ]
+}

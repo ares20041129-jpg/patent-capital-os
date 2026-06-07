@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-02T23:56:42+08:00",
+  "files": [
+    {
+      "path": "application-number-source.json",
+      "sha256": "sha256:c4ea9bca2b8fb2c955c979da02c1989ad905814428af06d52c9994d6d061aa7e",
+      "bytes": 2865
+    },
+    {
+      "path": "application-number-evidence.json",
+      "sha256": "sha256:c4ea9bca2b8fb2c955c979da02c1989ad905814428af06d52c9994d6d061aa7e",
+      "bytes": 2865
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:afbe08bc7a68e36b62b513e27e5b06c88f57cc6bae6d1af3893a08b614d232d7",
+      "bytes": 1565
+    },
+    {
+      "path": "docket-entry.yaml",
+      "sha256": "sha256:7f1f51a27d1d24aeaefe3dda90ea73217fc5bc6e7b01014780008938bc511526",
+      "bytes": 547
+    },
+    {
+      "path": "portfolio-update.json",
+      "sha256": "sha256:7f7f145fab783a8f388544d523e9caf3c4d672feb6dfe8bbc15bc75102aa35cf",
+      "bytes": 415
+    },
+    {
+      "path": "application-number-report.md",
+      "sha256": "sha256:d9fc4055d9fe67609368842275f112d2bc2d3911203a7fdf407c8b51545cbc72",
+      "bytes": 731
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "case_id": "BENCHMARK-SMART-APPLIANCE-CN13",
+  "status": "draft_only_not_filing_ready",
+  "karpathy_preflight": "pass_for_benchmark_only",
+  "legal_gate": "failed",
+  "failed_gates": [
+    "counsel_review",
+    "applicant_authorization",
+    "inventor_confirmation",
+    "ownership",
+    "secrecy_review",
+    "xml_package_validation",
+    "fee_authority",
+    "official_filing_channel"
+  ],
+  "decision": "do_not_file",
+  "next_action": "collect_submission_authorization_packet_before_any_filing_action"
+}

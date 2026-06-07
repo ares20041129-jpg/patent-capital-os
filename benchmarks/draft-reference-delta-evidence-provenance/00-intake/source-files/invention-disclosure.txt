@@ -1,0 +1,7 @@
+Title: Adaptive motor control for dough-state estimation
+
+Problem: Existing appliances use fixed mixing schedules and do not adapt to dough state.
+
+Technical idea: Compare motor current ripple, bowl temperature, and timed rest intervals to classify dough hydration and elasticity state.
+
+Evidence: Prototype log indicates motor-current variance changes after water absorption.

@@ -1,0 +1,46 @@
+{
+  "case_id": "BENCHMARK-SMART-APPLIANCE-CN13",
+  "generated_at": "2026-06-01T18:35:00+08:00",
+  "files": [
+    {
+      "path": "report.md",
+      "sha256": "sha256:9bae3afb2aad0862a794f030b3ba83a6f073e0e53d2a5ffe6e73d66e9c476cae",
+      "bytes": 16156
+    },
+    {
+      "path": "darwin-assessment.md",
+      "sha256": "sha256:49408c8780e9c71adef2cdcb0377a0ba903744c06819cc742066672b6d589909",
+      "bytes": 5409
+    },
+    {
+      "path": "submission-packet-status.json",
+      "sha256": "sha256:f1bbb7ee1167526990d81f743a04347e38f181a704b02e78a8ae52960da49f01",
+      "bytes": 511
+    },
+    {
+      "path": "results.tsv",
+      "sha256": "sha256:a6b15d7521607d9e7ae4fdb3bf1d18e822243c82855c92dd5451d6adad009667",
+      "bytes": 1294
+    },
+    {
+      "path": "claim-support-map.md",
+      "sha256": "sha256:775768995d4f0abab5ac71837178d7c9fe68d48f45450ee48144fd0560b3adf5",
+      "bytes": 4581
+    },
+    {
+      "path": "red-team-independent.md",
+      "sha256": "sha256:c23bcc75255071bf3239b2ed08046e8882b4029178ca0189b801c5a2c673dac1",
+      "bytes": 2917
+    },
+    {
+      "path": "prompt-runs/baseline-vs-skill.jsonl",
+      "sha256": "sha256:67ca73d236dccae791eef085f9f6c82f2524e238b91e46432aeb80e0fb8a75cd",
+      "bytes": 1716
+    },
+    {
+      "path": "prior-art/source-captures.jsonl",
+      "sha256": "sha256:ff7c6229058ba4e49563c767eb1ecc26494a9af7923c78c00e473052819f707a",
+      "bytes": 9963
+    }
+  ]
+}

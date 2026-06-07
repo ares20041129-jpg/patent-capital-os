@@ -1,0 +1,34 @@
+{
+  "case_id": "",
+  "previous_status": "submitted_pending_receipt",
+  "filing_action_id": "",
+  "submitted_at": "",
+  "official_system": "",
+  "official_session_authorization_hash": "",
+  "official_session_reference_hash": "",
+  "official_receipt": {
+    "receipt_id": "",
+    "receipt_file": "",
+    "receipt_hash": ""
+  },
+  "application": {
+    "application_number": "",
+    "filing_date": "",
+    "official_file_list_hash": ""
+  },
+  "fees": {
+    "payment_status": "pending",
+    "payment_receipt_file": "",
+    "payment_receipt_hash": ""
+  },
+  "docket": {
+    "docket_entry_id": "",
+    "next_deadlines": []
+  },
+  "evidence_notes": "",
+  "benchmark_mock": false,
+  "decision": {
+    "status": "official_receipt_received",
+    "reason": ""
+  }
+}

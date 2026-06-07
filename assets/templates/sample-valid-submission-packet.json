@@ -1,0 +1,62 @@
+{
+  "case_id": "SAMPLE-001",
+  "filing_type": "invention",
+  "jurisdiction": "CN",
+  "business_goal": "core product protection",
+  "final_documents": {
+    "claims": "claims-final.docx",
+    "specification": "specification-final.docx",
+    "abstract": "abstract-final.docx",
+    "drawings": "drawings.pdf",
+    "request_metadata": "request.yaml"
+  },
+  "hashes": {
+    "source_package": "sha256-demo-reviewed",
+    "final_claims": "sha256-demo-claims",
+    "final_specification": "sha256-demo-spec",
+    "final_xml": "sha256-demo-xml"
+  },
+  "counsel_review": {
+    "reviewer_name": "Patent Agent",
+    "reviewer_role": "patent agent",
+    "organization": "Example IP Firm",
+    "approval_statement": "Approved final package for filing.",
+    "reviewed_hash": "sha256-demo-reviewed",
+    "timestamp": "2026-06-01T16:30:00+08:00"
+  },
+  "applicant_authorization": {
+    "applicant_name": "Example Applicant Ltd.",
+    "authorized_person": "Authorized Officer",
+    "authority_basis": "board-approved filing authority",
+    "allowed_actions": ["submit", "file"],
+    "timestamp": "2026-06-01T16:35:00+08:00"
+  },
+  "inventor_confirmation": {
+    "inventors": ["Inventor A", "Inventor B"],
+    "contribution_confirmed": true
+  },
+  "ownership": {
+    "basis": "service invention assignment",
+    "evidence": "assignment-record.pdf"
+  },
+  "secrecy_review": {
+    "china_completed": true,
+    "foreign_or_pct_planned": false,
+    "status": "not_required"
+  },
+  "agency": {
+    "agent_or_firm": "Example IP Firm",
+    "appointment_evidence": "poa.pdf"
+  },
+  "filing_channel": {
+    "official_system": "CNIPA patent business processing system",
+    "account_owner": "Example IP Firm",
+    "signature_authority": "documented",
+    "automation_allowed": true
+  },
+  "fees": {
+    "payer": "Example Applicant Ltd.",
+    "fee_reduction": false,
+    "auto_pay_authorized": true
+  }
+}

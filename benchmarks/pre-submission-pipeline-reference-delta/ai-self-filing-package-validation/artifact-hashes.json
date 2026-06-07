@@ -1,0 +1,61 @@
+{
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "generated_at": "2026-06-03T06:11:16+08:00",
+  "files": [
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:801705f23d3838346232056a39baf5671bb769a76e29f847192771b1dbfc5355",
+      "bytes": 6348
+    },
+    {
+      "path": "abnormal-filing-risk-assessment.json",
+      "sha256": "sha256:075f6a01706646b54e5f18f938a56f1b826c8f2f41ddd18dec162392a5aaf008",
+      "bytes": 5421
+    },
+    {
+      "path": "ai-self-filing-authorization-packet.json",
+      "sha256": "sha256:404b5970bee9910de641f6997d01ac36e3a234aaded34adeae181674122a5c9e",
+      "bytes": 4550
+    },
+    {
+      "path": "claims-ai-self-filing-final.xml",
+      "sha256": "sha256:24e5ef2e203f19025ffe67432f24f951acef2a11bfaf0e902d3a421545e97add",
+      "bytes": 381
+    },
+    {
+      "path": "specification-ai-self-filing-final.xml",
+      "sha256": "sha256:af47ba7e64a120794b98e4e903526382eeafa7c536ddb6b7793bf3bddce933c1",
+      "bytes": 388
+    },
+    {
+      "path": "abstract-ai-self-filing-final.xml",
+      "sha256": "sha256:f6b9fe34875da3261b2dd3282351c2a86be3a5ad5f05f571f0f4b347c742c8d8",
+      "bytes": 383
+    },
+    {
+      "path": "drawings-ai-self-filing-final.pdf",
+      "sha256": "sha256:5e475411ed4bc5fdf490bb39735935bd64780126ee876561a76365e98761dabf",
+      "bytes": 332
+    },
+    {
+      "path": "request_metadata-ai-self-filing-final.xml",
+      "sha256": "sha256:aec53573a9a82b320b935d725d076ba6839a0fadb57c1ce01ce271e588773d2d",
+      "bytes": 391
+    },
+    {
+      "path": "filing-package-manifest.yaml",
+      "sha256": "sha256:49cf318bd1b6b1d770ff23ec74c0c486df57e24deae343a7d82850cbb3f1746e",
+      "bytes": 2795
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:0672026a9a0888e063d965cdd40d74bc200f274938baefca9d4209348bd5ad1f",
+      "bytes": 939
+    },
+    {
+      "path": "ai-self-filing-package-report.md",
+      "sha256": "sha256:4e0b895ad727af1e2ceac63f8719e7fc386c2c4a2cfb6b0fb55ea3311adab1fd",
+      "bytes": 1534
+    }
+  ]
+}

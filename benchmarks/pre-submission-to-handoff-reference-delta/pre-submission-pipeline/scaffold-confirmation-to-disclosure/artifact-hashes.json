@@ -1,0 +1,21 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T06:51:20+08:00",
+  "files": [
+    {
+      "path": "invention-disclosure.json",
+      "sha256": "sha256:4d911eeb112a70ac833bd8c518959bd5b059a0e66162bb81dcbac1cadbfb3c45",
+      "bytes": 5492
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:e3414df6fbadb88d77b7a841b34a46326a919c35dcc635d80292158f10436f70",
+      "bytes": 798
+    },
+    {
+      "path": "confirmation-report.md",
+      "sha256": "sha256:e85c342390e781549ff33ab5c47fdf62ad4f4edf1ca16236c39d47ee38b86d73",
+      "bytes": 1127
+    }
+  ]
+}

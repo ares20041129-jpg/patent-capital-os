@@ -1,0 +1,84 @@
+{
+  "readiness_gate": "production_adapter_readiness_gate",
+  "evidence_mode": "production_adapter_readiness",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system": "CNIPA patent business processing system",
+  "adapter": {
+    "name": "authorized-cnipa-filing-adapter",
+    "version": "1.0.0",
+    "registry_entry_hash": "sha256:...",
+    "release_artifact_hash": "sha256:...",
+    "source_review_hash": "sha256:...",
+    "supported_actions": [
+      "submit_package"
+    ],
+    "approved_for_production": true
+  },
+  "security_review": {
+    "reviewed_by": "security-review-owner",
+    "reviewed_at": "YYYY-MM-DDTHH:MM:SS+08:00",
+    "result": "passed",
+    "scope": "adapter release, credential boundary, official-control boundary, dry-run transcript",
+    "review_artifact_hash": "sha256:...",
+    "threat_model_hash": "sha256:...",
+    "dependency_scan_hash": "sha256:...",
+    "sandbox_dry_run_hash": "sha256:...",
+    "credential_handling_result": "passed"
+  },
+  "credential_policy": {
+    "credential_source": "official_session_broker",
+    "raw_credentials_in_request": false,
+    "private_keys_in_request": false,
+    "session_tokens_in_request": false,
+    "cookies_in_request": false,
+    "mfa_secrets_in_request": false,
+    "stores_credentials": false
+  },
+  "official_controls": {
+    "respects_mfa": true,
+    "human_only_steps_trigger_handoff": true,
+    "signature_ceremony_handoff_if_required": true,
+    "payment_requires_explicit_authority": true,
+    "bypasses_access_controls": false,
+    "bypasses_captcha": false,
+    "bypasses_signature_ceremony": false,
+    "bypasses_mfa": false
+  },
+  "approval": {
+    "account_owner_authorization_hash": "sha256:...",
+    "filing_ops_approval_hash": "sha256:...",
+    "compliance_approval_hash": "sha256:..."
+  },
+  "execution_controls": {
+    "requested_action": "submit_package",
+    "dry_run_required_before_production": true,
+    "stop_on_hash_mismatch": true,
+    "stop_on_human_only_step": true,
+    "stop_on_access_control_bypass": true,
+    "receipt_capture_required": true,
+    "audit_logging_required": true,
+    "docket_update_required": true,
+    "immutable_package_hash_required": true
+  },
+  "audit": {
+    "audit_log_schema_hash": "sha256:...",
+    "logs_input_hashes": true,
+    "logs_output_hashes": true,
+    "redacts_secrets": true,
+    "retention_policy": "retain official action audit evidence according to applicant policy"
+  },
+  "rollback": {
+    "duplicate_submission_prevention": true,
+    "idempotency_key_policy": "case-id plus final-package-hash plus official-account-role",
+    "failure_modes": [
+      "network_failure_before_submission",
+      "official_system_rejects_package",
+      "human_only_step_detected"
+    ]
+  },
+  "decision": {
+    "status": "production_adapter_ready",
+    "reason": "Adapter release, security review, credential boundary, official-control boundary, dry run, audit, docket, and rollback controls are verified."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-02T19:56:42+08:00",
+  "files": [
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:2154f3eeae61f9ca1483f15eac874ae63d98a6ee4514edec73daccb462120ecd",
+      "bytes": 4525
+    },
+    {
+      "path": "submission-authorization-packet.json",
+      "sha256": "sha256:60074753c85cae4192568e25ba79db4c94743b941e78641912381d1449cafd0d",
+      "bytes": 3053
+    },
+    {
+      "path": "claims-final.xml",
+      "sha256": "sha256:2fca59ef96973a2a1cb2d8fa1b84e86f8fc52d7e67d36cd24506004f08d1d891",
+      "bytes": 310
+    },
+    {
+      "path": "specification-final.xml",
+      "sha256": "sha256:8931680a6df3565a669825cb5a72caa986799ce271ec8bafdf74326ca770b241",
+      "bytes": 345
+    },
+    {
+      "path": "abstract-final.xml",
+      "sha256": "sha256:91d51a8dcfb543e4c0bad3011dfdfbce7d9c88a8a333bf1ec20fa005bcc9f180",
+      "bytes": 311
+    },
+    {
+      "path": "drawings-final.pdf",
+      "sha256": "sha256:29a665e1c543ee645116b0dfd248e3074c6a1751b61e11b60bc03469186ec0ff",
+      "bytes": 236
+    },
+    {
+      "path": "request-metadata.xml",
+      "sha256": "sha256:be0c92e29174e81582f6efb1a0708c1e97a6303fb90c3a1f788d1808bb20b1ee",
+      "bytes": 308
+    },
+    {
+      "path": "filing-package-manifest.yaml",
+      "sha256": "sha256:1caa4cc14bf1935cab6d1dcd8d245916e74757b541f655758b1b3a5605d0525c",
+      "bytes": 2685
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:972d6c7572ffb77fff8cfa31dfac714bc3b87e8fd9e28d7fbe51016b00836a7c",
+      "bytes": 806
+    },
+    {
+      "path": "package-validation-report.md",
+      "sha256": "sha256:83144b955730e33337e6fe758503c15fb5ccdbe4d4509f04e5570992ebfa7f20",
+      "bytes": 627
+    }
+  ]
+}

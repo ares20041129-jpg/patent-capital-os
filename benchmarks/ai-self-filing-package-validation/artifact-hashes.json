@@ -1,0 +1,61 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-02T23:55:36+08:00",
+  "files": [
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:8a7f5fd82ef6a44845a9e54e9d06b98158380298ab97104e37a0aa0885feeaf4",
+      "bytes": 4538
+    },
+    {
+      "path": "abnormal-filing-risk-assessment.json",
+      "sha256": "sha256:b50406646ebf5478ebb5cadbe77326032ced9bb16a81d323a370f5fd3d5940cd",
+      "bytes": 4630
+    },
+    {
+      "path": "ai-self-filing-authorization-packet.json",
+      "sha256": "sha256:d6f6b5deb1e8c4afc8b0e7ab2bb7133fc5dd3e83d243989033e19b3ec8affe6f",
+      "bytes": 4181
+    },
+    {
+      "path": "claims-ai-self-filing-final.xml",
+      "sha256": "sha256:ad2eb577acb6cacda4a608aca32c1384f190bc2f5bc1243ab3301c64d23fc4e2",
+      "bytes": 381
+    },
+    {
+      "path": "specification-ai-self-filing-final.xml",
+      "sha256": "sha256:b6f7ce840c1ddd8e1bc8172a59a58c3a9522681157d838f26b55997b9e904a09",
+      "bytes": 388
+    },
+    {
+      "path": "abstract-ai-self-filing-final.xml",
+      "sha256": "sha256:0ffb3dd6d2bfc54c13fcb9a4be03bbd8f66f7951712b266169a8e889f79e91db",
+      "bytes": 383
+    },
+    {
+      "path": "drawings-ai-self-filing-final.pdf",
+      "sha256": "sha256:3c10d4bbafc5c5027d47c262f204d52e1e65268b1c420064dfd9406affdaea13",
+      "bytes": 332
+    },
+    {
+      "path": "request_metadata-ai-self-filing-final.xml",
+      "sha256": "sha256:4cdb239bbb4f3cb906638ba9e630f9469d61181bf36660a349bf4d6761a29fe1",
+      "bytes": 391
+    },
+    {
+      "path": "filing-package-manifest.yaml",
+      "sha256": "sha256:e490362e6c46d1b410dc2b019f707f746edcc95cdcdfd3a5f4084533295b3f2c",
+      "bytes": 2795
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:a5b5a4865a32ed2f80100f752872d0398b1d8e8efcfb63776579bff13e7a98b0",
+      "bytes": 939
+    },
+    {
+      "path": "ai-self-filing-package-report.md",
+      "sha256": "sha256:ead03bbc48582b07e1137fdc7ed6b8c983bf9f4a969d30342238c96489c8ef31",
+      "bytes": 1205
+    }
+  ]
+}

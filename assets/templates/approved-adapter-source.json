@@ -1,0 +1,52 @@
+{
+  "case_id": "",
+  "adapter": {
+    "name": "",
+    "version": "",
+    "approved_for_production": true,
+    "registry_entry_hash": "",
+    "dry_run_result_hash": "",
+    "security_review": {
+      "reviewed_by": "",
+      "reviewed_at": "",
+      "result": "passed",
+      "review_artifact_hash": "",
+      "scope": ""
+    }
+  },
+  "production_readiness": {
+    "packet": ""
+  },
+  "official_session_authorization": {
+    "packet": ""
+  },
+  "authorization": {
+    "account_owner_authorization": "",
+    "allowed_actions": [
+      "submit",
+      "file",
+      "pay official fees"
+    ],
+    "two_person_approval": {
+      "legal_approver": "",
+      "ops_approver": "",
+      "approved_at": "",
+      "evidence_hash": ""
+    }
+  },
+  "credential_handling": {
+    "raw_credentials_in_request": false,
+    "private_keys_in_request": false,
+    "captcha_bypass": false,
+    "mfa_secret_in_request": false,
+    "session_token_in_request": false,
+    "stores_credentials": false
+  },
+  "execution_controls": {
+    "payment_allowed": true
+  },
+  "decision": {
+    "status": "approved_for_adapter_execution",
+    "reason": ""
+  }
+}

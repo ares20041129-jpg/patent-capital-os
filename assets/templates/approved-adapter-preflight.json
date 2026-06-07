@@ -1,0 +1,111 @@
+{
+  "case_id": "",
+  "execution_mode": "approved_adapter",
+  "adapter": {
+    "name": "",
+    "version": "",
+    "approved_for_production": false,
+    "registry_entry_hash": "",
+    "dry_run_result_hash": "",
+    "production_readiness": {
+      "readiness_gate": "production_adapter_readiness_gate",
+      "evidence_mode": "production_adapter_readiness",
+      "packet": "",
+      "packet_hash": "",
+      "validation_result": "",
+      "approved_for_real_execution": false,
+      "adapter_name": "",
+      "adapter_version": "",
+      "registry_entry_hash": ""
+    },
+    "security_review": {
+      "reviewed_by": "",
+      "reviewed_at": "",
+      "result": "",
+      "review_artifact_hash": "",
+      "scope": ""
+    }
+  },
+  "authorization": {
+    "submission_authorization_packet": "",
+    "submission_authorization_packet_hash": "",
+    "authorization_packet_type": "counsel_or_agent_review | ai_self_filing_no_external_lawyer",
+    "applicant_authorization_confirmed": false,
+    "counsel_review_confirmed": false,
+    "ai_self_filing_confirmed": false,
+    "external_lawyer_involved": false,
+    "self_filing_allowed": false,
+    "mandatory_agent_required": true,
+    "foreign_or_hmt_applicant": true,
+    "agency_bypass_requested": false,
+    "account_owner_authorization": "",
+    "signature_authority_evidence": "",
+    "payment_authority_evidence": "",
+    "allowed_actions": [],
+    "two_person_approval": {
+      "legal_approver": "",
+      "ops_approver": "",
+      "approved_at": "",
+      "evidence_hash": ""
+    }
+  },
+  "official_channel": {
+    "preflight_file": "",
+    "preflight_hash": "",
+    "official_system": "",
+    "automation_allowed": false,
+    "bypasses_access_controls": false,
+    "human_only_steps": [],
+    "human_only_steps_resolved": false,
+    "session_authorization": {
+      "session_gate": "official_session_authorization_gate",
+      "evidence_mode": "official_session_authorization",
+      "packet": "",
+      "packet_hash": "",
+      "validation_result": "",
+      "approved_for_real_execution": false,
+      "official_account_role": "",
+      "session_reference_hash": "",
+      "authorization_scope_hash": ""
+    }
+  },
+  "package": {
+    "manifest_file": "",
+    "manifest_hash": "",
+    "final_package_hash": "",
+    "reviewed_package_hash": "",
+    "xml_validation_result": "",
+    "attachment_list_hash": ""
+  },
+  "evidence": {
+    "receipt_capture_plan": "",
+    "receipt_capture_plan_hash": "",
+    "audit_log_entry_plan": "",
+    "audit_log_entry_plan_hash": "",
+    "docket_entry_plan": "",
+    "docket_entry_plan_hash": ""
+  },
+  "credential_handling": {
+    "raw_credentials_in_request": false,
+    "private_keys_in_request": false,
+    "captcha_bypass": false,
+    "mfa_secret_in_request": false,
+    "session_token_in_request": false,
+    "stores_credentials": false
+  },
+  "execution_controls": {
+    "requested_action": "submit_package",
+    "payment_allowed": false,
+    "stop_on_hash_mismatch": true,
+    "stop_on_human_only_step": true,
+    "stop_on_access_control_bypass": true,
+    "receipt_capture_required": true,
+    "audit_log_required": true,
+    "docket_update_required": true
+  },
+  "decision": {
+    "status": "blocked",
+    "reason": "",
+    "next_status_if_success": "submitted_pending_receipt"
+  }
+}

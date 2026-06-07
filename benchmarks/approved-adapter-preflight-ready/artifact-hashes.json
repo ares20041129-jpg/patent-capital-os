@@ -1,0 +1,51 @@
+{
+    "case_id":  "APPROVED-ADAPTER-PREFLIGHT-001",
+    "generated_at":  "2026-06-02T01:05:16+08:00",
+    "files":  [
+                  {
+                      "path":  "approved-adapter-preflight.json",
+                      "sha256":  "sha256:b294574df0df61a8b3a1ca575c162edb155e6a3b75886dc90716e019a8ea06c2",
+                      "bytes":  5567
+                  },
+                  {
+                      "path":  "filing-adapter-request.json",
+                      "sha256":  "sha256:c41e77d78d546ba1ca205f00b5e39c27a7b178c1a187b37fdd19916f12f3052a",
+                      "bytes":  1837
+                  },
+                  {
+                      "path":  "audit-log-entry-plan.yaml",
+                      "sha256":  "sha256:c95bc502f85b7598b42061b15bed3bd2a9a26ae36db1a28c8e89d283d38a3d2e",
+                      "bytes":  1029
+                  },
+                  {
+                      "path":  "docket-entry-plan.yaml",
+                      "sha256":  "sha256:0e063307d637021b4fed56a3059ac7d5903053b16851d5a0579810dbd8b7d164",
+                      "bytes":  442
+                  },
+                  {
+                      "path":  "adapter-boundary-report.md",
+                      "sha256":  "sha256:0c04220b415ea0f25cdaf1b5fbee3fc580792ca8621dd6b0fd797af42f5652b4",
+                      "bytes":  1660
+                  },
+                  {
+                      "path":  "filing-status.json",
+                      "sha256":  "sha256:f8358b6979f1b623190d31bd1ffda3e9626dde054a88b74bcd64338f27656a1c",
+                      "bytes":  1161
+                  },
+                  {
+                      "path":  "results.tsv",
+                      "sha256":  "sha256:2bc3917ade2d38a897a8e179a658980d0831477068f575c93c3c4ebdc6b62af5",
+                      "bytes":  467
+                  },
+                  {
+                      "path":  "readiness-bypass-rejection\\missing-production-readiness-preflight.json",
+                      "sha256":  "sha256:8a5abb5b4a1c663caa6d4c577c92fe5dc7cc4c05d46d1ba3a01888943a15b052",
+                      "bytes":  4035
+                  },
+                  {
+                      "path":  "readiness-bypass-rejection\\shape-readiness-preflight.json",
+                      "sha256":  "sha256:640b8eaf58b070c7843fa5cb5ece330ed7de1cddcd6bc8a20c64d187e83b0d7d",
+                      "bytes":  4697
+                  }
+              ]
+}

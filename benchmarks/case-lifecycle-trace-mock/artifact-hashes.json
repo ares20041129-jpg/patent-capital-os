@@ -1,0 +1,21 @@
+{
+    "case_id":  "LIFECYCLE-MOCK-001",
+    "generated_at":  "2026-06-03T00:05:00+08:00",
+    "files":  [
+                  {
+                      "path":  "case-lifecycle-trace.json",
+                      "sha256":  "sha256:f2890aecde870f3170b432ac6226c54c155a83232bf0cf86ded6670fb91887a8",
+                      "bytes":  13564
+                  },
+                  {
+                      "path":  "lifecycle-report.md",
+                      "sha256":  "sha256:7f4be64e686d1e8a3e887d6361df47f187f01cff0a6a33d84aca31c7d813d859",
+                      "bytes":  1865
+                  },
+                  {
+                      "path":  "results.tsv",
+                      "sha256":  "sha256:9ade7c7d6d35e4a70184c6a55c6ac5b05e8d10efbd9a4dcb031c5456dc1d6849",
+                      "bytes":  491
+                  }
+              ]
+}

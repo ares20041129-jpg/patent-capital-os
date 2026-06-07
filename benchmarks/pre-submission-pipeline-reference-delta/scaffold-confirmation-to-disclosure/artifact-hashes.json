@@ -1,0 +1,21 @@
+{
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "generated_at": "2026-06-03T06:11:16+08:00",
+  "files": [
+    {
+      "path": "invention-disclosure.json",
+      "sha256": "sha256:3cbf1c842a5139976117af85370c8637522442e946100a943b3fb17b0a467183",
+      "bytes": 5484
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:3b5e473fd15faa229461e1df9ea6289a3fc9b00134c3195342aeb9f70ae94fee",
+      "bytes": 790
+    },
+    {
+      "path": "confirmation-report.md",
+      "sha256": "sha256:880f7858e0e786c410490dc7894b62bf232d47d575b3cf7a4a4d29615cd5b98a",
+      "bytes": 1119
+    }
+  ]
+}

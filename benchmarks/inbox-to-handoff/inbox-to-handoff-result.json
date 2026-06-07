@@ -1,0 +1,76 @@
+{
+  "ok": true,
+  "inbox_id": "INBOX-HANDOFF-001",
+  "pipeline_type": "inbox_to_handoff_ai_self_filing_no_external_lawyer",
+  "created_at": "2026-06-03T07:03:18+08:00",
+  "status": "approved_for_adapter_execution",
+  "decision": "handoff_ready_no_auto_submit",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "adapter_execution_performed": false,
+  "automatic_submission_performed": false,
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 0
+  },
+  "case_results": [
+    {
+      "ok": true,
+      "case_id": "CASE-INBOX-HANDOFF-REF-001",
+      "source_case_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\inbox\\case-reference-delta",
+      "raw_input_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\inbox\\case-reference-delta\\raw-input",
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\001-CASE-INBOX-HANDOFF-REF-001",
+      "reference_delta_source": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\inbox\\case-reference-delta\\reference-delta-source.json",
+      "decision": "handoff_ready_no_auto_submit",
+      "artifacts": {
+        "pre_submission_pipeline": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\001-CASE-INBOX-HANDOFF-REF-001\\pre-submission-pipeline",
+        "pre_submission_pipeline_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\001-CASE-INBOX-HANDOFF-REF-001\\pre-submission-pipeline\\pre-submission-pipeline-result.json",
+        "pre_submission_handoff_package": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\001-CASE-INBOX-HANDOFF-REF-001\\pre-submission-handoff-package\\pre-submission-handoff-package.json",
+        "pre_submission_handoff_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\001-CASE-INBOX-HANDOFF-REF-001\\pre-submission-handoff-package\\pre-submission-handoff-report.md",
+        "case_lifecycle_trace": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\001-CASE-INBOX-HANDOFF-REF-001\\pre-submission-pipeline\\case-lifecycle-trace\\case-lifecycle-trace.json",
+        "pre_submission_to_handoff_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\001-CASE-INBOX-HANDOFF-REF-001\\pre-submission-to-handoff-result.json",
+        "pre_submission_to_handoff_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\001-CASE-INBOX-HANDOFF-REF-001\\pre-submission-to-handoff-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\001-CASE-INBOX-HANDOFF-REF-001\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": []
+    },
+    {
+      "ok": true,
+      "case_id": "CASE-INBOX-HANDOFF-001",
+      "source_case_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\inbox\\case-standard",
+      "raw_input_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\inbox\\case-standard\\raw-input",
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\002-CASE-INBOX-HANDOFF-001",
+      "reference_delta_source": "",
+      "decision": "handoff_ready_no_auto_submit",
+      "artifacts": {
+        "pre_submission_pipeline": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\002-CASE-INBOX-HANDOFF-001\\pre-submission-pipeline",
+        "pre_submission_pipeline_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\002-CASE-INBOX-HANDOFF-001\\pre-submission-pipeline\\pre-submission-pipeline-result.json",
+        "pre_submission_handoff_package": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\002-CASE-INBOX-HANDOFF-001\\pre-submission-handoff-package\\pre-submission-handoff-package.json",
+        "pre_submission_handoff_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\002-CASE-INBOX-HANDOFF-001\\pre-submission-handoff-package\\pre-submission-handoff-report.md",
+        "case_lifecycle_trace": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\002-CASE-INBOX-HANDOFF-001\\pre-submission-pipeline\\case-lifecycle-trace\\case-lifecycle-trace.json",
+        "pre_submission_to_handoff_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\002-CASE-INBOX-HANDOFF-001\\pre-submission-to-handoff-result.json",
+        "pre_submission_to_handoff_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\002-CASE-INBOX-HANDOFF-001\\pre-submission-to-handoff-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases\\002-CASE-INBOX-HANDOFF-001\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": []
+    }
+  ],
+  "artifacts": {
+    "case_queue": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\case-queue.json",
+    "batch_processor_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\batch-processor-result.json",
+    "inbox_to_handoff_result": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\inbox-to-handoff-result.json",
+    "inbox_to_handoff_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\inbox-to-handoff-report.md",
+    "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\artifact-hashes.json",
+    "processed_cases": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-to-handoff\\processed-cases"
+  },
+  "next_action": "Use each read-only handoff package only as approved-adapter execution input evidence; adapter execution, receipt capture, and application-number evidence remain separate gates.",
+  "manifest_errors": [],
+  "manifest_warnings": []
+}

@@ -1,0 +1,26 @@
+{
+    "case_id":  "CASE-OFFICIAL-SESSION-AUTHORIZATION-BENCHMARK",
+    "generated_at":  "2026-06-02T00:00:00+08:00",
+    "files":  [
+                  {
+                      "path":  "production-shape\\official-session-authorization-packet.json",
+                      "sha256":  "sha256:2e2a7d3664dd274842dfdaa78c14914da9cec49ad3cab9c1a16f7b2a34c443c8",
+                      "bytes":  3369
+                  },
+                  {
+                      "path":  "production-ready\\ai-self-filing-session-authorization-packet.json",
+                      "sha256":  "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+                      "bytes":  3293
+                  },
+                  {
+                      "path":  "unsafe-rejection\\official-session-authorization-packet.json",
+                      "sha256":  "sha256:47dd54eccae622092cf72dd9eab9637781b3a9eda1f684d266fa03728cc1715d",
+                      "bytes":  3301
+                  },
+                  {
+                      "path":  "official-session-authorization-report.md",
+                      "sha256":  "sha256:0dd095a3d1f2b3fa1ce6c4af390ed4973e8b3b6bc0ade21fa11887f5f8ce593b",
+                      "bytes":  851
+                  }
+              ]
+}

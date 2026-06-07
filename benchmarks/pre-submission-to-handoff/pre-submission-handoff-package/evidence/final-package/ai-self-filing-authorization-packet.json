@@ -1,0 +1,103 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-001",
+  "filing_type": "CN invention patent",
+  "jurisdiction": "CN",
+  "source_draft_hash": "sha256:1568e64175abb90a0f29f46cbb4676d55b6eb45c3cd6a5b7f6abd5cb344ecf66",
+  "final_package_hash": "sha256:e71723b2196242c7a973046c4b9bd75424ce0405d8c080c2c0d51a7573ab21e5",
+  "external_lawyer_involved": false,
+  "self_filing_eligibility": {
+    "applicant_region": "Mainland China",
+    "applicant_type": "enterprise applicant using own official account",
+    "self_filing_allowed": true,
+    "mandatory_agent_required": false,
+    "foreign_or_hmt_applicant": false,
+    "agency_bypass_requested": false,
+    "basis": "Applicant self-filing route; no external lawyer or patent agent in default production path."
+  },
+  "ai_compliance_review": {
+    "engine_name": "Patent Capital OS AI self-filing gate",
+    "engine_version": "2026-06-01.benchmark",
+    "checked_at": "2026-06-03T06:51:10+08:00",
+    "reviewed_artifacts_hash": "sha256:c77065cd93bb197f115f2305718652a3635a7a231d1055be0ecaac8a6f1196e2",
+    "no_copying_check": "passed",
+    "claim_support_check": "passed",
+    "abnormal_filing_risk": "low",
+    "abnormal_filing_risk_assessment": {
+      "case_id": "CASE-PRE-SUB-HANDOFF-001",
+      "status": "abnormal_filing_risk_assessed",
+      "gate": "G8 Non-abnormal filing check",
+      "risk_level": "low",
+      "artifact_hash": "sha256:1548db459e62db4453d6e56bd355e94a1b4dbb1d67208ff7276bbea0c54719a2",
+      "artifact_path": "../abnormal-filing-risk-gate/abnormal-filing-risk-assessment.json"
+    },
+    "official_format_check": "passed",
+    "limitations": [
+      "Local pre-submission pipeline only; official-channel preflight remains separate.",
+      "AI compliance review is not lawyer review and does not claim legal advice."
+    ],
+    "legal_gate_review": {
+      "review_record_hash": "sha256:5b066b100c2e3284a5726c0ecca64fb75c9450f6b50c785017b20f454eed73a4",
+      "authorization_scope_check": "passed",
+      "self_filing_eligibility_check": "passed",
+      "inventor_ownership_check": "passed",
+      "secrecy_check": "passed",
+      "fee_authority_check": "passed",
+      "official_channel_boundary_check": "passed",
+      "stop_conditions_checked": [
+        "mandatory_agent_condition",
+        "foreign_or_hmt_applicant_condition",
+        "agency_bypass_request",
+        "access_control_bypass",
+        "official_submission_claim_without_evidence"
+      ],
+      "legal_advice_claimed": false,
+      "lawyer_or_agent_review_claimed": false
+    }
+  },
+  "applicant_authorization": {
+    "applicant_name": "Benchmark Applicant Ltd.",
+    "authorized_person": "Applicant Filing Operator",
+    "authority_basis": "internal applicant self-filing authorization record",
+    "allowed_actions": [
+      "validate package",
+      "submit filing through applicant account",
+      "pay official fees"
+    ],
+    "timestamp": "2026-06-03T06:51:10+08:00"
+  },
+  "inventor_confirmation": {
+    "inventors": [
+      "Benchmark Inventor A"
+    ],
+    "contribution_confirmed": true
+  },
+  "ownership": {
+    "basis": "employee service invention assigned to applicant",
+    "evidence": "benchmark-ownership-record.pdf",
+    "dispute_absent": true
+  },
+  "secrecy_review": {
+    "china_completed": true,
+    "foreign_or_pct_planned": false,
+    "status": "not_required"
+  },
+  "filing_channel": {
+    "official_system": "CNIPA patent business processing system",
+    "account_owner": "Benchmark Applicant Ltd.",
+    "official_account_registered": true,
+    "signature_authority": "applicant electronic signature authority record",
+    "automation_allowed": true,
+    "bypasses_access_controls": false,
+    "human_only_steps": []
+  },
+  "fees": {
+    "payer": "Benchmark Applicant Ltd.",
+    "fee_reduction": false,
+    "auto_pay_authorized": true,
+    "payment_account_reference": "benchmark-applicant-payment-account"
+  },
+  "decision": {
+    "status": "ready_for_package_validation",
+    "reason": "AI self-filing legal/compliance gate passed for local pre-submission package validation without external lawyer involvement."
+  }
+}

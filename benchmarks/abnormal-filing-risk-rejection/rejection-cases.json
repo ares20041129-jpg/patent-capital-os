@@ -1,0 +1,96 @@
+{
+  "case_id": "ABNORMAL-FILING-RISK-REJECTION",
+  "description": "Unsafe mutations that must be rejected by the abnormal filing risk assessment gate.",
+  "cases": [
+    {
+      "id": "random_generation_marker",
+      "mutations": [
+        {
+          "file": "invention-disclosure.json",
+          "path": "applicant_context.actual_r_and_d_basis",
+          "value": "random computer generation of similar patent variants without R&D evidence"
+        }
+      ],
+      "expected_failed_checks": [
+        "no_random_generation"
+      ]
+    },
+    {
+      "id": "simple_replacement_copying",
+      "mutations": [
+        {
+          "file": "invention-disclosure.json",
+          "path": "similarity_control.no_copying_or_synonym_substitution_confirmed",
+          "value": false
+        },
+        {
+          "file": "invention-disclosure.json",
+          "path": "similarity_control.real_technical_contribution_summary",
+          "value": "simple replacement and synonym substitution of reference patent wording"
+        }
+      ],
+      "expected_failed_checks": [
+        "no_random_generation",
+        "no_reference_copy_or_simple_replacement"
+      ]
+    },
+    {
+      "id": "unsupported_technical_effects",
+      "mutations": [
+        {
+          "file": "invention-disclosure.json",
+          "path": "technical_effects",
+          "value": [
+            {
+              "effect": "Claims a large performance gain without supporting evidence hash.",
+              "evidence": "unsupported assertion only"
+            }
+          ]
+        }
+      ],
+      "expected_failed_checks": [
+        "technical_effects_supported"
+      ]
+    },
+    {
+      "id": "obvious_patchwork_without_delta",
+      "mutations": [
+        {
+          "file": "invention-disclosure.json",
+          "path": "known_prior_art",
+          "value": []
+        }
+      ],
+      "expected_failed_checks": [
+        "not_obvious_patchwork"
+      ]
+    },
+    {
+      "id": "malicious_batch_pattern",
+      "mutations": [
+        {
+          "file": "invention-disclosure.json",
+          "path": "business_goal",
+          "value": "Prepare many patent applications through maliciously distributed batch filings."
+        }
+      ],
+      "expected_failed_checks": [
+        "no_malicious_batch_or_duplicate_pattern"
+      ]
+    },
+    {
+      "id": "inventor_contribution_not_confirmed",
+      "mutations": [
+        {
+          "file": "invention-disclosure.json",
+          "path": "inventor_input.contribution_confirmed",
+          "value": false
+        }
+      ],
+      "expected_failed_checks": [
+        "real_inventive_activity",
+        "inventor_applicant_consistency"
+      ]
+    }
+  ]
+}

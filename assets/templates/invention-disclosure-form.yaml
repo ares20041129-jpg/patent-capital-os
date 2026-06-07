@@ -1,0 +1,52 @@
+case_id: ""
+title: ""
+jurisdiction_plan:
+  first_filing: "CN"
+  later_foreign_or_pct: null
+business_goal: ""
+applicant_context:
+  applicant_name: ""
+  product_or_project: ""
+  actual_r_and_d_basis: ""
+inventor_input:
+  inventors:
+    - name: ""
+      contribution: ""
+  contribution_confirmed: false
+technical_problem: ""
+technical_solution:
+  required_features:
+    - ""
+  optional_features:
+    - ""
+technical_effects:
+  - effect: ""
+    evidence: ""
+embodiments:
+  - name: ""
+    implementation_steps:
+      - ""
+    components:
+      - ""
+    parameters:
+      - ""
+drawings_needed:
+  - ""
+known_prior_art:
+  - publication: ""
+    relevance: ""
+similarity_control:
+  uses_reference_patents: true
+  no_copying_or_synonym_substitution_confirmed: false
+  real_technical_contribution_summary: ""
+data_and_evidence:
+  prototypes: []
+  experiments: []
+  logs_or_measurements: []
+  source_hashes: []
+secrecy:
+  invention_completed_in_china: null
+  foreign_or_pct_planned: null
+  secrecy_review_status: ""
+ai_legal_compliance_questions:
+  - ""

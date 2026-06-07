@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-001",
+  "generated_at": "2026-06-03T06:51:11+08:00",
+  "files": [
+    {
+      "path": "case-lifecycle-trace.json",
+      "sha256": "sha256:01dc7da501d98e1cd9c365c086d8bfe9b931fd858f82457320556a7ca2248801",
+      "bytes": 8797
+    },
+    {
+      "path": "lifecycle-report.md",
+      "sha256": "sha256:568246012874c6d8f4fff92c987e4dd6252e1949ac8cb6253111c4eccdd264a3",
+      "bytes": 566
+    }
+  ]
+}

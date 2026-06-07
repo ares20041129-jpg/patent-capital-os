@@ -1,0 +1,148 @@
+{
+  "case_id": "PATENT-APPLICATION-MATERIALS-REJECTION",
+  "base_materials": "../ai-self-filing-application-materials/application-materials.json",
+  "cases": [
+    {
+      "id": "missing_applicant_name_rejected",
+      "remove_paths": [
+        "request_form_metadata.applicant_name"
+      ],
+      "expected_error": "request_form_metadata_missing_required_field: applicant_name"
+    },
+    {
+      "id": "missing_inventors_rejected",
+      "mutations": {
+        "request_form_metadata.inventors": []
+      },
+      "expected_error": "request_form_metadata_missing_required_field: inventors"
+    },
+    {
+      "id": "missing_generated_claims_material_rejected",
+      "remove_document_types": [
+        {
+          "list": "document_materials",
+          "type": "claims"
+        }
+      ],
+      "expected_error": "missing_generated_material_type: claims"
+    },
+    {
+      "id": "placeholder_generated_claims_material_rejected",
+      "material_fixtures": [
+        {
+          "path": "placeholder-claims-material.md",
+          "source": "placeholder-claims-material.md"
+        }
+      ],
+      "mutate_document_types": [
+        {
+          "list": "document_materials",
+          "type": "claims",
+          "updates": {
+            "path": "placeholder-claims-material.md",
+            "hash": "sha256:8d1c38ce19be4aae422b75328cf79c3334a3d0798608f09b0cbb024671bd68d4"
+          }
+        }
+      ],
+      "expected_error": "document_material_1_claims_contains_missing_source_section_placeholder"
+    },
+    {
+      "id": "missing_document_generation_plan_rejected",
+      "remove_paths": [
+        "document_generation_plan"
+      ],
+      "expected_error": "missing_required_field: document_generation_plan"
+    },
+    {
+      "id": "document_generation_plan_hash_mismatch_rejected",
+      "mutations": {
+        "document_generation_plan.hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_error": "document_generation_plan_hash_mismatch"
+    },
+    {
+      "id": "final_package_hash_shape_rejected",
+      "mutations": {
+        "final_package_hash": "sha256:not-a-real-hash"
+      },
+      "expected_error": "final_package_hash_must_be_sha256_64_hex"
+    },
+    {
+      "id": "own_support_hash_shape_rejected",
+      "mutations": {
+        "evidence_provenance.own_support_hashes": [
+          "sha256:not-a-real-support-hash"
+        ]
+      },
+      "expected_error": "evidence_provenance.own_support_hashes[0]_must_be_sha256_64_hex"
+    },
+    {
+      "id": "xml_validation_report_hash_shape_rejected",
+      "mutations": {
+        "xml_readiness.validation_report_hash": "sha256:not-a-real-report-hash"
+      },
+      "expected_error": "xml_readiness.validation_report_hash_must_be_sha256_64_hex"
+    },
+    {
+      "id": "official_inventory_missing_filename_rejected",
+      "mutate_document_types": [
+        {
+          "list": "official_material_inventory",
+          "type": "claims",
+          "updates": {
+            "filename": ""
+          }
+        }
+      ],
+      "expected_error": "official_material_1_missing_required_field: filename"
+    },
+    {
+      "id": "official_inventory_manifest_hash_mismatch_rejected",
+      "mutate_document_types": [
+        {
+          "list": "official_material_inventory",
+          "type": "claims",
+          "updates": {
+            "hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        }
+      ],
+      "expected_error": "official_material_inventory_source_manifest_mismatch"
+    },
+    {
+      "id": "source_manifest_hash_mismatch_rejected",
+      "mutations": {
+        "source_package.filing_package_manifest_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_error": "source_package_manifest_hash_mismatch"
+    },
+    {
+      "id": "xml_validation_failed_rejected",
+      "mutations": {
+        "xml_readiness.validation_result": "failed"
+      },
+      "expected_error": "xml_readiness_validation_result_must_be_passed"
+    },
+    {
+      "id": "prior_art_as_claim_support_rejected",
+      "mutations": {
+        "evidence_provenance.no_reference_or_prior_art_used_as_claim_support": false
+      },
+      "expected_error": "evidence_provenance_must_block_reference_as_support"
+    },
+    {
+      "id": "source_package_final_hash_mismatch_rejected",
+      "mutations": {
+        "source_package.final_package_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_error": "source_package_final_hash_mismatch"
+    },
+    {
+      "id": "safeguard_missing_rejected",
+      "remove_paths": [
+        "safeguards.no_official_submission_claimed"
+      ],
+      "expected_error": "safeguard_missing_or_false: no_official_submission_claimed"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "queue_id": "APPROVED-ADAPTER-TO-SUBMITTED-PENDING-RECEIPT-QUEUE-001",
+  "created_at": "2026-06-02T00:51:15+08:00",
+  "execution_mode": "dry_run",
+  "official_submission_allowed": false,
+  "official_system_touch_allowed": false,
+  "queue_owner": "Patent Capital OS",
+  "items": [
+    {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "priority": 1,
+      "current_status": "submitted_pending_receipt",
+      "target_status": "submitted_pending_receipt",
+      "case_record": "adapter-execution-result.json",
+      "case_folder": ".",
+      "expected_outcome": "adapter_execution",
+      "owner": "Adapter execution result operator",
+      "required_validators": [
+        "validate_generated_adapter_execution_result_benchmark"
+      ],
+      "notes": "Generated from adapter-execution-result.json by build_case_queue.py."
+    }
+  ]
+}

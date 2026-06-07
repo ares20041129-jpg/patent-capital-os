@@ -1,0 +1,67 @@
+case_id: ""
+jurisdiction: "CN"
+filing_type: ""
+package_status: "draft | ready_for_package_validation | package_valid_official_preflight_pending | blocked"
+source_draft: ""
+source_draft_hash: ""
+authorization_packet: ""
+authorization_packet_hash: ""
+reviewed_package_hash: ""
+final_package_hash: ""
+official_submission_performed: false
+
+documents:
+  - document_id: "claims"
+    type: "claims"
+    filename: ""
+    format: "xml | docx | pdf | other"
+    hash: ""
+    required: true
+    validation_status: "pending"
+  - document_id: "specification"
+    type: "specification"
+    filename: ""
+    format: "xml | docx | pdf | other"
+    hash: ""
+    required: true
+    validation_status: "pending"
+  - document_id: "abstract"
+    type: "abstract"
+    filename: ""
+    format: "xml | docx | pdf | other"
+    hash: ""
+    required: true
+    validation_status: "pending"
+  - document_id: "drawings"
+    type: "drawings"
+    filename: ""
+    format: "pdf | tif | other"
+    hash: ""
+    required: true
+    validation_status: "pending"
+  - document_id: "request_metadata"
+    type: "request_metadata"
+    filename: ""
+    format: "xml | yaml | json | other"
+    hash: ""
+    required: true
+    validation_status: "pending"
+
+xml_validation:
+  final_xml_hash: ""
+  standard_or_tool: ""
+  validation_result: "pending"
+  validation_report_hash: ""
+  sequence_listing_standard: ""
+
+cross_checks:
+  final_package_hash_matches_reviewed_hash: false
+  claims_hash_matches_authorization: false
+  specification_hash_matches_authorization: false
+  drawings_present: false
+  request_metadata_present: false
+
+next_gate:
+  official_channel_preflight_required: true
+  receipt_capture_required: true
+  status_after_package_validation: "package_valid_official_preflight_pending"

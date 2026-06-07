@@ -1,0 +1,8 @@
+Case ID: INCOMING-DISCLOSURE-APP-001
+Material ID: M-003
+
+Controller block diagram notes:
+
+Sensors -> synchronized sampling buffer -> feature extraction -> dough-state confidence vector -> confidence-consistency gate -> process controller.
+
+The process controller outputs stirring, exhaust, humidity, temperature, ventilation, oxygen, baking timing, and threshold update commands. Calibration memory stores recipe-specific transition thresholds and historical batch feedback.

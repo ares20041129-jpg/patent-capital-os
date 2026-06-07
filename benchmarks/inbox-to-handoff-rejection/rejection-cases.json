@@ -1,0 +1,54 @@
+{
+  "case_id": "INBOX-TO-HANDOFF-REJECTION",
+  "base_inbox_to_handoff_folder": "../inbox-to-handoff",
+  "confirmation_packet_template": "../scaffold-confirmation-to-disclosure/disclosure-confirmation-packet.json",
+  "ai_self_filing_source_template": "../ai-self-filing-package-validation/ai-self-filing-source.json",
+  "official_preflight_source_template": "../ai-self-filing-official-ready/official-preflight-source.json",
+  "cases": [
+    {
+      "id": "raw_input_path_traversal",
+      "operation": "mutate_config",
+      "case_name": "case-reference-delta",
+      "updates": {
+        "raw_input_dir": "../outside"
+      },
+      "expected_error_fragments": [
+        "unsafe_raw_input_dir"
+      ]
+    },
+    {
+      "id": "reference_delta_path_traversal",
+      "operation": "mutate_config",
+      "case_name": "case-reference-delta",
+      "updates": {
+        "reference_delta_source": "../reference-delta-source.json"
+      },
+      "expected_error_fragments": [
+        "unsafe_reference_delta_source"
+      ]
+    },
+    {
+      "id": "missing_raw_input",
+      "operation": "missing_raw_input",
+      "case_name": "case-reference-delta",
+      "remove_dir": "raw-input",
+      "expected_error_fragments": [
+        "raw_input_dir_missing"
+      ]
+    },
+    {
+      "id": "empty_inbox",
+      "operation": "empty_inbox",
+      "expected_error_fragments": [
+        "inbox_has_no_case_folders"
+      ]
+    },
+    {
+      "id": "existing_output_reuse",
+      "operation": "existing_output",
+      "expected_error_fragments": [
+        "output_dir_already_has_inbox_outputs"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+    "case_id":  "APPROVED-ADAPTER-EVIDENCE-QUEUE-001",
+    "generated_at":  "2026-06-03T01:51:33+08:00",
+    "files":  [
+                  {
+                      "path":  "case-queue.json",
+                      "sha256":  "sha256:5d1c08cc7b10afe1fd1264867e2f91e2fdaed51dfeb866736a8eaa93c6cd4fdd",
+                      "bytes":  1160
+                  },
+                  {
+                      "path":  "runner-result.json",
+                      "sha256":  "sha256:5fbadc1a0dc2e671afcccfe5b66ddde058030d6105f52afaeeb129ba2eb681e1",
+                      "bytes":  1947
+                  }
+              ]
+}

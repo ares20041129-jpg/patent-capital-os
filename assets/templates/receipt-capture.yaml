@@ -1,0 +1,25 @@
+case_id: ""
+filing_action_id: ""
+status: "pending"
+submitted_at: ""
+official_system: ""
+official_session_authorization_hash: ""
+official_session_reference_hash: ""
+official_receipt:
+  receipt_id: ""
+  receipt_file: ""
+  receipt_hash: ""
+application:
+  application_number: ""
+  filing_date: ""
+  official_file_list_hash: ""
+fees:
+  payment_status: ""
+  payment_receipt_file: ""
+  payment_receipt_hash: ""
+docket:
+  docket_entry_id: ""
+  next_deadlines:
+    - name: ""
+      due_date: ""
+evidence_notes: ""

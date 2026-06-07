@@ -1,0 +1,48 @@
+{
+  "case_id": "",
+  "execution_mode": "approved_adapter",
+  "adapter_name": "",
+  "adapter_version": "",
+  "adapter_request": "",
+  "adapter_request_hash": "",
+  "approved_adapter_preflight": "",
+  "approved_adapter_preflight_hash": "",
+  "adapter_production_readiness_hash": "",
+  "official_session_authorization_hash": "",
+  "official_session_reference_hash": "",
+  "official_system": "",
+  "official_action": "submit_package",
+  "action_started_at": "",
+  "action_completed_at": "",
+  "response_state": "submitted_pending_receipt",
+  "next_status": "submitted_pending_receipt",
+  "official_system_touched": true,
+  "official_submission_performed": true,
+  "adapter_execution_performed": true,
+  "final_package_hash": "",
+  "reviewed_package_hash": "",
+  "receipt_capture_status": "submitted_pending_receipt",
+  "receipt_capture_plan": "",
+  "receipt_capture_plan_hash": "",
+  "audit_log_entry": "",
+  "audit_log_entry_hash": "",
+  "docket_entry": "",
+  "docket_entry_hash": "",
+  "official_submission_evidence": {
+    "submission_reference": "",
+    "official_status_snapshot_hash": "",
+    "submitted_package_hash": "",
+    "submitted_file_list_hash": ""
+  },
+  "fees": {
+    "payment_status": "pending",
+    "payment_receipt_hash": ""
+  },
+  "official_receipt_hash": "",
+  "application_number": "",
+  "benchmark_mock": false,
+  "decision": {
+    "status": "submitted_pending_receipt",
+    "reason": ""
+  }
+}

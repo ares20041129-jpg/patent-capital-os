@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Local editor noise
+.DS_Store
+Thumbs.db
+
+# Local working outputs
+out/
+backups/
+*.zip
+
+# Temporary logs
+*.stdout.txt
+*.stderr.txt
+
+# Local git noise
+.git/

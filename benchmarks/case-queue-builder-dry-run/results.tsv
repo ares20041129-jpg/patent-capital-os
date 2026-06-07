@@ -1,0 +1,2 @@
+timestamp	queue_id	skill_version	score	target_dimension	mutation	status	eval_mode	validation_result	official_system_touched	official_submission_allowed	notes
+2026-06-01T21:50:00+08:00	BUILDER-QUEUE-001	local-no-git	90	queue_builder	Created dry-run queue builder benchmark from existing case folders.	keep	dry_run	passed	false	false	Builder creates generated-case-queue.json without official action.

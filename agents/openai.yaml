@@ -1,0 +1,4 @@
+interface:
+  display_name: "Patent Capital OS"
+  short_description: "Enterprise patent filing workflow OS"
+  default_prompt: "Use Patent Capital OS to process a reviewed patent package through legal gates, patent strategy, filing readiness, and audit-ready next actions."

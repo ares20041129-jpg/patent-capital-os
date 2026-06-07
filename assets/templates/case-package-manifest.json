@@ -1,0 +1,56 @@
+{
+  "case_id": "",
+  "package_id": "",
+  "jurisdiction": "CN",
+  "package_status": "intake_received",
+  "received_at": "",
+  "received_from": "",
+  "intake_mode": "manual_upload | email | api | batch_import",
+  "confidentiality_marker": "confidential",
+  "source_package_hash": "",
+  "folders": {
+    "intake": "00-intake",
+    "normalized": "01-normalized",
+    "draft": "02-draft",
+    "legal": "03-legal",
+    "filing_package": "04-package",
+    "official_preflight": "05-official-preflight",
+    "adapter": "06-adapter",
+    "receipts": "07-receipts",
+    "docket": "08-docket",
+    "portfolio": "09-portfolio",
+    "audit": "audit"
+  },
+  "source_material_manifest": "01-normalized/source-material-manifest.json",
+  "source_material_manifest_hash": "",
+  "source_files": [
+    {
+      "material_id": "M-001",
+      "relative_path": "",
+      "filename": "",
+      "type": "invention_disclosure | drawing | experiment | prototype_log | prior_art | transcript | email | other",
+      "sha256": "",
+      "bytes": 0,
+      "source_owner": "",
+      "confidentiality": "confidential",
+      "usable_for_claim_support": false
+    }
+  ],
+  "legal_gate": {
+    "status": "pending",
+    "counsel_review_present": false,
+    "applicant_authorization_present": false,
+    "inventor_confirmation_present": false,
+    "ownership_confirmation_present": false,
+    "secrecy_review_status": "unknown",
+    "filing_allowed": false
+  },
+  "official_actions": {
+    "official_system_touched": false,
+    "official_submission_performed": false,
+    "receipt_captured": false,
+    "application_number_received": false
+  },
+  "next_action": "normalize_invention_disclosure",
+  "notes": ""
+}

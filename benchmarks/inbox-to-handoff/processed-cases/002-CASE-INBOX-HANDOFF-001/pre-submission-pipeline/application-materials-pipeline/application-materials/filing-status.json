@@ -1,0 +1,23 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-001",
+  "status": "package_valid_official_preflight_pending",
+  "legal_gate": "passed",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "ai_self_filing_gate": "passed",
+  "package_validation": "passed",
+  "application_materials_generation": "passed",
+  "official_channel_preflight": "pending",
+  "failed_gates": [
+    "official_channel_preflight_pending",
+    "receipt_capture_pending"
+  ],
+  "decision": "materials_generated_official_preflight_required",
+  "final_package_hash": "sha256:2d945f887bab6cd4afeaefe26161b2633c114a9add16dbfb4d5a558e94fe7848",
+  "reviewed_package_hash": "sha256:2d945f887bab6cd4afeaefe26161b2633c114a9add16dbfb4d5a558e94fe7848",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "official_submission_performed": false,
+  "official_system_touched": false,
+  "external_lawyer_involved": false,
+  "updated_at": "2026-06-03T07:03:16+08:00"
+}

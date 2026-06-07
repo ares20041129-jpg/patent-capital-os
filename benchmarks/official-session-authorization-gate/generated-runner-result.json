@@ -1,0 +1,37 @@
+{
+  "queue_id": "CASE-OFFICIAL-SESSION-AUTHORIZATION-QUEUE",
+  "processed_at": "2026-06-02T00:39:37+08:00",
+  "execution_mode": "dry_run",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 0
+  },
+  "results": [
+    {
+      "case_id": "CNIPA patent business processing system",
+      "input_status": "ready_for_authorized_filing",
+      "output_status": "ready_for_authorized_filing",
+      "expected_outcome": "official_session_authorization",
+      "decision": "official_session_authorization_gate_passed",
+      "outcome": "passed",
+      "validators_run": [
+        "validate_official_session_authorization_benchmark"
+      ],
+      "errors": [],
+      "warnings": [
+        "validate_official_session_authorization_benchmark: production_shape: production_shape_test_not_real_session_authorization"
+      ],
+      "next_action": "Allow approved adapter execution only after real, non-shape-test official session authorization passes strict validation.",
+      "owner": "Official session authorization gate operator",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": []
+}

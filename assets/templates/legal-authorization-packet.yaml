@@ -1,0 +1,67 @@
+case_id: ""
+filing_type: ""
+jurisdiction: "CN"
+business_goal: ""
+
+final_documents:
+  claims: ""
+  specification: ""
+  abstract: ""
+  drawings: ""
+  request_metadata: ""
+
+hashes:
+  source_package: ""
+  final_claims: ""
+  final_specification: ""
+  final_xml: ""
+
+counsel_review:
+  reviewer_name: ""
+  reviewer_role: ""
+  organization: ""
+  license_or_agent_identifier: ""
+  approval_statement: ""
+  reviewed_hash: ""
+  timestamp: ""
+
+applicant_authorization:
+  applicant_name: ""
+  authorized_person: ""
+  authority_basis: ""
+  allowed_actions:
+    - "prepare"
+    - "submit"
+    - "file"
+  timestamp: ""
+
+inventor_confirmation:
+  inventors:
+    - ""
+  contribution_confirmed: false
+
+ownership:
+  basis: ""
+  evidence: ""
+
+secrecy_review:
+  china_completed: null
+  foreign_or_pct_planned: null
+  status: ""
+
+agency:
+  agent_or_firm: ""
+  appointment_evidence: ""
+
+filing_channel:
+  official_system: ""
+  account_owner: ""
+  signature_authority: ""
+  automation_allowed: false
+  human_only_steps:
+    - ""
+
+fees:
+  payer: ""
+  fee_reduction: false
+  auto_pay_authorized: false

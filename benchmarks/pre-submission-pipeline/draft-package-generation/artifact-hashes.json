@@ -1,0 +1,31 @@
+{
+  "case_id": "CASE-PRE-SUB-001",
+  "generated_at": "2026-06-03T06:11:16+08:00",
+  "files": [
+    {
+      "path": "invention-disclosure.json",
+      "sha256": "sha256:b06a4a6eda3280535ce73bb71cbc8cc27b5007b8579745c2de6bba3e5b4ebd5e",
+      "bytes": 5480
+    },
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:3094002110efaae3cffa71313bf918278b55288fab5f8d7d213bdd4f05064c49",
+      "bytes": 4709
+    },
+    {
+      "path": "claim-support-map.md",
+      "sha256": "sha256:17a0d83581b51e59d075f35701b7ae6606e2f01cb65244e6830ef63214136318",
+      "bytes": 1755
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:8b82693327cf2295563c55f8ac0d879e3757d6ac438765f9f933bd35e642ee03",
+      "bytes": 804
+    },
+    {
+      "path": "draft-package-report.md",
+      "sha256": "sha256:44d53a80e6492db5e38869cb6f52db2c7c4315b79ed3f3a3911874afb770c298",
+      "bytes": 678
+    }
+  ]
+}

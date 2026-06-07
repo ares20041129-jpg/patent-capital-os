@@ -1,0 +1,20 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001-legal_advice_claim_rejected",
+  "previous_status": "draft_only",
+  "status": "legal_gate_failed",
+  "legal_gate": "failed",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "ai_self_filing_gate": "failed",
+  "failed_gates": [
+    "G1 AI legal/compliance review mode"
+  ],
+  "decision": "do_not_file",
+  "final_package_hash": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d",
+  "reviewed_package_hash": "",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "external_lawyer_involved": false,
+  "updated_at": "2026-06-02T02:03:22+08:00"
+}

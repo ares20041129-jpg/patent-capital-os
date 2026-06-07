@@ -1,0 +1,22 @@
+{
+  "case_id": "RECEIPT-CAPTURE-MOCK-001",
+  "previous_status": "submitted_pending_receipt",
+  "status": "official_receipt_received",
+  "legal_gate": "passed",
+  "package_validation": "passed",
+  "official_channel_preflight": "passed",
+  "official_session_authorization": "passed",
+  "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+  "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "receipt_capture": "passed_mock",
+  "failed_gates": [],
+  "decision": "mock_receipt_captured_for_benchmark_only",
+  "final_package_hash": "sha256:a9ac2f75512f842fc564dd7b02c25f257616e971dff3f1c6644a0d7c6bf386f6",
+  "reviewed_package_hash": "sha256:a9ac2f75512f842fc564dd7b02c25f257616e971dff3f1c6644a0d7c6bf386f6",
+  "official_receipt_hash": "sha256:ec927516989a9be816131149fd835302a9c2a10ec577f31dcb8e6e804dc9709e",
+  "application_number": "MOCK-CN-APPLICATION-001",
+  "official_system_touched": true,
+  "official_submission_performed": true,
+  "benchmark_mock": true,
+  "updated_at": "2026-06-01T20:45:00+08:00"
+}

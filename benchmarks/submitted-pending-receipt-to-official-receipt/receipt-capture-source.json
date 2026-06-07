@@ -1,0 +1,39 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "previous_status": "submitted_pending_receipt",
+  "filing_action_id": "MOCK-SUBMISSION-PENDING-CASE-INTAKE-ORCH-001",
+  "submitted_at": "2026-06-01T22:21:00+08:00",
+  "official_system": "CNIPA patent business processing system",
+  "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+  "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "official_receipt": {
+    "receipt_id": "MOCK-RECEIPT-CASE-INTAKE-ORCH-001",
+    "receipt_file": "mock-official-receipt-case-intake-orch-001.pdf",
+    "receipt_hash": "sha256:920189b31d505e97318727940e6973a433d72324a4c7c3be8888eaca20c1d953"
+  },
+  "application": {
+    "application_number": "MOCK-CN-CASE-INTAKE-ORCH-001",
+    "filing_date": "2026-06-01",
+    "official_file_list_hash": "sha256:0d10796b468097ba2f445a6a62509b653565bc18d901f32c961e848bceeb1ebd"
+  },
+  "fees": {
+    "payment_status": "pending",
+    "payment_receipt_file": "",
+    "payment_receipt_hash": ""
+  },
+  "docket": {
+    "docket_entry_id": "DOCKET-RECEIPT-MOCK-CASE-INTAKE-ORCH-001",
+    "next_deadlines": [
+      {
+        "name": "substantive examination request placeholder",
+        "due_date": "mock-date"
+      }
+    ]
+  },
+  "evidence_notes": "Benchmark mock only. This is not a real official receipt, real filing, or real application number.",
+  "benchmark_mock": true,
+  "decision": {
+    "status": "official_receipt_received",
+    "reason": "Mock receipt evidence proves the required shape for receipt-capture status without marking accepted/application-number received."
+  }
+}

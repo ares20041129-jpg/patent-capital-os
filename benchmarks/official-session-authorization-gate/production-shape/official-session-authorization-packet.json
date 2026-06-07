@@ -1,0 +1,81 @@
+{
+  "session_gate": "official_session_authorization_gate",
+  "evidence_mode": "production_shape_test",
+  "production_shape_test": true,
+  "not_real_session_authorization": true,
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system": "CNIPA patent business processing system",
+  "official_account": {
+    "role": "applicant_self_filing_account_owner",
+    "account_owner_authorization_hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "self_filing_authority_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+    "authorization_scope_hash": "sha256:3333333333333333333333333333333333333333333333333333333333333333"
+  },
+  "session_broker": {
+    "name": "official-session-broker-shape-test",
+    "version": "1.0.0",
+    "approval_hash": "sha256:4444444444444444444444444444444444444444444444444444444444444444",
+    "session_reference_hash": "sha256:5555555555555555555555555555555555555555555555555555555555555555",
+    "session_reference_scope": "case_action_and_account_scoped",
+    "expires_at": "2026-06-02T18:00:00+08:00",
+    "scoped_to_case": true,
+    "revocable": true,
+    "expiry_enforced": true
+  },
+  "authorization": {
+    "allowed_actions": [
+      "submit_package",
+      "pay_official_fees"
+    ],
+    "signature_authority_hash": "sha256:6666666666666666666666666666666666666666666666666666666666666666",
+    "payment_authority_hash": "sha256:7777777777777777777777777777777777777777777777777777777777777777",
+    "fee_payment_allowed": true,
+    "filing_action_idempotency_key": "CASE-AI-SELF-FILING-SHAPE-001:sha256-final-package",
+    "human_only_steps": [],
+    "human_only_steps_resolved": true
+  },
+  "credential_boundary": {
+    "credential_source": "official_session_broker",
+    "credential_material_included": false,
+    "raw_credentials_in_request": false,
+    "private_keys_in_request": false,
+    "session_tokens_in_request": false,
+    "cookies_in_request": false,
+    "mfa_secrets_in_request": false,
+    "passwords_in_request": false,
+    "stores_credentials": false
+  },
+  "official_controls": {
+    "respects_mfa": true,
+    "respects_captcha": true,
+    "access_control_enforced": true,
+    "human_only_steps_trigger_handoff": true,
+    "signature_ceremony_handoff_if_required": true,
+    "bypasses_access_controls": false,
+    "bypasses_captcha": false,
+    "bypasses_signature_ceremony": false,
+    "bypasses_mfa": false,
+    "human_only_step_bypassed": false
+  },
+  "execution_controls": {
+    "requested_action": "submit_package",
+    "stop_on_hash_mismatch": true,
+    "stop_on_human_only_step": true,
+    "stop_on_access_control_bypass": true,
+    "receipt_capture_required": true,
+    "audit_logging_required": true,
+    "idempotency_key_required": true
+  },
+  "audit": {
+    "audit_log_schema_hash": "sha256:8888888888888888888888888888888888888888888888888888888888888888",
+    "logs_input_hashes": true,
+    "logs_output_hashes": true,
+    "redacts_secrets": true,
+    "retention_policy": "retain official session authorization evidence according to applicant policy"
+  },
+  "decision": {
+    "status": "official_session_shape_test_verified",
+    "reason": "Production-shape test proves the official session authorization schema and boundary checks. It is not real session authorization."
+  }
+}

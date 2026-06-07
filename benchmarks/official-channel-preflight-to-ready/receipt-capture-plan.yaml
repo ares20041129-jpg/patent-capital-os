@@ -1,0 +1,23 @@
+case_id: "OFFICIAL-PREFLIGHT-READY-001"
+filing_action_id: "planned-action-001"
+status: "planned"
+submitted_at: ""
+official_system: "CNIPA patent business processing system"
+official_receipt:
+  receipt_id: ""
+  receipt_file: ""
+  receipt_hash: ""
+application:
+  application_number: ""
+  filing_date: ""
+  official_file_list_hash: ""
+fees:
+  payment_status: "pending"
+  payment_receipt_file: ""
+  payment_receipt_hash: ""
+docket:
+  docket_entry_id: "planned-docket-001"
+  next_deadlines:
+    - name: "capture official receipt after submission"
+      due_date: "on submission day"
+evidence_notes: "Plan only. No official submission or receipt exists."

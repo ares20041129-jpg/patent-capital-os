@@ -1,0 +1,256 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "reviewed_at": "2026-06-03T04:47:39+08:00",
+  "review_type": "application_materials_quality_gate",
+  "source_rubric": "references/quality-rubric.md",
+  "application_materials": {
+    "path": "../application-materials/application-materials.json",
+    "hash": "sha256:6d08b4c56bdcfb4267eb915ccca3c230b298fcff1a36ece6d12a5bb543038d88"
+  },
+  "quality_gate": {
+    "status": "passed",
+    "weighted_score": 100.0,
+    "minimum_score_for_official_preflight": 85.0,
+    "minimum_dimension_score": 7,
+    "enterprise_ready_score": 90.0,
+    "enterprise_ready": true,
+    "official_preflight_allowed": true
+  },
+  "dimensions": {
+    "claim_architecture": {
+      "name": "claim_architecture",
+      "score": 10,
+      "weight": 18,
+      "passed": true,
+      "checks": [
+        {
+          "id": "claims_section_present",
+          "passed": true,
+          "evidence": "claims material contains Claims Draft"
+        },
+        {
+          "id": "independent_claim_candidates_present",
+          "passed": true,
+          "evidence": "independent claim candidates marker"
+        },
+        {
+          "id": "dependent_claim_ladder_present",
+          "passed": true,
+          "evidence": "dependent claim ladder marker"
+        },
+        {
+          "id": "numbered_independent_claim_present",
+          "passed": true,
+          "evidence": "claim 1 numbering"
+        },
+        {
+          "id": "claim_support_rows_present",
+          "passed": true,
+          "evidence": "claim support rows count"
+        }
+      ]
+    },
+    "specification_enablement": {
+      "name": "specification_enablement",
+      "score": 10,
+      "weight": 18,
+      "passed": true,
+      "checks": [
+        {
+          "id": "technical_problem_present",
+          "passed": true,
+          "evidence": "technical problem section"
+        },
+        {
+          "id": "technical_solution_present",
+          "passed": true,
+          "evidence": "technical solution section"
+        },
+        {
+          "id": "beneficial_effects_present",
+          "passed": true,
+          "evidence": "technical effects section"
+        },
+        {
+          "id": "drawings_description_present",
+          "passed": true,
+          "evidence": "drawing description section"
+        },
+        {
+          "id": "embodiments_present",
+          "passed": true,
+          "evidence": "detailed embodiments section"
+        }
+      ]
+    },
+    "abstract_and_drawings": {
+      "name": "abstract_and_drawings",
+      "score": 10,
+      "weight": 10,
+      "passed": true,
+      "checks": [
+        {
+          "id": "abstract_section_present",
+          "passed": true,
+          "evidence": "abstract marker"
+        },
+        {
+          "id": "abstract_solution_language_present",
+          "passed": true,
+          "evidence": "abstract solution language"
+        },
+        {
+          "id": "drawings_section_present",
+          "passed": true,
+          "evidence": "drawings marker"
+        },
+        {
+          "id": "figure_reference_present",
+          "passed": true,
+          "evidence": "figure reference"
+        }
+      ]
+    },
+    "evidence_binding": {
+      "name": "evidence_binding",
+      "score": 10,
+      "weight": 18,
+      "passed": true,
+      "checks": [
+        {
+          "id": "materials_schema_valid",
+          "passed": true,
+          "evidence": "validate_patent_application_materials passed"
+        },
+        {
+          "id": "own_support_hashes_present",
+          "passed": true,
+          "evidence": "own support hashes"
+        },
+        {
+          "id": "prohibited_reference_hashes_recorded",
+          "passed": true,
+          "evidence": "prohibited reference hash list"
+        },
+        {
+          "id": "reference_not_used_as_support",
+          "passed": true,
+          "evidence": "reference boundary"
+        },
+        {
+          "id": "abnormal_risk_low",
+          "passed": true,
+          "evidence": "same-case low abnormal filing risk"
+        }
+      ]
+    },
+    "filing_readiness": {
+      "name": "filing_readiness",
+      "score": 10,
+      "weight": 14,
+      "passed": true,
+      "checks": [
+        {
+          "id": "applicant_name_present",
+          "passed": true,
+          "evidence": "request metadata applicant"
+        },
+        {
+          "id": "inventors_present",
+          "passed": true,
+          "evidence": "request metadata inventors"
+        },
+        {
+          "id": "official_inventory_complete",
+          "passed": true,
+          "evidence": "official inventory"
+        },
+        {
+          "id": "xml_validation_passed",
+          "passed": true,
+          "evidence": "XML readiness validation"
+        },
+        {
+          "id": "official_preflight_required",
+          "passed": true,
+          "evidence": "official-channel preflight required"
+        }
+      ]
+    },
+    "legal_safety": {
+      "name": "legal_safety",
+      "score": 10,
+      "weight": 12,
+      "passed": true,
+      "checks": [
+        {
+          "id": "ai_only_legal_gate_mode",
+          "passed": true,
+          "evidence": "AI self-filing mode"
+        },
+        {
+          "id": "external_lawyer_false",
+          "passed": true,
+          "evidence": "external lawyer absent"
+        },
+        {
+          "id": "no_legal_advice_claimed",
+          "passed": true,
+          "evidence": "no legal advice claim"
+        },
+        {
+          "id": "no_lawyer_or_agent_review_claimed",
+          "passed": true,
+          "evidence": "no lawyer or agent review claim"
+        },
+        {
+          "id": "no_official_action_claimed",
+          "passed": true,
+          "evidence": "official flags false"
+        }
+      ]
+    },
+    "auditability": {
+      "name": "auditability",
+      "score": 10,
+      "weight": 10,
+      "passed": true,
+      "checks": [
+        {
+          "id": "final_package_hash_exact",
+          "passed": true,
+          "evidence": "final package hash exact"
+        },
+        {
+          "id": "source_draft_hash_exact",
+          "passed": true,
+          "evidence": "source draft hash exact"
+        },
+        {
+          "id": "evidence_artifact_hash_exact",
+          "passed": true,
+          "evidence": "evidence artifact hash exact"
+        },
+        {
+          "id": "abnormal_artifact_hash_exact",
+          "passed": true,
+          "evidence": "abnormal risk artifact hash exact"
+        },
+        {
+          "id": "all_generated_doc_hashes_exact",
+          "passed": true,
+          "evidence": "generated document hashes exact"
+        }
+      ]
+    }
+  },
+  "materials_validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": []
+  },
+  "next_action": "Run official-channel preflight next; do not upload, sign, pay, submit, or claim receipt from quality review alone.",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "external_lawyer_involved": false
+}

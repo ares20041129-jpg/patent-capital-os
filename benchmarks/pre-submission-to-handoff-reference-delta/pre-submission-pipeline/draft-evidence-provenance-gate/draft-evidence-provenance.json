@@ -1,0 +1,74 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "status": "draft_evidence_provenance_checked",
+  "decision": "draft_only_do_not_file",
+  "source_material_manifest_hash": "sha256:7ec4febf64c5894dc88401430c2db1c6ebe97637b7a56ae621ae94758397b9f7",
+  "invention_disclosure_hash": "sha256:4d911eeb112a70ac833bd8c518959bd5b059a0e66162bb81dcbac1cadbfb3c45",
+  "patent_application_draft_hash": "sha256:80f2539c69aa427fdc0a2c504c8488807f30fe63cd562964a966ee9cc2213877",
+  "claim_support_map_hash": "sha256:dfeb029da71a96ba58b952418794bd67c6cec475f72ef0c510bd7c9b31faedeb",
+  "filing_status_hash": "sha256:35fcd9772a8a49936f2983514335a0279cb837fa2195701a7fe589814eeba924",
+  "reference_patent_delta_hash": "sha256:cfdb203ea3b5ab9cf252ca2eefbcec44edd6e569d54cf843078b49ad9ad3da91",
+  "reference_delta_claim_elements_count": 3,
+  "reference_delta_rows_count": 3,
+  "own_support_hashes": [
+    "sha256:36938c5922b3d40d2d16a0e50d7edacb676dd227621189f3a8d261ef7c235771",
+    "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c"
+  ],
+  "prohibited_reference_hashes": [
+    "sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e"
+  ],
+  "reference_identifiers": [
+    "prior-art-notes.txt"
+  ],
+  "claim_support_rows": [
+    {
+      "row": 1,
+      "claim": "1",
+      "limitation": "compare motor-current ripple, bowl temperature, and timed rest intervals",
+      "evidence_hash": "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+      "evidence_role": "own_source_material",
+      "material_id": "M-001",
+      "material_type": "drawing",
+      "source_owner": "Patent Capital OS benchmark",
+      "passes": true,
+      "errors": []
+    },
+    {
+      "row": 2,
+      "claim": "1",
+      "limitation": "classify dough hydration and elasticity state from the comparison",
+      "evidence_hash": "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+      "evidence_role": "own_source_material",
+      "material_id": "M-001",
+      "material_type": "drawing",
+      "source_owner": "Patent Capital OS benchmark",
+      "passes": true,
+      "errors": []
+    },
+    {
+      "row": 3,
+      "claim": "1",
+      "limitation": "adjust kneading torque and rest timing when the classified state crosses a threshold",
+      "evidence_hash": "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+      "evidence_role": "own_source_material",
+      "material_id": "M-001",
+      "material_type": "drawing",
+      "source_owner": "Patent Capital OS benchmark",
+      "passes": true,
+      "errors": []
+    }
+  ],
+  "unsupported_rows": [],
+  "errors": [],
+  "warnings": [
+    "source_manifest: material_3_not_marked_usable_for_claim_support",
+    "claim_support_map: row_1_draft_status: draft_supported",
+    "claim_support_map: row_2_draft_status: draft_supported",
+    "claim_support_map: row_3_draft_status: draft_supported"
+  ],
+  "draft_generation_allowed": true,
+  "filing_allowed": false,
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "external_lawyer_involved": false
+}

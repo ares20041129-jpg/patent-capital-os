@@ -1,0 +1,8 @@
+{
+  "cured_packet": "../ai-self-filing-package-validation/ai-self-filing-authorization-packet.json",
+  "cure_notes": [
+    "Removed the legal-advice misrepresentation.",
+    "Preserved AI self-filing route with no external lawyer or patent agent.",
+    "Revalidation may advance only to ready_for_package_validation."
+  ]
+}

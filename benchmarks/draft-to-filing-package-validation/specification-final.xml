@@ -1,0 +1,5 @@
+<specification case-id="DRAFT-TO-PACKAGE-001">
+  <title>Source-bound package validation workflow</title>
+  <description>Validates that final documents, authorization evidence, and filing-status boundaries are present before official preflight.</description>
+  <boundary>Mock specification for offline benchmark validation only; no official submission.</boundary>
+</specification>

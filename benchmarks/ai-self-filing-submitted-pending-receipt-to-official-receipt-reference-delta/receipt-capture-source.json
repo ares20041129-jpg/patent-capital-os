@@ -1,0 +1,44 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "previous_status": "submitted_pending_receipt",
+  "filing_action_id": "AI-MOCK-SUBMISSION-PENDING-CASE-INTAKE-ORCH-001",
+  "submitted_at": "2026-06-01T23:46:00+08:00",
+  "official_system": "CNIPA patent business processing system",
+  "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+  "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "official_receipt": {
+    "receipt_id": "AI-MOCK-RECEIPT-CASE-INTAKE-ORCH-001",
+    "receipt_file": "ai-self-filing-mock-official-receipt-case-intake-orch-001.pdf",
+    "receipt_hash": "sha256:8df8024236158d3f9db9a1242690cb53fce8904519a38fbf6f8a411568bf0367"
+  },
+  "application": {
+    "application_number": "AI-MOCK-CN-CASE-INTAKE-ORCH-001",
+    "filing_date": "2026-06-01",
+    "official_file_list_hash": "sha256:905d9df2eec3dd53d9f1f1e2f0c4fe6033cdfb0572199d175bce47d2d490ca94"
+  },
+  "fees": {
+    "payment_status": "pending",
+    "payment_receipt_file": "",
+    "payment_receipt_hash": ""
+  },
+  "docket": {
+    "docket_entry_id": "DOCKET-AI-SELF-FILING-RECEIPT-MOCK-CASE-INTAKE-ORCH-001",
+    "next_deadlines": [
+      {
+        "name": "substantive examination request placeholder",
+        "due_date": "mock-date"
+      }
+    ]
+  },
+  "evidence_notes": "Benchmark mock only. This is not a real official receipt, real filing, or real application number.",
+  "benchmark_mock": true,
+  "decision": {
+    "status": "official_receipt_received",
+    "reason": "Mock AI self-filing receipt evidence proves the required shape for receipt-capture status without marking accepted/application-number received."
+  },
+  "application_materials_hash": "sha256:451bf6debc7c479dd7802a2adf2c709e11b1e9051d498e33f965c1be8fd268ae",
+  "reference_patent_delta_hash": "sha256:21afcd8d4569933058a050427f65a6c863a9053f48a5b9a1368475827fb3a4a2",
+  "reference_delta_rows_count": "3",
+  "reference_delta_claim_elements_count": "3",
+  "reference_delta_boundary_preserved": true
+}

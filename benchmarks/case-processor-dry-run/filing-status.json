@@ -1,0 +1,18 @@
+{
+  "case_id": "CASE-PROCESSOR-DRY-RUN-001",
+  "previous_status": "package_valid_official_preflight_pending",
+  "status": "ready_for_authorized_filing",
+  "legal_gate": "passed",
+  "package_validation": "passed",
+  "official_channel_preflight": "passed",
+  "receipt_capture_plan": "planned",
+  "failed_gates": [],
+  "decision": "ready_for_authorized_filing",
+  "final_package_hash": "sha256:271f551faf3e459183db4014002ca92c3e50298743290ee102e057dc9b5fd0ab",
+  "reviewed_package_hash": "sha256:271f551faf3e459183db4014002ca92c3e50298743290ee102e057dc9b5fd0ab",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "updated_at": "2026-06-01T21:05:00+08:00"
+}

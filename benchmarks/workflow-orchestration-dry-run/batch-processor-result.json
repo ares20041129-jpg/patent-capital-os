@@ -1,0 +1,83 @@
+{
+  "queue_id": "WORKFLOW-ORCH-DRY-RUN-001",
+  "processed_at": "2026-06-03T00:29:31+08:00",
+  "execution_mode": "dry_run",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "summary": {
+    "total": 3,
+    "passed": 1,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 2
+  },
+  "results": [
+    {
+      "case_id": "INCOMING-DISCLOSURE-APP-001",
+      "input_status": "draft_only",
+      "output_status": "draft_only",
+      "expected_outcome": "deficiency",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "external_lawyer_involved": false,
+      "decision": "do_not_file",
+      "outcome": "deficiency",
+      "validators_run": [
+        "validate_incoming_application_benchmark"
+      ],
+      "errors": [],
+      "warnings": [
+        "validate_incoming_application_benchmark: manifest: material_4_not_marked_usable_for_claim_support",
+        "validate_incoming_application_benchmark: claim_map: row_1_draft_status: draft_supported",
+        "validate_incoming_application_benchmark: claim_map: row_2_draft_status: draft_supported",
+        "validate_incoming_application_benchmark: claim_map: row_3_draft_status: draft_supported",
+        "validate_incoming_application_benchmark: claim_map: row_4_draft_status: draft_supported",
+        "validate_incoming_application_benchmark: claim_map: row_5_draft_status: draft_supported",
+        "validate_incoming_application_benchmark: claim_map: row_6_draft_status: draft_supported"
+      ],
+      "next_action": "Cure legal, authorization, ownership, secrecy, support, or package deficiencies before filing.",
+      "owner": "Patent Capital OS benchmark",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    },
+    {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "input_status": "package_valid_official_preflight_pending",
+      "output_status": "package_valid_official_preflight_pending",
+      "expected_outcome": "ai_self_filing_package_validation",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "external_lawyer_involved": false,
+      "decision": "ai_self_filing_package_validation_passed",
+      "outcome": "passed",
+      "validators_run": [
+        "validate_ai_self_filing_package_benchmark"
+      ],
+      "errors": [],
+      "warnings": [],
+      "next_action": "Run AI self-filing official-channel preflight before any upload, signature, payment, or submission.",
+      "owner": "AI self-filing package validation operator",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    },
+    {
+      "case_id": "CASE-INTAKE-ORCH-001-legal_advice_claim_rejected",
+      "input_status": "legal_gate_failed",
+      "output_status": "legal_gate_failed",
+      "expected_outcome": "deficiency",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "external_lawyer_involved": false,
+      "decision": "do_not_file",
+      "outcome": "deficiency",
+      "validators_run": [
+        "validate_ai_self_filing_deficiency_report_benchmark"
+      ],
+      "errors": [],
+      "warnings": [],
+      "next_action": "Cure legal, authorization, ownership, secrecy, support, or package deficiencies before filing.",
+      "owner": "Patent Capital OS benchmark",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": []
+}

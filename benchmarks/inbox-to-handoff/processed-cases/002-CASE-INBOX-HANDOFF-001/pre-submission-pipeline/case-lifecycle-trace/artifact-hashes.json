@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-001",
+  "generated_at": "2026-06-03T07:03:16+08:00",
+  "files": [
+    {
+      "path": "case-lifecycle-trace.json",
+      "sha256": "sha256:d64bbf2f495edee927233e461a845c5e93ec3a7f80beb2b10d0270f2f6e20f72",
+      "bytes": 8793
+    },
+    {
+      "path": "lifecycle-report.md",
+      "sha256": "sha256:e04f9f4df46c3285268f69d69ab6d20b42733da3e1ae0a3265c1b30a9ca02c1f",
+      "bytes": 564
+    }
+  ]
+}

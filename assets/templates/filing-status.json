@@ -1,0 +1,22 @@
+{
+  "case_id": "",
+  "status": "intake_received",
+  "allowed_statuses": [
+    "intake_received",
+    "draft_only",
+    "legal_gate_failed",
+    "ready_for_package_validation",
+    "package_valid_official_preflight_pending",
+    "ready_for_authorized_filing",
+    "submitted_pending_receipt",
+    "official_receipt_received",
+    "accepted_or_application_number_received"
+  ],
+  "legal_gate": "pending",
+  "failed_gates": [],
+  "final_package_hash": "",
+  "reviewed_package_hash": "",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "updated_at": ""
+}

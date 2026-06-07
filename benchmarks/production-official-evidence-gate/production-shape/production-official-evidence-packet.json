@@ -1,0 +1,55 @@
+{
+  "case_id": "CASE-PRODUCTION-SHAPE-001",
+  "evidence_gate": "production_official_evidence_gate",
+  "evidence_mode": "production_shape_test",
+  "production_shape_test": true,
+  "not_real_official_evidence": true,
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system": "CNIPA patent business processing system",
+  "source": {
+    "capture_method": "approved_adapter_capture",
+    "captured_at": "2026-06-01T10:06:00+08:00",
+    "captured_by": "authorized-applicant-filing-operator",
+    "official_account_role": "applicant_self_filing_account_owner",
+    "authorization_packet_hash": "sha256:dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "credential_material_included": false,
+    "human_only_step_bypassed": false
+  },
+  "package": {
+    "final_package_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "reviewed_package_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "submitted_package_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+  },
+  "application_materials_hash": "sha256:451bf6debc7c479dd7802a2adf2c709e11b1e9051d498e33f965c1be8fd268ae",
+  "reference_patent_delta_hash": "sha256:21afcd8d4569933058a050427f65a6c863a9053f48a5b9a1368475827fb3a4a2",
+  "reference_delta_rows_count": "3",
+  "reference_delta_claim_elements_count": "3",
+  "reference_delta_boundary_preserved": true,
+  "artifacts": {
+    "adapter_execution_result": {
+      "path": "adapter-execution-result.json",
+      "sha256": "sha256:634f51582a81fbb237ab58d9892aaf2dc2159ba0e02852c17e3f0068c38a4b23",
+      "adapter_production_readiness_hash": "sha256:9999999999999999999999999999999999999999999999999999999999999999",
+      "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+      "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    "receipt_capture": {
+      "path": "receipt-capture.yaml",
+      "sha256": "sha256:fc3e64c02ae365cb496921648dddbb048eaf3ebb4658e018e73a7a6b452eaed3",
+      "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+      "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    "application_number_evidence": {
+      "path": "application-number-evidence.json",
+      "sha256": "sha256:d54b5af342e0edc2f8f1caf0321d20b30a9fe5d842e6113dc3ce5902851e27a3",
+      "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+      "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    }
+  },
+  "decision": {
+    "status": "production_shape_test_verified",
+    "reason": "Production-shape test proves the strict evidence gate schema and cross-artifact checks. It is not real official evidence."
+  }
+}

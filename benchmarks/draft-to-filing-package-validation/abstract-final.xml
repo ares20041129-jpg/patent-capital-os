@@ -1,0 +1,4 @@
+<abstract case-id="DRAFT-TO-PACKAGE-001">
+  <text>A filing package is checked against source draft, authorization packet, document hashes, and status boundaries before any official-channel action.</text>
+  <boundary>Mock abstract for offline benchmark validation only; no official submission.</boundary>
+</abstract>

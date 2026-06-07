@@ -1,0 +1,67 @@
+case_id: "CASE-INTAKE-ORCH-001"
+jurisdiction: "CN"
+filing_type: "invention"
+package_status: "package_valid_official_preflight_pending"
+source_draft: "patent-application-draft.md"
+source_draft_hash: "sha256:2154f3eeae61f9ca1483f15eac874ae63d98a6ee4514edec73daccb462120ecd"
+authorization_packet: "submission-authorization-packet.json"
+authorization_packet_hash: "sha256:60074753c85cae4192568e25ba79db4c94743b941e78641912381d1449cafd0d"
+reviewed_package_hash: "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d"
+final_package_hash: "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d"
+official_submission_performed: false
+
+documents:
+  - document_id: "claims"
+    type: "claims"
+    filename: "claims-final.xml"
+    format: "xml"
+    hash: "sha256:2fca59ef96973a2a1cb2d8fa1b84e86f8fc52d7e67d36cd24506004f08d1d891"
+    required: true
+    validation_status: "passed"
+  - document_id: "specification"
+    type: "specification"
+    filename: "specification-final.xml"
+    format: "xml"
+    hash: "sha256:8931680a6df3565a669825cb5a72caa986799ce271ec8bafdf74326ca770b241"
+    required: true
+    validation_status: "passed"
+  - document_id: "abstract"
+    type: "abstract"
+    filename: "abstract-final.xml"
+    format: "xml"
+    hash: "sha256:91d51a8dcfb543e4c0bad3011dfdfbce7d9c88a8a333bf1ec20fa005bcc9f180"
+    required: true
+    validation_status: "passed"
+  - document_id: "drawings"
+    type: "drawings"
+    filename: "drawings-final.pdf"
+    format: "pdf"
+    hash: "sha256:29a665e1c543ee645116b0dfd248e3074c6a1751b61e11b60bc03469186ec0ff"
+    required: true
+    validation_status: "passed"
+  - document_id: "request_metadata"
+    type: "request_metadata"
+    filename: "request-metadata.xml"
+    format: "xml"
+    hash: "sha256:be0c92e29174e81582f6efb1a0708c1e97a6303fb90c3a1f788d1808bb20b1ee"
+    required: true
+    validation_status: "passed"
+
+xml_validation:
+  final_xml_hash: "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d"
+  standard_or_tool: "Patent Capital OS offline package validation"
+  validation_result: "passed"
+  validation_report_hash: "sha256:8007330ecf9962af392bd4008bef2a6a23eea854a6da1d1d4717f696c31f5ea9"
+  sequence_listing_standard: "not_applicable"
+
+cross_checks:
+  final_package_hash_matches_reviewed_hash: true
+  claims_hash_matches_authorization: true
+  specification_hash_matches_authorization: true
+  drawings_present: true
+  request_metadata_present: true
+
+next_gate:
+  official_channel_preflight_required: true
+  receipt_capture_required: true
+  status_after_package_validation: "package_valid_official_preflight_pending"

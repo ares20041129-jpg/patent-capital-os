@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "pipeline_type": "application_materials_to_quality_gate",
+  "created_at": "2026-06-03T06:11:17+08:00",
+  "status": "package_valid_official_preflight_pending",
+  "decision": "official_channel_preflight_required",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "stages": {
+    "application_materials": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials",
+      "artifacts": {
+        "application_materials": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials\\application-materials.json",
+        "request_form_metadata": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials\\request-form-metadata.json",
+        "document_generation_plan": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials\\document-generation-plan.json",
+        "xml_readiness_checklist": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials\\xml-readiness-checklist.json",
+        "filing_status": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials\\filing-status.json",
+        "application_materials_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials\\application-materials-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": []
+    },
+    "quality_gate": {
+      "ok": true,
+      "output_dir": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials-quality-gate",
+      "artifacts": {
+        "quality_review": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials-quality-gate\\application-materials-quality-review.json",
+        "quality_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials-quality-gate\\application-materials-quality-report.md",
+        "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\application-materials-quality-gate\\artifact-hashes.json"
+      },
+      "errors": [],
+      "warnings": []
+    }
+  },
+  "next_action": "Run official-channel preflight; do not file from pipeline output alone.",
+  "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\pre-submission-pipeline-reference-delta\\application-materials-pipeline\\artifact-hashes.json",
+  "manifest_errors": [],
+  "manifest_warnings": []
+}

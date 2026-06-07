@@ -1,0 +1,37 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "checked_by": "Patent Capital OS benchmark",
+  "account": {
+    "role": "authorized filing account",
+    "authorization_evidence": "power-of-attorney.pdf and account-owner authorization record"
+  },
+  "signature": {
+    "authority_holder": "Patent Capital OS Mock Review Desk filing account",
+    "authority_evidence": "signature-authority-record.pdf",
+    "human_only": false
+  },
+  "automation": {
+    "automation_allowed": true,
+    "adapter_name": "benchmark-adapter",
+    "adapter_version": "0.0.0-dry-run",
+    "bypasses_access_controls": false
+  },
+  "fees": {
+    "payment_method_reference": "benchmark-payment-authority"
+  },
+  "receipt_capture": {
+    "destination": "case-vault/CASE-INTAKE-ORCH-001/receipts",
+    "responsible_owner": "Filing operator",
+    "planned_docket_entry_id": "planned-docket-CASE-INTAKE-ORCH-001",
+    "next_deadlines": [
+      {
+        "name": "capture official receipt after submission",
+        "due_date": "on submission day"
+      }
+    ]
+  },
+  "decision": {
+    "status": "ready_for_authorized_filing",
+    "reason": "Official-channel preflight fields are present for a dry-run benchmark. No official submission, signature, fee payment, or receipt capture has occurred."
+  }
+}

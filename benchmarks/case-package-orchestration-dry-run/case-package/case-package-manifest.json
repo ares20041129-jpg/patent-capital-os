@@ -1,0 +1,80 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "package_id": "CASE-INTAKE-ORCH-001-PKG-001",
+  "jurisdiction": "CN",
+  "package_status": "intake_received",
+  "received_at": "2026-06-03T00:38:01+08:00",
+  "received_from": "Patent Capital OS benchmark",
+  "intake_mode": "manual_upload",
+  "confidentiality_marker": "confidential",
+  "source_package_hash": "sha256:8a534abe29fa4e60cb851dd8374005bf1e137b5a7a74aae2bd313cfa6336525e",
+  "folders": {
+    "intake": "00-intake",
+    "normalized": "01-normalized",
+    "draft": "02-draft",
+    "legal": "03-legal",
+    "filing_package": "04-package",
+    "official_preflight": "05-official-preflight",
+    "adapter": "06-adapter",
+    "receipts": "07-receipts",
+    "docket": "08-docket",
+    "portfolio": "09-portfolio",
+    "audit": "audit"
+  },
+  "source_material_manifest": "01-normalized/source-material-manifest.json",
+  "source_material_manifest_hash": "sha256:d555bb9cd99f73e3407dccd485baa5bfa7fde4b16efa8ab8fab2625df6f40ede",
+  "source_files": [
+    {
+      "material_id": "M-001",
+      "relative_path": "00-intake/source-files/drawing-notes.txt",
+      "filename": "drawing-notes.txt",
+      "type": "drawing",
+      "sha256": "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+      "bytes": 192,
+      "source_owner": "Patent Capital OS benchmark",
+      "confidentiality": "confidential",
+      "usable_for_claim_support": true
+    },
+    {
+      "material_id": "M-002",
+      "relative_path": "00-intake/source-files/invention-disclosure.txt",
+      "filename": "invention-disclosure.txt",
+      "type": "invention_disclosure",
+      "sha256": "sha256:36938c5922b3d40d2d16a0e50d7edacb676dd227621189f3a8d261ef7c235771",
+      "bytes": 377,
+      "source_owner": "Patent Capital OS benchmark",
+      "confidentiality": "confidential",
+      "usable_for_claim_support": true
+    },
+    {
+      "material_id": "M-003",
+      "relative_path": "00-intake/source-files/prior-art-notes.txt",
+      "filename": "prior-art-notes.txt",
+      "type": "prior_art",
+      "sha256": "sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e",
+      "bytes": 194,
+      "source_owner": "Patent Capital OS benchmark",
+      "confidentiality": "confidential",
+      "usable_for_claim_support": false
+    }
+  ],
+  "legal_gate": {
+    "status": "pending",
+    "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+    "ai_legal_compliance_confirmation_present": false,
+    "external_lawyer_involved": false,
+    "applicant_authorization_present": false,
+    "inventor_confirmation_present": false,
+    "ownership_confirmation_present": false,
+    "secrecy_review_status": "unknown",
+    "filing_allowed": false
+  },
+  "official_actions": {
+    "official_system_touched": false,
+    "official_submission_performed": false,
+    "receipt_captured": false,
+    "application_number_received": false
+  },
+  "next_action": "normalize_invention_disclosure",
+  "notes": "Prepared by prepare_case_package.py. Intake only; no filing action performed."
+}

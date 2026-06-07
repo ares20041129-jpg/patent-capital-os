@@ -1,0 +1,81 @@
+{
+  "case_id": "CASE-PRE-SUB-001",
+  "status": "abnormal_filing_risk_assessed",
+  "decision": "draft_only_do_not_file_until_ai_self_filing_gate",
+  "gate": "G8 Non-abnormal filing check",
+  "risk_level": "low",
+  "checks": [
+    {
+      "check_id": "real_inventive_activity",
+      "result": "pass",
+      "evidence": "Inventor contribution is confirmed and R&D evidence includes prototype, experiment, log, or source hashes.",
+      "risk_if_ignored": "A filing without real inventive activity can be treated as abnormal and should not proceed.",
+      "required_cure": "Collect inventor contribution confirmation and real R&D evidence before draft generation or filing.",
+      "owner": "Patent Capital OS abnormal filing risk gate"
+    },
+    {
+      "check_id": "no_random_generation",
+      "result": "pass",
+      "evidence": "No random-generation, simple-replacement, or synonym-substitution marker was found in core disclosure fields.",
+      "risk_if_ignored": "Random computer generation, fabricated effects, or simple wording changes can make the filing abnormal.",
+      "required_cure": "Replace generated or wording-only material with real technical contribution evidence and inventor confirmation.",
+      "owner": "Patent Capital OS abnormal filing risk gate"
+    },
+    {
+      "check_id": "no_reference_copy_or_simple_replacement",
+      "result": "pass",
+      "evidence": "Similarity control is confirmed and provenance rows do not use prior-art/reference hashes as applicant claim support.",
+      "risk_if_ignored": "Copying or simply replacing prior art can create abnormal-filing and invalidity risk.",
+      "required_cure": "Remove copied material, rewrite claims from applicant evidence, and rerun provenance validation.",
+      "owner": "Patent Capital OS abnormal filing risk gate"
+    },
+    {
+      "check_id": "technical_effects_supported",
+      "result": "pass",
+      "evidence": "All technical effects cite evidence hashes traceable to applicant disclosure or R&D material.",
+      "risk_if_ignored": "Unsupported effects can be treated as fabricated technical effects.",
+      "required_cure": "Tie each technical effect to applicant evidence and remove unsupported performance claims.",
+      "owner": "Patent Capital OS abnormal filing risk gate"
+    },
+    {
+      "check_id": "not_obvious_patchwork",
+      "result": "pass",
+      "evidence": "The draft has multiple required features, known prior-art references, and element-level prior-art delta rows.",
+      "risk_if_ignored": "Obvious patchwork of references can be treated as low-quality abnormal filing and weak claim strategy.",
+      "required_cure": "Build a feature-by-feature prior-art delta and remove unsupported combinations.",
+      "owner": "Patent Capital OS abnormal filing risk gate"
+    },
+    {
+      "check_id": "not_unreasonable_degradation_or_nonessential_narrowing",
+      "result": "pass",
+      "evidence": "No unreasonable-degradation or non-essential-narrowing marker was found.",
+      "risk_if_ignored": "Unreasonable degradation or non-essential narrowing can indicate a bad-faith filing pattern.",
+      "required_cure": "Explain the technical purpose of narrowed features or remove artificial degradation language.",
+      "owner": "Patent Capital OS abnormal filing risk gate"
+    },
+    {
+      "check_id": "no_malicious_batch_or_duplicate_pattern",
+      "result": "pass",
+      "evidence": "No maliciously distributed batch filing or duplicate filing marker was found in the case text.",
+      "risk_if_ignored": "Maliciously distributed batch filings can trigger abnormal-filing handling.",
+      "required_cure": "Provide legitimate portfolio purpose and distinct invention evidence for each case.",
+      "owner": "Patent Capital OS abnormal filing risk gate"
+    },
+    {
+      "check_id": "inventor_applicant_consistency",
+      "result": "pass",
+      "evidence": "Applicant, inventors, and contribution confirmation are present.",
+      "risk_if_ignored": "False or inconsistent inventor/applicant information can block legal gate and create abnormal-filing risk.",
+      "required_cure": "Confirm applicant identity, inventor list/order, and real contribution before any filing package.",
+      "owner": "Patent Capital OS abnormal filing risk gate"
+    }
+  ],
+  "input_validation_errors": [],
+  "errors": [],
+  "warnings": [],
+  "draft_generation_allowed": true,
+  "filing_allowed": false,
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "external_lawyer_involved": false
+}

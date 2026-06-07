@@ -1,0 +1,3 @@
+Benchmark mock submitted filing package for APPLICATION-NUMBER-MOCK-001.
+Not a real filed package.
+Used only to provide a stable package hash in local application-number evidence.

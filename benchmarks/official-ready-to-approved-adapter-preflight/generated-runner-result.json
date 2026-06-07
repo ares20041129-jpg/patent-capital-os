@@ -1,0 +1,35 @@
+{
+  "queue_id": "OFFICIAL-READY-TO-APPROVED-ADAPTER-PREFLIGHT-QUEUE-001",
+  "processed_at": "2026-06-02T00:45:31+08:00",
+  "execution_mode": "dry_run",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 0
+  },
+  "results": [
+    {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "input_status": "approved_for_adapter_execution",
+      "output_status": "approved_for_adapter_execution",
+      "expected_outcome": "approved_adapter_preflight",
+      "decision": "approved_adapter_preflight_passed",
+      "outcome": "passed",
+      "validators_run": [
+        "validate_generated_approved_adapter_preflight_benchmark"
+      ],
+      "errors": [],
+      "warnings": [],
+      "next_action": "An approved adapter may attempt the authorized action next; capture adapter execution result before any status advance.",
+      "owner": "Approved adapter preflight operator",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": []
+}

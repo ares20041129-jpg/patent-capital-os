@@ -1,0 +1,48 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "evidence_gate": "production_official_evidence_gate",
+  "evidence_mode": "production_official_evidence",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system": "CNIPA patent business processing system",
+  "source": {
+    "capture_method": "approved_adapter_capture",
+    "captured_at": "2026-06-01T23:59:00+08:00",
+    "captured_by": "Patent Capital OS AI self-filing benchmark",
+    "official_account_role": "applicant_self_filing_account_owner",
+    "authorization_packet_hash": "sha256:dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "credential_material_included": false,
+    "human_only_step_bypassed": false
+  },
+  "package": {
+    "final_package_hash": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d",
+    "reviewed_package_hash": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d",
+    "submitted_package_hash": "sha256:569bc100958e868142f1c96b66939a4155c4228b0d743c52dca930236df4dd9d"
+  },
+  "artifacts": {
+    "adapter_execution_result": {
+      "path": "../../ai-self-filing-adapter-to-submitted-pending-receipt/adapter-execution-result.json",
+      "sha256": "sha256:03b46d5eb3a43f7c00b3a0920c1a758bce5a8450fc87416e60459206e3c4e52a",
+      "adapter_production_readiness_hash": "sha256:d8a70abc8fb1e8e19dbc74c6979bf2532cbc14e9cefab6d29949461595cb47a8",
+      "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+      "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    "receipt_capture": {
+      "path": "../../ai-self-filing-submitted-pending-receipt-to-official-receipt/receipt-capture.yaml",
+      "sha256": "sha256:f4d1354fd4ea626316dffbdf6a4b2474224eca0cadea1046fc7067401caafdc8",
+      "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+      "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    "application_number_evidence": {
+      "path": "../../ai-self-filing-official-receipt-to-application-number/application-number-evidence.json",
+      "sha256": "sha256:692888b6d10bb3022f94c218a21caa8c7abd2a8adf67d5967d8b6f48aa254752",
+      "official_session_authorization_hash": "sha256:e66f58b30ea3ed3108998c02e9814f1b40aa33ae48c45eff09cdd5a28cd3c0ca",
+      "official_session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    }
+  },
+  "decision": {
+    "status": "production_official_evidence_verified",
+    "reason": "This packet intentionally points at benchmark mock evidence and must fail the strict production gate."
+  }
+}

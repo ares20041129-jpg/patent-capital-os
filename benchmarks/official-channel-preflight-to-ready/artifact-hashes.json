@@ -1,0 +1,31 @@
+{
+  "case_id": "OFFICIAL-PREFLIGHT-READY-001",
+  "generated_at": "2026-06-01T20:25:00+08:00",
+  "files": [
+    {
+      "path": "official-channel-preflight.yaml",
+      "sha256": "sha256:16e8ed5c3037cc8cd0b1d2195e87e0acdf617214aee46ea752ad7b0b37d72db6",
+      "bytes": 1332
+    },
+    {
+      "path": "receipt-capture-plan.yaml",
+      "sha256": "sha256:c2a45654e113de8076f8c98e18875eb15f53c29468215d7cf449102e0642bc0c",
+      "bytes": 649
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:58829b2fbf9d68f786b378233066c8adaf4562e6c9dda6ed79ddcaffe12f288b",
+      "bytes": 745
+    },
+    {
+      "path": "readiness-report.md",
+      "sha256": "sha256:7ea97e8ef444a93283b5d408c756cdeaee78f148b9e57d6d527366dfa9e44716",
+      "bytes": 884
+    },
+    {
+      "path": "results.tsv",
+      "sha256": "sha256:6ac40067f7d947ce78d0b1a087c2dac7948ba78058067caaf4fee36107dfeaae",
+      "bytes": 488
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "case_id": "",
+  "previous_status": "official_receipt_received",
+  "status": "accepted_or_application_number_received",
+  "official_system": "",
+  "official_session_authorization_hash": "",
+  "official_session_reference_hash": "",
+  "checked_at": "",
+  "checked_by": "",
+  "official_receipt": {
+    "receipt_id": "",
+    "receipt_file": "",
+    "receipt_hash": ""
+  },
+  "application": {
+    "application_number": "",
+    "filing_date": "",
+    "official_status": "",
+    "official_status_snapshot": "",
+    "official_status_snapshot_hash": "",
+    "official_file_list_hash": ""
+  },
+  "package": {
+    "final_package_hash": "",
+    "reviewed_package_hash": "",
+    "submitted_package_hash": ""
+  },
+  "fees": {
+    "payment_status": "",
+    "payment_receipt_file": "",
+    "payment_receipt_hash": ""
+  },
+  "docket": {
+    "docket_entry_id": "",
+    "docket_entry_hash": "",
+    "next_deadlines": []
+  },
+  "portfolio": {
+    "family_id": "",
+    "portfolio_tags": [],
+    "maintenance_owner": ""
+  },
+  "benchmark_mock": false,
+  "decision": {
+    "status": "accepted_or_application_number_received",
+    "reason": ""
+  }
+}

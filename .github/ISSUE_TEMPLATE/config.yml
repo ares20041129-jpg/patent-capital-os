@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security-sensitive report
+    url: https://github.com/ares20041129-jpg/patent-capital-os/security/policy
+    about: Do not post credentials, private applicant materials, or exploitable boundary bypasses publicly.

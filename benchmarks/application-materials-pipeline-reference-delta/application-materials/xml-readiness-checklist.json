@@ -1,0 +1,15 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "xml_required": true,
+  "jurisdiction": "CN",
+  "filing_type": "CN invention patent",
+  "final_xml_hash": "sha256:7ecb5176b903cc3ce6df0f8cd04ea0eb1be49e45c5682664fbde0924ef2af6d8",
+  "standard_or_tool": "Patent Capital OS AI self-filing offline package validation",
+  "validation_result": "passed",
+  "validation_report_hash": "sha256:f34dbc46e678a1749440aa18eda215f1ee1ea3550ce98d7ec4e8861aced76d5c",
+  "sequence_listing_standard": "not_applicable",
+  "official_channel_preflight_required": true,
+  "official_upload_performed": false,
+  "official_system_touched": false,
+  "official_submission_performed": false
+}

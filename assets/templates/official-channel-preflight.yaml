@@ -1,0 +1,33 @@
+case_id: ""
+jurisdiction: "CN"
+official_system: "CNIPA patent business processing system"
+checked_at: ""
+checked_by: ""
+account:
+  owner: ""
+  role: ""
+  authorization_evidence: ""
+signature:
+  authority_holder: ""
+  authority_evidence: ""
+  human_only: null
+automation:
+  automation_allowed: false
+  adapter_name: ""
+  adapter_version: ""
+  bypasses_access_controls: false
+package:
+  final_package_hash: ""
+  reviewed_package_hash: ""
+  xml_validation_result: ""
+  attachment_list_hash: ""
+fees:
+  payer: ""
+  auto_pay_authorized: false
+  payment_method_reference: ""
+receipt_capture:
+  destination: ""
+  responsible_owner: ""
+decision:
+  status: "blocked"
+  reason: ""

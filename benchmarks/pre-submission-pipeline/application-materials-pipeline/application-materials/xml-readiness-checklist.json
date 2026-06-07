@@ -1,0 +1,15 @@
+{
+  "case_id": "CASE-PRE-SUB-001",
+  "xml_required": true,
+  "jurisdiction": "CN",
+  "filing_type": "CN invention patent",
+  "final_xml_hash": "sha256:97e47805b1dac498c237080271dc7f79d2584e6cd498f801a48aedbe0f9f0a84",
+  "standard_or_tool": "Patent Capital OS AI self-filing offline package validation",
+  "validation_result": "passed",
+  "validation_report_hash": "sha256:51df35a70bb6a2e4ed603a74eb666d36ccd99ea781aeef2d5e020381d429b85c",
+  "sequence_listing_standard": "not_applicable",
+  "official_channel_preflight_required": true,
+  "official_upload_performed": false,
+  "official_system_touched": false,
+  "official_submission_performed": false
+}

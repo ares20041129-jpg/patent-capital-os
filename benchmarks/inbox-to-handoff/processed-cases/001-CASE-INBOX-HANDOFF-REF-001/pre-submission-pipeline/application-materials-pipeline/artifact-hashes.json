@@ -1,0 +1,36 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T07:03:15+08:00",
+  "files": [
+    {
+      "path": "application-materials/application-materials.json",
+      "sha256": "sha256:c8197ec8fb3b9ab731b51bd84663813c1bd8841debbce97a743f4cb24c478008",
+      "bytes": 10250
+    },
+    {
+      "path": "application-materials/artifact-hashes.json",
+      "sha256": "sha256:a65fe599eb97c3dd4137beada02d47f4f3f78756ae4e3183358804bbcdb4cb45",
+      "bytes": 2190
+    },
+    {
+      "path": "application-materials-quality-gate/application-materials-quality-review.json",
+      "sha256": "sha256:460f92d2d60949d4803b137e619d982c428bafa0069e6fc4858fac069d32205f",
+      "bytes": 7230
+    },
+    {
+      "path": "application-materials-quality-gate/artifact-hashes.json",
+      "sha256": "sha256:7c03b19ec611e7b8b5627e3612d41a74e4cb8018aae4a2f5fd644e353b576332",
+      "bytes": 489
+    },
+    {
+      "path": "application-materials-pipeline-result.json",
+      "sha256": "sha256:4a7022a0bb2c20fcab550ff7ce92f06f0e774b477e80846ccbacfacb3d0fdbf8",
+      "bytes": 4227
+    },
+    {
+      "path": "application-materials-pipeline-report.md",
+      "sha256": "sha256:93dfa92960650f9be2054e054923a96694d3acafbdc78fbaf44ea907982246fa",
+      "bytes": 1854
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "case_id": "WORKFLOW-ORCH-DRY-RUN-001",
+  "generated_at": "2026-06-03T00:29:31+08:00",
+  "files": [
+    {
+      "path": "case-queue.json",
+      "sha256": "sha256:b7780b3ef6dfe3bfee695faab577f0501024a0b685ab8d972555a6d242a7fcc2",
+      "bytes": 2443
+    },
+    {
+      "path": "batch-processor-result.json",
+      "sha256": "sha256:a3dcfcff3942650159f2fe50e819114f880181aa0d7ff586d3da7c016490a748",
+      "bytes": 3492
+    },
+    {
+      "path": "orchestration-report.md",
+      "sha256": "sha256:ad7849d69958d147e5c690c0bda5c5bcb8fc90cc5c600f4f8a55fce835bfc17f",
+      "bytes": 1550
+    }
+  ]
+}

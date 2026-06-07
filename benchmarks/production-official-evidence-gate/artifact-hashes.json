@@ -1,0 +1,36 @@
+{
+    "case_id":  "CASE-PRODUCTION-OFFICIAL-EVIDENCE-GATE-BENCHMARK",
+    "generated_at":  "2026-06-02T01:20:40+08:00",
+    "files":  [
+                  {
+                      "path":  "production-shape\\adapter-execution-result.json",
+                      "sha256":  "sha256:634f51582a81fbb237ab58d9892aaf2dc2159ba0e02852c17e3f0068c38a4b23",
+                      "bytes":  3751
+                  },
+                  {
+                      "path":  "production-shape\\receipt-capture.yaml",
+                      "sha256":  "sha256:fc3e64c02ae365cb496921648dddbb048eaf3ebb4658e018e73a7a6b452eaed3",
+                      "bytes":  1570
+                  },
+                  {
+                      "path":  "production-shape\\application-number-evidence.json",
+                      "sha256":  "sha256:d54b5af342e0edc2f8f1caf0321d20b30a9fe5d842e6113dc3ce5902851e27a3",
+                      "bytes":  2961
+                  },
+                  {
+                      "path":  "production-shape\\production-official-evidence-packet.json",
+                      "sha256":  "sha256:30f0fc42db6227678002f6c522e1bee767aae2d48a05f791c63225383a9741c8",
+                      "bytes":  3172
+                  },
+                  {
+                      "path":  "mock-rejection\\production-official-evidence-packet.json",
+                      "sha256":  "sha256:ed5be85ca0fbea05681e90ef23728a36b07bf10e330a92f736db6a9b3ac698fd",
+                      "bytes":  2936
+                  },
+                  {
+                      "path":  "production-official-evidence-gate-report.md",
+                      "sha256":  "sha256:52e8b3af03d7655d7767cae0850d117c7a8c4ab35a1d2dc474f750b5a71f57f6",
+                      "bytes":  998
+                  }
+              ]
+}

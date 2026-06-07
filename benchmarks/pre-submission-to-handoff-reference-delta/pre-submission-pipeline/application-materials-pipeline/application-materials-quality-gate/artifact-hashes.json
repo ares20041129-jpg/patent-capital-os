@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T06:51:21+08:00",
+  "files": [
+    {
+      "path": "application-materials-quality-review.json",
+      "sha256": "sha256:88e5d9fb685a214a9ebebf0630490430b6f019ff74b2c0123155fe09a5db61f5",
+      "bytes": 7232
+    },
+    {
+      "path": "application-materials-quality-report.md",
+      "sha256": "sha256:8e68c4a269e4ebc593d335be8352209ec4c012abf1e6d3c26ee34dbfcd237596",
+      "bytes": 852
+    }
+  ]
+}

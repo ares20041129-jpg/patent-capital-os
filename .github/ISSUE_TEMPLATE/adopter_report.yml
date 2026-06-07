@@ -1,0 +1,42 @@
+name: Adopter report
+description: Tell us how you use Patent Capital OS publicly.
+title: "[Adopter]: "
+labels: ["adopter", "community"]
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project or organization
+      description: Name that may be listed publicly.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Public URL
+      description: Repository, article, integration page, or other public evidence.
+  - type: dropdown
+    id: use_type
+    attributes:
+      label: Use type
+      options:
+        - evaluation
+        - pilot
+        - production
+        - research
+        - education
+        - integration
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: How are you using Patent Capital OS?
+    validations:
+      required: true
+  - type: checkboxes
+    id: permission
+    attributes:
+      label: Permission
+      options:
+        - label: Maintainers may list this public adoption in ADOPTERS.md after review.
+          required: true

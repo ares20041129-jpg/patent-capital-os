@@ -1,0 +1,2 @@
+timestamp	case_id	skill_version	score	target_dimension	mutation	status	eval_mode	validation_result	official_system_touched	official_submission_performed	notes
+2026-06-01T22:05:00+08:00	APPROVED-ADAPTER-PREFLIGHT-001	local-no-git	93	approved_adapter_preflight	Added final pre-execution adapter gate with legal, security, credential, receipt, audit, and docket controls.	keep	dry_run	passed	false	false	Preflight approves adapter execution attempt but does not submit.

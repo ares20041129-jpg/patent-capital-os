@@ -1,0 +1,37 @@
+{
+  "queue_id": "PRODUCTION-ADAPTER-READINESS-GATE-QUEUE-001",
+  "processed_at": "2026-06-02T00:12:47+08:00",
+  "execution_mode": "dry_run",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 0
+  },
+  "results": [
+    {
+      "case_id": "authorized-cnipa-filing-adapter-shape-test",
+      "input_status": "ready_for_authorized_filing",
+      "output_status": "ready_for_authorized_filing",
+      "expected_outcome": "production_adapter_readiness",
+      "decision": "production_adapter_readiness_gate_passed",
+      "outcome": "passed",
+      "validators_run": [
+        "validate_production_adapter_readiness_benchmark"
+      ],
+      "errors": [],
+      "warnings": [
+        "validate_production_adapter_readiness_benchmark: production_shape: production_shape_test_not_real_adapter_approval"
+      ],
+      "next_action": "Allow approved adapter execution only after a real, non-shape-test adapter readiness packet passes strict validation.",
+      "owner": "Production adapter readiness gate operator",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": []
+}

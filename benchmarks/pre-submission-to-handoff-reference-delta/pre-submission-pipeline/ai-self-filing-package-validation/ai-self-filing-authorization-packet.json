@@ -1,0 +1,108 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "filing_type": "CN invention patent",
+  "jurisdiction": "CN",
+  "source_draft_hash": "sha256:80f2539c69aa427fdc0a2c504c8488807f30fe63cd562964a966ee9cc2213877",
+  "final_package_hash": "sha256:119c2b0199b06a7c66a0bb5ca18303c482ca1465a8552057d959e1000d59af6f",
+  "external_lawyer_involved": false,
+  "self_filing_eligibility": {
+    "applicant_region": "Mainland China",
+    "applicant_type": "enterprise applicant using own official account",
+    "self_filing_allowed": true,
+    "mandatory_agent_required": false,
+    "foreign_or_hmt_applicant": false,
+    "agency_bypass_requested": false,
+    "basis": "Applicant self-filing route; no external lawyer or patent agent in default production path."
+  },
+  "ai_compliance_review": {
+    "engine_name": "Patent Capital OS AI self-filing gate",
+    "engine_version": "2026-06-01.benchmark",
+    "checked_at": "2026-06-03T06:51:21+08:00",
+    "reviewed_artifacts_hash": "sha256:c971e3cbd69f7a5225faef349b86d12a6d1bac1c01b05a8feee947fb45f28182",
+    "no_copying_check": "passed",
+    "claim_support_check": "passed",
+    "abnormal_filing_risk": "low",
+    "abnormal_filing_risk_assessment": {
+      "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+      "status": "abnormal_filing_risk_assessed",
+      "gate": "G8 Non-abnormal filing check",
+      "risk_level": "low",
+      "artifact_hash": "sha256:d7459c50237e05bea9858020871bc953c32714529d9ac6b22118785f072f1732",
+      "artifact_path": "../abnormal-filing-risk-gate/abnormal-filing-risk-assessment.json",
+      "reference_patent_delta_hash": "sha256:cfdb203ea3b5ab9cf252ca2eefbcec44edd6e569d54cf843078b49ad9ad3da91",
+      "reference_delta_rows_count": 3,
+      "reference_delta_claim_elements_count": 3,
+      "reference_delta_boundary_preserved": true
+    },
+    "official_format_check": "passed",
+    "limitations": [
+      "Local pre-submission pipeline only; official-channel preflight remains separate.",
+      "AI compliance review is not lawyer review and does not claim legal advice.",
+      "Reference-patent delta is preserved only as boundary and claim-strategy evidence, not applicant claim support."
+    ],
+    "legal_gate_review": {
+      "review_record_hash": "sha256:36f16664191ce9fe59aa7bceb169ffcbab215fd4a7fb3d7ff7bab83465ca1022",
+      "authorization_scope_check": "passed",
+      "self_filing_eligibility_check": "passed",
+      "inventor_ownership_check": "passed",
+      "secrecy_check": "passed",
+      "fee_authority_check": "passed",
+      "official_channel_boundary_check": "passed",
+      "stop_conditions_checked": [
+        "mandatory_agent_condition",
+        "foreign_or_hmt_applicant_condition",
+        "agency_bypass_request",
+        "access_control_bypass",
+        "official_submission_claim_without_evidence"
+      ],
+      "legal_advice_claimed": false,
+      "lawyer_or_agent_review_claimed": false
+    }
+  },
+  "applicant_authorization": {
+    "applicant_name": "Benchmark Applicant Ltd.",
+    "authorized_person": "Applicant Filing Operator",
+    "authority_basis": "internal applicant self-filing authorization record",
+    "allowed_actions": [
+      "validate package",
+      "submit filing through applicant account",
+      "pay official fees"
+    ],
+    "timestamp": "2026-06-03T06:51:21+08:00"
+  },
+  "inventor_confirmation": {
+    "inventors": [
+      "Benchmark Inventor A"
+    ],
+    "contribution_confirmed": true
+  },
+  "ownership": {
+    "basis": "employee service invention assigned to applicant",
+    "evidence": "benchmark-ownership-record.pdf",
+    "dispute_absent": true
+  },
+  "secrecy_review": {
+    "china_completed": true,
+    "foreign_or_pct_planned": false,
+    "status": "not_required"
+  },
+  "filing_channel": {
+    "official_system": "CNIPA patent business processing system",
+    "account_owner": "Benchmark Applicant Ltd.",
+    "official_account_registered": true,
+    "signature_authority": "applicant electronic signature authority record",
+    "automation_allowed": true,
+    "bypasses_access_controls": false,
+    "human_only_steps": []
+  },
+  "fees": {
+    "payer": "Benchmark Applicant Ltd.",
+    "fee_reduction": false,
+    "auto_pay_authorized": true,
+    "payment_account_reference": "benchmark-applicant-payment-account"
+  },
+  "decision": {
+    "status": "ready_for_package_validation",
+    "reason": "AI self-filing legal/compliance gate passed for local pre-submission package validation without external lawyer involvement."
+  }
+}

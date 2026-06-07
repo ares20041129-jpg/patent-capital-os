@@ -1,0 +1,27 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001-legal_advice_claim_rejected",
+  "status": "legal_gate_failed",
+  "decision": "do_not_file",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "filing_allowed": false,
+  "draft_only_work_allowed": true,
+  "source_packet_hash": "sha256:28324bf1a8d4505309e452e8d6d9ffcb71a1ea4fc478d1ddf34330757fcf2b90",
+  "validator_errors": [
+    "ai_self_filing_must_not_claim_legal_advice"
+  ],
+  "validator_warnings": [],
+  "deficiencies": [
+    {
+      "gate": "G1 AI legal/compliance review mode",
+      "validator_error": "ai_self_filing_must_not_claim_legal_advice",
+      "missing_or_contradictory_evidence": "ai_self_filing_must_not_claim_legal_advice",
+      "filing_risk_if_ignored": "The AI-only route could falsely represent legal advice, lawyer review, or patent-agent review.",
+      "required_cure": "Remove review misrepresentation and provide a complete AI legal gate review record.",
+      "owner": "AI legal gate operator",
+      "draft_only_work_allowed": true
+    }
+  ],
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "external_lawyer_involved": false
+}

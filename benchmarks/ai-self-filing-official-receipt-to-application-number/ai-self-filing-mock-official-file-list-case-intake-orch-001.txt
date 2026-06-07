@@ -1,0 +1,5 @@
+Benchmark mock official file list for AI self-filing receipt capture.
+Not from an official CNIPA system.
+Validator fixture only.
+case_id=CASE-INTAKE-ORCH-001
+items=claims,description,abstract,drawings

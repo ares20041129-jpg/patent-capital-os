@@ -1,0 +1,92 @@
+{
+  "case_id": "DISCLOSURE-SAMPLE-001",
+  "title": "Multi-modal dough state control method",
+  "jurisdiction_plan": {
+    "first_filing": "CN",
+    "later_foreign_or_pct": false
+  },
+  "business_goal": "Protect product-level dough automation controller",
+  "applicant_context": {
+    "applicant_name": "Example Applicant Ltd.",
+    "product_or_project": "Smart bread maker controller",
+    "actual_r_and_d_basis": "Prototype controller and bench tests"
+  },
+  "inventor_input": {
+    "inventors": [
+      {
+        "name": "Inventor A",
+        "contribution": "Designed sensor fusion controller"
+      }
+    ],
+    "contribution_confirmed": true
+  },
+  "technical_problem": "Timer-only fermentation control cannot adapt to flour, yeast, and ambient variability.",
+  "technical_solution": {
+    "required_features": [
+      "Acquire torque time-series, image contour, VOC, temperature, and humidity signals",
+      "Generate a dough-state confidence vector",
+      "Adjust kneading, fermentation, and baking transitions based on the confidence vector"
+    ],
+    "optional_features": [
+      "Self-calibrate thresholds from post-bake quality feedback"
+    ]
+  },
+  "technical_effects": [
+    {
+      "effect": "Reduces under-fermentation and over-fermentation transitions",
+      "evidence": "Prototype log set hash sha256-demo-logs"
+    }
+  ],
+  "embodiments": [
+    {
+      "name": "Bread maker embodiment",
+      "implementation_steps": [
+        "Collect sensor window",
+        "Infer dough-state vector",
+        "Select next control action"
+      ],
+      "components": [
+        "Torque sensor",
+        "Camera",
+        "VOC sensor",
+        "Controller"
+      ],
+      "parameters": [
+        "Window length 30-180 seconds"
+      ]
+    }
+  ],
+  "known_prior_art": [
+    {
+      "publication": "CN120827118A",
+      "relevance": "VOC-based fermentation state"
+    }
+  ],
+  "similarity_control": {
+    "uses_reference_patents": true,
+    "no_copying_or_synonym_substitution_confirmed": true,
+    "real_technical_contribution_summary": "Combines multi-modal state confidence with staged closed-loop action selection."
+  },
+  "data_and_evidence": {
+    "prototypes": [
+      "prototype-v1"
+    ],
+    "experiments": [
+      "bench-test-2026-05"
+    ],
+    "logs_or_measurements": [
+      "sha256-demo-logs"
+    ],
+    "source_hashes": [
+      "sha256-demo-disclosure"
+    ]
+  },
+  "secrecy": {
+    "invention_completed_in_china": true,
+    "foreign_or_pct_planned": false,
+    "secrecy_review_status": "not_required"
+  },
+  "ai_legal_compliance_questions": [
+    "Confirm claim breadth against closest dough monitoring references."
+  ]
+}

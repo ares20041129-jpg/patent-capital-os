@@ -1,0 +1,18 @@
+{
+  "case_id": "OFFICIAL-PREFLIGHT-READY-001",
+  "previous_status": "package_valid_official_preflight_pending",
+  "status": "ready_for_authorized_filing",
+  "legal_gate": "passed",
+  "package_validation": "passed",
+  "official_channel_preflight": "passed",
+  "receipt_capture_plan": "planned",
+  "failed_gates": [],
+  "decision": "ready_for_authorized_filing",
+  "final_package_hash": "sha256:a9ac2f75512f842fc564dd7b02c25f257616e971dff3f1c6644a0d7c6bf386f6",
+  "reviewed_package_hash": "sha256:a9ac2f75512f842fc564dd7b02c25f257616e971dff3f1c6644a0d7c6bf386f6",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "updated_at": "2026-06-01T20:20:00+08:00"
+}

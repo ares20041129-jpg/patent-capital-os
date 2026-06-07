@@ -1,0 +1,66 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T07:03:14+08:00",
+  "files": [
+    {
+      "path": "claims-material.md",
+      "sha256": "sha256:37f88b913675eac807e771689f8f9425dc589ff343660569d97324d14e0a1811",
+      "bytes": 1187
+    },
+    {
+      "path": "specification-material.md",
+      "sha256": "sha256:ff1b174be88ddecd6fddcf388e80122c5480de91a34b94cbaeb26004ac62d033",
+      "bytes": 3063
+    },
+    {
+      "path": "abstract-material.md",
+      "sha256": "sha256:f80eac346fc52cfdc5fabec1f1738360f85e5f0b4d9933f277164627172644d2",
+      "bytes": 907
+    },
+    {
+      "path": "drawings-materials-plan.md",
+      "sha256": "sha256:dc1e7ba9f1291e285889a152429bb933fd3d0de99961ab8271a3779cbfda3e63",
+      "bytes": 580
+    },
+    {
+      "path": "request-form-metadata.json",
+      "sha256": "sha256:02bcd66ae54b34d5ee6b4016960eafce518a63b7d682196d8f717ccc4e047475",
+      "bytes": 1607
+    },
+    {
+      "path": "xml-readiness-checklist.json",
+      "sha256": "sha256:2be48181a8af943832f1462c615e15627afa59d3f18cb696b83ff896758f56f5",
+      "bytes": 677
+    },
+    {
+      "path": "document-generation-plan.json",
+      "sha256": "sha256:2c4064980d84e0dfd3092a208dba79fe79e8d2e5738aa20bff92e4a4d96e5780",
+      "bytes": 2144
+    },
+    {
+      "path": "draft-evidence-provenance.json",
+      "sha256": "sha256:0c4ce22e396fae5fc66b39626b0913de3aa3ad7cc2d75524bf5a5e4f248aa1a2",
+      "bytes": 3182
+    },
+    {
+      "path": "abnormal-filing-risk-assessment.json",
+      "sha256": "sha256:3022f7e9a4f5201c7e870d356f126f12ff3f1e2c7b7a0f6994222f67198d8908",
+      "bytes": 5427
+    },
+    {
+      "path": "application-materials.json",
+      "sha256": "sha256:c8197ec8fb3b9ab731b51bd84663813c1bd8841debbce97a743f4cb24c478008",
+      "bytes": 10250
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:d3d175283352ea4efb9ba1dc70b7a1915edd434ae4d1b3f0ed74e901327f1400",
+      "bytes": 951
+    },
+    {
+      "path": "application-materials-report.md",
+      "sha256": "sha256:11e2f9043b7a5aa5e17f1c2998ebe0e2e79e6cada8c652ca45a528d71ba81b44",
+      "bytes": 1988
+    }
+  ]
+}

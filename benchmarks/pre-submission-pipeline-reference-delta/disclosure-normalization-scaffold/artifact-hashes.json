@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "generated_at": "2026-06-03T06:11:16+08:00",
+  "files": [
+    {
+      "path": "invention-disclosure-scaffold.json",
+      "sha256": "sha256:8a4a7fa6e5de413e9c701cfb49bbb1ceb8c6b2cf8a83d8134659fff23559fe93",
+      "bytes": 3820
+    },
+    {
+      "path": "normalization-report.md",
+      "sha256": "sha256:46a2d8bda5d8bacc7a4fc352a25424e16c75a2a00c41812773f06682b759b3fc",
+      "bytes": 681
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+case_id: "CASE-PRE-SUB-001"
+jurisdiction: "CN"
+filing_type: "CN invention patent"
+package_status: "package_valid_official_preflight_pending"
+source_draft: "patent-application-draft.md"
+source_draft_hash: "sha256:3094002110efaae3cffa71313bf918278b55288fab5f8d7d213bdd4f05064c49"
+authorization_packet: "ai-self-filing-authorization-packet.json"
+authorization_packet_hash: "sha256:315292c8b72f50cfeae055309359dd42d51c781a6e0c7bb246a491e11e87045b"
+reviewed_package_hash: "sha256:3bc9ec38d5e0ea8c88ce3172aa4a7b6ae904bda44a9807f41b96c34ef1cf44d1"
+final_package_hash: "sha256:3bc9ec38d5e0ea8c88ce3172aa4a7b6ae904bda44a9807f41b96c34ef1cf44d1"
+official_submission_performed: false
+
+documents:
+  - document_id: "claims"
+    type: "claims"
+    filename: "claims-ai-self-filing-final.xml"
+    format: "xml"
+    hash: "sha256:ee561cc9b79b90a361e7d3bb206a1b7074df5792a5822664f556eb0aad249ec1"
+    required: true
+    validation_status: "passed"
+  - document_id: "specification"
+    type: "specification"
+    filename: "specification-ai-self-filing-final.xml"
+    format: "xml"
+    hash: "sha256:673345d2482d1324c3561fd502a5a5550c9733946206bf6963dd04a69cbfcd58"
+    required: true
+    validation_status: "passed"
+  - document_id: "abstract"
+    type: "abstract"
+    filename: "abstract-ai-self-filing-final.xml"
+    format: "xml"
+    hash: "sha256:4f2a932d07d9a4a954d066883ee3a269123fb0a48c39a160ee0366500820d381"
+    required: true
+    validation_status: "passed"
+  - document_id: "drawings"
+    type: "drawings"
+    filename: "drawings-ai-self-filing-final.pdf"
+    format: "pdf"
+    hash: "sha256:0f44fe2515de6a5e342a1029b0e14155ee40b755d22c269ca3b7e44cb2ed4fd6"
+    required: true
+    validation_status: "passed"
+  - document_id: "request_metadata"
+    type: "request_metadata"
+    filename: "request_metadata-ai-self-filing-final.xml"
+    format: "xml"
+    hash: "sha256:f62efa5dee36292581ad51b0d7065cec996d865451f3b3246dbd4d175c6d4caf"
+    required: true
+    validation_status: "passed"
+
+xml_validation:
+  final_xml_hash: "sha256:97e47805b1dac498c237080271dc7f79d2584e6cd498f801a48aedbe0f9f0a84"
+  standard_or_tool: "Patent Capital OS AI self-filing offline package validation"
+  validation_result: "passed"
+  validation_report_hash: "sha256:51df35a70bb6a2e4ed603a74eb666d36ccd99ea781aeef2d5e020381d429b85c"
+  sequence_listing_standard: "not_applicable"
+
+cross_checks:
+  final_package_hash_matches_reviewed_hash: true
+  claims_hash_matches_authorization: true
+  specification_hash_matches_authorization: true
+  drawings_present: true
+  request_metadata_present: true
+
+next_gate:
+  official_channel_preflight_required: true
+  receipt_capture_required: true
+  status_after_package_validation: "package_valid_official_preflight_pending"

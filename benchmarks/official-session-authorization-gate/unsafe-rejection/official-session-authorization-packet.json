@@ -1,0 +1,80 @@
+{
+  "session_gate": "official_session_authorization_gate",
+  "evidence_mode": "official_session_authorization",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system": "CNIPA patent business processing system",
+  "official_account": {
+    "role": "applicant_self_filing_account_owner",
+    "account_owner_authorization_hash": "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "self_filing_authority_hash": "sha256:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "authorization_scope_hash": "sha256:cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+  },
+  "session_broker": {
+    "name": "unsafe-official-session-broker",
+    "version": "0.1.0",
+    "approval_hash": "sha256:dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "session_reference_hash": "sha256:eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+    "session_reference_scope": "case_action_and_account_scoped",
+    "expires_at": "2026-06-02T18:00:00+08:00",
+    "scoped_to_case": true,
+    "revocable": true,
+    "expiry_enforced": true
+  },
+  "authorization": {
+    "allowed_actions": [
+      "submit_package",
+      "pay_official_fees"
+    ],
+    "signature_authority_hash": "sha256:ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "payment_authority_hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+    "fee_payment_allowed": true,
+    "filing_action_idempotency_key": "CASE-AI-SELF-FILING-UNSAFE-001:sha256-final-package",
+    "human_only_steps": [],
+    "human_only_steps_resolved": true
+  },
+  "credential_boundary": {
+    "credential_source": "official_session_broker",
+    "credential_material_included": true,
+    "raw_credentials_in_request": true,
+    "private_keys_in_request": false,
+    "session_tokens_in_request": true,
+    "cookies_in_request": true,
+    "mfa_secrets_in_request": true,
+    "passwords_in_request": true,
+    "stores_credentials": true
+  },
+  "official_controls": {
+    "respects_mfa": false,
+    "respects_captcha": false,
+    "access_control_enforced": false,
+    "human_only_steps_trigger_handoff": true,
+    "signature_ceremony_handoff_if_required": true,
+    "bypasses_access_controls": true,
+    "bypasses_captcha": true,
+    "bypasses_signature_ceremony": true,
+    "bypasses_mfa": true,
+    "human_only_step_bypassed": true
+  },
+  "execution_controls": {
+    "requested_action": "submit_package",
+    "stop_on_hash_mismatch": true,
+    "stop_on_human_only_step": true,
+    "stop_on_access_control_bypass": true,
+    "receipt_capture_required": true,
+    "audit_logging_required": true,
+    "idempotency_key_required": true
+  },
+  "audit": {
+    "audit_log_schema_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+    "logs_input_hashes": true,
+    "logs_output_hashes": true,
+    "redacts_secrets": true,
+    "retention_policy": "retain official session authorization evidence according to applicant policy"
+  },
+  "raw_credentials": "unsafe-test-value",
+  "decision": {
+    "status": "official_session_authorized",
+    "reason": "This unsafe packet intentionally includes credential material and official-control bypasses and must fail."
+  }
+}

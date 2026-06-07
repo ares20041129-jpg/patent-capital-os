@@ -1,0 +1,16 @@
+{
+  "case_id": "CASE-PRE-SUB-001",
+  "generated_at": "2026-06-03T06:11:17+08:00",
+  "files": [
+    {
+      "path": "case-lifecycle-trace.json",
+      "sha256": "sha256:45fd8dfbf61044d83cf3b02a94afe9d9acc6a605ca0264bab87a73b0d9052f22",
+      "bytes": 8781
+    },
+    {
+      "path": "lifecycle-report.md",
+      "sha256": "sha256:1d5356ababcf9e1fbd3f4e82c9911fa280afdd9f398f72e20331f9e1c6bc13c3",
+      "bytes": 558
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+case_id:
+filing_type:
+jurisdiction:
+business_goal:
+final_documents:
+  claims:
+  specification:
+  abstract:
+  drawings:
+  request_metadata:
+hashes:
+  source_package:
+  final_claims:
+  final_specification:
+  final_xml:
+counsel_review:
+  reviewer_name:
+  reviewer_role:
+  organization:
+  approval_statement:
+  reviewed_hash:
+  timestamp:
+applicant_authorization:
+  applicant_name:
+  authorized_person:
+  authority_basis:
+  allowed_actions:
+  timestamp:
+inventor_confirmation:
+  inventors:
+  contribution_confirmed:
+ownership:
+  basis:
+  evidence:
+secrecy_review:
+  china_completed:
+  foreign_or_pct_planned:
+  status:
+agency:
+  agent_or_firm:
+  appointment_evidence:
+filing_channel:
+  official_system:
+  account_owner:
+  signature_authority:
+  automation_allowed:
+fees:
+  payer:
+  fee_reduction:
+  auto_pay_authorized:

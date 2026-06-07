@@ -1,0 +1,15 @@
+{
+  "case_id": "CASE-INBOX-HANDOFF-001",
+  "xml_required": true,
+  "jurisdiction": "CN",
+  "filing_type": "CN invention patent",
+  "final_xml_hash": "sha256:64aa0a7d53e4ea1d502588532200955ba648d530c926826f7fae4e5251e43c82",
+  "standard_or_tool": "Patent Capital OS AI self-filing offline package validation",
+  "validation_result": "passed",
+  "validation_report_hash": "sha256:69a7ae7abd2da5c583b38ecce0b33b770dff61ce036d58d70cbe465ffbcf0995",
+  "sequence_listing_standard": "not_applicable",
+  "official_channel_preflight_required": true,
+  "official_upload_performed": false,
+  "official_system_touched": false,
+  "official_submission_performed": false
+}

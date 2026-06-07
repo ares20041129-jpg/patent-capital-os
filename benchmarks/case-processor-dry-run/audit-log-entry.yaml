@@ -1,0 +1,15 @@
+case_id: "CASE-PROCESSOR-DRY-RUN-001"
+event_id: "audit-case-processor-dry-run-001"
+event_type: "case_processor_dry_run"
+actor: "Patent Capital OS benchmark"
+actor_role: "case processor"
+timestamp: "2026-06-01T21:05:00+08:00"
+input_hashes:
+  - "sha256:271f551faf3e459183db4014002ca92c3e50298743290ee102e057dc9b5fd0ab"
+output_hashes:
+  - "sha256:41e6e229a00a3b4df51bd648caf23e77b981ae5c185d64ee032954e5f7dcd6a4"
+approval_basis: "Dry-run only; no official system touched."
+decision: "handoff"
+external_system: ""
+receipt_or_error_evidence: "filing-adapter-response.json"
+notes: "Case remains ready_for_authorized_filing."

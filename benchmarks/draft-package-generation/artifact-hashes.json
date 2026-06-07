@@ -1,0 +1,31 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "generated_at": "2026-06-02T23:52:44+08:00",
+  "files": [
+    {
+      "path": "invention-disclosure.json",
+      "sha256": "sha256:50b929eeee1b5ce160d5a580414580c78966e35ce1540db6f4309e2e8df23005",
+      "bytes": 5484
+    },
+    {
+      "path": "patent-application-draft.md",
+      "sha256": "sha256:8a7f5fd82ef6a44845a9e54e9d06b98158380298ab97104e37a0aa0885feeaf4",
+      "bytes": 4538
+    },
+    {
+      "path": "claim-support-map.md",
+      "sha256": "sha256:f6bdcefef9a173432d3c9d83025fece8cdb18609eedd5eba08cc67f4abab6a16",
+      "bytes": 1759
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:d78a3dbcd95c8529bf72db3495e1ab6202cd3d18caf5278c6e695b046c2ca8b4",
+      "bytes": 808
+    },
+    {
+      "path": "draft-package-report.md",
+      "sha256": "sha256:11ba0980ca396dfd90fcf5f70814024065ae0fa94099ed807a8d8bce048945db",
+      "bytes": 649
+    }
+  ]
+}

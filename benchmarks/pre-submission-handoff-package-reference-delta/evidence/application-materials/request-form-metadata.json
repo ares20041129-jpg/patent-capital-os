@@ -1,0 +1,40 @@
+{
+  "case_id": "CASE-PRE-SUB-REF-001",
+  "jurisdiction": "CN",
+  "filing_type": "CN invention patent",
+  "applicant_name": "Benchmark Applicant Ltd.",
+  "applicant_type": "enterprise applicant using own official account",
+  "applicant_region": "Mainland China",
+  "inventors": [
+    "Benchmark Inventor A"
+  ],
+  "inventor_contribution_confirmed": true,
+  "ownership_basis": "employee service invention assigned to applicant",
+  "ownership_dispute_absent": true,
+  "priority_claims": [],
+  "foreign_or_pct_planned": false,
+  "secrecy_review_status": "not_required",
+  "china_secrecy_review_completed": true,
+  "official_system": "CNIPA patent business processing system",
+  "official_account_owner": "Benchmark Applicant Ltd.",
+  "official_account_registered": true,
+  "signature_authority": "applicant electronic signature authority record",
+  "automation_allowed": true,
+  "bypasses_access_controls": false,
+  "fee_payer": "Benchmark Applicant Ltd.",
+  "fee_reduction": false,
+  "auto_pay_authorized": true,
+  "payment_account_reference": "benchmark-applicant-payment-account",
+  "authorized_person": "Applicant Filing Operator",
+  "authority_basis": "internal applicant self-filing authorization record",
+  "allowed_actions": [
+    "validate package",
+    "submit filing through applicant account",
+    "pay official fees"
+  ],
+  "authorization_timestamp": "2026-06-03T06:11:16+08:00",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "legal_advice_claimed": false,
+  "lawyer_or_agent_review_claimed": false,
+  "external_lawyer_involved": false
+}

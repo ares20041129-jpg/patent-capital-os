@@ -1,0 +1,37 @@
+{
+  "queue_id": "OFFICIAL-RECEIPT-TO-APPLICATION-NUMBER-QUEUE-REGRESSION",
+  "processed_at": "2026-06-01T23:28:28+08:00",
+  "execution_mode": "dry_run",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 0
+  },
+  "results": [
+    {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "input_status": "accepted_or_application_number_received",
+      "output_status": "accepted_or_application_number_received",
+      "expected_outcome": "application_number",
+      "decision": "application_number_evidence_accepted",
+      "outcome": "passed",
+      "validators_run": [
+        "validate_generated_application_number_benchmark"
+      ],
+      "errors": [],
+      "warnings": [
+        "validate_generated_application_number_benchmark: application_number_evidence: benchmark_mock_not_real_application_number"
+      ],
+      "next_action": "Maintain docket deadlines, portfolio ownership, fee monitoring, and prosecution workflow.",
+      "owner": "Application number evidence operator",
+      "official_system_touched": false,
+      "official_submission_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": []
+}

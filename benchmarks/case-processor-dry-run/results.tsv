@@ -1,0 +1,2 @@
+timestamp	case_id	skill_version	score	target_dimension	mutation	status	eval_mode	validation_result	legal_gate	filing_status	notes
+2026-06-01T21:05:00+08:00	CASE-PROCESSOR-DRY-RUN-001	local-no-git	90	case_processor	Created dry-run case processor and filing adapter contract benchmark.	keep	dry_run	case_record=pass; adapter_request=pass; adapter_response=pass; status_transition=pass; benchmark=pass	passed	ready_for_authorized_filing	Adapter dry-run produces handoff and does not submit.

@@ -1,0 +1,58 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-001",
+  "received_at": "2026-06-03T06:51:10+08:00",
+  "received_from": "Patent Capital OS benchmark",
+  "confidentiality_marker": "confidential",
+  "source_package_hash": "sha256:8a534abe29fa4e60cb851dd8374005bf1e137b5a7a74aae2bd313cfa6336525e",
+  "materials": [
+    {
+      "material_id": "M-001",
+      "filename": "00-intake/source-files/drawing-notes.txt",
+      "type": "drawing",
+      "received_at": "2026-06-03T06:51:10+08:00",
+      "hash": "sha256:6baab568f9192b044032b1eb3cad2fd81e547dd6abcfd039dfd1de975921959c",
+      "source_owner": "Patent Capital OS benchmark",
+      "confidentiality": "confidential",
+      "usable_for_claim_support": true,
+      "notes": "Copied into standard case package intake folder."
+    },
+    {
+      "material_id": "M-002",
+      "filename": "00-intake/source-files/invention-disclosure.txt",
+      "type": "invention_disclosure",
+      "received_at": "2026-06-03T06:51:10+08:00",
+      "hash": "sha256:36938c5922b3d40d2d16a0e50d7edacb676dd227621189f3a8d261ef7c235771",
+      "source_owner": "Patent Capital OS benchmark",
+      "confidentiality": "confidential",
+      "usable_for_claim_support": true,
+      "notes": "Copied into standard case package intake folder."
+    },
+    {
+      "material_id": "M-003",
+      "filename": "00-intake/source-files/prior-art-notes.txt",
+      "type": "prior_art",
+      "received_at": "2026-06-03T06:51:10+08:00",
+      "hash": "sha256:b862a7d9073554fcf7e4bac56ff9992382f2f9ada4cc070b521efbc889ae0b3e",
+      "source_owner": "Patent Capital OS benchmark",
+      "confidentiality": "confidential",
+      "usable_for_claim_support": false,
+      "notes": "Copied into standard case package intake folder."
+    }
+  ],
+  "chain_of_custody": [
+    {
+      "actor": "prepare_case_package.py",
+      "action": "received",
+      "timestamp": "2026-06-03T06:51:10+08:00",
+      "input_hash": "sha256:8a534abe29fa4e60cb851dd8374005bf1e137b5a7a74aae2bd313cfa6336525e",
+      "output_hash": "sha256:8a534abe29fa4e60cb851dd8374005bf1e137b5a7a74aae2bd313cfa6336525e"
+    }
+  ],
+  "claim_support_links": [],
+  "missing_materials": [
+    "inventor confirmation",
+    "ownership confirmation",
+    "AI legal/compliance gate confirmation",
+    "applicant filing authorization"
+  ]
+}

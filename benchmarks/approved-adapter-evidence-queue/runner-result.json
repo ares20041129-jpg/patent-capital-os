@@ -1,0 +1,49 @@
+{
+  "queue_id": "APPROVED-ADAPTER-EVIDENCE-QUEUE-001",
+  "processed_at": "2026-06-03T01:50:35+08:00",
+  "execution_mode": "approved_adapter",
+  "approved_adapter_evidence_mode": true,
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "generator_official_system_touched": false,
+  "generator_official_submission_performed": false,
+  "generator_adapter_execution_performed": false,
+  "summary": {
+    "total": 1,
+    "passed": 1,
+    "blocked": 0,
+    "handoff": 0,
+    "deficiency": 0
+  },
+  "results": [
+    {
+      "case_id": "CASE-INTAKE-ORCH-001",
+      "input_status": "submitted_pending_receipt",
+      "output_status": "submitted_pending_receipt",
+      "expected_outcome": "adapter_execution",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "external_lawyer_involved": false,
+      "decision": "adapter_execution_result_captured",
+      "outcome": "passed",
+      "validators_run": [
+        "validate_generated_adapter_execution_result_benchmark"
+      ],
+      "errors": [],
+      "warnings": [
+        "validate_generated_adapter_execution_result_benchmark: adapter_execution_result: benchmark_mock_not_real_official_submission",
+        "validate_generated_adapter_execution_result_benchmark: adapter_response: submitted_pending_receipt_requires_receipt_capture_followup"
+      ],
+      "next_action": "Capture official receipt evidence before marking receipt received, accepted, or application-number status.",
+      "owner": "Approved adapter evidence queue operator",
+      "official_system_touched": false,
+      "official_submission_performed": false,
+      "generator_official_system_touched": false,
+      "generator_official_submission_performed": false,
+      "generator_adapter_execution_performed": false
+    }
+  ],
+  "batch_errors": [],
+  "batch_warnings": [
+    "approved_adapter_evidence_mode_local_validation_only"
+  ]
+}

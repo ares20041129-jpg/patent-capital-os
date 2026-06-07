@@ -1,0 +1,23 @@
+{
+  "case_id": "CASE-PRE-SUB-001",
+  "previous_status": "package_valid_official_preflight_pending",
+  "status": "ready_for_authorized_filing",
+  "legal_gate": "passed",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "package_validation": "passed",
+  "official_channel_preflight": "passed",
+  "receipt_capture_plan": "planned",
+  "failed_gates": [],
+  "decision": "ready_for_authorized_filing",
+  "final_package_hash": "sha256:3bc9ec38d5e0ea8c88ce3172aa4a7b6ae904bda44a9807f41b96c34ef1cf44d1",
+  "reviewed_package_hash": "sha256:3bc9ec38d5e0ea8c88ce3172aa4a7b6ae904bda44a9807f41b96c34ef1cf44d1",
+  "official_receipt_hash": "",
+  "application_number": "",
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "updated_at": "2026-06-03T06:11:17+08:00",
+  "ai_self_filing_gate": "passed",
+  "application_materials_generation": "passed",
+  "application_materials_hash": "sha256:5aac7d067af68ada2e258fba823e33183c455ca34974933a3540b7c504431a7d",
+  "external_lawyer_involved": false
+}

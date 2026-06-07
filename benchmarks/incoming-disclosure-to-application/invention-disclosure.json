@@ -1,0 +1,126 @@
+{
+  "case_id": "INCOMING-DISCLOSURE-APP-001",
+  "title": "Multi-modal dough state transition control method and smart cooking appliance",
+  "jurisdiction_plan": {
+    "first_filing": "CN",
+    "later_foreign_or_pct": false
+  },
+  "business_goal": "Generate an AI self-filing legal/compliance-ready draft application for a smart bread maker control feature.",
+  "applicant_context": {
+    "applicant_name": "Example Applicant Ltd.",
+    "product_or_project": "Smart bread maker controller",
+    "actual_r_and_d_basis": "Prototype sensor-fusion controller and bench-test log summary."
+  },
+  "inventor_input": {
+    "inventors": [
+      {
+        "name": "Inventor A",
+        "contribution": "Designed cross-modal confidence-consistency state transition rule."
+      },
+      {
+        "name": "Inventor B",
+        "contribution": "Implemented recipe-specific threshold calibration using batch feedback."
+      }
+    ],
+    "contribution_confirmed": true
+  },
+  "technical_problem": "Timer-based or single-sensor dough processing transitions misjudge kneading maturity and fermentation readiness when flour, hydration, yeast activity, and ambient conditions vary.",
+  "technical_solution": {
+    "required_features": [
+      "Acquire synchronized torque time-series, dough image, VOC, and chamber environment signals.",
+      "Extract modality-specific state features from the synchronized signals.",
+      "Generate a dough-state confidence vector for kneading maturity, fermentation readiness, over-fermentation risk, collapse risk, and baking-transition readiness.",
+      "Permit a process-stage transition only when at least two different sensor modalities satisfy a confidence-consistency condition.",
+      "Update recipe-specific transition thresholds using historical batch feedback."
+    ],
+    "optional_features": [
+      "Block baking transition when VOC readiness is high but image-derived collapse risk exceeds a threshold.",
+      "Generate fallback control for torque plus image when VOC data is unavailable."
+    ]
+  },
+  "technical_effects": [
+    {
+      "effect": "Reduces false transition from fermentation to baking compared with timer-only control.",
+      "evidence": "prototype-logs-summary hash sha256:ace5a3fd82f7b5fb63688094fd0106f745e5b1ee69a5f6c19f9c0715c30998cc"
+    },
+    {
+      "effect": "Improves robustness when a single sensor indicates readiness but another modality indicates collapse risk.",
+      "evidence": "controller-block-diagram hash sha256:49771d6235b5197776378a1fb940467ded64873dbf5ea0b507ed469875203cb0"
+    }
+  ],
+  "embodiments": [
+    {
+      "name": "Smart bread maker embodiment",
+      "implementation_steps": [
+        "Collect a synchronized sensor window during kneading and fermentation.",
+        "Compute torque slope, image contour stability, VOC change rate, and humidity deviation.",
+        "Generate a confidence vector and compare cross-modal consistency.",
+        "Select stirring, exhaust, humidity, temperature, ventilation, or baking-start command.",
+        "Store batch feedback and update recipe-specific thresholds."
+      ],
+      "components": [
+        "Torque sensor",
+        "Camera",
+        "VOC sensor",
+        "Temperature and humidity sensor",
+        "Controller",
+        "Recipe threshold memory"
+      ],
+      "parameters": [
+        "Sensor window length 30-180 seconds",
+        "At least two modalities required for stage transition"
+      ]
+    }
+  ],
+  "drawings_needed": [
+    "System block diagram",
+    "Sensor synchronization flow",
+    "Confidence vector generation flow",
+    "Stage transition controller flow",
+    "Recipe threshold update flow"
+  ],
+  "known_prior_art": [
+    {
+      "publication": "CN120827118A",
+      "relevance": "VOC fermentation monitoring"
+    },
+    {
+      "publication": "CN121092920A",
+      "relevance": "Torque time-series dough processing monitoring"
+    },
+    {
+      "publication": "CN121195989A",
+      "relevance": "Bread maker self-optimization"
+    }
+  ],
+  "similarity_control": {
+    "uses_reference_patents": true,
+    "no_copying_or_synonym_substitution_confirmed": true,
+    "real_technical_contribution_summary": "Cross-modal confidence-consistency stage transition and recipe-specific feedback update."
+  },
+  "data_and_evidence": {
+    "prototypes": [
+      "smart-bread-controller-prototype-v1"
+    ],
+    "experiments": [
+      "bench-test-window-summary"
+    ],
+    "logs_or_measurements": [
+      "sha256:ace5a3fd82f7b5fb63688094fd0106f745e5b1ee69a5f6c19f9c0715c30998cc"
+    ],
+    "source_hashes": [
+      "sha256:6cf74b95c4758ab461a38fddc1e53aa54d2b070431fb26f6f9c37d362484faa8",
+      "sha256:ace5a3fd82f7b5fb63688094fd0106f745e5b1ee69a5f6c19f9c0715c30998cc",
+      "sha256:49771d6235b5197776378a1fb940467ded64873dbf5ea0b507ed469875203cb0"
+    ]
+  },
+  "secrecy": {
+    "invention_completed_in_china": true,
+    "foreign_or_pct_planned": false,
+    "secrecy_review_status": "not_required"
+  },
+  "ai_legal_compliance_questions": [
+    "Confirm whether the confidence-consistency rule is distinguishable over full claims of CN120765118B and CN121195989A before AI self-filing authorization.",
+    "Confirm whether fallback modality subsets should be claimed broadly or moved into dependent claims for AI self-filing package validation."
+  ]
+}

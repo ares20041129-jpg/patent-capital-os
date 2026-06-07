@@ -1,0 +1,26 @@
+{
+  "case_id": "CASE-PRE-SUB-HANDOFF-REF-001",
+  "generated_at": "2026-06-03T06:51:21+08:00",
+  "files": [
+    {
+      "path": "official-channel-preflight.yaml",
+      "sha256": "sha256:831ab0888f8f1b48245b5ec3df80ffaf3dbaea94a4af0de8d27feb061a4994e1",
+      "bytes": 2134
+    },
+    {
+      "path": "receipt-capture-plan.yaml",
+      "sha256": "sha256:ea0b2faf95862aed96e397a4819cb54c3d8af1fda5a075e3920cf851681eba66",
+      "bytes": 773
+    },
+    {
+      "path": "filing-status.json",
+      "sha256": "sha256:44f2349f62b3925cc6b7d08b1d6d75d150742b70752dd4ee8a8d99fd0fdf0c24",
+      "bytes": 1209
+    },
+    {
+      "path": "readiness-report.md",
+      "sha256": "sha256:897de1575d3f9d82fdad4faae9a32fff7305723347e48375d59a1226f208432a",
+      "bytes": 1308
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "case_id": "AUTHORIZED-CN-READY-001",
+  "filing_type": "invention",
+  "jurisdiction": "CN",
+  "business_goal": "core product protection",
+  "final_documents": {
+    "claims": "claims-final.docx",
+    "specification": "specification-final.docx",
+    "abstract": "abstract-final.docx",
+    "drawings": "drawings.pdf",
+    "request_metadata": "request.yaml"
+  },
+  "hashes": {
+    "source_package": "sha256:87a8c293b9a77a423548096b9d4e4e36871ba1bb058db39624a216daba489d90",
+    "final_claims": "sha256:ad673391b659d79d53f02cd80b06d9750b3b59b05481a194af99eb0b7f7ad11c",
+    "final_specification": "sha256:f24be83a5932212b841faf14711b433c5b58042439ec206dd2f20ec0cb30644f",
+    "final_abstract": "sha256:f533bbfae379c86e77d8fdb7fb7371d4c36e3ebe7be702f1ef8d29c1e13fe09e",
+    "final_drawings": "sha256:ddbcc4ec1e42db77b311ea6eaf1ea0006b51904ee4b23de6a58d5e6a3a2eae3a",
+    "request_metadata": "sha256:05fe9f533c4eafb88912adb9ac60d9c92e859429b78ceb37a55e690e066f95e2",
+    "final_xml": "sha256:87a8c293b9a77a423548096b9d4e4e36871ba1bb058db39624a216daba489d90"
+  },
+  "counsel_review": {
+    "reviewer_name": "Patent Agent",
+    "reviewer_role": "patent agent",
+    "organization": "Example IP Firm",
+    "license_or_agent_identifier": "example-agent-id",
+    "approval_statement": "Approved exact final package hash for filing.",
+    "reviewed_hash": "sha256:87a8c293b9a77a423548096b9d4e4e36871ba1bb058db39624a216daba489d90",
+    "timestamp": "2026-06-01T18:40:00+08:00"
+  },
+  "applicant_authorization": {
+    "applicant_name": "Example Applicant Ltd.",
+    "authorized_person": "Authorized Officer",
+    "authority_basis": "board-approved filing authority",
+    "allowed_actions": [
+      "submit",
+      "file",
+      "pay official fees"
+    ],
+    "timestamp": "2026-06-01T18:42:00+08:00"
+  },
+  "inventor_confirmation": {
+    "inventors": [
+      "Inventor A",
+      "Inventor B"
+    ],
+    "contribution_confirmed": true
+  },
+  "ownership": {
+    "basis": "service invention assignment",
+    "evidence": "assignment-record.pdf"
+  },
+  "secrecy_review": {
+    "china_completed": true,
+    "foreign_or_pct_planned": false,
+    "status": "not_required"
+  },
+  "agency": {
+    "agent_or_firm": "Example IP Firm",
+    "appointment_evidence": "poa.pdf"
+  },
+  "filing_channel": {
+    "official_system": "CNIPA patent business processing system",
+    "account_owner": "Example IP Firm",
+    "signature_authority": "documented",
+    "automation_allowed": true
+  },
+  "fees": {
+    "payer": "Example Applicant Ltd.",
+    "fee_reduction": false,
+    "auto_pay_authorized": true
+  }
+}

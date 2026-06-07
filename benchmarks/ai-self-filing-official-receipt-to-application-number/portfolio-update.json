@@ -1,0 +1,14 @@
+{
+  "case_id": "CASE-INTAKE-ORCH-001",
+  "family_id": "AI-SELF-FILING-FAMILY-CASE-INTAKE-ORCH-001",
+  "application_number": "AI-MOCK-CN-CASE-INTAKE-ORCH-001",
+  "portfolio_tags": [
+    "ai-self-filing",
+    "cn-invention",
+    "mock-benchmark"
+  ],
+  "maintenance_owner": "Portfolio operator",
+  "status": "pending_application",
+  "benchmark_mock": true,
+  "updated_at": "2026-06-02T23:56:42+08:00"
+}

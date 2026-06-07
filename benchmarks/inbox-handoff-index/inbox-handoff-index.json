@@ -1,0 +1,166 @@
+{
+  "ok": true,
+  "index_id": "INBOX-HANDOFF-INDEX-001",
+  "index_type": "inbox_handoff_index_ai_self_filing_no_external_lawyer",
+  "created_at": "2026-06-03T13:27:08+08:00",
+  "source_inbox_dir": "../inbox-to-handoff",
+  "inbox_id": "INBOX-HANDOFF-001",
+  "status": "approved_for_adapter_execution",
+  "decision": "handoff_index_ready_no_auto_submit",
+  "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+  "external_lawyer_involved": false,
+  "official_system_touched": false,
+  "official_submission_performed": false,
+  "adapter_execution_performed": false,
+  "automatic_submission_performed": false,
+  "source_artifacts": {
+    "inbox_to_handoff_result": {
+      "path": "../inbox-to-handoff/inbox-to-handoff-result.json",
+      "sha256": "sha256:42ae17f39f4e3785d31795c42bb9d473d537bcaa273e82d8f0b704d09d952b13"
+    },
+    "case_queue": {
+      "path": "../inbox-to-handoff/case-queue.json",
+      "sha256": "sha256:3a0bfff486f14022df57c88c3d55468335599b65dae656c09a75c160daf8279d"
+    },
+    "batch_processor_result": {
+      "path": "../inbox-to-handoff/batch-processor-result.json",
+      "sha256": "sha256:50c0bd7c4f40b52c6e93f9553f329d862f41336457e04c0df8891ad9025fb6e1"
+    },
+    "source_artifact_hashes": {
+      "path": "../inbox-to-handoff/artifact-hashes.json",
+      "sha256": "sha256:c6cd4b9aebf56cf6baca8a5ffd25ee25f8b4cc93c3ee97a391470aaa5ee1d5a6"
+    }
+  },
+  "summary": {
+    "total": 2,
+    "passed": 2,
+    "blocked": 0,
+    "reference_delta_cases": 1
+  },
+  "cases": [
+    {
+      "case_id": "CASE-INBOX-HANDOFF-REF-001",
+      "status": "approved_for_adapter_execution",
+      "decision": "handoff_ready_no_auto_submit",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "quality_gate": {
+        "status": "passed",
+        "weighted_score": 100.0,
+        "minimum_score_for_official_preflight": 85.0,
+        "official_preflight_allowed": true,
+        "review_path": "processed-cases/001-CASE-INBOX-HANDOFF-REF-001/pre-submission-pipeline/application-materials-pipeline/application-materials-quality-gate/application-materials-quality-review.json",
+        "review_hash": "sha256:460f92d2d60949d4803b137e619d982c428bafa0069e6fc4858fac069d32205f"
+      },
+      "reference_delta_present": true,
+      "reference_patent_delta_hash": "sha256:a3c8fdf36246f82c722d0d27ca56f2e9bf4c8b583547ba7d256490cc64ebb841",
+      "reference_delta_rows_count": 3,
+      "reference_delta_claim_elements_count": 3,
+      "reference_delta_boundary_preserved": true,
+      "pre_submission_to_handoff_result": {
+        "path": "../inbox-to-handoff/processed-cases/001-CASE-INBOX-HANDOFF-REF-001/pre-submission-to-handoff-result.json",
+        "sha256": "sha256:d06e4ef06d0b6b307843b8a005f104005ae3145630534539eaf2159fb8b5e08c"
+      },
+      "handoff_package": {
+        "path": "../inbox-to-handoff/processed-cases/001-CASE-INBOX-HANDOFF-REF-001/pre-submission-handoff-package/pre-submission-handoff-package.json",
+        "sha256": "sha256:77e362bbbdf23ee8c081ea1130f24aa1c3e1d6ce50bf38770eefb04ca9c7ac7d"
+      },
+      "handoff_package_hash": "sha256:77e362bbbdf23ee8c081ea1130f24aa1c3e1d6ce50bf38770eefb04ca9c7ac7d",
+      "lifecycle_trace_hash": "sha256:28a5bb45cf844c8a01455d2efbd3e1e5876153ab3ead26accfc361dcc494aee1",
+      "source_pre_submission_hash": "sha256:c83f065307ac888ce87dd993cb81dda1a8c90895bc8fee0ce0ec37c55ad4e3d9",
+      "output_dir": "../inbox-to-handoff/processed-cases/001-CASE-INBOX-HANDOFF-REF-001",
+      "errors": [],
+      "warnings": [
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: case_package: case_package_manifest: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: case_package: case_package_manifest: source_file_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: case_package: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: draft_package: claim_support_map: row_1_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: draft_package: claim_support_map: row_2_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: draft_package: claim_support_map: row_3_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: draft_evidence_provenance: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: draft_evidence_provenance: claim_support_map: row_1_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: draft_evidence_provenance: claim_support_map: row_2_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: draft_evidence_provenance: claim_support_map: row_3_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: abnormal_filing_risk: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: abnormal_filing_risk: claim_support_map: row_1_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: abnormal_filing_risk: claim_support_map: row_2_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: abnormal_filing_risk: claim_support_map: row_3_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: case_package: case_package_manifest: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: case_package: case_package_manifest: source_file_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: case_package: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: draft_package: claim_support_map: row_1_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: draft_package: claim_support_map: row_2_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: draft_package: claim_support_map: row_3_draft_status: draft_supported"
+      ],
+      "warning_count": 28,
+      "next_action": "Use the read-only handoff package as approved-adapter execution input evidence only; adapter execution, receipt capture, and application-number evidence remain separate gates.",
+      "official_system_touched": false,
+      "official_submission_performed": false,
+      "adapter_execution_performed": false,
+      "automatic_submission_performed": false,
+      "external_lawyer_involved": false
+    },
+    {
+      "case_id": "CASE-INBOX-HANDOFF-001",
+      "status": "approved_for_adapter_execution",
+      "decision": "handoff_ready_no_auto_submit",
+      "legal_gate_mode": "ai_self_filing_no_external_lawyer",
+      "quality_gate": {
+        "status": "passed",
+        "weighted_score": 100.0,
+        "minimum_score_for_official_preflight": 85.0,
+        "official_preflight_allowed": true,
+        "review_path": "processed-cases/002-CASE-INBOX-HANDOFF-001/pre-submission-pipeline/application-materials-pipeline/application-materials-quality-gate/application-materials-quality-review.json",
+        "review_hash": "sha256:6144ab6a59817ffe6790c2570a43be5b7453ad041df3e0708e31f0d06b9fe7e1"
+      },
+      "reference_delta_present": false,
+      "reference_patent_delta_hash": "",
+      "reference_delta_rows_count": 0,
+      "reference_delta_claim_elements_count": 0,
+      "reference_delta_boundary_preserved": false,
+      "pre_submission_to_handoff_result": {
+        "path": "../inbox-to-handoff/processed-cases/002-CASE-INBOX-HANDOFF-001/pre-submission-to-handoff-result.json",
+        "sha256": "sha256:dabf98bcce3a90534fa6e603590c191727ab2fbe814c3d82d1fef37c8cecbc49"
+      },
+      "handoff_package": {
+        "path": "../inbox-to-handoff/processed-cases/002-CASE-INBOX-HANDOFF-001/pre-submission-handoff-package/pre-submission-handoff-package.json",
+        "sha256": "sha256:4955b3bbd67ff43084bafad8672bde046a24fc29559fca295e1a21523330ceb1"
+      },
+      "handoff_package_hash": "sha256:4955b3bbd67ff43084bafad8672bde046a24fc29559fca295e1a21523330ceb1",
+      "lifecycle_trace_hash": "sha256:d64bbf2f495edee927233e461a845c5e93ec3a7f80beb2b10d0270f2f6e20f72",
+      "source_pre_submission_hash": "sha256:fb54065f85ad2f5e68935278b1ff2de29daa66b1d172732e485e7cfd8a0d32ce",
+      "output_dir": "../inbox-to-handoff/processed-cases/002-CASE-INBOX-HANDOFF-001",
+      "errors": [],
+      "warnings": [
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: case_package: case_package_manifest: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: case_package: case_package_manifest: source_file_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: case_package: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: draft_package: claim_support_map: row_1_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: draft_evidence_provenance: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: draft_evidence_provenance: claim_support_map: row_1_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: abnormal_filing_risk: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_pipeline: abnormal_filing_risk: claim_support_map: row_1_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: case_package: case_package_manifest: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: case_package: case_package_manifest: source_file_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: case_package: source_material_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: draft_package: claim_support_map: row_1_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: draft_evidence_provenance: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: draft_evidence_provenance: claim_support_map: row_1_draft_status: draft_supported",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: abnormal_filing_risk: source_manifest: material_3_not_marked_usable_for_claim_support",
+        "validate_pre_submission_to_handoff_benchmark: pre_submission_handoff_package: source_pre_submission: abnormal_filing_risk: claim_support_map: row_1_draft_status: draft_supported"
+      ],
+      "warning_count": 16,
+      "next_action": "Use the read-only handoff package as approved-adapter execution input evidence only; adapter execution, receipt capture, and application-number evidence remain separate gates.",
+      "official_system_touched": false,
+      "official_submission_performed": false,
+      "adapter_execution_performed": false,
+      "automatic_submission_performed": false,
+      "external_lawyer_involved": false
+    }
+  ],
+  "next_action": "Use each indexed handoff package only as approved-adapter execution input evidence; adapter execution, receipt capture, and application-number evidence remain separate gates.",
+  "artifacts": {
+    "inbox_handoff_index": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-handoff-index\\inbox-handoff-index.json",
+    "inbox_handoff_index_report": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-handoff-index\\inbox-handoff-index.md",
+    "artifact_hashes": "D:\\.agents\\skills\\patent-capital-os\\benchmarks\\inbox-handoff-index\\artifact-hashes.json"
+  }
+}

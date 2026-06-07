@@ -1,0 +1,2 @@
+timestamp	lifecycle_id	skill_version	score	target_dimension	mutation	status	eval_mode	validation_result	trace_type	final_status	notes
+2026-06-01T23:00:00+08:00	LIFECYCLE-MOCK-001	local-no-git	94	lifecycle_trace	Added end-to-end lifecycle trace across intake, draft, legal, package, official preflight, adapter, receipt, and application-number gates.	keep	dry_run	passed	benchmark_mock	accepted_or_application_number_received	Trace proves ordering and evidence boundaries, not a real filing.

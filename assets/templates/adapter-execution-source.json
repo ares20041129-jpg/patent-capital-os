@@ -1,0 +1,32 @@
+{
+  "case_id": "",
+  "execution_mode": "approved_adapter",
+  "adapter": {
+    "name": "",
+    "version": ""
+  },
+  "execution": {
+    "action_started_at": "",
+    "action_completed_at": "",
+    "response_state": "submitted_pending_receipt",
+    "official_system_touched": true,
+    "official_submission_performed": true,
+    "adapter_execution_performed": true,
+    "submission_reference": "",
+    "official_status_snapshot_hash": "",
+    "submitted_file_list_hash": "",
+    "payment_status": "pending",
+    "payment_receipt_hash": "",
+    "benchmark_mock": false
+  },
+  "receipt_followup": {
+    "docket_entry_id": "",
+    "next_deadline_name": "capture official filing receipt",
+    "next_deadline_due_date": "",
+    "evidence_notes": ""
+  },
+  "decision": {
+    "status": "submitted_pending_receipt",
+    "reason": ""
+  }
+}

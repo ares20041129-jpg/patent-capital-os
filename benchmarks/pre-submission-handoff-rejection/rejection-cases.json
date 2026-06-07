@@ -1,0 +1,64 @@
+{
+  "case_id": "PRE-SUBMISSION-HANDOFF-REJECTION",
+  "base_handoff_folders": {
+    "standard": "../pre-submission-handoff-package",
+    "reference_delta": "../pre-submission-handoff-package-reference-delta"
+  },
+  "cases": [
+    {
+      "id": "lifecycle_hash_mismatch",
+      "base": "standard",
+      "description": "Mutates the package lifecycle trace hash away from the copied trace file.",
+      "package_mutations": {
+        "lifecycle_trace_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "expected_error_fragments": [
+        "handoff_lifecycle_trace_hash_mismatch"
+      ]
+    },
+    {
+      "id": "official_submission_flag_true",
+      "base": "standard",
+      "description": "Mutates the handoff package to claim official submission.",
+      "package_mutations": {
+        "official_submission_performed": true
+      },
+      "expected_error_fragments": [
+        "handoff_official_submission_performed_must_be_false"
+      ]
+    },
+    {
+      "id": "missing_filing_adapter_request_role",
+      "base": "standard",
+      "description": "Removes the required filing-adapter request evidence role.",
+      "remove_evidence_roles": [
+        "filing_adapter_request"
+      ],
+      "expected_error_fragments": [
+        "missing_evidence_role: filing_adapter_request"
+      ]
+    },
+    {
+      "id": "copied_lifecycle_evidence_tamper",
+      "base": "standard",
+      "description": "Modifies the copied lifecycle trace file after the package hash was recorded.",
+      "tamper_files": [
+        "evidence/control/case-lifecycle-trace.json"
+      ],
+      "expected_error_fragments": [
+        "evidence_hash_mismatch: evidence/control/case-lifecycle-trace.json"
+      ]
+    },
+    {
+      "id": "reference_delta_boundary_false",
+      "base": "reference_delta",
+      "description": "Mutates a reference-delta handoff package to lose the boundary-preserved flag.",
+      "package_mutations": {
+        "reference_delta_boundary_preserved": false
+      },
+      "expected_error_fragments": [
+        "reference_delta_boundary_must_be_preserved"
+      ]
+    }
+  ]
+}

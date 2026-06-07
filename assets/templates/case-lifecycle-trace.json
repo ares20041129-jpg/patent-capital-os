@@ -1,0 +1,38 @@
+{
+  "lifecycle_id": "",
+  "case_id": "",
+  "jurisdiction": "CN",
+  "trace_type": "production | benchmark_mock",
+  "generated_at": "",
+  "final_status": "",
+  "stages": [
+    {
+      "order": 1,
+      "stage": "",
+      "status": "",
+      "artifact": "",
+      "artifact_hash": "",
+      "validator": "",
+      "validation_result": "passed",
+      "legal_gate": "pending | failed | passed",
+      "official_system_touched": false,
+      "official_submission_performed": false,
+      "adapter_execution_performed": false,
+      "receipt_hash": "",
+      "application_number": "",
+      "official_session_authorization_hash": "",
+      "official_session_reference_hash": "",
+      "benchmark_mock": false,
+      "decision": "",
+      "next_required_gate": ""
+    }
+  ],
+  "invariants": {
+    "legal_gate_never_skipped": false,
+    "package_hash_consistent": false,
+    "no_receipt_before_submission": false,
+    "no_application_number_before_receipt": false,
+    "official_session_hash_consistent": false,
+    "mock_evidence_marked": false
+  }
+}
