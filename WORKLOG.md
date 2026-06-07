@@ -25,6 +25,7 @@ Verification:
 - `gh repo view ares20041129-jpg/ares20041129-jpg`: `visibility=PUBLIC`, `isPrivate=false`.
 - `gh release view v0.1.0`: published, not draft, not prerelease.
 - `git status --short`: clean before this worklog entry.
+
 ## 2026-06-08 03:54 +08:00
 
 Karpathy preflight:
