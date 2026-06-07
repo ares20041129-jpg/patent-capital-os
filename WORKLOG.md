@@ -1,5 +1,30 @@
 ﻿# Patent Capital OS Worklog
 
+## 2026-06-08 04:09 +08:00
+
+Karpathy preflight:
+
+- Assumptions: the public GitHub repository and public maintainer profile have been created under `ares20041129-jpg`; the goal is to record publication evidence without changing workflow semantics.
+- Smallest sufficient action: record the public repo, profile repo, release, topics, and CI result.
+- Evidence check: GitHub CLI confirmed the project repo and profile repo are public, `v0.1.0` is published, topics are set, and CI completed successfully.
+- Jagged-intelligence check: public visibility and maintainer status are real, but ecosystem importance and broad usage must still be earned through public adoption evidence.
+- Success criteria: worklog records public release evidence and no local uncommitted changes remain after push.
+- Stop rule: do not claim many users, downstream dependencies, or ecosystem importance until `ADOPTERS.md`, issues, forks, stars, citations, or integrations provide evidence.
+
+Publication evidence:
+
+- Public project repo: `https://github.com/ares20041129-jpg/patent-capital-os`
+- Public profile repo: `https://github.com/ares20041129-jpg/ares20041129-jpg`
+- Release: `https://github.com/ares20041129-jpg/patent-capital-os/releases/tag/v0.1.0`
+- Topics: `ai-workflows`, `codex-skill`, `ip`, `legaltech`, `open-source`, `patent`, `workflow-automation`
+- CI run `27103403471`: success.
+
+Verification:
+
+- `gh repo view ares20041129-jpg/patent-capital-os`: `visibility=PUBLIC`, `isPrivate=false`.
+- `gh repo view ares20041129-jpg/ares20041129-jpg`: `visibility=PUBLIC`, `isPrivate=false`.
+- `gh release view v0.1.0`: published, not draft, not prerelease.
+- `git status --short`: clean before this worklog entry.
 ## 2026-06-08 03:54 +08:00
 
 Karpathy preflight:
@@ -2359,4 +2384,5 @@ Verification:
 - `run_case_queue.py out\patent-application-materials-rejection-queue.json ... --json`: passed with `decision=patent_application_materials_rejection_passed`, `official_system_touched=false`, and `official_submission_performed=false`.
 - `run_regression_gate.py --output-dir out\regression-gate --json`: `ok=true`, `folder_validators.total=47 failed=0`, `artifact_manifests.total=50 failed=0`, `source_compile.total=90 failed=0`, `json_parse.total=255 failed=0`, `forbidden_scans.total=2 failed=0`, `official_system_touched=false`, `official_submission_performed=false`, `external_lawyer_involved=false`.
 - `validate_artifact_hash_manifest.py out\regression-gate\artifact-hashes.json --json`: passed.
+
 
