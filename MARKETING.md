@@ -1,201 +1,292 @@
-# Marketing Plan
+# GitHub Launch Kit
 
-This plan positions Patent Capital OS as a serious open-source project for developers, GPT builders, agent engineers, legaltech builders, and patent-operations teams. The goal is not to claim adoption before it exists; the goal is to earn visible usage, public feedback, and maintainer credibility through a technical launch that programmers can inspect and run.
+This is the GitHub-facing marketing kit for Patent Capital OS. It is written for the repository itself: README positioning, repo description, topics, release language, issue/discussion conversion, adopter evidence, and maintainer credibility.
 
-## Positioning
+The goal is to make a developer, GPT builder, or agent engineer understand the project in 30 seconds, trust the boundary claims in 3 minutes, and run or star the repository in 10 minutes.
 
-Patent Capital OS is the open-source workflow layer for evidence-bound patent operations in the AI era.
+## Repository Positioning
 
-It is not a patent-writing prompt, not an AI lawyer, and not an auto-filing bot. It is a reproducible local skill with intake, draft generation, AI legal/compliance gates, quality review, hash-bound handoff packages, and regression tests that prove it stops before real official submission.
+Patent Capital OS is an open-source Codex skill for evidence-bound patent workflow automation.
 
-## Primary Audience
+It turns patent invention materials into local, hash-bound pre-submission handoff packages through intake, draft generation, reference-patent delta analysis, AI legal/compliance gates, quality review, batch indexing, and completion audit.
 
-- Agent and GPT builders who need examples of production-grade skill design.
-- Python developers interested in workflow automation, validators, and benchmark-driven agent systems.
-- Open-source maintainers building serious AI tools with safety boundaries.
-- Legaltech and IP-operations builders looking for auditable automation patterns.
-- AI startup founders who need to understand patent workflow infrastructure without fake legal claims.
+It deliberately stops before real official filing.
 
-## Core Narrative
+## GitHub One-Liner
 
-The message should be technical, restrained, and proof-driven:
+Use this as the repository description:
 
-> I built an open-source patent workflow skill that refuses to fake legal review or official filing. It generates local handoff-ready patent materials, binds artifacts with hashes, runs legal/compliance and quality gates, and proves through regression tests that it never touches an official filing system.
+```text
+Evidence-bound Codex skill for patent intake, AI legal/compliance gates, application-material generation, quality review, and read-only pre-submission handoff.
+```
 
-The strongest wedge is reliability, not hype. Developers should see a project that is inspectable, runnable, and honest about boundaries.
+Shorter variant:
 
-## Messaging Pillars
+```text
+Open-source patent workflow skill with legal/compliance gates, hash-bound artifacts, validators, and no fake official filing.
+```
 
-- Evidence over vibes: every meaningful artifact is hash-bound and validator-backed.
-- Boundary discipline: local handoff is not submission, preview is not filing, and AI review is not attorney review.
-- Useful agent architecture: the repository demonstrates how to build serious skills with scripts, templates, benchmarks, schemas, and regression gates.
-- Patent-ops specificity: the workflow speaks in real patent-operation objects such as disclosures, claim support, legal gates, handoff packages, queues, and audit reports.
-- Open-source credibility: roadmap, governance, maintainers, issues, adopters, security policy, and CI are public.
+## GitHub Topics
 
-## Launch Hooks
+Recommended topics:
 
-- "I built a patent workflow OS that refuses to lie."
-- "From invention notes to hash-bound pre-submission handoff, without pretending it filed anything."
-- "A serious open-source Codex skill for patent operations, legal/compliance gates, and regression-tested AI workflows."
-- "Not another prompt pack: a local agent workflow with validators, benchmarks, and audit trails."
-- "If AI agents are going to touch legal workflows, they need hard gates. Here is one open-source example."
+```text
+ai-agents
+ai-workflows
+codex-skill
+gpt-skills
+ip
+legal-compliance
+legaltech
+open-source
+patent
+patent-automation
+patent-workflow
+workflow-automation
+```
 
-## Channel Strategy
+Keep topics specific. Avoid vague tags that attract the wrong audience.
 
-Use a proof-first launch sequence before paid promotion.
+## README First Screen
 
-| Channel | Why it fits | Primary action |
-| --- | --- | --- |
-| GitHub | Source of truth for open-source credibility | Keep README, issues, releases, CI, roadmap, and adopters current |
-| Hacker News | Developers respond to technical substance and clear boundaries | Submit a "Show HN" only after README and demo artifacts are polished |
-| X / Twitter | Best for fast AI-builder awareness and launch threads | Publish a technical thread with screenshots, architecture, and a demo command |
-| LinkedIn | Strong for legaltech, IP operations, founders, and B2B credibility | Post a professional launch note focused on risk controls and workflow evidence |
-| Reddit | Useful for niche technical feedback when handled transparently | Share in relevant communities as an open-source technical project, not an ad |
-| OpenAI Developer Community | Direct fit for GPT and agent builders | Share architecture lessons and skill design patterns when aligned with forum rules |
-| Dev.to / Medium / personal blog | Good for durable technical SEO | Publish a deep dive on "How to build an evidence-bound AI workflow skill" |
-| YouTube / short demo video | Compresses the workflow into something easy to understand | Publish a 90-second local run-through and a 6-minute technical walkthrough |
+The top of the README should answer four questions immediately:
 
-Current channel notes:
+- What is it?
+- Who is it for?
+- What can it run locally?
+- What does it refuse to claim?
 
-- Stack Overflow offers developer-focused advertising products for reaching developers and technologists: https://stackoverflow.co/advertising/
-- Reddit supports community and interest targeting for niche communities: https://www.business.reddit.com/advertise/targeting/community-and-interest
-- LinkedIn Ads are useful when targeting professional roles and B2B audiences: https://www.linkedin.com/help/linkedin/answer/a421454/linkedin-ads-and-marketing-solutions-overview
-- OpenAI's developer surfaces and community are natural places to engage builders: https://developers.openai.com/community/ and https://community.openai.com/
+Recommended first-screen copy:
 
-Paid promotion should wait until there is a clean demo, at least one public release, and a clear call to action. Early spend should be small, measured, and retargeting-oriented.
+```markdown
+# Patent Capital OS
 
-## Launch Sequence
+Patent Capital OS is an open-source Codex skill for evidence-bound patent workflow automation.
 
-### Phase 0: Proof Base
+It helps developers and GPT builders turn invention materials into local, hash-bound pre-submission handoff packages with intake, patent draft generation, reference-patent delta analysis, AI legal/compliance gates, quality review, batch indexing, and completion audit.
 
-- Make the repository public and polished.
-- Keep Cyrus Sheng listed as primary/core maintainer.
-- Maintain CI, release notes, governance, roadmap, security policy, and issue templates.
-- Add screenshots or terminal output examples showing the local loop.
-- Add one anonymized sample inbox-to-handoff run that users can reproduce.
+It does not perform real official patent filing by default. The local closed loop stops at `approved_for_adapter_execution` / `handoff_ready_no_auto_submit`.
+```
 
-### Phase 1: Technical Launch
+## Why Developers Should Care
 
-- Publish GitHub release notes with a concise architecture summary.
-- Post one launch thread for AI builders.
-- Post one professional LinkedIn launch note for legaltech and founders.
-- Publish one technical article explaining the workflow contract.
-- Invite users to run the smoke checks and open issues.
+This project should be marketed on GitHub as an engineering artifact, not as a legal shortcut.
 
-### Phase 2: Developer Trust
+Developer-facing value:
 
-- Add "good first issue" labels.
-- Open discussions for roadmap, use cases, and integration requests.
-- Publish validator design notes.
-- Add a compact architecture diagram.
-- Record short videos showing the run commands and outputs.
+- A real example of a serious Codex skill with scripts, templates, references, schemas, benchmarks, and CI.
+- A reusable pattern for agent workflows that need hard stop conditions and audit evidence.
+- A patent-domain workflow that shows how AI systems can generate useful artifacts without faking legal authority.
+- A validation-heavy architecture with hash-bound artifacts and rejection benchmarks.
+- A public maintainer model that does not exaggerate adoption.
 
-### Phase 3: Community Flywheel
+## What Makes It Different
 
-- Convert real questions into documentation.
-- Turn repeated requests into issues and roadmap entries.
-- Ask early users to add public adopter entries only when they actually use the project.
-- Publish weekly maintainer notes while the project is active.
-- Keep claims evidence-based: stars, forks, issues, discussions, and adopter entries.
+Use these as GitHub bullets:
 
-### Phase 4: Paid Amplification
+- Not a prompt pack: it is a workflow skill with executable local scripts.
+- Not an AI lawyer: it keeps AI legal/compliance review separate from legal advice.
+- Not an auto-filing bot: it does not log in, upload, sign, pay, submit, capture receipts, or claim application numbers.
+- Not a demo-only folder: it includes validators, benchmark fixtures, runbooks, and regression gates.
+- Not a black box: it records work in `WORKLOG.md` and keeps source artifacts hash-bound.
 
-Only after organic proof:
+## GitHub Conversion Path
 
-- Test Reddit community-targeted ads with educational copy and a GitHub call to action.
-- Test LinkedIn founder/legaltech targeting with a professional workflow-risk angle.
-- Test Stack Overflow or developer newsletter placements only after conversion pages and examples are strong.
-- Retarget visitors to a demo article or release page rather than sending cold paid traffic directly to a broad README.
+The repository should move visitors through this path:
 
-## Content Assets
+1. Read the README first screen.
+2. See the explicit no-official-submission boundary.
+3. Run a smoke command or inspect benchmark fixtures.
+4. Star the repo if the architecture is useful.
+5. Open an issue for a workflow gap, docs request, or integration idea.
+6. Submit an adopter report only after real usage exists.
 
-Build these in order:
+Primary GitHub calls to action:
 
-- GitHub README with the first 30 seconds of value clear.
-- Architecture diagram showing intake, gates, validators, handoff, and stop boundary.
-- A reproducible demo fixture and command sequence.
-- A 90-second demo video.
-- A 6-minute technical walkthrough.
-- A launch thread for AI developers.
-- A LinkedIn post for legaltech and startup operators.
-- A technical blog post for "evidence-bound AI workflow design."
-- A contributor guide with three starter issues.
+- "Run the local smoke workflow."
+- "Open an issue for a patent workflow gap."
+- "Use `ADOPTERS.md` only for real public usage evidence."
+- "Star the repo if the skill architecture is useful."
 
-## Launch Copy
+## README Sections To Keep Sharp
 
-### GitHub Description
+Keep these sections short and strong:
 
-Evidence-bound open-source Codex skill for patent intake, AI legal/compliance gates, application-material generation, quality review, and read-only pre-submission handoff.
+- Project Status
+- Core Capabilities
+- Explicit Boundary
+- Quick Start
+- Verification Status
+- Maintainer Evidence
 
-### Show HN Title
+Avoid turning the README into a sales page. GitHub users want proof, commands, files, and clear constraints.
 
-Show HN: Patent Capital OS - an open-source AI workflow that stops before fake patent filing
+## Release Copy
 
-### X / Twitter Opener
+Use this template for GitHub releases:
 
-I built Patent Capital OS, an open-source Codex skill for patent operations.
+```markdown
+## Patent Capital OS vX.Y.Z
 
-It takes invention materials through draft generation, AI legal/compliance gates, quality review, hash-bound handoff packages, and regression tests.
+This release improves the local patent skill workflow from invention-material intake to read-only pre-submission handoff.
 
-The important part: it proves it did not touch an official filing system.
+### Highlights
 
-### LinkedIn Opener
+- [Capability]
+- [Validator or benchmark]
+- [Documentation or runbook]
 
-AI legal workflows need more than impressive drafts. They need boundaries, evidence, and auditability.
+### Boundary
 
-Patent Capital OS is an open-source workflow toolkit for patent intake, AI legal/compliance gating, application-material preparation, quality review, and read-only pre-submission handoff.
+This release does not perform official login, upload, signature, fee payment, submission, receipt capture, or application-number issuance.
 
-## Conversion Goals
+### Verification
 
-Primary:
+- `python -m json.tool test-prompts.json`
+- `python -m py_compile ...`
+- `[focused validator command]`
+- `[CI or regression result]`
+```
 
-- GitHub star
-- GitHub issue
-- GitHub discussion
-- Local benchmark run
-- Adopter report when there is real use
+## Issue Strategy
 
-Secondary:
+Use issues as public evidence of active maintenance.
 
-- Forks
-- Pull requests
-- Release followers
-- Blog/article citations
-- Maintainer credibility for public open-source applications
+Recommended labels:
 
-## Metrics
+- `good first issue`
+- `documentation`
+- `benchmark`
+- `validator`
+- `workflow`
+- `legal-boundary`
+- `patent-domain`
+- `help wanted`
 
-Track weekly:
+Recommended first public issues:
 
-- Stars and forks
-- Unique cloners and visitors
-- Issues opened and closed
-- Pull requests opened and merged
-- Discussions and comments
-- Release views/downloads when available
-- Public adopter entries
-- External links or citations
-- Demo video watch time
+- Add a compact architecture diagram to the README.
+- Add a minimal sample inbox fixture for new users.
+- Document the difference between draft generation, handoff readiness, and official submission.
+- Add a validator map showing which scripts guard which workflow boundaries.
+- Add a contributor guide section for creating rejection benchmarks.
 
-Do not treat vanity metrics as proof of ecosystem dependence. Use them as directional signals until public integrations or adopter evidence exists.
+## Discussion Prompts
 
-## Guardrails
+Use GitHub Discussions to attract the right people:
 
-- Do not claim attorney review unless real attorney review evidence exists.
-- Do not call AI legal/compliance gating "legal advice."
-- Do not claim official submission, receipt, acceptance, or application number from local outputs.
-- Do not fabricate users, adopters, stars, downloads, testimonials, or partnerships.
-- Do not market the project as a way to bypass patent agents, logins, signatures, fees, captchas, or government-system controls.
-- Keep the default claim: local, evidence-bound, no-official-submission workflow.
+- "What makes a patent workflow skill trustworthy enough for local use?"
+- "Where should AI patent drafting stop before legal or official authority is required?"
+- "What benchmark fixtures would make this skill easier to evaluate?"
+- "Which agent workflow patterns from this repo are reusable outside patent operations?"
 
-## Weekly Maintainer Rhythm
+## Adopter Evidence
 
-- Monday: triage issues, label starter tasks, update roadmap.
-- Tuesday: publish one technical note or example.
-- Wednesday: improve one validator, fixture, or document.
-- Thursday: respond to community feedback and convert questions into docs.
-- Friday: ship a small release or maintainer note when there is meaningful progress.
+Do not claim broad usage before it exists.
 
-## Success Definition
+Good adopter evidence:
 
-The campaign succeeds when developers can explain the project in one sentence, run the local loop, trust the boundary claims, and see Cyrus Sheng as the active primary maintainer behind a serious open-source AI workflow project.
+- public issue from a real user
+- public discussion with workflow feedback
+- public fork that integrates the skill
+- public demo using the repository
+- public entry in `ADOPTERS.md`
+
+Bad adopter evidence:
+
+- private praise without permission
+- assumed users from traffic
+- fake testimonials
+- unverified "many people rely on this" claims
+
+## GitHub Profile Copy
+
+Use this for Cyrus Sheng's profile:
+
+```markdown
+I am the primary maintainer of Patent Capital OS, an open-source Codex skill for evidence-bound patent workflow automation.
+
+The project focuses on local patent intake, draft generation, AI legal/compliance gates, application-material preparation, quality review, hash-bound handoff packages, and regression-tested stop boundaries before official filing.
+```
+
+## Pinned Repository Note
+
+When pinning the repo on the GitHub profile, use this mental model:
+
+```text
+Patent Capital OS = serious AI workflow infrastructure for patent operations, not a legal shortcut.
+```
+
+## Star Pitch
+
+Use this line when asking technical audiences to star the repo:
+
+```text
+Star it if you want a concrete example of how to build AI agent workflows with legal/compliance gates, hash-bound artifacts, rejection benchmarks, and honest stop conditions.
+```
+
+## Pull Request Pitch
+
+Use this line when inviting contributors:
+
+```text
+Contributions are welcome around validators, benchmark fixtures, documentation, sample workflows, and safer patent-domain automation boundaries.
+```
+
+## GitHub SEO Keywords
+
+Use these terms naturally in README, release notes, and issue titles:
+
+- patent workflow automation
+- patent application materials
+- Codex skill
+- GPT skill
+- AI agent workflow
+- legal compliance gate
+- AI legal compliance
+- patent drafting workflow
+- prior art delta
+- claim support map
+- hash-bound artifacts
+- pre-submission handoff
+- regression-tested AI workflow
+
+## What Not To Say
+
+Do not use these claims on GitHub:
+
+- "AI lawyer"
+- "automatic patent filing"
+- "guaranteed patent approval"
+- "officially submitted"
+- "lawyer-reviewed" unless there is real evidence
+- "many companies use this" unless public evidence exists
+- "bypass patent agents"
+- "bypass CNIPA controls"
+
+## Maintainer Rhythm For GitHub
+
+Weekly:
+
+- Triage new issues and label them.
+- Add one small documentation or benchmark improvement.
+- Publish a short maintainer note when there is meaningful progress.
+- Keep `ADOPTERS.md` honest.
+- Keep `ROADMAP.md` current.
+
+Monthly:
+
+- Cut a small release if changes are meaningful.
+- Review README first screen and repo topics.
+- Open or close roadmap issues based on actual feedback.
+- Record public evidence in `docs/maintainer-application-evidence.md`.
+
+## Success Criteria
+
+The GitHub marketing is working when:
+
+- A developer can explain the project accurately after reading the README.
+- A GPT builder understands the skill architecture and stop boundaries.
+- Issues and discussions ask about real workflow integrations rather than fake filing.
+- Stars, forks, and adopter reports grow from public technical trust.
+- Cyrus Sheng is visibly the active primary maintainer without overstating adoption.

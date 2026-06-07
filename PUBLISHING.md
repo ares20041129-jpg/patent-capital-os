@@ -10,7 +10,7 @@ Use this checklist when preparing Patent Capital OS for a GitHub repository.
 - [ ] `MAINTAINERS.md` names the public primary/core maintainer
 - [ ] `GOVERNANCE.md` explains the maintainer model
 - [ ] `ADOPTERS.md` avoids unsupported usage claims
-- [ ] `MARKETING.md` explains the developer and GPT-builder launch plan
+- [ ] `MARKETING.md` explains the GitHub launch kit for this patent skill
 - [ ] `.gitignore` excludes `out/`, `backups/`, and local zip exports
 - [ ] `requirements.txt` matches the actual runtime dependency surface
 - [ ] no secrets, credentials, or applicant-private materials are present

@@ -1,6 +1,8 @@
 # Patent Capital OS
 
-Patent Capital OS is a production-style Codex skill for patent intake, draft generation, AI legal/compliance gating, application-material preparation, quality review, and read-only pre-submission handoff.
+Patent Capital OS is an open-source Codex skill for evidence-bound patent workflow automation.
+
+It helps developers and GPT builders turn invention materials into local, hash-bound pre-submission handoff packages with intake, patent draft generation, reference-patent delta analysis, AI legal/compliance gates, quality review, batch indexing, and completion audit.
 
 It is designed for Chinese patent workflow prototyping and enterprise IP operations. The current repository closes the local skill loop from received materials to `approved_for_adapter_execution` / `handoff_ready_no_auto_submit` and intentionally stops before real official submission.
 
@@ -22,7 +24,7 @@ Patent Capital OS is an early public open-source project maintained by Cyrus She
 - `GOVERNANCE.md`: project decision and review model
 - `ADOPTERS.md`: public adoption evidence tracker
 - `ROADMAP.md`: public roadmap
-- `MARKETING.md`: developer and GPT-builder launch strategy
+- `MARKETING.md`: GitHub launch kit for this patent skill
 
 ## Core Capabilities
 
@@ -37,6 +39,13 @@ Patent Capital OS is an early public open-source project maintained by Cyrus She
 - Read-only handoff package generation
 - Batch inbox processing, handoff indexing, and completion audit
 - Queue validation and full regression validation
+
+## Why Developers Should Care
+
+- A concrete Codex skill architecture with scripts, templates, references, schemas, benchmarks, and CI.
+- A validation-heavy agent workflow pattern for legal/compliance-sensitive domains.
+- Patent-domain automation that is useful without pretending to be a lawyer or an official filing system.
+- Hash-bound artifacts, rejection benchmarks, and explicit stop conditions that other GPT/agent projects can reuse.
 
 ## Explicit Boundary
 
@@ -130,6 +139,7 @@ patent-capital-os/
 - The project is licensed under Apache-2.0.
 - Review `SECURITY.md` before enabling issues, PRs, or public contribution.
 - Keep `ADOPTERS.md` truthful. Do not claim heavy usage until public evidence exists.
+- Use `MARKETING.md` as the GitHub-specific positioning and growth kit for this patent skill.
 
 ## Maintainer Evidence
 

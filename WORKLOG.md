@@ -1,5 +1,42 @@
 ﻿# Patent Capital OS Worklog
 
+## 2026-06-08 04:50 +08:00
+
+Karpathy preflight:
+
+- Assumptions: the user clarified that the need is not a generic marketing plan, but a GitHub-specific marketing and positioning kit for the Patent Capital OS skill itself.
+- Smallest sufficient action: rewrite `MARKETING.md` as a GitHub launch kit, sharpen the README first-screen positioning, update publishing checklist wording, and configure GitHub repository metadata plus starter contribution entrypoints.
+- Evidence check: the repository is public at `https://github.com/ares20041129-jpg/patent-capital-os`; GitHub repo settings, topics, labels, and issues can be updated through `gh`; changes must not touch patent workflow code or official filing boundaries.
+- Jagged-intelligence check: marketing copy can easily overclaim usage, legal authority, or official filing capability. Keep the plan tied to GitHub presentation, developer trust, validation evidence, and truthful public contribution paths.
+- Success criteria: GitHub visitors can understand the patent skill in 30 seconds, see the no-official-submission boundary, find contribution entrypoints, and recognize Cyrus Sheng as the active maintainer without fabricated adoption claims.
+- Stop rule: do not create fake adopters, fake testimonials, fake usage metrics, fake legal review, or any claim that the skill performs real official filing.
+
+Backup:
+
+- `<skill-root>\backups\20260608-github-skill-marketing-kit`
+
+Changes recorded:
+
+- Rewrote `MARKETING.md` from a broad channel/ad plan into `GitHub Launch Kit` for this patent skill, covering repository positioning, GitHub one-liner, topics, README first screen, developer value, differentiation, conversion path, release copy, issue strategy, discussion prompts, adopter evidence, profile copy, star pitch, contributor pitch, GitHub SEO, forbidden claims, and maintainer rhythm.
+- Updated `README.md` first-screen copy so the repository presents Patent Capital OS as an open-source Codex skill for evidence-bound patent workflow automation aimed at developers and GPT builders.
+- Added a concise `Why Developers Should Care` section to the README.
+- Updated `PUBLISHING.md` so `MARKETING.md` is described as the GitHub launch kit for this patent skill.
+- Updated GitHub repository description to: `Evidence-bound Codex skill for patent intake, AI legal/compliance gates, application-material generation, quality review, and read-only pre-submission handoff.`
+- Updated GitHub topics to include `ai-agents`, `gpt-skills`, `legal-compliance`, `patent-automation`, and `patent-workflow` alongside the existing project topics.
+- Enabled GitHub Issues and Discussions.
+- Added GitHub labels: `benchmark`, `validator`, `workflow`, `legal-boundary`, and `patent-domain`.
+- Created starter issues:
+  - `#1` Add a compact architecture diagram to the README.
+  - `#2` Add a minimal sample inbox fixture for first-time users.
+  - `#3` Document which validators protect each workflow boundary.
+  - `#4` Clarify draft generation vs handoff readiness vs official submission.
+  - `#5` Add contributor guidance for rejection benchmarks.
+
+Verification:
+
+- `gh repo view ares20041129-jpg/patent-capital-os --json description,repositoryTopics,hasIssuesEnabled,hasDiscussionsEnabled,url`: confirmed description, topics, Issues, and Discussions.
+- Starter issues `#1` through `#5` were created under the public repository.
+
 ## 2026-06-08 04:21 +08:00
 
 Karpathy preflight:
